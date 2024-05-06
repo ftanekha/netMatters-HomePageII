@@ -1,0 +1,82 @@
+div#header {
+  width: 100%;
+  height: 168px;
+  margin: 0;
+  background: green;
+}
+div#header header div.header-top {
+  width: 100%;
+  height: 70px;
+  inline-size: 750px;
+  letter-spacing: 0.4px;
+  lighting-color: rgb(255, 255, 255);
+  line-height: 22.8571px;
+}
+div#header header div.header-top div.container {
+  width: 100%;
+  height: 128px;
+  background: yellow;
+}
+div#header header div.header-top div.container div.header-top-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background: blue;
+}
+div#header header div.header-top div.container div.header-top-row div.logo-wrapper a.logo-link img {
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+div#header header div.header-top div.container div.header-top-row div.actions-wrapper a.phone-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: end;
+  width: 47.4px;
+  height: 70px;
+  background: tomato;
+  cursor: pointer;
+}
+div#header header div.header-top div.container div.header-top-row div.actions-wrapper a.phone-icon-link div.phone-icon {
+  display: inline-block;
+  width: 32.4px;
+  height: 32.8px;
+  background: green;
+}
+div#header header div.header-top div.container div.header-top-row div.actions-wrapper button.button-hamburger {
+  box-sizing: border-box;
+  width: 63px;
+  height: 56px;
+  margin-left: 20px;
+  padding: 5px 15px;
+  border: none;
+  vertical-align: middle;
+  background-color: #333645;
+  border-color: #333645;
+  border-radius: 3px;
+  cursor: pointer;
+}
+div#header header div.header-top div.container div.header-top-row div.actions-wrapper button.button-hamburger:hover {
+  background-color: #22242e;
+  border-color: #191a22;
+}
+div#header header div.header-top div.container div.header-top-row div.actions-wrapper button.button-hamburger span.button-hamburger-line hr {
+  box-sizing: border-box;
+  min-width: 33px;
+  margin: 6.25px 0;
+  max-width: 23px;
+  border-top: 3.5px solid white;
+  border-color: white;
+}
+
+body {
+  padding: 0px;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  line-height: 1.42857143;
+  color: #666;
+}
+
+/*# sourceMappingURL=application.css.map */
