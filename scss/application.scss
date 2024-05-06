@@ -1,4 +1,4 @@
-@import "main-container/index";
+@import "main-sections/index";
 
 body{
     padding: 0px;
@@ -7,6 +7,7 @@ body{
     letter-spacing: .4px;
     line-height: 1.42857143;
     color: #666;
+    background-color: #fff;
     div#container{
         height: 100%;
         position: relative;

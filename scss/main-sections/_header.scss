@@ -1,0 +1,30 @@
+header{
+    div.inner{
+        div.container{
+            margin: 0 auto;
+            padding: 0 auto;
+            div.row{
+                div.logo-container{
+
+                }
+                div.phone-icon-container{
+                    a.phone-in-link{
+                        span.icon-phone_in_talk{
+                            
+                        }
+                    }
+                }
+                div.actions-container{
+                    div.actions{
+
+                    }
+                }
+            }
+            div.search-form-wrapper--mobile{
+                @media screen and (min-width: 768px){
+                    display: none;
+                }
+            }
+        }
+    }
+}
