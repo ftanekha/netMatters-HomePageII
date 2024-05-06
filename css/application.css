@@ -2,6 +2,20 @@ header div.inner div.container {
   margin: 0 auto;
   padding: 0 auto;
 }
+header div.inner div.container div.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  background: green;
+}
+header div.inner div.container div.grid > div {
+  width: 100%;
+  max-width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+}
 @media screen and (min-width: 768px) {
   header div.inner div.container div.search-form-wrapper--mobile {
     display: none;

@@ -3,14 +3,30 @@ header{
         div.container{
             margin: 0 auto;
             padding: 0 auto;
-            div.row{
+            div.grid{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr;
+                background: green;
+                > div{
+                    // display: table-cell;
+                    width: 100%;
+                    max-width: 100%;
+                    // position: relative;
+                    min-height: 1px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    align-items: center;
+                    // vertical-align: middle;
+                    // float: none;
+                }
                 div.logo-container{
 
                 }
                 div.phone-icon-container{
                     a.phone-in-link{
                         span.icon-phone_in_talk{
-                            
+
                         }
                     }
                 }

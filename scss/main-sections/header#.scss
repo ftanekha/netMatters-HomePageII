@@ -1,0 +1,12 @@
+@media (max-width: 767px) {
+    header .inner .row {
+        display: table;
+        width: 100%;
+        margin: 0;
+    }
+}
+> * {
+    flex: 0 0 auto;
+    max-width: 100%;
+}
+///////////////////////////////////////////
