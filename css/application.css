@@ -43,6 +43,8 @@ header div.inner div.container div.search-form-wrapper--mobile form input {
   font-size: 14px;
   line-height: 1.42857143;
   color: #555;
+  height: 47px;
+  padding: 5px 15px;
   background-image: none;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
@@ -50,6 +52,27 @@ header div.inner div.container div.search-form-wrapper--mobile form input {
 }
 header div.inner div.container div.search-form-wrapper--mobile form input:active, header div.inner div.container div.search-form-wrapper--mobile form input:focus {
   box-shadow: 0 0 3px #fff;
+}
+header div.inner div.container div.search-form-wrapper--mobile form button {
+  background: none;
+  border: none;
+  color: #333645;
+  position: absolute;
+  right: 5px;
+  line-height: 47px;
+  font-size: 20px;
+  outline: none;
+  text-transform: none;
+  overflow: visible;
+}
+header div.inner div.container div.search-form-wrapper--mobile form button span {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: Glyphicons Halflings;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   header div.inner div.container div.search-form-wrapper--mobile {

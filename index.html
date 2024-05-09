@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="assets/icons/style.css">
     <link rel="stylesheet" href="css/application.css">
     <title>Farai Tanekha: HTML & SASS Assessment</title>
 </head>
 <body class="home-page default overflow-hidden">
+    <p>hi</p>
     <div id="cookie-app"><!-- COOKIE CONSENT BAR --></div>
     <div id="container">
         <div class="main">
@@ -52,8 +54,11 @@
                                     </div>
                                     <!-- search form wrapper -->
                                     <div class="search-form-wrapper--mobile">
-                                        <form action="">
-                                            <input type="text" name="" id="" placeholder='Search...'/>
+                                        <form class="search-form " action="GET" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8">
+                                            <input type="text" name="keyword" id="" placeholder='Search...'/>
+                                            <button type="submit" id="search-submit">
+                                                <span class="glyphicon-search" aria-hidden="true"></span>
+                                            </button>
                                         </form>
                                     </div>
                                 </div>

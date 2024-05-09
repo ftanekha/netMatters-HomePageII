@@ -1,4 +1,7 @@
-@import "main-sections/index";
+@import
+    "mixins",
+    "main-sections/index"
+;
 
 body{
     padding: 0px;
