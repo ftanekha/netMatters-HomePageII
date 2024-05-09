@@ -21,9 +21,28 @@ header{
                     }
                     div.phone-in-icon-container{
                         width: 3fr;
+                        display: flex;
+                        align-items: center;
                         // background-color: black;
-                        a{
+                        a.phone-in-link{
                             display: block;
+                            color: #333645;
+                            text-decoration: none;
+                                &:focus{
+                                    outline-offset: -2px;
+                                    outline: thin dotted;
+                                }
+                                &:hover, &:focus{
+                                    color: #121419;
+                                    text-decoration: underline;
+                                }
+                                &:hover, &:active{
+                                    outline: 0;
+                                }
+                            span.icon-phone_in_talk{
+                                font-size: 32px;
+                                margin-left: 15px;
+                            }
                         }
                     }
                     div.actions-container{
@@ -67,6 +86,8 @@ header{
                             font-style: normal;
                             font-weight: 400;
                             line-height: 1;
+                            // inherit from button 
+                            text-transform: none;
                         }
                     }
                 }

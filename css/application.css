@@ -20,9 +20,28 @@ header div.inner div.container div.row {
   }
   header div.inner div.container div.row div.phone-in-icon-container {
     width: 3fr;
+    display: flex;
+    align-items: center;
   }
-  header div.inner div.container div.row div.phone-in-icon-container a {
+  header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link {
     display: block;
+    color: #333645;
+    text-decoration: none;
+  }
+  header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:focus {
+    outline-offset: -2px;
+    outline: thin dotted;
+  }
+  header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:hover, header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:focus {
+    color: #121419;
+    text-decoration: underline;
+  }
+  header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:hover, header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:active {
+    outline: 0;
+  }
+  header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link span.icon-phone_in_talk {
+    font-size: 32px;
+    margin-left: 15px;
   }
   header div.inner div.container div.row div.actions-container {
     width: 3fr;
@@ -73,6 +92,7 @@ header div.inner div.container div.search-form-wrapper--mobile form button span 
   font-style: normal;
   font-weight: 400;
   line-height: 1;
+  text-transform: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   header div.inner div.container div.search-form-wrapper--mobile {
