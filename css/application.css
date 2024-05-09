@@ -8,43 +8,127 @@ header div.inner div.container {
 header div.inner div.container div.row {
   display: flex;
 }
-@media (max-width: 767px) {
+header div.inner div.container div.row div.logo-container {
+  width: 6fr;
+  display: flex;
+  align-items: center;
+}
+header div.inner div.container div.row div.logo-container a {
+  display: block;
+}
+header div.inner div.container div.row div.logo-container a picture img {
+  max-width: 100%;
+}
+header div.inner div.container div.row div.phone-in-icon-container {
+  width: 3fr;
+  display: flex;
+  align-items: center;
+}
+header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link {
+  display: block;
+  color: #333645;
+  text-decoration: none;
+}
+header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:focus {
+  outline-offset: -2px;
+  outline: thin dotted;
+}
+header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:hover, header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:focus {
+  color: #121419;
+  text-decoration: underline;
+}
+header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:hover, header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:active {
+  outline: 0;
+}
+header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link span.icon-phone_in_talk {
+  font-size: 32px;
+  margin-left: 15px;
+}
+header div.inner div.container div.row div.actions-container {
+  width: 3fr;
+  max-width: 100%;
+  min-height: 1px;
+  position: relative;
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+header div.inner div.container div.row div.actions-container div.actions {
+  padding: 7px 0;
+  display: flex;
+}
+header div.inner div.container div.row div.actions-container div.actions button {
+  height: 56px;
+  margin-left: 20px;
+  padding: 5px 15px;
+  float: left;
+  background-color: #333645;
+  background-image: none;
+  border: 0;
+  border-radius: 3px;
+  border-color: #333645;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 46px;
+  font-size: 1.125rem;
+  white-space: normal;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  overflow: visible;
+  user-select: none;
+  appearance: button;
+}
+header div.inner div.container div.row div.actions-container div.actions button:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+header div.inner div.container div.row div.actions-container div.actions button:active {
+  background-image: none;
+  outline: 0;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+header div.inner div.container div.row div.actions-container div.actions button:focus {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+  outline-offset: -2px;
+}
+header div.inner div.container div.row div.actions-container div.actions button:hover, header div.inner div.container div.row div.actions-container div.actions button:active, header div.inner div.container div.row div.actions-container div.actions button:focus {
+  background-color: #22242e;
+  border-color: #191a22;
+}
+header div.inner div.container div.row div.actions-container div.actions button span.hamburger-box {
+  display: block;
+  width: 33px;
+  height: 9px;
+  position: relative;
+  font-size: 1.438rem;
+  line-height: 45px;
+}
+header div.inner div.container div.row div.actions-container div.actions button span.hamburger-box span.hamburger-inner {
+  width: 33px;
+  height: 4px;
+  position: absolute;
+  transition-property: transform;
+  background-color: #fff;
+  border-radius: 0;
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  display: block;
+  top: 50%;
+  margin-top: -1.5px;
+}
+@media (min-width: 768px) {
   header div.inner div.container div.row div.logo-container {
     width: 6fr;
   }
-  header div.inner div.container div.row div.logo-container a {
-    display: block;
-  }
-  header div.inner div.container div.row div.logo-container a picture img {
-    max-width: 100%;
-  }
   header div.inner div.container div.row div.phone-in-icon-container {
-    width: 3fr;
-    display: flex;
-    align-items: center;
-  }
-  header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link {
-    display: block;
-    color: #333645;
-    text-decoration: none;
-  }
-  header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:focus {
-    outline-offset: -2px;
-    outline: thin dotted;
-  }
-  header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:hover, header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:focus {
-    color: #121419;
-    text-decoration: underline;
-  }
-  header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:hover, header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:active {
-    outline: 0;
-  }
-  header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link span.icon-phone_in_talk {
-    font-size: 32px;
-    margin-left: 15px;
+    display: none;
   }
   header div.inner div.container div.row div.actions-container {
-    width: 3fr;
+    width: 6fr;
   }
 }
 header div.inner div.container div.search-form-wrapper--mobile form {
@@ -92,7 +176,6 @@ header div.inner div.container div.search-form-wrapper--mobile form button span 
   font-style: normal;
   font-weight: 400;
   line-height: 1;
-  text-transform: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   header div.inner div.container div.search-form-wrapper--mobile {
