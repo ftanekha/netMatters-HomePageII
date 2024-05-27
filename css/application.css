@@ -394,6 +394,45 @@ div#middle div.container {
   margin: 0 auto;
   padding: 0 15px;
 }
+div#middle div.container div.our-services-headline {
+  color: #333645;
+  margin: 30px auto;
+}
+div#middle div.container div.our-services-headline h2 strong {
+  font-size: 2.7rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+div#middle div.container div.our-services-headline a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.625rem;
+  color: #333645;
+}
+div#middle div.container div.our-services-headline a.sm {
+  display: block;
+  text-align: center;
+}
+div#middle div.container div.our-services-headline a.md {
+  display: none;
+}
+div#middle div.container div.our-services-headline a:hover {
+  text-decoration: underline;
+  outline: 0;
+}
+@media (min-width: 768px) {
+  div#middle div.container div.our-services-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  div#middle div.container div.our-services-headline a.sm {
+    display: none;
+  }
+  div#middle div.container div.our-services-headline a.md {
+    display: inline-block;
+  }
+}
 div#middle div.container div#our-services-container div#top-services ul {
   padding: 0;
 }
