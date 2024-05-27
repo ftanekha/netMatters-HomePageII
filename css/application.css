@@ -390,316 +390,302 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
 div.container nav {
   background-color: #333645;
 }
-div.container nav ul {
-  margin: auto;
-  list-style-type: none;
-  color: white;
+div.container nav div {
   display: flex;
-  justify-content: space-between;
-  font-size: 1.438rem;
 }
 @media (max-width: 1260px) {
-  div.container nav ul {
+  div.container nav div {
     display: none;
   }
 }
-div.container nav ul li:nth-child(1) {
-  width: 100%;
-  height: 100%;
+div.container nav div a {
+  display: block;
+  font-size: 1.438rem;
+  width: 14.2857142857%;
+}
+div.container nav div a:nth-child(1) {
   padding: 1.25rem;
   text-align: center;
 }
-div.container nav ul li:nth-child(1):hover {
+div.container nav div a:nth-child(1):hover {
   background-color: #67809f;
 }
-div.container nav ul li:nth-child(1):hover span:first-child {
+div.container nav div a:nth-child(1):hover span:first-child {
   color: white;
 }
-div.container nav ul li:nth-child(1) a:link {
+div.container nav div a:nth-child(1):link {
   text-decoration: none;
 }
-div.container nav ul li:nth-child(1) a:link, div.container nav ul li:nth-child(1) a:visited {
+div.container nav div a:nth-child(1):link, div.container nav div a:nth-child(1):visited {
   color: white;
 }
-div.container nav ul li:nth-child(1) a div {
+div.container nav div a:nth-child(1) div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-div.container nav ul li:nth-child(1) a div * {
+div.container nav div a:nth-child(1) div * {
   text-align: center;
 }
-div.container nav ul li:nth-child(1) a div span:first-child {
+div.container nav div a:nth-child(1) div span:first-child {
   color: #67809f;
   font-size: 1.438rem;
   display: block;
   padding-bottom: 10px;
 }
-div.container nav ul li:nth-child(1) a div small {
+div.container nav div a:nth-child(1) div small {
   display: block;
   padding-bottom: 1px;
   font-size: 0.481rem;
 }
-div.container nav ul li:nth-child(1) a div span:last-child {
+div.container nav div a:nth-child(1) div span:last-child {
   display: inline-block;
   margin-top: -0.2rem;
   font-size: 1.12rem;
 }
-div.container nav ul li:nth-child(2) {
-  width: 100%;
-  height: 100%;
+div.container nav div a:nth-child(2) {
   padding: 1.25rem;
   text-align: center;
 }
-div.container nav ul li:nth-child(2):hover {
+div.container nav div a:nth-child(2):hover {
   background-color: #4183d7;
 }
-div.container nav ul li:nth-child(2):hover span:first-child {
+div.container nav div a:nth-child(2):hover span:first-child {
   color: white;
 }
-div.container nav ul li:nth-child(2) a:link {
+div.container nav div a:nth-child(2):link {
   text-decoration: none;
 }
-div.container nav ul li:nth-child(2) a:link, div.container nav ul li:nth-child(2) a:visited {
+div.container nav div a:nth-child(2):link, div.container nav div a:nth-child(2):visited {
   color: white;
 }
-div.container nav ul li:nth-child(2) a div {
+div.container nav div a:nth-child(2) div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-div.container nav ul li:nth-child(2) a div * {
+div.container nav div a:nth-child(2) div * {
   text-align: center;
 }
-div.container nav ul li:nth-child(2) a div span:first-child {
+div.container nav div a:nth-child(2) div span:first-child {
   color: #4183d7;
   font-size: 1.438rem;
   display: block;
   padding-bottom: 10px;
 }
-div.container nav ul li:nth-child(2) a div small {
+div.container nav div a:nth-child(2) div small {
   display: block;
   padding-bottom: 1px;
   font-size: 0.481rem;
 }
-div.container nav ul li:nth-child(2) a div span:last-child {
+div.container nav div a:nth-child(2) div span:last-child {
   display: inline-block;
   margin-top: -0.2rem;
   font-size: 1.12rem;
 }
-div.container nav ul li:nth-child(3) {
-  width: 100%;
-  height: 100%;
+div.container nav div a:nth-child(3) {
   padding: 1.25rem;
   text-align: center;
 }
-div.container nav ul li:nth-child(3):hover {
+div.container nav div a:nth-child(3):hover {
   background-color: #2ecc71;
 }
-div.container nav ul li:nth-child(3):hover span:first-child {
+div.container nav div a:nth-child(3):hover span:first-child {
   color: white;
 }
-div.container nav ul li:nth-child(3) a:link {
+div.container nav div a:nth-child(3):link {
   text-decoration: none;
 }
-div.container nav ul li:nth-child(3) a:link, div.container nav ul li:nth-child(3) a:visited {
+div.container nav div a:nth-child(3):link, div.container nav div a:nth-child(3):visited {
   color: white;
 }
-div.container nav ul li:nth-child(3) a div {
+div.container nav div a:nth-child(3) div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-div.container nav ul li:nth-child(3) a div * {
+div.container nav div a:nth-child(3) div * {
   text-align: center;
 }
-div.container nav ul li:nth-child(3) a div span:first-child {
+div.container nav div a:nth-child(3) div span:first-child {
   color: #2ecc71;
   font-size: 1.438rem;
   display: block;
   padding-bottom: 10px;
 }
-div.container nav ul li:nth-child(3) a div small {
+div.container nav div a:nth-child(3) div small {
   display: block;
   padding-bottom: 1px;
   font-size: 0.481rem;
 }
-div.container nav ul li:nth-child(3) a div span:last-child {
+div.container nav div a:nth-child(3) div span:last-child {
   display: inline-block;
   margin-top: -0.2rem;
   font-size: 1.12rem;
 }
-div.container nav ul li:nth-child(4) {
-  width: 100%;
-  height: 100%;
+div.container nav div a:nth-child(4) {
   padding: 1.25rem;
   text-align: center;
 }
-div.container nav ul li:nth-child(4):hover {
+div.container nav div a:nth-child(4):hover {
   background-color: #d64541;
 }
-div.container nav ul li:nth-child(4):hover span:first-child {
+div.container nav div a:nth-child(4):hover span:first-child {
   color: white;
 }
-div.container nav ul li:nth-child(4) a:link {
+div.container nav div a:nth-child(4):link {
   text-decoration: none;
 }
-div.container nav ul li:nth-child(4) a:link, div.container nav ul li:nth-child(4) a:visited {
+div.container nav div a:nth-child(4):link, div.container nav div a:nth-child(4):visited {
   color: white;
 }
-div.container nav ul li:nth-child(4) a div {
+div.container nav div a:nth-child(4) div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-div.container nav ul li:nth-child(4) a div * {
+div.container nav div a:nth-child(4) div * {
   text-align: center;
 }
-div.container nav ul li:nth-child(4) a div span:first-child {
+div.container nav div a:nth-child(4) div span:first-child {
   color: #d64541;
   font-size: 1.438rem;
   display: block;
   padding-bottom: 10px;
 }
-div.container nav ul li:nth-child(4) a div small {
+div.container nav div a:nth-child(4) div small {
   display: block;
   padding-bottom: 1px;
   font-size: 0.481rem;
 }
-div.container nav ul li:nth-child(4) a div span:last-child {
+div.container nav div a:nth-child(4) div span:last-child {
   display: inline-block;
   margin-top: -0.2rem;
   font-size: 1.12rem;
 }
-div.container nav ul li:nth-child(5) {
-  width: 100%;
-  height: 100%;
+div.container nav div a:nth-child(5) {
   padding: 1.25rem;
   text-align: center;
 }
-div.container nav ul li:nth-child(5):hover {
+div.container nav div a:nth-child(5):hover {
   background-color: #926fb1;
 }
-div.container nav ul li:nth-child(5):hover span:first-child {
+div.container nav div a:nth-child(5):hover span:first-child {
   color: white;
 }
-div.container nav ul li:nth-child(5) a:link {
+div.container nav div a:nth-child(5):link {
   text-decoration: none;
 }
-div.container nav ul li:nth-child(5) a:link, div.container nav ul li:nth-child(5) a:visited {
+div.container nav div a:nth-child(5):link, div.container nav div a:nth-child(5):visited {
   color: white;
 }
-div.container nav ul li:nth-child(5) a div {
+div.container nav div a:nth-child(5) div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-div.container nav ul li:nth-child(5) a div * {
+div.container nav div a:nth-child(5) div * {
   text-align: center;
 }
-div.container nav ul li:nth-child(5) a div span:first-child {
+div.container nav div a:nth-child(5) div span:first-child {
   color: #926fb1;
   font-size: 1.438rem;
   display: block;
   padding-bottom: 10px;
 }
-div.container nav ul li:nth-child(5) a div small {
+div.container nav div a:nth-child(5) div small {
   display: block;
   padding-bottom: 1px;
   font-size: 0.481rem;
 }
-div.container nav ul li:nth-child(5) a div span:last-child {
+div.container nav div a:nth-child(5) div span:last-child {
   display: inline-block;
   margin-top: -0.2rem;
   font-size: 1.12rem;
 }
-div.container nav ul li:nth-child(6) {
-  width: 100%;
-  height: 100%;
+div.container nav div a:nth-child(6) {
   padding: 1.25rem;
   text-align: center;
 }
-div.container nav ul li:nth-child(6):hover {
+div.container nav div a:nth-child(6):hover {
   background-color: #f62459;
 }
-div.container nav ul li:nth-child(6):hover span:first-child {
+div.container nav div a:nth-child(6):hover span:first-child {
   color: white;
 }
-div.container nav ul li:nth-child(6) a:link {
+div.container nav div a:nth-child(6):link {
   text-decoration: none;
 }
-div.container nav ul li:nth-child(6) a:link, div.container nav ul li:nth-child(6) a:visited {
+div.container nav div a:nth-child(6):link, div.container nav div a:nth-child(6):visited {
   color: white;
 }
-div.container nav ul li:nth-child(6) a div {
+div.container nav div a:nth-child(6) div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-div.container nav ul li:nth-child(6) a div * {
+div.container nav div a:nth-child(6) div * {
   text-align: center;
 }
-div.container nav ul li:nth-child(6) a div span:first-child {
+div.container nav div a:nth-child(6) div span:first-child {
   color: #f62459;
   font-size: 1.438rem;
   display: block;
   padding-bottom: 10px;
 }
-div.container nav ul li:nth-child(6) a div small {
+div.container nav div a:nth-child(6) div small {
   display: block;
   padding-bottom: 1px;
   font-size: 0.481rem;
 }
-div.container nav ul li:nth-child(6) a div span:last-child {
+div.container nav div a:nth-child(6) div span:last-child {
   display: inline-block;
   margin-top: -0.2rem;
   font-size: 1.12rem;
 }
-div.container nav ul li:nth-child(7) {
-  width: 100%;
-  height: 100%;
+div.container nav div a:nth-child(7) {
   padding: 1.25rem;
   text-align: center;
 }
-div.container nav ul li:nth-child(7):hover {
+div.container nav div a:nth-child(7):hover {
   background-color: #ce4125;
 }
-div.container nav ul li:nth-child(7):hover span:first-child {
+div.container nav div a:nth-child(7):hover span:first-child {
   color: white;
 }
-div.container nav ul li:nth-child(7) a:link {
+div.container nav div a:nth-child(7):link {
   text-decoration: none;
 }
-div.container nav ul li:nth-child(7) a:link, div.container nav ul li:nth-child(7) a:visited {
+div.container nav div a:nth-child(7):link, div.container nav div a:nth-child(7):visited {
   color: white;
 }
-div.container nav ul li:nth-child(7) a div {
+div.container nav div a:nth-child(7) div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-div.container nav ul li:nth-child(7) a div * {
+div.container nav div a:nth-child(7) div * {
   text-align: center;
 }
-div.container nav ul li:nth-child(7) a div span:first-child {
+div.container nav div a:nth-child(7) div span:first-child {
   color: #ce4125;
   font-size: 1.438rem;
   display: block;
   padding-bottom: 10px;
 }
-div.container nav ul li:nth-child(7) a div small {
+div.container nav div a:nth-child(7) div small {
   display: block;
   padding-bottom: 1px;
   font-size: 0.481rem;
 }
-div.container nav ul li:nth-child(7) a div span:last-child {
+div.container nav div a:nth-child(7) div span:last-child {
   display: inline-block;
   margin-top: -0.2rem;
   font-size: 1.12rem;
@@ -1595,15 +1581,6 @@ body div#container {
 body div#container div.main-outer {
   height: 100%;
   overflow: auto;
-}
-body div#container div.main-outer div.main-inner div#header {
-  display: none;
-}
-body div#container div.main-outer div.main-inner div#banner {
-  display: none;
-}
-body div#container div.main-outer div.main-inner div#middle {
-  display: none;
 }
 body div#container div.main-outer div.main-inner footer {
   display: none;

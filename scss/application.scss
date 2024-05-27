@@ -22,10 +22,10 @@ body{
             overflow: auto;   
             div.main-inner{
                 // overflow: hidden;   
-                div#header{display: none;} 
+                div#header{} 
                 div#nav{}
-                div#banner{display: none;} 
-                div#middle{display: none;} 
+                div#banner{} 
+                div#middle{} 
                 footer{display: none;}
                 div#footer{display: none;} 
                 div.footer-bottom{display: none;}    

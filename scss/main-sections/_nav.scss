@@ -1,40 +1,37 @@
 div.container{
     nav{
         background-color: #333645;
-        // width: 80%;
-        // margin: auto;
-        ul{
-            // width: 85%;
-            margin: auto;
-            list-style-type: none;
-            color: white;
+        div{ 
             display: flex;
-            justify-content: space-between;
-            font-size: 1.438rem;
             @media (max-width: 1260px){
                 display: none;
             }
             //nav-items
-            li:nth-child(1){
-                @include nav-item($hoki);
-            }
-            li:nth-child(2){
-                @include nav-item($havelockBlue);
-            }
-            li:nth-child(3){
-                @include nav-item($shamrock);
-            }
-            li:nth-child(4){
-                @include nav-item($valencia);
-            }
-            li:nth-child(5){
-                @include nav-item($wisteria);
-            }
-            li:nth-child(6){
-                @include nav-item($radicalRed);
-            }
-            li:nth-child(7){
-                @include nav-item($punch);
+            a{
+                display: block;
+                font-size: 1.438rem;
+                width: calc((100% / 7));
+                &:nth-child(1){
+                    @include nav-item($hoki);
+                }
+                &:nth-child(2){
+                    @include nav-item($havelockBlue);
+                }
+                &:nth-child(3){
+                    @include nav-item($shamrock);
+                }
+                &:nth-child(4){
+                    @include nav-item($valencia);
+                }
+                &:nth-child(5){
+                    @include nav-item($wisteria);
+                }
+                &:nth-child(6){
+                    @include nav-item($radicalRed);
+                }
+                &:nth-child(7){
+                    @include nav-item($punch);
+                }
             }
         }
     }
