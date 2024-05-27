@@ -1,29 +1,4 @@
-// @mixin link-button(
-//     $width: 6rem, $height: 3rem, $bg-color: $bg--primary, 
-//     $color: $base--color, $border-rad: $border--base-radius
-// ){
-//     text-decoration: none;
-//     width: $width;
-//     height: $height;
-//     color: $color;
-//     border: $border--base;
-//     border-radius: $border-rad;
-//     //$web--design and "why-choose-us" share the same theme
-//     @if($bg-color == "why--choose--us"){
-//         background-color: $web--design;
-//         &:hover{
-//             background-color: darken($web--design, 5%);
-//         }
-//     }@else{
-//         background-color: $bg-color;
-//         &:hover{
-//             background-color: darken($bg-color, 5%);
-//         }
-//     }
-// }
-
 @mixin banner($image-id: "why-choose-us"){
-    // width: 90%;
     height: 360.6px;
     margin: auto;
     padding: 0;
@@ -60,7 +35,6 @@
         font-size: 1.25rem;
         text-transform: uppercase;
         border-radius: 3px;
-        // white-space: normal;
         //btn
         display: inline-block;
         margin-bottom: 0;
@@ -71,10 +45,6 @@
         border: 1px solid transparent;
         user-select: none;
         text-decoration: none;
-        
-        //
-        span{
-        }
     }
     @media (min-width: 992px){
         width: 90%;

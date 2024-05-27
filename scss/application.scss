@@ -23,7 +23,8 @@ body{
             div.main-inner{
                 // overflow: hidden;   
                 div#header{display: none;} 
-                div#banner{} 
+                div#nav{}
+                div#banner{display: none;} 
                 div#middle{display: none;} 
                 footer{display: none;}
                 div#footer{display: none;} 

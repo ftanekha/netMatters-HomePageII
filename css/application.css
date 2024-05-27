@@ -316,7 +316,7 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
   }
   header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet form button {
     position: relative;
-    border-radius: 3px;
+    border-radius: 0 3px 3px 0;
   }
 }
 @media (min-width: 1260px) {
@@ -387,17 +387,337 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
   }
 }
 
+div.container nav {
+  background-color: #333645;
+}
+div.container nav ul {
+  margin: auto;
+  list-style-type: none;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.438rem;
+}
+@media (max-width: 1260px) {
+  div.container nav ul {
+    display: none;
+  }
+}
+div.container nav ul li:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+div.container nav ul li:nth-child(1):hover {
+  background-color: #67809f;
+}
+div.container nav ul li:nth-child(1):hover span:first-child {
+  color: white;
+}
+div.container nav ul li:nth-child(1) a:link {
+  text-decoration: none;
+}
+div.container nav ul li:nth-child(1) a:link, div.container nav ul li:nth-child(1) a:visited {
+  color: white;
+}
+div.container nav ul li:nth-child(1) a div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div.container nav ul li:nth-child(1) a div * {
+  text-align: center;
+}
+div.container nav ul li:nth-child(1) a div span:first-child {
+  color: #67809f;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div.container nav ul li:nth-child(1) a div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div.container nav ul li:nth-child(1) a div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+div.container nav ul li:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+div.container nav ul li:nth-child(2):hover {
+  background-color: #4183d7;
+}
+div.container nav ul li:nth-child(2):hover span:first-child {
+  color: white;
+}
+div.container nav ul li:nth-child(2) a:link {
+  text-decoration: none;
+}
+div.container nav ul li:nth-child(2) a:link, div.container nav ul li:nth-child(2) a:visited {
+  color: white;
+}
+div.container nav ul li:nth-child(2) a div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div.container nav ul li:nth-child(2) a div * {
+  text-align: center;
+}
+div.container nav ul li:nth-child(2) a div span:first-child {
+  color: #4183d7;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div.container nav ul li:nth-child(2) a div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div.container nav ul li:nth-child(2) a div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+div.container nav ul li:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+div.container nav ul li:nth-child(3):hover {
+  background-color: #2ecc71;
+}
+div.container nav ul li:nth-child(3):hover span:first-child {
+  color: white;
+}
+div.container nav ul li:nth-child(3) a:link {
+  text-decoration: none;
+}
+div.container nav ul li:nth-child(3) a:link, div.container nav ul li:nth-child(3) a:visited {
+  color: white;
+}
+div.container nav ul li:nth-child(3) a div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div.container nav ul li:nth-child(3) a div * {
+  text-align: center;
+}
+div.container nav ul li:nth-child(3) a div span:first-child {
+  color: #2ecc71;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div.container nav ul li:nth-child(3) a div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div.container nav ul li:nth-child(3) a div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+div.container nav ul li:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+div.container nav ul li:nth-child(4):hover {
+  background-color: #d64541;
+}
+div.container nav ul li:nth-child(4):hover span:first-child {
+  color: white;
+}
+div.container nav ul li:nth-child(4) a:link {
+  text-decoration: none;
+}
+div.container nav ul li:nth-child(4) a:link, div.container nav ul li:nth-child(4) a:visited {
+  color: white;
+}
+div.container nav ul li:nth-child(4) a div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div.container nav ul li:nth-child(4) a div * {
+  text-align: center;
+}
+div.container nav ul li:nth-child(4) a div span:first-child {
+  color: #d64541;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div.container nav ul li:nth-child(4) a div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div.container nav ul li:nth-child(4) a div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+div.container nav ul li:nth-child(5) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+div.container nav ul li:nth-child(5):hover {
+  background-color: #926fb1;
+}
+div.container nav ul li:nth-child(5):hover span:first-child {
+  color: white;
+}
+div.container nav ul li:nth-child(5) a:link {
+  text-decoration: none;
+}
+div.container nav ul li:nth-child(5) a:link, div.container nav ul li:nth-child(5) a:visited {
+  color: white;
+}
+div.container nav ul li:nth-child(5) a div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div.container nav ul li:nth-child(5) a div * {
+  text-align: center;
+}
+div.container nav ul li:nth-child(5) a div span:first-child {
+  color: #926fb1;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div.container nav ul li:nth-child(5) a div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div.container nav ul li:nth-child(5) a div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+div.container nav ul li:nth-child(6) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+div.container nav ul li:nth-child(6):hover {
+  background-color: #f62459;
+}
+div.container nav ul li:nth-child(6):hover span:first-child {
+  color: white;
+}
+div.container nav ul li:nth-child(6) a:link {
+  text-decoration: none;
+}
+div.container nav ul li:nth-child(6) a:link, div.container nav ul li:nth-child(6) a:visited {
+  color: white;
+}
+div.container nav ul li:nth-child(6) a div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div.container nav ul li:nth-child(6) a div * {
+  text-align: center;
+}
+div.container nav ul li:nth-child(6) a div span:first-child {
+  color: #f62459;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div.container nav ul li:nth-child(6) a div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div.container nav ul li:nth-child(6) a div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+div.container nav ul li:nth-child(7) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+div.container nav ul li:nth-child(7):hover {
+  background-color: #ce4125;
+}
+div.container nav ul li:nth-child(7):hover span:first-child {
+  color: white;
+}
+div.container nav ul li:nth-child(7) a:link {
+  text-decoration: none;
+}
+div.container nav ul li:nth-child(7) a:link, div.container nav ul li:nth-child(7) a:visited {
+  color: white;
+}
+div.container nav ul li:nth-child(7) a div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div.container nav ul li:nth-child(7) a div * {
+  text-align: center;
+}
+div.container nav ul li:nth-child(7) a div span:first-child {
+  color: #ce4125;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div.container nav ul li:nth-child(7) a div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div.container nav ul li:nth-child(7) a div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+
 div.container {
   padding: 94.7px 0 !important;
-  width: 100% !important;
-  height: 608.6px !important;
+  width: 100vw;
+}
+div.container div.image-container {
   background-image: url("../assets/images/banners/why--choose--us.png"), url("../assets/images/banners/why--choose--us.jpg");
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-blend-mode: hard-light;
+  height: 608.6px !important;
 }
-div.container div.why-choose-us {
+div.container div.image-container div.why-choose-us {
   height: 360.6px;
   margin: auto;
   padding: 0;
@@ -407,20 +727,20 @@ div.container div.why-choose-us {
   flex-direction: column;
   justify-self: center;
 }
-div.container div.why-choose-us h1 {
+div.container div.image-container div.why-choose-us h1 {
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
   color: #fff;
   font-weight: 600;
 }
-div.container div.why-choose-us p {
+div.container div.image-container div.why-choose-us p {
   margin-bottom: 0.375rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
 }
-div.container div.why-choose-us a {
+div.container div.image-container div.why-choose-us a {
   align-self: center;
   margin-top: 1.938rem;
   margin-bottom: 1.125rem;
@@ -445,19 +765,19 @@ div.container div.why-choose-us a {
   text-decoration: none;
 }
 @media (min-width: 992px) {
-  div.container div.why-choose-us {
+  div.container div.image-container div.why-choose-us {
     width: 90%;
     text-align: left;
   }
-  div.container div.why-choose-us h1 {
+  div.container div.image-container div.why-choose-us h1 {
     font-size: 4rem;
     line-height: 5rem;
   }
-  div.container div.why-choose-us p {
+  div.container div.image-container div.why-choose-us p {
     font-size: 1.625rem;
     line-height: 2.5rem;
   }
-  div.container div.why-choose-us a {
+  div.container div.image-container div.why-choose-us a {
     align-self: flex-start;
   }
 }
@@ -1277,6 +1597,9 @@ body div#container div.main-outer {
   overflow: auto;
 }
 body div#container div.main-outer div.main-inner div#header {
+  display: none;
+}
+body div#container div.main-outer div.main-inner div#banner {
   display: none;
 }
 body div#container div.main-outer div.main-inner div#middle {
