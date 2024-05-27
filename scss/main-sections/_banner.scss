@@ -1,0 +1,37 @@
+div.container{
+    padding: calc(( 550px - 360.6px ) / 2) 0 !important;
+    width: 100% !important;
+    height: 608.6px !important;
+    background-image: url("../assets/images/banners/why--choose--us.png"),
+                      url("../assets/images/banners/why--choose--us.jpg");
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: hard-light;
+    // opacity: .5;
+    div.why-choose-us{
+        @include banner("why--choose--us");
+    }
+    // div.bespoke--software{
+    //     @include banner($bespoke--software);
+    // }
+    // div.it--support{
+    //     @include banner($it--support);
+    // }
+    // div.digital--marketing{
+    //     @include banner($digital--marketing);
+    // }
+    // div.telecoms--services{
+    //     @include banner($telecoms--services);
+    // }
+    // div.web--design{
+    //     @include banner($web--design);
+    // }
+    // div.cyber--security{
+    //     @include banner($cyber--security);
+    // }  
+
+    // div.initially-hidden{
+    //     display: none;
+    // }
+}

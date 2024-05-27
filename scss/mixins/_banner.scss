@@ -1,0 +1,94 @@
+// @mixin link-button(
+//     $width: 6rem, $height: 3rem, $bg-color: $bg--primary, 
+//     $color: $base--color, $border-rad: $border--base-radius
+// ){
+//     text-decoration: none;
+//     width: $width;
+//     height: $height;
+//     color: $color;
+//     border: $border--base;
+//     border-radius: $border-rad;
+//     //$web--design and "why-choose-us" share the same theme
+//     @if($bg-color == "why--choose--us"){
+//         background-color: $web--design;
+//         &:hover{
+//             background-color: darken($web--design, 5%);
+//         }
+//     }@else{
+//         background-color: $bg-color;
+//         &:hover{
+//             background-color: darken($bg-color, 5%);
+//         }
+//     }
+// }
+
+@mixin banner($image-id: "why-choose-us"){
+    // width: 90%;
+    height: 360.6px;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin: 0 0 1.25rem;
+        color: #fff;
+        font-weight: 600;
+    }
+    p{
+        margin-bottom: .375rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+    }
+    a{
+        align-self: center;
+        margin-top: 1.938rem;
+        margin-bottom: 1.125rem;
+        color: #fff;
+        background-color: $wisteria;
+        border-color: $wisteria;
+        line-height: 50px;
+        width: 249.717px;
+        // width: 224.467px;
+        height: 61.6px;
+        padding: 5px 20px;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        border-radius: 3px;
+        // white-space: normal;
+        //btn
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        background-image: none;
+        border: 1px solid transparent;
+        user-select: none;
+        text-decoration: none;
+        
+        //
+        span{
+        }
+    }
+    @media (min-width: 992px){
+        width: 90%;
+        text-align: left;
+        h1{
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+        p{
+            font-size: 1.625rem;
+            line-height: 2.5rem;
+        }
+        a{
+            align-self: flex-start;
+        }
+    }
+}
