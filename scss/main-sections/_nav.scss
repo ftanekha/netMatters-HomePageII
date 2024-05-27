@@ -1,12 +1,12 @@
-div.container{
-    nav{
-        background-color: #333645;
+nav{
+    background-color: #333645;
+    @media (max-width: 1260px){
+        display: none;
+    }
+    div.container{
         div{ 
-            display: flex;
-            @media (max-width: 1260px){
-                display: none;
-            }
             //nav-items
+            display: flex;
             a{
                 display: block;
                 font-size: 1.438rem;
