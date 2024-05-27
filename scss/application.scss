@@ -1,5 +1,6 @@
 @import
-    "mixins",
+    "variables/index.scss",
+    "mixins/index.scss",
     "main-sections/index"
 ;
 
@@ -20,7 +21,7 @@ body{
             height: 100%;
             overflow: auto;   
             div.main-inner{
-                overflow: hidden;   
+                // overflow: hidden;   
                 div#header{} 
                 div#banner{} 
                 div#middle{} 
@@ -28,6 +29,19 @@ body{
                 div#footer{} 
                 div.footer-bottom{}    
             }     
+        }
+    }
+    .container{
+        margin: 0 auto;
+        padding: 0 15px;
+        @media (min-width: 768px){
+            width: 750px;
+        }
+        @media (min-width: 992px){
+            width: 970px;
+        }
+        @media (min-width: 1260px){
+            width: 1200px;
         }
     }
 }

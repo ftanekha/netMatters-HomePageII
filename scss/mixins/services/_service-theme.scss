@@ -1,0 +1,202 @@
+@mixin service-theme($service-name){
+    //top-services
+    @if $service-name == bs{
+        div{
+            span{
+                background-color: $hoki;
+            }
+            button{
+                background-color: $buttercup;
+            }
+        }
+        &:hover{
+            background-color: $hoki;
+            color: #fff;
+            border-color: transparent;
+            top: -10px;
+            transition: .5s ease;
+            div{
+                span{
+                    background-color: white;
+                    span{    
+                        color: $hoki;
+                    }
+                }
+                button{
+                    color: $hoki;
+                }
+            }
+        }
+    }
+    @else if $service-name == it{
+        div{
+            span{
+                background-color: $havelockBlue;
+            }
+            button{
+                background-color: $havelockBlue;
+            }
+        }
+        &:hover{
+            background-color: $havelockBlue;
+            color: #fff;
+            border-color: transparent;
+            top: -10px;
+            transition: .5s ease;
+            div{
+                span{
+                    background-color: white;
+                    span{    
+                        color: $havelockBlue;
+                    }
+                }
+                button{
+                    color: $havelockBlue;
+                }
+            }
+        }
+    }@else if $service-name == dm{
+        div{
+            span{
+                background-color: $shamrock;
+            }
+            button{
+                background-color: $shamrock;
+            }
+        }
+        &:hover{
+            background-color: $shamrock;
+            color: #fff;
+            border-color: transparent;
+            top: -10px;
+            transition: .5s ease;
+            div{
+                span{
+                    background-color: white;
+                    span{    
+                        color: $shamrock;
+                    }
+                }
+                button{
+                    color: $shamrock;
+                }
+            }
+        }
+    }
+    //bottom-services
+    @else if $service-name == ts{
+        div{
+            span{
+                background-color: $valencia;
+            }
+            button{
+                background-color: $valencia;
+            }
+        }
+        &:hover{
+            background-color: $valencia;
+            color: #fff;
+            border-color: transparent;
+            top: -10px;
+            transition: .5s ease;
+            div{
+                span{
+                    background-color: white;
+                    span{    
+                        color: $valencia;
+                    }
+                }
+                button{
+                    color: $valencia;
+                }
+            }
+        }
+    }
+    @else if $service-name == wd{
+        div{
+            span{
+                span{    
+                    background-color: $wisteria !important;
+                }
+            }
+            button{
+                background-color: $wisteria;
+            }
+        }
+        &:hover{
+            background-color: $wisteria;
+            color: #fff;
+            border-color: transparent;
+            top: -10px;
+            transition: .5s ease;
+            div{
+                span{
+                    span{    
+                        color: $wisteria !important;
+                    }
+                }
+                button{
+                    color: $wisteria;
+                }
+            }
+        }
+    }
+    @else if $service-name == cs{
+        div{
+            span{
+                span{    
+                    background-color: $radicalRed !important;
+                }
+            }
+            button{
+                background-color: $radicalRed;
+            }
+        }
+        &:hover{
+            background-color: $radicalRed;
+            color: #fff;
+            border-color: transparent;
+            top: -10px;
+            transition: .5s ease;
+            div{
+                span{
+                    span{    
+                        color: $radicalRed !important;
+                    }
+                }
+                button{
+                    color: $radicalRed;
+                }
+            }
+        }
+    }
+    @else if $service-name == dt{
+        div{
+            span{
+                span{    
+                    background-color: $punch !important;
+                }
+            }
+            button{
+                background-color: $punch;
+            }
+        }
+        &:hover{
+            background-color: $punch;
+            color: #fff;
+            border-color: transparent;
+            top: -10px;
+            transition: .5s ease;
+            div{
+                span{
+                    span{    
+                        color: $punch !important;
+                    }
+                }
+                button{
+                    color: $punch;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+div#middle{
+    div.container{
+        //global
+        margin: 0 auto;
+        padding: 0 15px;
+        div#our-services--headline{}
+        div#our-services-container{
+            div#top-services{
+                // display: none;
+                ul{
+                    padding: 0;
+
+                    li:first-child{ @include service(bs);}
+                    li:nth-child(2){ @include service(it);}
+                    li:last-child{ @include service(dm);}
+
+                    @media (min-width: 992px){
+                        display: flex;
+                        gap: 30px;
+
+                        li{
+                            width: calc(100% / 3);
+                            display: flex;
+                            a{
+                                div{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    button{
+                                        margin-top: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div#bottom-services{
+                // display: none;
+                ul{
+                    padding: 0;
+
+                    li:first-child{ @include service(ts);}
+                    li:nth-child(2){ @include service(wd);}
+                    li:nth-child(3){ @include service(cs);}
+                    li:last-child{ @include service(dt);}
+                }
+
+                @media (min-width: 768px){
+                    //remove unwanted extra space
+                    margin-top: -16px;
+                    //
+                    ul{
+                        display: grid;
+                        grid-template-columns: repeat(2, calc( (100% - ( 30px * 2)) / 2) );
+                        column-gap: 30px;
+
+                        li{
+                            display: flex;
+                            a{
+                                div{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    button{
+                                        margin-top: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                @media (min-width: 1260px){
+                    ul{
+                        grid-template-columns: repeat(4, calc( (100% - (30px * 3)) / 4) );
+                    }
+                }
+            }
+        }
+    }
+}

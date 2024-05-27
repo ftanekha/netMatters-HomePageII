@@ -1,0 +1,96 @@
+@import "service-theme";
+@mixin block{
+    display: block;
+    border: 1px solid #ccc;
+    padding: 30px;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+}
+
+// @mixin service($position: top, $bg: transparent, $theme){
+@mixin service($name){
+    list-style-type: none;
+    a{
+        @include block;
+        @include service-theme($name);
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        text-decoration: none;
+        margin-top: 30px;
+        text-align: center;
+        position: relative;
+        top: 0;
+        transition: .5s ease;
+        //
+        font-weight: 600;
+        color: #333645;
+        //
+        &:focus{
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
+        }
+        &:hover{
+            color: #fff;
+            border-color: transparent;
+            top: -10px;
+            transition: .5s ease;
+            div{
+                span{
+                    background-color: white !important;
+                }
+                button{
+                    background-color: white;
+                    border-color: transparent;
+                }
+            }
+        }
+        div{
+            height: 100%;
+            span{
+                display: block;
+                border-radius: 50%;
+                height: 65px;
+                width: 65px;
+                margin: 0 auto 17px;
+                span{
+                    font-size: 2rem;
+                    line-height: 62px;
+                    color: #fff;
+                }
+            }
+            h3{
+                font-size: 1.3rem;
+                font-weight: 400;
+                position: relative;
+                padding-bottom: 10px;
+                margin: 0 0 11px;
+                
+            }
+            p{
+                font-size: .8125rem;
+                line-height: 1.375rem;
+                margin-bottom: 13px;
+                font-weight: 400;
+            }
+            button{
+                //from cass btn
+                height: auto;
+                line-height: 35px;
+                padding: 5px 15px;
+                text-transform: uppercase;
+                font-size: 1.063rem;
+                border-radius: 3px;
+                white-space: normal;
+                //
+                color: #fff;
+                border: 1px solid transparent;
+                border-radius: 3px;;
+                font-weight: 400;
+                //calcl
+                width: 127.737px;
+                height: 45px;
+                //
+                padding: 5px 15px;
+            }
+        }
+    }
+}

@@ -1,12 +1,13 @@
+header {
+  display: none;
+}
 header div.inner {
   padding: 20px 0;
 }
-header div.inner div.container {
-  margin: 0 auto;
-  padding: 0 15px;
-}
 header div.inner div.container div.row {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 header div.inner div.container div.row div.logo-container {
   width: 6fr;
@@ -19,32 +20,35 @@ header div.inner div.container div.row div.logo-container a {
 header div.inner div.container div.row div.logo-container a picture img {
   max-width: 100%;
 }
-header div.inner div.container div.row div.phone-in-icon-container {
-  width: 3fr;
+header div.inner div.container div.row div.flex-wrapper {
   display: flex;
-  align-items: center;
 }
-header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link {
-  display: block;
+header div.inner div.container div.row div.flex-wrapper div.phone-in-icon-container {
+  width: 3fr;
+}
+header div.inner div.container div.row div.flex-wrapper div.phone-in-icon-container a.phone-in-link {
+  width: 32.4pf;
+  height: 32.8px;
   color: #333645;
   text-decoration: none;
 }
-header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:focus {
+header div.inner div.container div.row div.flex-wrapper div.phone-in-icon-container a.phone-in-link:focus {
   outline-offset: -2px;
   outline: thin dotted;
 }
-header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:hover, header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:focus {
+header div.inner div.container div.row div.flex-wrapper div.phone-in-icon-container a.phone-in-link:hover, header div.inner div.container div.row div.flex-wrapper div.phone-in-icon-container a.phone-in-link:focus {
   color: #121419;
   text-decoration: underline;
 }
-header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:hover, header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link:active {
+header div.inner div.container div.row div.flex-wrapper div.phone-in-icon-container a.phone-in-link:hover, header div.inner div.container div.row div.flex-wrapper div.phone-in-icon-container a.phone-in-link:active {
   outline: 0;
 }
-header div.inner div.container div.row div.phone-in-icon-container a.phone-in-link span.icon-phone_in_talk {
+header div.inner div.container div.row div.flex-wrapper div.phone-in-icon-container a.phone-in-link span.icon-phone_in_talk {
+  display: block;
   font-size: 32px;
-  margin-left: 15px;
+  margin: 20px;
 }
-header div.inner div.container div.row div.actions-container {
+header div.inner div.container div.row div.flex-wrapper div.actions-container {
   width: 3fr;
   max-width: 100%;
   min-height: 1px;
@@ -53,13 +57,19 @@ header div.inner div.container div.row div.actions-container {
   float: none;
   vertical-align: middle;
 }
-header div.inner div.container div.row div.actions-container div.actions {
+header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions {
   padding: 7px 0;
   display: flex;
+  gap: 20px;
 }
-header div.inner div.container div.row div.actions-container div.actions button {
+header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions .show-md {
+  display: none;
+}
+header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet {
+  display: none;
+}
+header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button {
   height: 56px;
-  margin-left: 20px;
   padding: 5px 15px;
   float: left;
   background-color: #333645;
@@ -80,26 +90,26 @@ header div.inner div.container div.row div.actions-container div.actions button 
   user-select: none;
   appearance: button;
 }
-header div.inner div.container div.row div.actions-container div.actions button:hover {
+header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button:hover {
   opacity: 1;
   text-decoration: none;
 }
-header div.inner div.container div.row div.actions-container div.actions button:active {
+header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button:active {
   background-image: none;
   outline: 0;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-header div.inner div.container div.row div.actions-container div.actions button:focus {
+header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button:focus {
   color: #fff;
   outline: none;
   text-decoration: none;
   outline-offset: -2px;
 }
-header div.inner div.container div.row div.actions-container div.actions button:hover, header div.inner div.container div.row div.actions-container div.actions button:active, header div.inner div.container div.row div.actions-container div.actions button:focus {
+header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button:hover, header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button:active, header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button:focus {
   background-color: #22242e;
   border-color: #191a22;
 }
-header div.inner div.container div.row div.actions-container div.actions button span.hamburger-box {
+header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button span.hamburger-box {
   display: block;
   width: 33px;
   height: 9px;
@@ -107,9 +117,9 @@ header div.inner div.container div.row div.actions-container div.actions button 
   font-size: 1.438rem;
   line-height: 45px;
 }
-header div.inner div.container div.row div.actions-container div.actions button span.hamburger-box span.hamburger-inner {
+header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button span.hamburger-box span.hamburger-inner {
   width: 33px;
-  height: 4px;
+  height: 3.8px;
   position: absolute;
   transition-property: transform;
   background-color: #fff;
@@ -120,28 +130,17 @@ header div.inner div.container div.row div.actions-container div.actions button 
   top: 50%;
   margin-top: -1.5px;
 }
-@media (min-width: 768px) {
-  header div.inner div.container div.row div.logo-container {
-    width: 6fr;
-  }
-  header div.inner div.container div.row div.phone-in-icon-container {
-    display: none;
-  }
-  header div.inner div.container div.row div.actions-container {
-    width: 6fr;
-  }
-}
-header div.inner div.container div.search-form-wrapper--mobile form {
+header div.inner div.container div.search-form-wrapper--mobile form.search-form {
   margin-top: 11px;
   position: relative;
 }
-header div.inner div.container div.search-form-wrapper--mobile form input {
+header div.inner div.container div.search-form-wrapper--mobile form.search-form input#search-input {
   width: 100%;
   height: 47px;
   padding: 5px 15px;
   background-color: rgba(0, 0, 0, 0.1);
   outline: 1px solid hsla(0, 0%, 100%, 0.2);
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1) !important;
   transition: none;
   font-size: 14px;
   line-height: 1.42857143;
@@ -153,10 +152,7 @@ header div.inner div.container div.search-form-wrapper--mobile form input {
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-header div.inner div.container div.search-form-wrapper--mobile form input:active, header div.inner div.container div.search-form-wrapper--mobile form input:focus {
-  box-shadow: 0 0 3px #fff;
-}
-header div.inner div.container div.search-form-wrapper--mobile form button {
+header div.inner div.container div.search-form-wrapper--mobile form.search-form button {
   background: none;
   border: none;
   color: #333645;
@@ -168,7 +164,7 @@ header div.inner div.container div.search-form-wrapper--mobile form button {
   text-transform: none;
   overflow: visible;
 }
-header div.inner div.container div.search-form-wrapper--mobile form button span {
+header div.inner div.container div.search-form-wrapper--mobile form.search-form button span {
   position: relative;
   top: 1px;
   display: inline-block;
@@ -177,9 +173,980 @@ header div.inner div.container div.search-form-wrapper--mobile form button span 
   font-weight: 400;
   line-height: 1;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
+  header div.inner div.container div.row div.logo-container {
+    width: 50%;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.phone-in-icon-container {
+    display: none;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet {
+    display: block;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet form {
+    position: relative;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet form input#search-input {
+    color: #888;
+    opacity: 1;
+    display: inline-block;
+    border: none;
+    outline: none;
+    width: 174px;
+    height: 56px;
+    padding: 5px 15px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-color: #ccc;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet form input#search-input:focus {
+    border-color: #5bc0de;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet form button {
+    position: absolute;
+    right: 0;
+    outline: none;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    padding: 7px 20px 3px;
+    height: 56px;
+    vertical-align: bottom;
+    background-color: #999aa2;
+    color: #fff;
+    font-size: 23px;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet form button:hover {
+    background-color: #7e808a;
+  }
   header div.inner div.container div.search-form-wrapper--mobile {
     display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  header div.inner div.container div.row div.logo-container {
+    width: 33.3333333333%;
+  }
+  header div.inner div.container div.row div.flex-wrapper {
+    width: 66.6666666667%;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container {
+    width: 100%;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions .show-md {
+    width: 141.35px;
+    height: 56px;
+    padding: 5px 15px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions .show-md .icon-mouse, header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions .show-md .icon-paperplane {
+    font-size: 1.438rem;
+    margin-right: 5px;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support {
+    display: inline-flex;
+    width: 141.183px;
+    background-color: #4183d7;
+    border: 1px solid #4183d7;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support:hover {
+    background-color: #2a6ec6;
+    border-color: #2665b5;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a span {
+    display: inline-block;
+    width: 23.4px;
+    height: 45px;
+    margin-right: 5px;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a.btn-support {
+    display: block;
+    border: 0 !important;
+    background-color: #4183d7;
+    color: #fff;
+    border-color: #4183d7;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    background-image: none;
+    border: 1px solid transparent;
+    line-height: 46px;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a.btn-support:active, header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a.btn-support:focus, header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a.btn-support:hover {
+    color: #fff;
+    background-color: #2a6ec6;
+    border-color: #2665b5;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a.btn-support span.icon-mouse {
+    float: left !important;
+    margin-right: 5px;
+    font-size: 1.438rem;
+    line-height: 45px;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.contact {
+    display: inline-flex;
+    background-color: #999aa2;
+    border: 1px solid #999aa2;
+    width: 149.56px;
+    padding: 5px 15px;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.contact:hover, header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.contact:active, header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.contact:focus {
+    background-color: #84858f;
+    border-color: #797a85;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet form input#search-input {
+    display: none;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet form button {
+    position: relative;
+    border-radius: 3px;
+  }
+}
+@media (min-width: 1260px) {
+  header div.inner div.container div.row div.logo-container {
+    width: 41.6666666667%;
+  }
+  header div.inner div.container div.row div.flex-wrapper {
+    width: 58.3333333333%;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container {
+    width: 100%;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions .show-md {
+    width: 141.35px;
+    height: 56px;
+    padding: 5px 15px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions .show-md .icon-mouse, header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions .show-md .icon-paperplane {
+    font-size: 1.438rem;
+    margin-right: 5px;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support {
+    display: inline-flex;
+    width: 141.183px;
+    background-color: #4183d7;
+    border: 1px solid #4183d7;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support:hover {
+    background-color: #2a6ec6;
+    border-color: #2665b5;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a span {
+    display: inline-block;
+    width: 23.4px;
+    height: 45px;
+    margin-right: 5px;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.contact {
+    display: inline-flex;
+    background-color: #999aa2;
+    border: 1px solid #999aa2;
+    width: 149.56px;
+    padding: 5px 15px;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.contact:hover, header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.contact:active, header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.contact:focus {
+    background-color: #84858f;
+    border-color: #797a85;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet form input#search-input {
+    display: block;
+    width: 300px;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+div#middle div.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+div#middle div.container div#our-services-container div#top-services ul {
+  padding: 0;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child {
+  list-style-type: none;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+  font-weight: 600;
+  color: #333645;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a div span {
+  background-color: #67809f;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a div button {
+  background-color: #f7b322;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a:hover {
+  background-color: #67809f;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a:hover div span {
+  background-color: white;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a:hover div span span {
+  color: #67809f;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a:hover div button {
+  color: #67809f;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a:hover {
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a:hover div span {
+  background-color: white !important;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a:hover div button {
+  background-color: white;
+  border-color: transparent;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a div {
+  height: 100%;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a div span {
+  display: block;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a div span span {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a div h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a div p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+div#middle div.container div#our-services-container div#top-services ul li:first-child a div button {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-weight: 400;
+  width: 127.737px;
+  height: 45px;
+  padding: 5px 15px;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) {
+  list-style-type: none;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+  font-weight: 600;
+  color: #333645;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a div span {
+  background-color: #4183d7;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a div button {
+  background-color: #4183d7;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a:hover {
+  background-color: #4183d7;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a:hover div span {
+  background-color: white;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a:hover div span span {
+  color: #4183d7;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a:hover div button {
+  color: #4183d7;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a:hover {
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a:hover div span {
+  background-color: white !important;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a:hover div button {
+  background-color: white;
+  border-color: transparent;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a div {
+  height: 100%;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a div span {
+  display: block;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a div span span {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a div h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a div p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a div button {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-weight: 400;
+  width: 127.737px;
+  height: 45px;
+  padding: 5px 15px;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child {
+  list-style-type: none;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+  font-weight: 600;
+  color: #333645;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a div span {
+  background-color: #2ecc71;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a div button {
+  background-color: #2ecc71;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a:hover {
+  background-color: #2ecc71;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a:hover div span {
+  background-color: white;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a:hover div span span {
+  color: #2ecc71;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a:hover div button {
+  color: #2ecc71;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a:hover {
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a:hover div span {
+  background-color: white !important;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a:hover div button {
+  background-color: white;
+  border-color: transparent;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a div {
+  height: 100%;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a div span {
+  display: block;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a div span span {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a div h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a div p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+div#middle div.container div#our-services-container div#top-services ul li:last-child a div button {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-weight: 400;
+  width: 127.737px;
+  height: 45px;
+  padding: 5px 15px;
+}
+@media (min-width: 992px) {
+  div#middle div.container div#our-services-container div#top-services ul {
+    display: flex;
+    gap: 30px;
+  }
+  div#middle div.container div#our-services-container div#top-services ul li {
+    width: 33.3333333333%;
+    display: flex;
+  }
+  div#middle div.container div#our-services-container div#top-services ul li a div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div#middle div.container div#our-services-container div#top-services ul li a div button {
+    margin-top: auto;
+  }
+}
+div#middle div.container div#our-services-container div#bottom-services ul {
+  padding: 0;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child {
+  list-style-type: none;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+  font-weight: 600;
+  color: #333645;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a div span {
+  background-color: #d64541;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a div button {
+  background-color: #d64541;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a:hover {
+  background-color: #d64541;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a:hover div span {
+  background-color: white;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a:hover div span span {
+  color: #d64541;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a:hover div button {
+  color: #d64541;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a:hover {
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a:hover div span {
+  background-color: white !important;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a:hover div button {
+  background-color: white;
+  border-color: transparent;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a div {
+  height: 100%;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a div span {
+  display: block;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a div span span {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a div h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a div p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:first-child a div button {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-weight: 400;
+  width: 127.737px;
+  height: 45px;
+  padding: 5px 15px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) {
+  list-style-type: none;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+  font-weight: 600;
+  color: #333645;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a div span span {
+  background-color: #926fb1 !important;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a div button {
+  background-color: #926fb1;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a:hover {
+  background-color: #926fb1;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a:hover div span span {
+  color: #926fb1 !important;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a:hover div button {
+  color: #926fb1;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a:hover {
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a:hover div span {
+  background-color: white !important;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a:hover div button {
+  background-color: white;
+  border-color: transparent;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a div {
+  height: 100%;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a div span {
+  display: block;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a div span span {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a div h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a div p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a div button {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-weight: 400;
+  width: 127.737px;
+  height: 45px;
+  padding: 5px 15px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) {
+  list-style-type: none;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+  font-weight: 600;
+  color: #333645;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a div span span {
+  background-color: #f62459 !important;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a div button {
+  background-color: #f62459;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a:hover {
+  background-color: #f62459;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a:hover div span span {
+  color: #f62459 !important;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a:hover div button {
+  color: #f62459;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a:hover {
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a:hover div span {
+  background-color: white !important;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a:hover div button {
+  background-color: white;
+  border-color: transparent;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a div {
+  height: 100%;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a div span {
+  display: block;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a div span span {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a div h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a div p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a div button {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-weight: 400;
+  width: 127.737px;
+  height: 45px;
+  padding: 5px 15px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child {
+  list-style-type: none;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+  font-weight: 600;
+  color: #333645;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a div span span {
+  background-color: #ce4125 !important;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a div button {
+  background-color: #ce4125;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a:hover {
+  background-color: #ce4125;
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a:hover div span span {
+  color: #ce4125 !important;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a:hover div button {
+  color: #ce4125;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a:hover {
+  color: #fff;
+  border-color: transparent;
+  top: -10px;
+  transition: 0.5s ease;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a:hover div span {
+  background-color: white !important;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a:hover div button {
+  background-color: white;
+  border-color: transparent;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a div {
+  height: 100%;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a div span {
+  display: block;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a div span span {
+  font-size: 2rem;
+  line-height: 62px;
+  color: #fff;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a div h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a div p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+div#middle div.container div#our-services-container div#bottom-services ul li:last-child a div button {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-weight: 400;
+  width: 127.737px;
+  height: 45px;
+  padding: 5px 15px;
+}
+@media (min-width: 768px) {
+  div#middle div.container div#our-services-container div#bottom-services {
+    margin-top: -16px;
+  }
+  div#middle div.container div#our-services-container div#bottom-services ul {
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% - 60px) / 2));
+    column-gap: 30px;
+  }
+  div#middle div.container div#our-services-container div#bottom-services ul li {
+    display: flex;
+  }
+  div#middle div.container div#our-services-container div#bottom-services ul li a div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div#middle div.container div#our-services-container div#bottom-services ul li a div button {
+    margin-top: auto;
+  }
+}
+@media (min-width: 1260px) {
+  div#middle div.container div#our-services-container div#bottom-services ul {
+    grid-template-columns: repeat(4, calc((100% - 90px) / 4));
   }
 }
 
@@ -202,8 +1169,24 @@ body div#container div.main-outer {
   height: 100%;
   overflow: auto;
 }
-body div#container div.main-outer div.main-inner {
-  overflow: hidden;
+body .container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  body .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  body .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  body .container {
+    width: 1200px;
+  }
 }
 
 /*# sourceMappingURL=application.css.map */

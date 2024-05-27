@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="assets/icons/style.css">
+    <link rel="stylesheet" href="assets/web-fonts/Poppins.css">
     <link rel="stylesheet" href="css/application.css">
     <title>Farai Tanekha: HTML & SASS Assessment</title>
 </head>
@@ -30,42 +31,54 @@
                                                 </picture>
                                             </a>
                                         </div>
-                                        <div class="phone-in-icon-container">
-                                            <a href="" class="phone-in-link" href="tel:01603704020">
-                                                <span class="icon-phone_in_talk"></span>
-                                            </a>
-                                        </div>
-                                        <div class="actions-container">
-                                            <div class="actions">
-                                                <a href=""><span></span></a>
-                                                <!-- <a href=""><span></span></a> -->
-                                                <!-- <div class="search-form-wrapper--tablet">
-                                                    <form method="GET" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8">
-                                                        <label for=""></label>
-                                                        <input type="text" name="" id="">
-                                                        <button type="submit"></button>
-                                                    </form>
-                                                </div> -->
-                                                <!-- hamburger menu -->
-                                                <button type="button" data-toggle="sidebar">
-                                                    <span class="hamburger-box">
-                                                        <span class="hamburger-inner"></span>
-                                                    </span>
-                                                    <span class="hamburger-box">
-                                                        <span class="hamburger-inner"></span>
-                                                    </span>
-                                                    <span class="hamburger-box">
-                                                        <span class="hamburger-inner"></span>
-                                                    </span>
-                                                </button>
+                                        <div class="flex-wrapper">
+                                            <div class="phone-in-icon-container">
+                                                <a href="" class="phone-in-link" href="tel:01603704020">
+                                                    <span class="icon-phone_in_talk"></span>
+                                                </a>
+                                            </div>
+                                            <div class="actions-container">
+                                                <div class="actions">
+                                                    <div class="show-md support">
+                                                        <a class="btn-support" href="https://cwa-netmatters.screenconnect.com/" target="_blank" rel="noopener noreferrer"></a>
+                                                            <span class='icon-mouse'></span>Support
+                                                        </a>
+                                                    </div>
+                                                    <div class="show-md contact">
+                                                        <a class="btn-contact" href="https://www.netmatters.co.uk/contact-us" target="_blank" rel="noopener noreferrer"></a>
+                                                            <span class="icon-paperplane"></span>Contact
+                                                        </a>
+                                                    </div>
+                                                    <div class="search-form-wrapper--tablet">
+                                                        <form method="GET" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8">
+                                                            <!-- <label for=""></label> -->
+                                                            <input id="search-input" class="search-bar" type="text" name="" value="" placeholder="Search...">
+                                                            <button type="submit">
+                                                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                    <!-- hamburger menu -->
+                                                    <button type="button" data-toggle="sidebar">
+                                                        <span class="hamburger-box">
+                                                            <span class="hamburger-inner"></span>
+                                                        </span>
+                                                        <span class="hamburger-box">
+                                                            <span class="hamburger-inner"></span>
+                                                        </span>
+                                                        <span class="hamburger-box">
+                                                            <span class="hamburger-inner"></span>
+                                                        </span>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- search form wrapper -->
                                     <div class="search-form-wrapper--mobile">
-                                        <form class="search-form " action="GET" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8">
-                                            <input type="text" name="keyword" id="" placeholder="Search..."/>
-                                            <button type="submit" id="search-submit">
+                                        <form class="search-form" action="GET" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8">
+                                            <input id="search-input" type="text" name="keyword" placeholder="Search..."/>
+                                            <button id="search-submit" type="submit">
                                                 <span class="glyphicon-search" aria-hidden="true"></span>
                                             </button>
                                         </form>
@@ -79,7 +92,113 @@
                     <!-- BANNER -->
                     <div id="banner"></div>
                     <!-- MIDDLE -->
-                    <div id="middle"></div>
+                    <div id="middle">
+                        <div class="container">
+                            <!-- headline -->
+                            <div class="headline">
+                                <h2>Our Services</h2>
+                                <a href="https://www.netmatters.co.uk/case-studies" rel="noopener noreferrer">
+                                    <span>View Our Work</span>&nbsp;<span class="icon-arrow-right2"></span>
+                                </a>
+                            </div>
+                            <!-- list of services -->
+                            <div id="our-services-container">
+                                <!-- top services -->
+                                <div id="top-services">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.netmatters.co.uk/bespoke-software" rel="noopener noreferrer">
+                                                <div>
+                                                    <span>
+                                                        <span class="icon-apps"></span>
+                                                    </span>
+                                                    <h3>Bespoke Software</h3>
+                                                    <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
+                                                    <button>READ MORE</button>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.netmatters.co.uk/it-support" rel="noopener noreferrer">
+                                                <div>
+                                                    <span>
+                                                        <span class="icon-display"></span>
+                                                    </span>
+                                                    <h3>IT Support</h3>
+                                                    <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
+                                                    <button>READ MORE</button>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.netmatters.co.uk/digital-marketing" rel="noopener noreferrer">
+                                                <div>
+                                                    <span>
+                                                        <span class="icon-bar-graph"></span>
+                                                    </span>
+                                                    <h3>Digital Marketing</h3>
+                                                    <p>Driven brand awareness &amp; ROI through creative digital marketing campaigns.</p>
+                                                    <button>READ MORE</button>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- bottom services -->
+                                <div id="bottom-services">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.netmatters.co.uk/telecoms-services" rel="noopener noreferrer">
+                                                <div>
+                                                    <span>
+                                                        <span class="icon-phone_in_talk"></span>
+                                                    </span>
+                                                    <h3>Telecoms Services</h3>
+                                                    <p>Business telephony solutions including mobile &amp; connectivity solutions. </p>
+                                                    <button>READ MORE</button>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.netmatters.co.uk/web-design" rel="noopener noreferrer">
+                                                <div>
+                                                    <span>
+                                                        <span class="icon-code"></span>
+                                                    </span>
+                                                    <h3>Web Design</h3>
+                                                    <p>User-centric design for businesses looking to make a lasting impression.</p>
+                                                    <button>READ MORE</button>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.netmatters.co.uk/cyber-security" rel="noopener noreferrer">
+                                                <div>
+                                                    <span>
+                                                        <span class="icon-security"></span>
+                                                    </span>
+                                                    <h3>Cyber Security</h3>
+                                                    <p>Prevention, testing, consultancy &amp; breach management services.</p>
+                                                    <button>READ MORE</button>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.netmatters.co.uk/scs-web-developer-course" rel="noopener noreferrer">
+                                                <div>
+                                                    <span>
+                                                        <span class="icon-school"></span>
+                                                    </span>
+                                                    <h3>Developer Training</h3>
+                                                    <p>Web design &amp; software training courses designed to secure a job in tech.</p>  
+                                                    <button>READ MORE</button>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
                     <!-- FOOTER -->
                     <footer></footer>
                     <div class="footer-bottom"></div>
