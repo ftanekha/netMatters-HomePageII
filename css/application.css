@@ -408,7 +408,7 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
 nav {
   background-color: #333645;
 }
-@media (max-width: 1260px) {
+@media (max-width: 992px) {
   nav {
     display: none;
   }
