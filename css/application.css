@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header div.inner {
   padding: 20px 0;
 }
@@ -1692,6 +1693,35 @@ div.footer-top div.container div#company-info-links div ul li a:hover {
 @media (min-width: 992px) {
   div.footer-top div.container div#company-info-links div {
     width: calc((100% - 90px) / 4);
+  }
+}
+
+div#footer-contatiner-wrapper {
+  background: #212330;
+}
+div#footer-contatiner-wrapper div.container div#main-footer {
+  margin: 0 auto;
+  letter-spacing: 0.04rem;
+  display: flex;
+  flex-direction: column;
+}
+div#footer-contatiner-wrapper div.container div#main-footer p {
+  color: white;
+  font-size: 0.8125rem;
+  padding: 5px 0 10px;
+}
+div#footer-contatiner-wrapper div.container div#main-footer p:not(:last-child) {
+  margin-bottom: -25px;
+}
+@media (min-width: 768px) {
+  div#footer-contatiner-wrapper div.container div#main-footer {
+    flex-direction: row;
+  }
+  div#footer-contatiner-wrapper div.container div#main-footer p:nth-child(2)::before {
+    content: " ";
+  }
+  div#footer-contatiner-wrapper div.container div#main-footer p:last-child::before {
+    content: "  -  ";
   }
 }
 

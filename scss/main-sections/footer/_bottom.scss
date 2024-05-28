@@ -1,0 +1,31 @@
+div#footer-contatiner-wrapper{
+    background: #212330;
+    div.container{
+        div#main-footer{
+            // width: 80%;
+            margin: 0 auto;
+            // line-height: 1.375rem;
+            // font-stretch: ultra-expanded;
+            letter-spacing: .04rem;
+            display: flex;
+            flex-direction: column;
+            p{
+                color: white;
+                font-size: .8125rem;
+                padding: 5px 0 10px;
+                &:not(:last-child){
+                    margin-bottom: -25px;
+                }
+            }
+            @media (min-width: 768px){
+                flex-direction: row;
+                p:nth-child(2)::before{
+                    content: $nbspace;
+                }
+                p:last-child::before{
+                    content: "#{$nbspace} - #{$nbspace}"
+                }
+            }
+        }
+    }
+}
