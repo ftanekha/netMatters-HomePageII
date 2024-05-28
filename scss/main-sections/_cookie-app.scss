@@ -1,0 +1,16 @@
+button.cookie-settings-btn{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    background: #75788a;
+    padding: 0 10px;
+    color: white;
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 22px;
+    border: solid #75788a;
+    border-width: 1px 1px 0 0;
+    border-top-right-radius: 10px;
+}
