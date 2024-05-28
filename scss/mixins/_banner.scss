@@ -1,7 +1,7 @@
 @mixin banner($image-id: "why-choose-us"){
     height: 360.6px;
     margin: auto;
-    padding: 0;
+    padding: 5% 0;
     text-align: center;
     color: white;
     display: flex;
@@ -51,7 +51,6 @@
         }
     }
     @media (min-width: 992px){
-        width: 90%;
         text-align: left;
         h1{
             font-size: 4rem;

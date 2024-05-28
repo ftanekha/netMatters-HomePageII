@@ -17,7 +17,7 @@ button.cookie-settings-btn {
 }
 
 header div.inner {
-  padding: 20px 0;
+  padding: 17px 0;
 }
 header div.inner div.container div.row {
   display: flex;
@@ -725,10 +725,6 @@ nav div.container div a:nth-child(7) div span:last-child {
   font-size: 1.12rem;
 }
 
-div.banner-container {
-  padding: 94.7px 0 !important;
-  width: 100vw;
-}
 div.banner-container div.image-container {
   background-image: url("../assets/images/banners/why--choose--us.png"), url("../assets/images/banners/why--choose--us.jpg");
   background-attachment: local;
@@ -737,30 +733,30 @@ div.banner-container div.image-container {
   background-blend-mode: hard-light;
   height: 608.6px !important;
 }
-div.banner-container div.image-container div.why-choose-us {
+div.banner-container div.image-container div.container div.why-choose-us {
   height: 360.6px;
   margin: auto;
-  padding: 0;
+  padding: 5% 0;
   text-align: center;
   color: white;
   display: flex;
   flex-direction: column;
   justify-self: center;
 }
-div.banner-container div.image-container div.why-choose-us h1 {
+div.banner-container div.image-container div.container div.why-choose-us h1 {
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
   color: #fff;
   font-weight: 600;
 }
-div.banner-container div.image-container div.why-choose-us p {
+div.banner-container div.image-container div.container div.why-choose-us p {
   margin-bottom: 0.375rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
 }
-div.banner-container div.image-container div.why-choose-us a {
+div.banner-container div.image-container div.container div.why-choose-us a {
   align-self: center;
   margin-top: 1.938rem;
   margin-bottom: 1.125rem;
@@ -784,24 +780,23 @@ div.banner-container div.image-container div.why-choose-us a {
   user-select: none;
   text-decoration: none;
 }
-div.banner-container div.image-container div.why-choose-us a:hover {
+div.banner-container div.image-container div.container div.why-choose-us a:hover {
   background-color: #7e57a0;
   border-color: #735093;
 }
 @media (min-width: 992px) {
-  div.banner-container div.image-container div.why-choose-us {
-    width: 90%;
+  div.banner-container div.image-container div.container div.why-choose-us {
     text-align: left;
   }
-  div.banner-container div.image-container div.why-choose-us h1 {
+  div.banner-container div.image-container div.container div.why-choose-us h1 {
     font-size: 4rem;
     line-height: 5rem;
   }
-  div.banner-container div.image-container div.why-choose-us p {
+  div.banner-container div.image-container div.container div.why-choose-us p {
     font-size: 1.625rem;
     line-height: 2.5rem;
   }
-  div.banner-container div.image-container div.why-choose-us a {
+  div.banner-container div.image-container div.container div.why-choose-us a {
     align-self: flex-start;
   }
 }
