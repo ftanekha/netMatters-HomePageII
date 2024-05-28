@@ -14,7 +14,8 @@ header{
                         display: block;
                         picture{
                             img{
-                                max-width: 100%;
+                                //from original site
+                                max-width: min(374.167px, 100%);
                             }
                         }
                     }
