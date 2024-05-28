@@ -1,53 +1,49 @@
 @mixin banner($image-id: "why-choose-us"){
-    height: 360.6px;
+    height: 100%;
     margin: auto;
-    padding: 5% 0;
+    padding: 0;
     text-align: center;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    h1{
-        font-size: 2.5rem;
-        line-height: 3rem;
-        margin: 0 0 1.25rem;
-        color: #fff;
-        font-weight: 600;
-    }
-    p{
-        margin-bottom: .375rem;
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-        font-weight: 600;
-    }
-    a{
-        align-self: center;
-        margin-top: 1.938rem;
-        margin-bottom: 1.125rem;
-        color: #fff;
-        background-color: $wisteria;
-        border-color: $wisteria;
-        line-height: 50px;
-        width: 249.717px;
-        // width: 224.467px;
-        height: 61.6px;
-        padding: 5px 20px;
-        font-size: 1.25rem;
-        text-transform: uppercase;
-        border-radius: 3px;
-        //btn
-        display: inline-block;
-        margin-bottom: 0;
-        font-weight: 400;
-        text-align: center;
-        vertical-align: middle;
-        background-image: none;
-        border: 1px solid transparent;
-        user-select: none;
-        text-decoration: none;
-        &:hover{
-            background-color: #7e57a0;
-            border-color: #735093;
+    div.wrapper{
+        height: 360.6px;
+        padding-top: 20%;
+        h1{
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin: 0 0 1.25rem;
+            color: #fff;
+            font-weight: 600;
+            
+        }
+        p{
+            margin-bottom: .375rem;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 600;
+        }
+        a{
+            margin-top: 1.938rem;
+            margin-bottom: 1.125rem;
+            color: #fff;
+            background-color: $wisteria;
+            border-color: $wisteria;
+            line-height: 50px;
+            width: 249.717px;
+            // width: 224.467px;
+            height: 61.6px;
+            padding: 5px 20px;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            border-radius: 3px;
+            //btn
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: 400;
+            border: 1px solid transparent;
+            &:hover{
+                background-color: #7e57a0;
+                border-color: #735093;
+            }
         }
     }
     @media (min-width: 992px){

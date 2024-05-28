@@ -1,18 +1,21 @@
 div.banner-container{
     div.image-container{
+        height: 550px !important;
         background-image: url("../assets/images/banners/why--choose--us.png"),
-                      url("../assets/images/banners/why--choose--us.jpg");
+                      url("../assets/images/banners/why--choose--us.jpg"),
+                    ;
         background-attachment: local;
         background-size: cover;
         background-position: center;
-        background-blend-mode: hard-light;
-        // width: 100vw !important;
-        height: 608.6px !important;
+        background-color: rgb(94, 91, 91);
+        // background-blend-mode: hard-light;
         
-        div.container{
-            div.why-choose-us{
-                @include banner("why--choose--us");
+        div.why-choose-us{
+            background-image: linear-gradient(to right, #1b1c24, transparent);
+            @media (min-width: 992px){
+                background-image: linear-gradient(to right, black, transparent);
             }
+            @include banner("why--choose--us");
         }
         // div.bespoke--software{
         //     @include banner($bespoke--software);
