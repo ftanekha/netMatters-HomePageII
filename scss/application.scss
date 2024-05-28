@@ -22,12 +22,12 @@ body{
             overflow: auto;   
             div.main-inner{
                 // overflow: hidden;   
-                div#header{} 
-                div#nav{}
-                div#banner{} 
-                div#middle{} 
-                footer{display: none;}
-                div#footer{display: none;} 
+                // display: none;
+                div#header{display: none;} 
+                div#nav{display: none;}
+                div#banner{display: none;} 
+                div#middle{display: none;} 
+                footer{}
                 div.footer-bottom{display: none;}    
             }     
         }

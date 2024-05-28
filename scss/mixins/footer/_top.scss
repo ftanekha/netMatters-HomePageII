@@ -1,0 +1,43 @@
+@mixin social-media-company-logo{
+    width: 70.4px;
+    height: 56px;
+    // padding: 12px 22px 16px;
+    background-color: #212330;
+    display: flex;
+    justify-content: center;
+    &:hover, &:active{
+        border-color: #191a22;
+        outline: 0;
+        background-image: none;
+    }
+    &:first-child{//fbook
+        &:hover{
+            background-color: $bg-fbook;
+        }
+    }
+    &:nth-child(2){//linkedin
+        &:hover{
+            background-color: $bg-lin;
+        }
+    }
+    &:nth-child(3){//twitter
+        &:hover{
+            background-color: $bg-twit;
+        }
+    }
+    &:last-child{//igram
+        &:hover{
+            background-color: $bg-igram;
+        }
+    }
+    span{
+        display: inline-block;
+        align-self: center;
+        font-size: 26px;
+        color: white;
+    }
+}
+
+@mixin company-info-links-item{
+
+}

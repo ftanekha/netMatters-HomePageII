@@ -1,0 +1,50 @@
+div.footer-top{
+    background-color: #323544;
+    div.container{
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 1260px){
+            flex-direction: row;
+        }
+        div#social-media-company-logo-container{
+            picture{
+                border: 0;
+                img{
+                    width: 320px;
+                    height: 65.6px;
+                }
+            }
+            h3{
+                margin-top: 24px;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 400;
+                margin-bottom: 26px;
+            }
+            div#social-media-logos{
+                width: 326px;
+                display: flex;
+                justify-content: space-between;
+                a{
+                    @include social-media-company-logo;
+                }
+            }
+        }
+        div#company-info-links{
+            @media (min-width: 768px){
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                div{
+                    width: 50%;
+                }
+            }
+            @media (min-width: 992px){
+                div{
+                    width: 20%;
+                }
+            }
+        }
+    }
+}

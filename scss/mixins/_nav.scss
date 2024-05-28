@@ -1,5 +1,8 @@
 @mixin nav-item($color){
-    padding: 1.25rem;
+    display: block;
+    width: calc((100% / 7));
+    padding: 15px;
+    font-size: 1.438rem;          
     text-align: center;
     &:hover{
         background-color: $color;

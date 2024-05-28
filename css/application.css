@@ -398,13 +398,11 @@ nav {
 nav div.container div {
   display: flex;
 }
-nav div.container div a {
-  display: block;
-  font-size: 1.438rem;
-  width: 14.2857142857%;
-}
 nav div.container div a:nth-child(1) {
-  padding: 1.25rem;
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
   text-align: center;
 }
 nav div.container div a:nth-child(1):hover {
@@ -445,7 +443,10 @@ nav div.container div a:nth-child(1) div span:last-child {
   font-size: 1.12rem;
 }
 nav div.container div a:nth-child(2) {
-  padding: 1.25rem;
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
   text-align: center;
 }
 nav div.container div a:nth-child(2):hover {
@@ -486,7 +487,10 @@ nav div.container div a:nth-child(2) div span:last-child {
   font-size: 1.12rem;
 }
 nav div.container div a:nth-child(3) {
-  padding: 1.25rem;
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
   text-align: center;
 }
 nav div.container div a:nth-child(3):hover {
@@ -527,7 +531,10 @@ nav div.container div a:nth-child(3) div span:last-child {
   font-size: 1.12rem;
 }
 nav div.container div a:nth-child(4) {
-  padding: 1.25rem;
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
   text-align: center;
 }
 nav div.container div a:nth-child(4):hover {
@@ -568,7 +575,10 @@ nav div.container div a:nth-child(4) div span:last-child {
   font-size: 1.12rem;
 }
 nav div.container div a:nth-child(5) {
-  padding: 1.25rem;
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
   text-align: center;
 }
 nav div.container div a:nth-child(5):hover {
@@ -609,7 +619,10 @@ nav div.container div a:nth-child(5) div span:last-child {
   font-size: 1.12rem;
 }
 nav div.container div a:nth-child(6) {
-  padding: 1.25rem;
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
   text-align: center;
 }
 nav div.container div a:nth-child(6):hover {
@@ -650,7 +663,10 @@ nav div.container div a:nth-child(6) div span:last-child {
   font-size: 1.12rem;
 }
 nav div.container div a:nth-child(7) {
-  padding: 1.25rem;
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
   text-align: center;
 }
 nav div.container div a:nth-child(7):hover {
@@ -1563,6 +1579,84 @@ div#middle div.container div#our-services-container div#bottom-services ul li:la
   }
 }
 
+div.footer-top {
+  background-color: #323544;
+}
+div.footer-top div.container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1260px) {
+  div.footer-top div.container {
+    flex-direction: row;
+  }
+}
+div.footer-top div.container div#social-media-company-logo-container picture {
+  border: 0;
+}
+div.footer-top div.container div#social-media-company-logo-container picture img {
+  width: 320px;
+  height: 65.6px;
+}
+div.footer-top div.container div#social-media-company-logo-container h3 {
+  margin-top: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+div.footer-top div.container div#social-media-company-logo-container div#social-media-logos {
+  width: 326px;
+  display: flex;
+  justify-content: space-between;
+}
+div.footer-top div.container div#social-media-company-logo-container div#social-media-logos a {
+  width: 70.4px;
+  height: 56px;
+  background-color: #212330;
+  display: flex;
+  justify-content: center;
+}
+div.footer-top div.container div#social-media-company-logo-container div#social-media-logos a:hover, div.footer-top div.container div#social-media-company-logo-container div#social-media-logos a:active {
+  border-color: #191a22;
+  outline: 0;
+  background-image: none;
+}
+div.footer-top div.container div#social-media-company-logo-container div#social-media-logos a:first-child:hover {
+  background-color: #3b5998;
+}
+div.footer-top div.container div#social-media-company-logo-container div#social-media-logos a:nth-child(2):hover {
+  background-color: #0077b5;
+}
+div.footer-top div.container div#social-media-company-logo-container div#social-media-logos a:nth-child(3):hover {
+  background-color: #00aced;
+}
+div.footer-top div.container div#social-media-company-logo-container div#social-media-logos a:last-child:hover {
+  background-color: #d93175;
+}
+div.footer-top div.container div#social-media-company-logo-container div#social-media-logos a span {
+  display: inline-block;
+  align-self: center;
+  font-size: 26px;
+  color: white;
+}
+@media (min-width: 768px) {
+  div.footer-top div.container div#company-info-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  div.footer-top div.container div#company-info-links div {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  div.footer-top div.container div#company-info-links div {
+    width: 20%;
+  }
+}
+
 body {
   padding: 0px;
   font-family: Poppins, sans-serif;
@@ -1582,10 +1676,16 @@ body div#container div.main-outer {
   height: 100%;
   overflow: auto;
 }
-body div#container div.main-outer div.main-inner footer {
+body div#container div.main-outer div.main-inner div#header {
   display: none;
 }
-body div#container div.main-outer div.main-inner div#footer {
+body div#container div.main-outer div.main-inner div#nav {
+  display: none;
+}
+body div#container div.main-outer div.main-inner div#banner {
+  display: none;
+}
+body div#container div.main-outer div.main-inner div#middle {
   display: none;
 }
 body div#container div.main-outer div.main-inner div.footer-bottom {

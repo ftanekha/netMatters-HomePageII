@@ -8,9 +8,6 @@ nav{
             //nav-items
             display: flex;
             a{
-                display: block;
-                font-size: 1.438rem;
-                width: calc((100% / 7));
                 &:nth-child(1){
                     @include nav-item($hoki);
                 }
