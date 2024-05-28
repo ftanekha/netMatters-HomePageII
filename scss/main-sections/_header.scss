@@ -206,7 +206,8 @@ header{
                                             display: inline-block;                                          
                                             border: none;
                                             outline: none;
-                                            width: 174px;
+                                            //width = [174px] + the width of the overlaying search button [63px]
+                                            width: 237px;
                                             //from form-control
                                             height: 56px;
                                             padding: 5px 15px;
@@ -397,7 +398,7 @@ header{
                         //             background: yellow;
                         //             input#search-input{
                         //                 // display: none !important;
-                        //                 width: 174px;
+                        //                 width: 237px;
 
                         //             }
                         //         }

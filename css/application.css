@@ -207,7 +207,7 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
     display: inline-block;
     border: none;
     outline: none;
-    width: 174px;
+    width: 237px;
     height: 56px;
     padding: 5px 15px;
     background-color: #fff;
@@ -804,6 +804,9 @@ div.banner-container div.image-container div.container div.why-choose-us a:hover
 div#middle div.container div.our-services-headline {
   color: #333645;
   margin: 30px auto;
+}
+div#middle div.container div.our-services-headline h2 {
+  margin: 50px 0;
 }
 div#middle div.container div.our-services-headline h2 strong {
   font-size: 2.7rem;
@@ -1720,10 +1723,14 @@ div#footer-contatiner-wrapper div.container div#main-footer {
 div#footer-contatiner-wrapper div.container div#main-footer p {
   color: white;
   font-size: 0.8125rem;
-  padding: 5px 0 10px;
+  padding: 2px 0 10px;
 }
 div#footer-contatiner-wrapper div.container div#main-footer p:not(:last-child) {
   margin-bottom: -25px;
+}
+div#footer-contatiner-wrapper div.container div#main-footer p:last-child {
+  margin-bottom: -1.2px;
+  padding-bottom: 14px;
 }
 @media (min-width: 768px) {
   div#footer-contatiner-wrapper div.container div#main-footer {
