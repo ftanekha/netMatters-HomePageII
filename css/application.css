@@ -766,6 +766,10 @@ div.banner-container div.image-container div.why-choose-us a {
   user-select: none;
   text-decoration: none;
 }
+div.banner-container div.image-container div.why-choose-us a:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
 @media (min-width: 992px) {
   div.banner-container div.image-container div.why-choose-us {
     width: 90%;
@@ -1709,21 +1713,6 @@ body div#container {
 body div#container div.main-outer {
   height: 100%;
   overflow: auto;
-}
-body div#container div.main-outer div.main-inner div#header {
-  display: none;
-}
-body div#container div.main-outer div.main-inner div#nav {
-  display: none;
-}
-body div#container div.main-outer div.main-inner div#banner {
-  display: none;
-}
-body div#container div.main-outer div.main-inner div#middle {
-  display: none;
-}
-body div#container div.main-outer div.main-inner div.footer-bottom {
-  display: none;
 }
 body .container {
   margin: 0 auto;

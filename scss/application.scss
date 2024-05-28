@@ -22,13 +22,13 @@ body{
             overflow: auto;   
             div.main-inner{
                 // overflow: hidden;   
-                // display: none;
-                div#header{display: none;} 
-                div#nav{display: none;}
-                div#banner{display: none;} 
-                div#middle{display: none;} 
+                // 
+                div#header{} 
+                div#nav{}
+                div#banner{} 
+                div#middle{} 
                 footer{}
-                div.footer-bottom{display: none;}    
+                div.footer-bottom{}    
             }     
         }
     }

@@ -45,6 +45,10 @@
         border: 1px solid transparent;
         user-select: none;
         text-decoration: none;
+        &:hover{
+            background-color: #7e57a0;
+            border-color: #735093;
+        }
     }
     @media (min-width: 992px){
         width: 90%;
