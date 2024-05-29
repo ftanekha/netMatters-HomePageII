@@ -1,0 +1,36 @@
+@mixin about-nm-button(
+    $margin-btm, $first-child-border-color, $first-child-bg-color, $first-child-width,
+    $last-child-border-color, $last-child-bg-color, $last-child-width
+){
+    a{
+        display: block;
+        // until 535px
+        margin-bottom: $margin-btm;
+        //
+        padding: 10px 30px;
+        border: 1px solid;
+        border-radius: 6px;
+        text-decoration: none;
+        color: white !important;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 35px;
+        span{//arrow
+            width: 20.4px;
+            height: 35px;
+            line-height: 35px;
+        }
+        &:first-child{
+            box-sizing: content-box;
+            width: $first-child-width;
+            border-color: $first-child-border-color;
+            background-color: $first-child-bg-color;
+        }
+        &:last-child{
+            box-sizing: content-box;
+            width: $last-child-width;
+            border-color: $last-child-border-color;
+            background-color: $last-child-bg-color;
+        }
+    }
+}

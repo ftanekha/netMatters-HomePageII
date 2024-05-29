@@ -1605,6 +1605,154 @@ div#middle div.container div#our-services-container div#bottom-services ul li:la
   }
 }
 
+div#about-netmatters {
+  background: #333645;
+}
+@media (min-width: 992px) {
+  div#about-netmatters div.container div.handy-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+  }
+}
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters {
+  color: white !important;
+  padding: 20px 0;
+}
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters h2 strong {
+  font-size: 36px !important;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters article p {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+}
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters article p strong {
+  font-weight: 600;
+}
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters article a {
+  text-decoration: none;
+  color: white !important;
+}
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters article a:hover {
+  text-decoration: underline;
+}
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters footer a {
+  display: block;
+  margin-bottom: 17px;
+  padding: 10px 30px;
+  border: 1px solid;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white !important;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+}
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters footer a span {
+  width: 20.4px;
+  height: 35px;
+  line-height: 35px;
+}
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters footer a:first-child {
+  box-sizing: content-box;
+  width: 208.163px;
+  border-color: #272936;
+  background-color: #272936;
+}
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters footer a:last-child {
+  box-sizing: content-box;
+  width: 163.85px;
+  border-color: #272936;
+  background-color: #272936;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review {
+  color: white !important;
+  padding: 20px 0 50px 0;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review h2 strong {
+  font-size: 36px !important;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review div#rating span {
+  display: inline-block;
+  color: orange;
+  font-size: 50px;
+  font-weight: 400;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review article {
+  margin-bottom: 25px;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review article big {
+  margin-bottom: 25px;
+  font-size: 20.8px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 30px;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review article p {
+  margin: 30px 0 60px 0;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review article p span {
+  font-size: 17.6px;
+  font-weight: 600;
+  color: rgb(163, 168, 172);
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review article p cite a {
+  font-style: normal;
+  text-decoration: none;
+  color: white !important;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review article p cite a:hover {
+  text-decoration: underline;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review footer a {
+  display: block;
+  margin-bottom: 17px;
+  padding: 10px 30px;
+  border: 1px solid;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white !important;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review footer a span {
+  width: 20.4px;
+  height: 35px;
+  line-height: 35px;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review footer a:first-child {
+  box-sizing: content-box;
+  width: 203.188px;
+  border-color: #4183d7;
+  background-color: #4183d7;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review footer a:last-child {
+  box-sizing: content-box;
+  width: 234.05px;
+  border-color: #2ecc71;
+  background-color: #2ecc71;
+}
+
 div.footer-top {
   background-color: #323544;
   padding: 32px 0 28px;
