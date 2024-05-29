@@ -4,7 +4,7 @@ div#about-netmatters{
         div.handy-wrapper{
             @media (min-width: 992px){
                 display: grid;
-                grid-template-columns: 50% 50%;
+                grid-template-columns: repeat(2, calc((100% - 30px) / 2));
                 gap: 30px;
             }
             div#welcome-to-netmatters{

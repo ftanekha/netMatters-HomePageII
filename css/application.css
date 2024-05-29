@@ -1611,7 +1611,7 @@ div#about-netmatters {
 @media (min-width: 992px) {
   div#about-netmatters div.container div.handy-wrapper {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, calc((100% - 30px) / 2));
     gap: 30px;
   }
 }
