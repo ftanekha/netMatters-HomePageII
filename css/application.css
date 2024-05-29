@@ -738,6 +738,7 @@ div.banner-container div.image-container {
   background-color: rgb(94, 91, 91);
 }
 div.banner-container div.image-container div.why-choose-us {
+  position: relative;
   background-image: linear-gradient(to right, #1b1c24, transparent);
   height: 100%;
   margin: auto;
@@ -753,6 +754,7 @@ div.banner-container div.image-container div.why-choose-us {
 div.banner-container div.image-container div.why-choose-us div.wrapper {
   height: 360.6px;
   padding-top: 20%;
+  margin-bottom: 120px;
 }
 div.banner-container div.image-container div.why-choose-us div.wrapper h1 {
   font-size: 2.5rem;
@@ -805,6 +807,24 @@ div.banner-container div.image-container div.why-choose-us div.wrapper a:hover {
   div.banner-container div.image-container div.why-choose-us div.wrapper a {
     align-self: flex-start;
   }
+}
+div.banner-container div.image-container div.why-choose-us div#owl-dots {
+  display: flex;
+  justify-content: center;
+}
+div.banner-container div.image-container div.why-choose-us div#owl-dots span.owl-dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin: 0 10px;
+  margin-top: 10px;
+  background-color: hsla(0, 0%, 100%, 0.5);
+  color: #666;
+  border-radius: 30px;
+  transition: opacity 0.2s ease;
+}
+div.banner-container div.image-container div.why-choose-us div#owl-dots span.owl-dot:hover {
+  background-color: #869791;
 }
 
 div#middle div.container div.our-services-headline {

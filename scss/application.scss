@@ -21,14 +21,13 @@ body{
             height: 100%;
             overflow: auto;   
             div.main-inner{
-                // overflow: hidden;   
-                // 
                 div#cookie-app{} 
                 div#header{} 
                 div#nav{}
                 div#banner{} 
                 div#middle{}
-                div#about-netmatters{} 
+                div#about-netmatters{}
+                div#latest-news{} 
                 footer{}
                 div#footer-bottom{}  
             }     
