@@ -13,7 +13,6 @@
             margin: 0 0 1.25rem;
             color: #fff;
             font-weight: 600;
-            
         }
         p{
             margin-bottom: .375rem;
@@ -47,17 +46,20 @@
         }
     }
     @media (min-width: 992px){
-        text-align: left;
-        h1{
-            font-size: 4rem;
-            line-height: 5rem;
-        }
-        p{
-            font-size: 1.625rem;
-            line-height: 2.5rem;
-        }
-        a{
-            align-self: flex-start;
+        div.wrapper{
+            padding-top: 5%;
+            text-align: left;
+            h1{
+                font-size: 4rem !important;
+                line-height: 5rem !important;
+            }
+            p{
+                font-size: 1.625rem;
+                line-height: 2.5rem;
+            }
+            a{
+                align-self: flex-start;
+            }
         }
     }
 }

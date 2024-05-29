@@ -145,6 +145,9 @@ header div.inner div.container div.row div.flex-wrapper div.actions-container di
   top: 50%;
   margin-top: -1.5px;
 }
+header div.inner div.container div.search-form-wrapper--mobile {
+  margin-top: -10px;
+}
 header div.inner div.container div.search-form-wrapper--mobile form.search-form {
   margin-top: 11px;
   position: relative;
@@ -787,18 +790,19 @@ div.banner-container div.image-container div.why-choose-us div.wrapper a:hover {
   border-color: #735093;
 }
 @media (min-width: 992px) {
-  div.banner-container div.image-container div.why-choose-us {
+  div.banner-container div.image-container div.why-choose-us div.wrapper {
+    padding-top: 5%;
     text-align: left;
   }
-  div.banner-container div.image-container div.why-choose-us h1 {
-    font-size: 4rem;
-    line-height: 5rem;
+  div.banner-container div.image-container div.why-choose-us div.wrapper h1 {
+    font-size: 4rem !important;
+    line-height: 5rem !important;
   }
-  div.banner-container div.image-container div.why-choose-us p {
+  div.banner-container div.image-container div.why-choose-us div.wrapper p {
     font-size: 1.625rem;
     line-height: 2.5rem;
   }
-  div.banner-container div.image-container div.why-choose-us a {
+  div.banner-container div.image-container div.why-choose-us div.wrapper a {
     align-self: flex-start;
   }
 }
