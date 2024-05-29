@@ -1,0 +1,12 @@
+@mixin client-partners{
+    img{
+        width: 174x;
+        height: 70px;
+        margin: 0 50px;
+        transform-style: preserve-3d;
+        filter: grayscale(100%);
+        &:hover{
+            filter: grayscale(0%);
+        }
+    }
+}
