@@ -99,7 +99,8 @@ div#about-netmatters{
                 footer{
                     display: flex;
                     flex-wrap: wrap;
-                    gap: 10px;
+                    //for some reason 10px gap is too big?! needs reviewing 
+                    gap: 9.5px;
                     @include about-nm-button(
                         17px, $havelockBlue, $havelockBlue, 203.188px, 
                         $shamrock, $shamrock, 234.05px

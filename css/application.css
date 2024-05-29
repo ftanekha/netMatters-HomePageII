@@ -1721,7 +1721,7 @@ div#about-netmatters div.container div.handy-wrapper div#client-review article p
 div#about-netmatters div.container div.handy-wrapper div#client-review footer {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 9.5px;
 }
 div#about-netmatters div.container div.handy-wrapper div#client-review footer a {
   display: block;
