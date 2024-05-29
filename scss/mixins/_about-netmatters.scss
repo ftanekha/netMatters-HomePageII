@@ -1,6 +1,6 @@
 @mixin about-nm-button(
-    $margin-btm, $first-child-border-color, $first-child-bg-color, $first-child-width,
-    $last-child-border-color, $last-child-bg-color, $last-child-width
+    $margin-btm, $first-child-border-color, $first-child-bg-color, $first-child-width, $first-child-hover-bg-color,
+    $last-child-border-color, $last-child-bg-color, $last-child-width, $last-child-hover-bg-color
 ){
     a{
         display: block;
@@ -25,12 +25,20 @@
             width: $first-child-width;
             border-color: $first-child-border-color;
             background-color: $first-child-bg-color;
+            &:hover{
+                background-color: $first-child-hover-bg-color;
+                border-color: transparent;
+            }
         }
         &:last-child{
             box-sizing: content-box;
             width: $last-child-width;
             border-color: $last-child-border-color;
             background-color: $last-child-bg-color;
+            &:hover{
+                background-color: $last-child-hover-bg-color;
+                border-color: transparent;
+            }
         }
     }
 }

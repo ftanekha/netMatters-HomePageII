@@ -39,8 +39,8 @@ div#about-netmatters{
                     flex-wrap: wrap;
                     gap: 10px;
                     @include about-nm-button(
-                        17px, #272936, #272936, 208.163px, 
-                        #272936, #272936, 163.85px
+                        17px, #272936, #272936, 208.163px,#121318,
+                      #272936, #272936, 163.85px, #121318
                     );
                 }
             }
@@ -100,10 +100,11 @@ div#about-netmatters{
                     display: flex;
                     flex-wrap: wrap;
                     //for some reason 10px gap is too big?! needs reviewing 
+                    //temp
                     gap: 9.5px;
                     @include about-nm-button(
-                        17px, $havelockBlue, $havelockBlue, 203.188px, 
-                        $shamrock, $shamrock, 234.05px
+                        17px, $havelockBlue, $havelockBlue, 203.188px,#166af4, 
+                        $shamrock, $shamrock, 234.05px, #009b69
                     );
                 }
             }

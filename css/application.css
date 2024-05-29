@@ -1667,11 +1667,19 @@ div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters f
   border-color: #272936;
   background-color: #272936;
 }
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters footer a:first-child:hover {
+  background-color: #121318;
+  border-color: transparent;
+}
 div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters footer a:last-child {
   box-sizing: content-box;
   width: 163.85px;
   border-color: #272936;
   background-color: #272936;
+}
+div#about-netmatters div.container div.handy-wrapper div#welcome-to-netmatters footer a:last-child:hover {
+  background-color: #121318;
+  border-color: transparent;
 }
 div#about-netmatters div.container div.handy-wrapper div#client-review {
   color: white !important;
@@ -1746,11 +1754,19 @@ div#about-netmatters div.container div.handy-wrapper div#client-review footer a:
   border-color: #4183d7;
   background-color: #4183d7;
 }
+div#about-netmatters div.container div.handy-wrapper div#client-review footer a:first-child:hover {
+  background-color: #166af4;
+  border-color: transparent;
+}
 div#about-netmatters div.container div.handy-wrapper div#client-review footer a:last-child {
   box-sizing: content-box;
   width: 234.05px;
   border-color: #2ecc71;
   background-color: #2ecc71;
+}
+div#about-netmatters div.container div.handy-wrapper div#client-review footer a:last-child:hover {
+  background-color: #009b69;
+  border-color: transparent;
 }
 
 div.footer-top {
