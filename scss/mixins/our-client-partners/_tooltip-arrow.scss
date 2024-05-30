@@ -1,13 +1,12 @@
 @mixin tooltip-arrow{
-    // max-width: 280px;
-    // border-style: solid;
-    // border-width: 35px 36px 0;
-    // border-color: #333645 transparent transparent;
-    // width: 30px;
-    // height: 30px;
-    // transform: rotate(45deg);
-    // position: relative;
-    // top: -15px;
-    // left: 25px;
-    // z-index: 6;
+    max-width: 280px;
+    width: 50px;
+    border-style: solid;
+    border-width: 35px 36px 0;
+    border-color: #333645 transparent;
+    margin: auto;
+    height: 100px;
+    position: relative;
+    top: -50px;
+    z-index: 6;
 }

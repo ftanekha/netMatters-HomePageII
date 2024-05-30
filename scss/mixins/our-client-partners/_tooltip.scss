@@ -36,5 +36,7 @@
         }
     }
     //tooltip arraow
-    @include tooltip-arrow;
+    div.tooltip-arrow{
+        @include tooltip-arrow;
+    }
 }
