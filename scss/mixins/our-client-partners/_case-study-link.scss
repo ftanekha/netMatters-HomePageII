@@ -1,5 +1,5 @@
 //case study link button
-@mixin case-study-link($bg-color){
+@mixin case-study-link($bg-color, $hover-bg-color, $hover-border-color){
     display: block;
     height: px;
     width: px;
@@ -12,5 +12,9 @@
     background-color: $bg-color;
     border: 1px solid $bg-color;
     border-radius: 3px;
-    display: flex;   
+    display: flex;  
+    &:hover{
+        background-color: $hover-bg-color;
+        border-color: $hover-border-color;
+    } 
 }

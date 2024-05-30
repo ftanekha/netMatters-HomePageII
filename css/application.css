@@ -1855,6 +1855,8 @@ div.tooltips .tooltip-container:first-child .tooltip p {
   font-size: 0.875rem;
 }
 div.tooltips .tooltip-container:first-child .tooltip a {
+  display: flex;
+  align-items: center;
   display: block;
   height: px;
   width: px;
@@ -1868,6 +1870,10 @@ div.tooltips .tooltip-container:first-child .tooltip a {
   border: 1px solid #f7b322;
   border-radius: 3px;
   display: flex;
+}
+div.tooltips .tooltip-container:first-child .tooltip a:hover {
+  background-color: #e8a008;
+  border-color: #d49308;
 }
 div.tooltips .tooltip-container:nth-child(2) div {
   position: relative;
@@ -1894,6 +1900,10 @@ div.tooltips .tooltip-container:nth-child(2) .tooltip h3 {
 div.tooltips .tooltip-container:nth-child(2) .tooltip p {
   font-size: 0.875rem;
 }
+div.tooltips .tooltip-container:nth-child(2) .tooltip a {
+  display: flex;
+  align-items: center;
+}
 div.tooltips .tooltip-container:nth-child(3) div {
   position: relative;
 }
@@ -1919,6 +1929,10 @@ div.tooltips .tooltip-container:nth-child(3) .tooltip h3 {
 div.tooltips .tooltip-container:nth-child(3) .tooltip p {
   font-size: 0.875rem;
 }
+div.tooltips .tooltip-container:nth-child(3) .tooltip a {
+  display: flex;
+  align-items: center;
+}
 div.tooltips .tooltip-container:nth-child(4) div {
   position: relative;
 }
@@ -1943,6 +1957,10 @@ div.tooltips .tooltip-container:nth-child(4) .tooltip h3 {
 }
 div.tooltips .tooltip-container:nth-child(4) .tooltip p {
   font-size: 0.875rem;
+}
+div.tooltips .tooltip-container:nth-child(4) .tooltip a {
+  display: flex;
+  align-items: center;
 }
 div.tooltips .tooltip-container:nth-child(5) div {
   position: relative;
@@ -1970,6 +1988,8 @@ div.tooltips .tooltip-container:nth-child(5) .tooltip p {
   font-size: 0.875rem;
 }
 div.tooltips .tooltip-container:nth-child(5) .tooltip a {
+  display: flex;
+  align-items: center;
   display: block;
   height: px;
   width: px;
@@ -1983,6 +2003,10 @@ div.tooltips .tooltip-container:nth-child(5) .tooltip a {
   border: 1px solid #4183d7;
   border-radius: 3px;
   display: flex;
+}
+div.tooltips .tooltip-container:nth-child(5) .tooltip a:hover {
+  background-color: #2a6ec6;
+  border-color: #2665b5;
 }
 div.tooltips .tooltip-container:last-child div {
   position: relative;
@@ -2010,6 +2034,8 @@ div.tooltips .tooltip-container:last-child .tooltip p {
   font-size: 0.875rem;
 }
 div.tooltips .tooltip-container:last-child .tooltip a {
+  display: flex;
+  align-items: center;
   display: block;
   height: px;
   width: px;
@@ -2023,6 +2049,10 @@ div.tooltips .tooltip-container:last-child .tooltip a {
   border: 1px solid #2ecc71;
   border-radius: 3px;
   display: flex;
+}
+div.tooltips .tooltip-container:last-child .tooltip a:hover {
+  background-color: #26ab5f;
+  border-color: #239a55;
 }
 
 div.footer-top {
