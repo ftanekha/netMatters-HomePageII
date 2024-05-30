@@ -1,0 +1,16 @@
+//case study link button
+@mixin case-study-link($bg-color){
+    display: block;
+    height: px;
+    width: px;
+    margin-top: 11px;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    text-transform: uppercase;
+    background-color: $bg-color;
+    border: 1px solid $bg-color;
+    border-radius: 3px;
+    display: flex;   
+}

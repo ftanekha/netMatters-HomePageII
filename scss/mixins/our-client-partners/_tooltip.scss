@@ -1,0 +1,39 @@
+@mixin tooltip($bg-color){
+    div{position: relative;}
+    .tooltip {
+        // box-sizing: border-box;
+            z-index: 15;
+            background-color: #333645;
+            padding: 20px;
+            max-width: 280px;
+            margin: 0 auto 50px;
+            color: white; 
+            *{
+                color: #fff;
+                text-align: center;
+            }
+        h3{
+            margin: 0;
+            margin-bottom: -20px;
+            padding-bottom: 17px;
+            font-size: 1.125rem;
+            font-weight: 400;
+            // text-align: center;
+        }
+        p{
+            font-size: .875rem;
+        }
+        a{
+            @if $bg-color == bs{
+                @include case-study-link($buttercup)
+            }@else if $bg-color == it{
+                @include case-study-link($havelockBlue)
+            }@else if $bg-color == dm{
+                @include case-study-link($shamrock)
+            }
+            
+        }
+    }
+    //tooltip arraow
+    @include tooltip-arrow;
+}
