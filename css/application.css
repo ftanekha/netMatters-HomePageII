@@ -729,26 +729,6 @@ nav div.container div a:nth-child(7) div span:last-child {
   font-size: 1.12rem;
 }
 
-div.accreditations-container {
-  background-color: white;
-  margin: 40px 0 20px;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: hidden;
-}
-div.accreditations-container img {
-  width: 174x;
-  height: 70px;
-  margin: 0 50px;
-  transform-style: preserve-3d;
-  filter: grayscale(100%);
-}
-div.accreditations-container img:hover {
-  filter: grayscale(0%);
-}
-
 div.banner-container div.image-container {
   height: 550px !important;
   background-image: url("../assets/images/banners/why--choose--us.png"), url("../assets/images/banners/why--choose--us.jpg");
@@ -1645,6 +1625,26 @@ div#middle div.container div#our-services-container div#bottom-services ul li:la
   }
 }
 
+div.accreditations-container {
+  background-color: white;
+  margin: 40px 0 20px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+div.accreditations-container img {
+  width: 174x;
+  height: 70px;
+  margin: 0 50px;
+  transform-style: preserve-3d;
+  filter: grayscale(100%);
+}
+div.accreditations-container img:hover {
+  filter: grayscale(0%);
+}
+
 div#about-netmatters {
   background: #333645;
 }
@@ -1807,6 +1807,26 @@ div#about-netmatters div.container div.handy-wrapper div#client-review footer a:
 div#about-netmatters div.container div.handy-wrapper div#client-review footer a:last-child:hover {
   background-color: #009b69;
   border-color: transparent;
+}
+
+div.our-clients-container {
+  background-color: white;
+  margin: 40px 0 20px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+div.our-clients-container img {
+  width: 174x;
+  height: 70px;
+  margin: 0 50px;
+  transform-style: preserve-3d;
+  filter: grayscale(100%);
+}
+div.our-clients-container img:hover {
+  filter: grayscale(0%);
 }
 
 div.footer-top {

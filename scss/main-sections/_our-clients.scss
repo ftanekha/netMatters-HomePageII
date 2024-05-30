@@ -1,0 +1,10 @@
+div.our-clients-container{
+    background-color: white;
+    margin: 40px 0 20px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    @include client-partners;
+}
