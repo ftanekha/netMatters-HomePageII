@@ -1809,12 +1809,81 @@ div#about-netmatters div.container div.handy-wrapper div#client-review footer a:
   border-color: transparent;
 }
 
+div.container div.latest-news-headline {
+  color: #333645;
+  margin: 30px auto;
+}
+div.container div.latest-news-headline h2 {
+  margin: 50px 0;
+}
+div.container div.latest-news-headline h2 strong {
+  font-size: 2.7rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+div.container div.latest-news-headline a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.625rem;
+  color: #333645;
+}
+div.container div.latest-news-headline a.sm {
+  display: block;
+  text-align: center;
+}
+div.container div.latest-news-headline a.md {
+  display: none;
+}
+div.container div.latest-news-headline a:hover {
+  text-decoration: underline;
+  outline: 0;
+}
+@media (min-width: 768px) {
+  div.container div.latest-news-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  div.container div.latest-news-headline a.sm {
+    display: none;
+  }
+  div.container div.latest-news-headline a.md {
+    display: inline-block;
+  }
+}
 div.container div#latest-news-main-container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+div.container div#latest-news-main-container div#latest-news {
+  margin: 30px 0;
+}
+@media (min-width: 768px) {
+  div.container div#latest-news-main-container div#latest-news {
+    display: flex;
+    gap: 30px;
+  }
+  div.container div#latest-news-main-container div#latest-news div.latest-news-item {
+    width: calc(50% - 15px);
+  }
+}
+@media (min-width: 1260px) {
+  div.container div#latest-news-main-container div#latest-news {
+    gap: 30px;
+  }
+  div.container div#latest-news-main-container div#latest-news div.latest-news-item {
+    width: calc(33.3333333333% - 60px);
+  }
 }
 div.container div#latest-news-main-container div#latest-news div.latest-news-item img {
   max-width: 100%;
   max-height: 50%;
+}
+@media (min-width: 768px) and (max-width: 1260px) {
+  div.container div#latest-news-main-container div#latest-news div.latest-news-item.md-screen-hidden {
+    display: none;
+  }
 }
 div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body {
   margin: 30px auto;
@@ -1838,11 +1907,43 @@ div.container div#latest-news-main-container div#latest-news div.latest-news-ite
   line-height: 1.375rem;
   font-size: 0.8125rem;
 }
-div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body button {
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body button.shamrock {
+  width: 130px !important;
+  height: 48px !important;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.4px;
+  border: 1px solid transparent;
+  margin-top: 30px;
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  text-transform: uppercase;
+  line-height: 35px;
+  border-radius: 3px;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body button.valencia {
   width: 130px !important;
   height: 48px !important;
   background-color: #d64541;
   border-color: #d64541;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.4px;
+  border: 1px solid transparent;
+  margin-top: 30px;
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  text-transform: uppercase;
+  line-height: 35px;
+  border-radius: 3px;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body button.havelockBlue {
+  width: 130px !important;
+  height: 48px !important;
+  background-color: #4183d7;
+  border-color: #4183d7;
   color: white;
   text-align: center;
   letter-spacing: 0.4px;
@@ -1874,11 +1975,6 @@ div.container div#latest-news-main-container div#latest-news div.latest-news-ite
 }
 div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body footer small {
   padding-left: 20px;
-}
-@media (min-width: 768px) and (max-width: 1260px) {
-  div.container div#latest-news-main-container div#latest-news div.latest-news-item.md-screen-hidden {
-    display: none;
-  }
 }
 
 div.our-clients-container {

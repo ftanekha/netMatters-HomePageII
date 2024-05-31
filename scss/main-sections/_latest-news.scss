@@ -1,11 +1,76 @@
 div.container{
+    div.latest-news-headline{
+        color: #333645;
+        //temp margin, tbc
+        margin: 30px auto;
+        //
+        h2{
+            margin: 50px 0;
+            strong{
+                font-size: 2.7rem;
+                line-height: 1.1;
+                font-weight: 600;
+            }
+        }
+        a{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.625rem;
+            color: #333645;
+            &.sm{
+                display: block;
+                text-align: center;
+            }
+            &.md{ display: none;}
+            &:hover{
+                text-decoration: underline;
+                outline: 0;
+            }
+            
+            // span{
+            // cant find the right arrow
+            //     em{}
+            // }
+        }
+        @media (min-width: 768px){
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            a{
+                &.sm{ display: none;}
+                &.md{ display: inline-block;}
+            }
+        }
+    }
     div#latest-news-main-container{
         width: 100%;
+        // background: red;
+        display: flex;
+        flex-direction: column;
         div#latest-news{
+            margin: 30px 0;
+            @media (min-width: 768px){
+                display: flex;
+                gap: 30px;
+                div.latest-news-item{
+                    width: calc(50% - 15px)
+                }
+            }
+            @media (min-width: 1260px){
+                gap: 30px;
+                div.latest-news-item{
+                    width: calc((100% / 3 ) - (30px * 2))
+                }
+            }
             div.latest-news-item{
                 img{
                     max-width: 100%;
                     max-height: 50%;
+                }
+                &.md-screen-hidden{
+                    @media (min-width: 768px) and (max-width: 1260px){
+                        display: none;
+                    }
                 }
                 div.news-item-body{
                     margin: 30px auto;
@@ -31,21 +96,9 @@ div.container{
                         font-size: .8125rem;
                     }
                     button{
-                        width: 130px !important;
-                        height: 48px !important;
-                        background-color: #d64541;
-                        border-color: #d64541;
-                        color: white;
-                        text-align: center;
-                        letter-spacing: .4px;
-                        border: 1px solid transparent;
-                        //btn
-                        margin-top: 30px;
-                        padding: 5px 15px;
-                        font-size: 1.063rem;
-                        text-transform: uppercase;
-                        line-height: 35px;
-                        border-radius: 3px;
+                        &.shamrock{@include read-more-button($shamrock)}
+                        &.valencia{@include read-more-button($valencia)}
+                        &.havelockBlue{@include read-more-button($havelockBlue)}
                     }
                     hr{
                         margin: 30px 0;
@@ -67,11 +120,6 @@ div.container{
                         small{
                             padding-left: 20px;
                         }
-                    }
-                }
-                &.md-screen-hidden{
-                    @media (min-width: 768px) and (max-width: 1260px){
-                        display: none;
                     }
                 }
             }
