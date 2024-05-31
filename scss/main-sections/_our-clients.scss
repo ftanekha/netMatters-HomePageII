@@ -1,32 +1,126 @@
 div.our-clients-container{
     background-color: white;
-    margin: 40px 0 20px;
+    margin: 50px 0 20px 0;
     width: 100%;
     height: 100px;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: hidden;
+    // position: relative;
+    //affects all imag
     @include client-partners;
-}
-div.tooltips{
-    .tooltip-container{
+    //
+    div.carousel-item{
         &:first-child{
-            @include tooltip(bs)
+            div.tooltip-container{
+                display: none;
+            }
+            img{}
+            &:hover{
+                div.tooltip-container{
+                    display: block;
+                    // z-index: 100;
+                    // position: fixed;
+                    // top: 70vh;
+                    @include tooltip(bs);
+                }
+            }
         }
         &:nth-child(2){
-            @include tooltip(null)
+            div.tooltip-container{
+                display: none;
+            }
+            img{}
+            &:hover{
+                div.tooltip-container{
+                    display: block;
+                    @include tooltip(null);
+                }
+            }
         }
         &:nth-child(3){
-            @include tooltip(null)
+            div.tooltip-container{
+                display: none;
+            }
+            img{}
+            &:hover{
+                div.tooltip-container{
+                    display: block;
+                    @include tooltip(null);
+                }
+            }
         }
         &:nth-child(4){
-            @include tooltip(null)
+            div.tooltip-container{
+                display: none;
+            }
+            img{}
+            &:hover{
+                div.tooltip-container{
+                    display: block;
+                    @include tooltip(null);
+                }
+            }
         }
         &:nth-child(5){
-            @include tooltip(it)
+            div.tooltip-container{
+                display: none;
+            }
+            img{}
+            &:hover{
+                div.tooltip-container{
+                    display: block;
+                    @include tooltip(it);
+                }
+            }
+        }
+        &:nth-child(6){
+            div.tooltip-container{
+                display: none;
+            }
+            img{}
+            &:hover{
+                div.tooltip-container{
+                    display: block;
+                    @include tooltip(dm);
+                }
+            }
+        }
+        &:nth-child(7){
+            div.tooltip-container{
+                display: none;
+            }
+            img{}
+            &:hover{
+                div.tooltip-container{
+                    display: block;
+                    @include tooltip(dm);
+                }
+            }
+        }
+        &:nth-child(8){
+            div.tooltip-container{
+                display: none;
+            }
+            img{}
+            &:hover{
+                div.tooltip-container{
+                    display: block;
+                    @include tooltip(wd);
+                }
+            }
         }
         &:last-child{
-            @include tooltip(dm)
+            div.tooltip-container{
+                display: none;
+            }
+            img{}
+            &:hover{
+                div.tooltip-container{
+                    display: block;
+                    @include tooltip(wd);
+                }
+            }
         }
     }
 }

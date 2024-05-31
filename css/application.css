@@ -1811,7 +1811,7 @@ div#about-netmatters div.container div.handy-wrapper div#client-review footer a:
 
 div.our-clients-container {
   background-color: white;
-  margin: 40px 0 20px;
+  margin: 50px 0 20px 0;
   width: 100%;
   height: 100px;
   display: flex;
@@ -1828,11 +1828,13 @@ div.our-clients-container img {
 div.our-clients-container img:hover {
   filter: grayscale(0%);
 }
-
-div.tooltips .tooltip-container:first-child div {
-  position: relative;
+div.our-clients-container div.carousel-item:first-child div.tooltip-container {
+  display: none;
 }
-div.tooltips .tooltip-container:first-child .tooltip {
+div.our-clients-container div.carousel-item:first-child:hover div.tooltip-container {
+  display: block;
+}
+div.our-clients-container div.carousel-item:first-child:hover div.tooltip-container .tooltip {
   z-index: 15;
   background-color: #333645;
   padding: 20px;
@@ -1840,21 +1842,21 @@ div.tooltips .tooltip-container:first-child .tooltip {
   margin: 0 auto 50px;
   color: white;
 }
-div.tooltips .tooltip-container:first-child .tooltip * {
+div.our-clients-container div.carousel-item:first-child:hover div.tooltip-container .tooltip * {
   color: #fff;
   text-align: center;
 }
-div.tooltips .tooltip-container:first-child .tooltip h3 {
+div.our-clients-container div.carousel-item:first-child:hover div.tooltip-container .tooltip h3 {
   margin: 0;
   margin-bottom: -20px;
   padding-bottom: 17px;
   font-size: 1.125rem;
   font-weight: 400;
 }
-div.tooltips .tooltip-container:first-child .tooltip p {
+div.our-clients-container div.carousel-item:first-child:hover div.tooltip-container .tooltip p {
   font-size: 0.875rem;
 }
-div.tooltips .tooltip-container:first-child .tooltip a {
+div.our-clients-container div.carousel-item:first-child:hover div.tooltip-container .tooltip a {
   display: flex;
   align-items: center;
   display: block;
@@ -1871,11 +1873,11 @@ div.tooltips .tooltip-container:first-child .tooltip a {
   border-radius: 3px;
   display: flex;
 }
-div.tooltips .tooltip-container:first-child .tooltip a:hover {
+div.our-clients-container div.carousel-item:first-child:hover div.tooltip-container .tooltip a:hover {
   background-color: #e8a008;
   border-color: #d49308;
 }
-div.tooltips .tooltip-container:first-child div.tooltip-arrow {
+div.our-clients-container div.carousel-item:first-child:hover div.tooltip-container div.tooltip-arrow {
   max-width: 280px;
   width: 50px;
   border-style: solid;
@@ -1883,14 +1885,14 @@ div.tooltips .tooltip-container:first-child div.tooltip-arrow {
   border-color: #333645 transparent;
   margin: auto;
   height: 100px;
-  position: relative;
-  top: -50px;
-  z-index: 6;
 }
-div.tooltips .tooltip-container:nth-child(2) div {
-  position: relative;
+div.our-clients-container div.carousel-item:nth-child(2) div.tooltip-container {
+  display: none;
 }
-div.tooltips .tooltip-container:nth-child(2) .tooltip {
+div.our-clients-container div.carousel-item:nth-child(2):hover div.tooltip-container {
+  display: block;
+}
+div.our-clients-container div.carousel-item:nth-child(2):hover div.tooltip-container .tooltip {
   z-index: 15;
   background-color: #333645;
   padding: 20px;
@@ -1898,25 +1900,25 @@ div.tooltips .tooltip-container:nth-child(2) .tooltip {
   margin: 0 auto 50px;
   color: white;
 }
-div.tooltips .tooltip-container:nth-child(2) .tooltip * {
+div.our-clients-container div.carousel-item:nth-child(2):hover div.tooltip-container .tooltip * {
   color: #fff;
   text-align: center;
 }
-div.tooltips .tooltip-container:nth-child(2) .tooltip h3 {
+div.our-clients-container div.carousel-item:nth-child(2):hover div.tooltip-container .tooltip h3 {
   margin: 0;
   margin-bottom: -20px;
   padding-bottom: 17px;
   font-size: 1.125rem;
   font-weight: 400;
 }
-div.tooltips .tooltip-container:nth-child(2) .tooltip p {
+div.our-clients-container div.carousel-item:nth-child(2):hover div.tooltip-container .tooltip p {
   font-size: 0.875rem;
 }
-div.tooltips .tooltip-container:nth-child(2) .tooltip a {
+div.our-clients-container div.carousel-item:nth-child(2):hover div.tooltip-container .tooltip a {
   display: flex;
   align-items: center;
 }
-div.tooltips .tooltip-container:nth-child(2) div.tooltip-arrow {
+div.our-clients-container div.carousel-item:nth-child(2):hover div.tooltip-container div.tooltip-arrow {
   max-width: 280px;
   width: 50px;
   border-style: solid;
@@ -1924,14 +1926,14 @@ div.tooltips .tooltip-container:nth-child(2) div.tooltip-arrow {
   border-color: #333645 transparent;
   margin: auto;
   height: 100px;
-  position: relative;
-  top: -50px;
-  z-index: 6;
 }
-div.tooltips .tooltip-container:nth-child(3) div {
-  position: relative;
+div.our-clients-container div.carousel-item:nth-child(3) div.tooltip-container {
+  display: none;
 }
-div.tooltips .tooltip-container:nth-child(3) .tooltip {
+div.our-clients-container div.carousel-item:nth-child(3):hover div.tooltip-container {
+  display: block;
+}
+div.our-clients-container div.carousel-item:nth-child(3):hover div.tooltip-container .tooltip {
   z-index: 15;
   background-color: #333645;
   padding: 20px;
@@ -1939,25 +1941,25 @@ div.tooltips .tooltip-container:nth-child(3) .tooltip {
   margin: 0 auto 50px;
   color: white;
 }
-div.tooltips .tooltip-container:nth-child(3) .tooltip * {
+div.our-clients-container div.carousel-item:nth-child(3):hover div.tooltip-container .tooltip * {
   color: #fff;
   text-align: center;
 }
-div.tooltips .tooltip-container:nth-child(3) .tooltip h3 {
+div.our-clients-container div.carousel-item:nth-child(3):hover div.tooltip-container .tooltip h3 {
   margin: 0;
   margin-bottom: -20px;
   padding-bottom: 17px;
   font-size: 1.125rem;
   font-weight: 400;
 }
-div.tooltips .tooltip-container:nth-child(3) .tooltip p {
+div.our-clients-container div.carousel-item:nth-child(3):hover div.tooltip-container .tooltip p {
   font-size: 0.875rem;
 }
-div.tooltips .tooltip-container:nth-child(3) .tooltip a {
+div.our-clients-container div.carousel-item:nth-child(3):hover div.tooltip-container .tooltip a {
   display: flex;
   align-items: center;
 }
-div.tooltips .tooltip-container:nth-child(3) div.tooltip-arrow {
+div.our-clients-container div.carousel-item:nth-child(3):hover div.tooltip-container div.tooltip-arrow {
   max-width: 280px;
   width: 50px;
   border-style: solid;
@@ -1965,14 +1967,14 @@ div.tooltips .tooltip-container:nth-child(3) div.tooltip-arrow {
   border-color: #333645 transparent;
   margin: auto;
   height: 100px;
-  position: relative;
-  top: -50px;
-  z-index: 6;
 }
-div.tooltips .tooltip-container:nth-child(4) div {
-  position: relative;
+div.our-clients-container div.carousel-item:nth-child(4) div.tooltip-container {
+  display: none;
 }
-div.tooltips .tooltip-container:nth-child(4) .tooltip {
+div.our-clients-container div.carousel-item:nth-child(4):hover div.tooltip-container {
+  display: block;
+}
+div.our-clients-container div.carousel-item:nth-child(4):hover div.tooltip-container .tooltip {
   z-index: 15;
   background-color: #333645;
   padding: 20px;
@@ -1980,25 +1982,25 @@ div.tooltips .tooltip-container:nth-child(4) .tooltip {
   margin: 0 auto 50px;
   color: white;
 }
-div.tooltips .tooltip-container:nth-child(4) .tooltip * {
+div.our-clients-container div.carousel-item:nth-child(4):hover div.tooltip-container .tooltip * {
   color: #fff;
   text-align: center;
 }
-div.tooltips .tooltip-container:nth-child(4) .tooltip h3 {
+div.our-clients-container div.carousel-item:nth-child(4):hover div.tooltip-container .tooltip h3 {
   margin: 0;
   margin-bottom: -20px;
   padding-bottom: 17px;
   font-size: 1.125rem;
   font-weight: 400;
 }
-div.tooltips .tooltip-container:nth-child(4) .tooltip p {
+div.our-clients-container div.carousel-item:nth-child(4):hover div.tooltip-container .tooltip p {
   font-size: 0.875rem;
 }
-div.tooltips .tooltip-container:nth-child(4) .tooltip a {
+div.our-clients-container div.carousel-item:nth-child(4):hover div.tooltip-container .tooltip a {
   display: flex;
   align-items: center;
 }
-div.tooltips .tooltip-container:nth-child(4) div.tooltip-arrow {
+div.our-clients-container div.carousel-item:nth-child(4):hover div.tooltip-container div.tooltip-arrow {
   max-width: 280px;
   width: 50px;
   border-style: solid;
@@ -2006,14 +2008,14 @@ div.tooltips .tooltip-container:nth-child(4) div.tooltip-arrow {
   border-color: #333645 transparent;
   margin: auto;
   height: 100px;
-  position: relative;
-  top: -50px;
-  z-index: 6;
 }
-div.tooltips .tooltip-container:nth-child(5) div {
-  position: relative;
+div.our-clients-container div.carousel-item:nth-child(5) div.tooltip-container {
+  display: none;
 }
-div.tooltips .tooltip-container:nth-child(5) .tooltip {
+div.our-clients-container div.carousel-item:nth-child(5):hover div.tooltip-container {
+  display: block;
+}
+div.our-clients-container div.carousel-item:nth-child(5):hover div.tooltip-container .tooltip {
   z-index: 15;
   background-color: #333645;
   padding: 20px;
@@ -2021,21 +2023,21 @@ div.tooltips .tooltip-container:nth-child(5) .tooltip {
   margin: 0 auto 50px;
   color: white;
 }
-div.tooltips .tooltip-container:nth-child(5) .tooltip * {
+div.our-clients-container div.carousel-item:nth-child(5):hover div.tooltip-container .tooltip * {
   color: #fff;
   text-align: center;
 }
-div.tooltips .tooltip-container:nth-child(5) .tooltip h3 {
+div.our-clients-container div.carousel-item:nth-child(5):hover div.tooltip-container .tooltip h3 {
   margin: 0;
   margin-bottom: -20px;
   padding-bottom: 17px;
   font-size: 1.125rem;
   font-weight: 400;
 }
-div.tooltips .tooltip-container:nth-child(5) .tooltip p {
+div.our-clients-container div.carousel-item:nth-child(5):hover div.tooltip-container .tooltip p {
   font-size: 0.875rem;
 }
-div.tooltips .tooltip-container:nth-child(5) .tooltip a {
+div.our-clients-container div.carousel-item:nth-child(5):hover div.tooltip-container .tooltip a {
   display: flex;
   align-items: center;
   display: block;
@@ -2052,11 +2054,11 @@ div.tooltips .tooltip-container:nth-child(5) .tooltip a {
   border-radius: 3px;
   display: flex;
 }
-div.tooltips .tooltip-container:nth-child(5) .tooltip a:hover {
+div.our-clients-container div.carousel-item:nth-child(5):hover div.tooltip-container .tooltip a:hover {
   background-color: #2a6ec6;
   border-color: #2665b5;
 }
-div.tooltips .tooltip-container:nth-child(5) div.tooltip-arrow {
+div.our-clients-container div.carousel-item:nth-child(5):hover div.tooltip-container div.tooltip-arrow {
   max-width: 280px;
   width: 50px;
   border-style: solid;
@@ -2064,14 +2066,14 @@ div.tooltips .tooltip-container:nth-child(5) div.tooltip-arrow {
   border-color: #333645 transparent;
   margin: auto;
   height: 100px;
-  position: relative;
-  top: -50px;
-  z-index: 6;
 }
-div.tooltips .tooltip-container:last-child div {
-  position: relative;
+div.our-clients-container div.carousel-item:nth-child(6) div.tooltip-container {
+  display: none;
 }
-div.tooltips .tooltip-container:last-child .tooltip {
+div.our-clients-container div.carousel-item:nth-child(6):hover div.tooltip-container {
+  display: block;
+}
+div.our-clients-container div.carousel-item:nth-child(6):hover div.tooltip-container .tooltip {
   z-index: 15;
   background-color: #333645;
   padding: 20px;
@@ -2079,21 +2081,21 @@ div.tooltips .tooltip-container:last-child .tooltip {
   margin: 0 auto 50px;
   color: white;
 }
-div.tooltips .tooltip-container:last-child .tooltip * {
+div.our-clients-container div.carousel-item:nth-child(6):hover div.tooltip-container .tooltip * {
   color: #fff;
   text-align: center;
 }
-div.tooltips .tooltip-container:last-child .tooltip h3 {
+div.our-clients-container div.carousel-item:nth-child(6):hover div.tooltip-container .tooltip h3 {
   margin: 0;
   margin-bottom: -20px;
   padding-bottom: 17px;
   font-size: 1.125rem;
   font-weight: 400;
 }
-div.tooltips .tooltip-container:last-child .tooltip p {
+div.our-clients-container div.carousel-item:nth-child(6):hover div.tooltip-container .tooltip p {
   font-size: 0.875rem;
 }
-div.tooltips .tooltip-container:last-child .tooltip a {
+div.our-clients-container div.carousel-item:nth-child(6):hover div.tooltip-container .tooltip a {
   display: flex;
   align-items: center;
   display: block;
@@ -2110,11 +2112,11 @@ div.tooltips .tooltip-container:last-child .tooltip a {
   border-radius: 3px;
   display: flex;
 }
-div.tooltips .tooltip-container:last-child .tooltip a:hover {
+div.our-clients-container div.carousel-item:nth-child(6):hover div.tooltip-container .tooltip a:hover {
   background-color: #26ab5f;
   border-color: #239a55;
 }
-div.tooltips .tooltip-container:last-child div.tooltip-arrow {
+div.our-clients-container div.carousel-item:nth-child(6):hover div.tooltip-container div.tooltip-arrow {
   max-width: 280px;
   width: 50px;
   border-style: solid;
@@ -2122,9 +2124,180 @@ div.tooltips .tooltip-container:last-child div.tooltip-arrow {
   border-color: #333645 transparent;
   margin: auto;
   height: 100px;
-  position: relative;
-  top: -50px;
-  z-index: 6;
+}
+div.our-clients-container div.carousel-item:nth-child(7) div.tooltip-container {
+  display: none;
+}
+div.our-clients-container div.carousel-item:nth-child(7):hover div.tooltip-container {
+  display: block;
+}
+div.our-clients-container div.carousel-item:nth-child(7):hover div.tooltip-container .tooltip {
+  z-index: 15;
+  background-color: #333645;
+  padding: 20px;
+  max-width: 280px;
+  margin: 0 auto 50px;
+  color: white;
+}
+div.our-clients-container div.carousel-item:nth-child(7):hover div.tooltip-container .tooltip * {
+  color: #fff;
+  text-align: center;
+}
+div.our-clients-container div.carousel-item:nth-child(7):hover div.tooltip-container .tooltip h3 {
+  margin: 0;
+  margin-bottom: -20px;
+  padding-bottom: 17px;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+div.our-clients-container div.carousel-item:nth-child(7):hover div.tooltip-container .tooltip p {
+  font-size: 0.875rem;
+}
+div.our-clients-container div.carousel-item:nth-child(7):hover div.tooltip-container .tooltip a {
+  display: flex;
+  align-items: center;
+  display: block;
+  height: px;
+  width: px;
+  margin-top: 11px;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: uppercase;
+  background-color: #2ecc71;
+  border: 1px solid #2ecc71;
+  border-radius: 3px;
+  display: flex;
+}
+div.our-clients-container div.carousel-item:nth-child(7):hover div.tooltip-container .tooltip a:hover {
+  background-color: #26ab5f;
+  border-color: #239a55;
+}
+div.our-clients-container div.carousel-item:nth-child(7):hover div.tooltip-container div.tooltip-arrow {
+  max-width: 280px;
+  width: 50px;
+  border-style: solid;
+  border-width: 35px 36px 0;
+  border-color: #333645 transparent;
+  margin: auto;
+  height: 100px;
+}
+div.our-clients-container div.carousel-item:nth-child(8) div.tooltip-container {
+  display: none;
+}
+div.our-clients-container div.carousel-item:nth-child(8):hover div.tooltip-container {
+  display: block;
+}
+div.our-clients-container div.carousel-item:nth-child(8):hover div.tooltip-container .tooltip {
+  z-index: 15;
+  background-color: #333645;
+  padding: 20px;
+  max-width: 280px;
+  margin: 0 auto 50px;
+  color: white;
+}
+div.our-clients-container div.carousel-item:nth-child(8):hover div.tooltip-container .tooltip * {
+  color: #fff;
+  text-align: center;
+}
+div.our-clients-container div.carousel-item:nth-child(8):hover div.tooltip-container .tooltip h3 {
+  margin: 0;
+  margin-bottom: -20px;
+  padding-bottom: 17px;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+div.our-clients-container div.carousel-item:nth-child(8):hover div.tooltip-container .tooltip p {
+  font-size: 0.875rem;
+}
+div.our-clients-container div.carousel-item:nth-child(8):hover div.tooltip-container .tooltip a {
+  display: flex;
+  align-items: center;
+  display: block;
+  height: px;
+  width: px;
+  margin-top: 11px;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: uppercase;
+  background-color: #926fb1;
+  border: 1px solid #926fb1;
+  border-radius: 3px;
+  display: flex;
+}
+div.our-clients-container div.carousel-item:nth-child(8):hover div.tooltip-container .tooltip a:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+div.our-clients-container div.carousel-item:nth-child(8):hover div.tooltip-container div.tooltip-arrow {
+  max-width: 280px;
+  width: 50px;
+  border-style: solid;
+  border-width: 35px 36px 0;
+  border-color: #333645 transparent;
+  margin: auto;
+  height: 100px;
+}
+div.our-clients-container div.carousel-item:last-child div.tooltip-container {
+  display: none;
+}
+div.our-clients-container div.carousel-item:last-child:hover div.tooltip-container {
+  display: block;
+}
+div.our-clients-container div.carousel-item:last-child:hover div.tooltip-container .tooltip {
+  z-index: 15;
+  background-color: #333645;
+  padding: 20px;
+  max-width: 280px;
+  margin: 0 auto 50px;
+  color: white;
+}
+div.our-clients-container div.carousel-item:last-child:hover div.tooltip-container .tooltip * {
+  color: #fff;
+  text-align: center;
+}
+div.our-clients-container div.carousel-item:last-child:hover div.tooltip-container .tooltip h3 {
+  margin: 0;
+  margin-bottom: -20px;
+  padding-bottom: 17px;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+div.our-clients-container div.carousel-item:last-child:hover div.tooltip-container .tooltip p {
+  font-size: 0.875rem;
+}
+div.our-clients-container div.carousel-item:last-child:hover div.tooltip-container .tooltip a {
+  display: flex;
+  align-items: center;
+  display: block;
+  height: px;
+  width: px;
+  margin-top: 11px;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: uppercase;
+  background-color: #926fb1;
+  border: 1px solid #926fb1;
+  border-radius: 3px;
+  display: flex;
+}
+div.our-clients-container div.carousel-item:last-child:hover div.tooltip-container .tooltip a:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+div.our-clients-container div.carousel-item:last-child:hover div.tooltip-container div.tooltip-arrow {
+  max-width: 280px;
+  width: 50px;
+  border-style: solid;
+  border-width: 35px 36px 0;
+  border-color: #333645 transparent;
+  margin: auto;
+  height: 100px;
 }
 
 div.footer-top {

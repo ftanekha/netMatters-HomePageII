@@ -1,7 +1,5 @@
 @mixin tooltip($bg-color){
-    div{position: relative;}
     .tooltip {
-        // box-sizing: border-box;
             z-index: 15;
             background-color: #333645;
             padding: 20px;
@@ -31,11 +29,12 @@
                 @include case-study-link($havelockBlue, $havelockBlue-clients-hover-bg-color, $havelockBlue-clients-hover-border-color)
             }@else if $bg-color == dm{
                 @include case-study-link($shamrock, $shamrock-clients-hover-bg-color, $shamrock-clients-hover-border-color)
+            }@else if $bg-color == wd{
+                @include case-study-link($wisteria, $wisteria-clients-hover-bg-color, $wisteria-clients-hover-border-color)
             }
-            
         }
     }
-    //tooltip arraow
+    //tooltip arrow
     div.tooltip-arrow{
         @include tooltip-arrow;
     }
