@@ -1809,6 +1809,78 @@ div#about-netmatters div.container div.handy-wrapper div#client-review footer a:
   border-color: transparent;
 }
 
+div.container div#latest-news-main-container {
+  width: 100%;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item img {
+  max-width: 100%;
+  max-height: 50%;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body {
+  margin: 30px auto;
+  margin-top: -6px;
+  padding: 30px;
+  border-left: solid #666 0.1px;
+  border-bottom: solid #666 0.1px;
+  border-right: solid #666 0.1px;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body h3 a {
+  color: #d64541 !important;
+  text-decoration: none;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin-top: 30px;
+  transition: 0.5s ease;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body p {
+  margin: 0 0 10px;
+  color: #666;
+  line-height: 1.375rem;
+  font-size: 0.8125rem;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body button {
+  width: 130px !important;
+  height: 48px !important;
+  background-color: #d64541;
+  border-color: #d64541;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.4px;
+  border: 1px solid transparent;
+  margin-top: 30px;
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  text-transform: uppercase;
+  line-height: 35px;
+  border-radius: 3px;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body hr {
+  margin: 30px 0;
+  background-color: #666;
+  border-top-width: 0.1px;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body footer {
+  padding: 0;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body footer img {
+  float: left;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body footer strong {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333645;
+  padding-left: 20px;
+  line-height: 1.375rem;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body footer small {
+  padding-left: 20px;
+}
+@media (min-width: 768px) and (max-width: 1260px) {
+  div.container div#latest-news-main-container div#latest-news div.latest-news-item.md-screen-hidden {
+    display: none;
+  }
+}
+
 div.our-clients-container {
   background-color: white;
   margin: 50px 0 20px 0;

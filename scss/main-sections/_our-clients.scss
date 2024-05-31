@@ -6,7 +6,6 @@ div.our-clients-container{
     display: flex;
     flex-wrap: nowrap;
     overflow-x: hidden;
-    // position: relative;
     //affects all imag
     @include client-partners;
     //

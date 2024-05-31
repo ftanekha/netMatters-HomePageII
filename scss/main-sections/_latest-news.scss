@@ -1,0 +1,80 @@
+div.container{
+    div#latest-news-main-container{
+        width: 100%;
+        div#latest-news{
+            div.latest-news-item{
+                img{
+                    max-width: 100%;
+                    max-height: 50%;
+                }
+                div.news-item-body{
+                    margin: 30px auto;
+                    margin-top: -6px;
+                    padding: 30px;
+                    border-left: solid #666 .1px;
+                    border-bottom: solid #666 .1px;
+                    border-right: solid #666 .1px;
+                    h3{
+                        a{
+                            color: #d64541 !important;
+                            text-decoration: none;
+                            line-height: 1.5rem;
+                            font-weight: 600;
+                            margin-top: 30px;
+                            transition: .5s ease;
+                        }
+                    }
+                    p{
+                        margin: 0 0 10px;
+                        color: #666;
+                        line-height: 1.375rem;
+                        font-size: .8125rem;
+                    }
+                    button{
+                        width: 130px !important;
+                        height: 48px !important;
+                        background-color: #d64541;
+                        border-color: #d64541;
+                        color: white;
+                        text-align: center;
+                        letter-spacing: .4px;
+                        border: 1px solid transparent;
+                        //btn
+                        margin-top: 30px;
+                        padding: 5px 15px;
+                        font-size: 1.063rem;
+                        text-transform: uppercase;
+                        line-height: 35px;
+                        border-radius: 3px;
+                    }
+                    hr{
+                        margin: 30px 0;
+                        background-color: #666;
+                        border-top-width: .1px;
+                    }
+                    footer{
+                        padding: 0;
+                        img{
+                            float: left;
+                        }
+                        strong{
+                            font-size: .875rem;
+                            font-weight: 600;
+                            color: #333645;
+                            padding-left: 20px;
+                            line-height: 1.375rem;
+                        }
+                        small{
+                            padding-left: 20px;
+                        }
+                    }
+                }
+                &.md-screen-hidden{
+                    @media (min-width: 768px) and (max-width: 1260px){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
