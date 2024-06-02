@@ -1899,6 +1899,15 @@ div.container div#latest-news-main-container div#latest-news div.latest-news-ite
   border-right: solid #ccc 1px;
   border-radius: 3px;
 }
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body h3.shamrock a {
+  color: #2ecc71 !important;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body h3.valencia a {
+  color: #d64541 !important;
+}
+div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body h3.havelockBlue a {
+  color: #4183d7 !important;
+}
 div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body h3 a {
   color: #d64541 !important;
   text-decoration: none;
@@ -1971,6 +1980,7 @@ div.container div#latest-news-main-container div#latest-news div.latest-news-ite
 }
 div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body footer img {
   float: left;
+  border-radius: 50%;
 }
 div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body footer strong {
   font-size: 0.875rem;

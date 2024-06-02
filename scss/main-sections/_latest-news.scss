@@ -75,6 +75,15 @@ div.container{
                     border-right: solid #ccc 1px;
                     border-radius: 3px;
                     h3{
+                        &.shamrock{
+                            a{color: $shamrock !important;}
+                        }
+                        &.valencia{
+                            a{color: $valencia !important;;}
+                        }
+                        &.havelockBlue{
+                            a{color: $havelockBlue !important;}
+                        }
                         a{
                             color: #d64541 !important;
                             text-decoration: none;
@@ -104,6 +113,7 @@ div.container{
                         padding: 0;
                         img{
                             float: left;
+                            border-radius: 50%;
                         }
                         strong{
                             font-size: .875rem;
