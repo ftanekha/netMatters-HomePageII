@@ -103,9 +103,9 @@ div#about-netmatters{
                     //temp
                     gap: 9.5px;
                     @include about-nm-button(
-                        17px, $havelockBlue, $havelockBlue, 203.188px,$havelockBlue-hover, 
-                        $shamrock, $shamrock, 234.05px, $shamrock-hover
-                    );
+                        17px, #4387f6, #4387f6, 203.188px, #166af4, 
+                        #00b67b,  #00b67b, 234.05px, #009b69
+                    )
                 }
             }
         }
