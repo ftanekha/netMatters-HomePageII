@@ -1894,9 +1894,10 @@ div.container div#latest-news-main-container div#latest-news div.latest-news-ite
   margin: 30px auto;
   margin-top: -6px;
   padding: 30px;
-  border-left: solid #666 0.1px;
-  border-bottom: solid #666 0.1px;
-  border-right: solid #666 0.1px;
+  border-left: solid #ccc 1px;
+  border-bottom: solid #ccc 1px;
+  border-right: solid #ccc 1px;
+  border-radius: 3px;
 }
 div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body h3 a {
   color: #d64541 !important;
@@ -1962,8 +1963,8 @@ div.container div#latest-news-main-container div#latest-news div.latest-news-ite
 }
 div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body hr {
   margin: 30px 0;
-  background-color: #666;
-  border-top-width: 0.1px;
+  border: solid #ccc;
+  border-width: 1px 0 0 0;
 }
 div.container div#latest-news-main-container div#latest-news div.latest-news-item div.news-item-body footer {
   padding: 0;

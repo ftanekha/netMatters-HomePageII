@@ -70,9 +70,10 @@ div.container{
                     margin: 30px auto;
                     margin-top: -6px;
                     padding: 30px;
-                    border-left: solid #666 .1px;
-                    border-bottom: solid #666 .1px;
-                    border-right: solid #666 .1px;
+                    border-left: solid #ccc 1px;
+                    border-bottom: solid #ccc 1px;
+                    border-right: solid #ccc 1px;
+                    border-radius: 3px;
                     h3{
                         a{
                             color: #d64541 !important;
@@ -96,8 +97,8 @@ div.container{
                     }
                     hr{
                         margin: 30px 0;
-                        background-color: #666;
-                        border-top-width: .1px;
+                        border: solid #ccc;
+                        border-width: 1px 0 0 0;
                     }
                     footer{
                         padding: 0;
