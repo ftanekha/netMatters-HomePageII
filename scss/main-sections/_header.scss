@@ -359,6 +359,7 @@ header{
                                         background-color: #84858f;
                                         border-color: #797a85;
                                     }
+                                    a{color: white;}
                                 }
                                 div.search-form-wrapper--tablet{
                                     // background-color: brown;
@@ -392,33 +393,15 @@ header{
                     }
                     div.flex-wrapper{
                         width:  calc(7/12 * 100%);
-                        // div.actions-container{
-                        //     // background-color: brown;
-                        //     div.search-form-wrapper--tablet{
-                        //         // display: none !important;
-                        //         form{
-                        //             background: yellow;
-                        //             input#search-input{
-                        //                 // display: none !important;
-                        //                 width: 237px;
-
-                        //             }
-                        //         }
-                        //     }
-                        // }
                         div.actions-container{
                             width: 100%;
                             div.actions{
                                 display: flex;
                                 justify-content: flex-end;
-                                // gap: 20px;
                                 .show-md{
-                                    //box-sizing: border-box;
                                     width: 141.35px;
                                     height: 56px;
                                     padding: 5px 15px;
-                                    // border: solid .8px .8px .8px .815px;
-                                    // background: red;
                                     display: inline-flex;
                                     align-items: center;
                                     color: #fff;
@@ -433,9 +416,7 @@ header{
                                     }
                                 }
                                 div.support{
-                                    //box-sizing: border-box;
                                     display: inline-flex;
-                                    width: 141.183px;
                                     background-color: #4183d7;
                                     border: 1px solid #4183d7;
                                     &:hover{
@@ -443,7 +424,7 @@ header{
                                         border-color: #2665b5;
                                     }
                                     a{
-                                        
+                                        width: 149.56px;
                                         span{
                                             display: inline-block;
                                             width: 23.4px;
@@ -451,46 +432,8 @@ header{
                                             margin-right: 5px;
                                         }
                                     }
-                                    // width:;
-                                    // background: transparent;
-                                    // a.btn-support{
-                                    //     display: block;
-                                    //     border: 0 !important;
-                                    //     //inherit from a
-                                    //     background-color: #4183d7;
-                                    //     //inherit from .btn-support
-                                    //     color: #fff;
-                                    //     border-color: #4183d7;
-                                    //     //inherit from .btn
-                                    //     // padding: 5px 15px;
-                                    //     text-transform: uppercase;
-                                    //     font-size: 1.063rem;
-                                    //     border-radius: 3px;
-                                    //     white-space: normal;
-                                    //     margin-bottom: 0;
-                                    //     font-weight: 400;
-                                    //     text-align: center;
-                                    //     background-image: none;
-                                    //     border: 1px solid transparent;
-                                    //     line-height: 46px;
-                                    //     //
-                                    //     &:active, &:focus, &:hover{
-                                    //         color: #fff;
-                                    //         background-color: #2a6ec6;
-                                    //         border-color: #2665b5;
-                                    //     }
-                                    //     span.icon-mouse{
-                                    //         //.pull-left
-                                    //         float: left !important;
-                                    //         //
-                                    //         margin-right: 5px;
-                                    //         font-size: 1.438rem;
-                                    //         line-height: 45px;
-                                    //     }
-                                    // }
                                 }
                                 div.contact{
-                                    //box-sizing: border-box;
                                     display: inline-flex;
                                     background-color: #999aa2;
                                     border: 1px solid #999aa2;
@@ -502,12 +445,8 @@ header{
                                     }
                                 }
                                 div.search-form-wrapper--tablet{
-                                    // background-color: brown;
-                                    // display: none !important;
                                     form{
-                                        // width: 8px;
                                         input#search-input{
-                                            // visibility: collapse;
                                             display: block;
                                             width: 300px
                                         }

@@ -332,6 +332,9 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
     background-color: #84858f;
     border-color: #797a85;
   }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.contact a {
+    color: white;
+  }
   header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.search-form-wrapper--tablet form input#search-input {
     display: none;
   }
@@ -372,13 +375,15 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
   }
   header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support {
     display: inline-flex;
-    width: 141.183px;
     background-color: #4183d7;
     border: 1px solid #4183d7;
   }
   header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support:hover {
     background-color: #2a6ec6;
     border-color: #2665b5;
+  }
+  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a {
+    width: 149.56px;
   }
   header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a span {
     display: inline-block;
