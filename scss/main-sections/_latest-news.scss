@@ -57,6 +57,11 @@ div.container{
                 }
             }
             div.latest-news-item{
+                position: relative;
+                &:hover{
+                    top: -10px;
+                    transition: .5s ease;
+                }
                 img{
                     max-width: 100%;
                     max-height: 50%;
