@@ -6,5 +6,6 @@ div.accreditations-container{
     display: flex;
     flex-wrap: nowrap;
     overflow-x: hidden;
+    gap: 90px;
     @include client-partners-logo;
 }

@@ -1638,6 +1638,7 @@ div.accreditations-container {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: hidden;
+  gap: 90px;
 }
 div.accreditations-container img {
   max-width: 100%;
@@ -2002,6 +2003,7 @@ div.container div#latest-news-main-container div#latest-news div.latest-news-ite
 
 div.our-clients-carousel {
   display: flex;
+  gap: 90px;
 }
 div.our-clients-carousel div.carousel-item:first-child {
   display: flex;

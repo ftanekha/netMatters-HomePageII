@@ -1,5 +1,6 @@
 div.our-clients-carousel{
     display: flex;
+    gap: 90px;
     div.carousel-item{
         &:first-child{//black swan
             @include carousel-item(bs);
