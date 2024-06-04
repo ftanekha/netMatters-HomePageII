@@ -18,27 +18,27 @@ div.banner-container{
             }
             @include banner("why--choose--us");
 
-            div#owl-dots{
-                display: flex;
-                justify-content: center;
-                span.owl-dot{
-                    display: inline-block;
-                    width: 11px;
-                    height: 11px;
-                    margin: 0 10px;
-                    margin-top: 10px;
-                    background-color: hsla(0, 0%, 100%, .5);
-                    color: #666;
-                    border-radius: 30px;
-                    transition: opacity .2s ease; 
-                    // &:click{
-                    //     background-color: #d6d6d6;
-                    // }
-                    &:hover{
-                        background-color: #869791;
-                    }
-                }
-            }
+            // div#owl-dots{
+            //     display: flex;
+            //     justify-content: center;
+            //     span.owl-dot{
+            //         display: inline-block;
+            //         width: 11px;
+            //         height: 11px;
+            //         margin: 0 10px;
+            //         margin-top: 10px;
+            //         background-color: hsla(0, 0%, 100%, .5);
+            //         color: #666;
+            //         border-radius: 30px;
+            //         transition: opacity .2s ease; 
+            //         // &:click{
+            //         //     background-color: #d6d6d6;
+            //         // }
+            //         &:hover{
+            //             background-color: #869791;
+            //         }
+            //     }
+            // }
         }
         // div.bespoke--software{
         //     @include banner($bespoke--software);
