@@ -1641,7 +1641,6 @@ div.accreditations-container {
   gap: 90px;
 }
 div.accreditations-container img {
-  max-width: 100%;
   max-height: 70px;
   margin: 0 auto;
   transform-style: preserve-3d;
@@ -2014,13 +2013,11 @@ div.our-clients-carousel div.carousel-item:first-child {
 }
 div.our-clients-carousel div.carousel-item:first-child div.client-logo {
   box-sizing: border-box;
-  max-width: 100%;
   margin-top: 30px;
   padding-bottom: 50px;
   display: flex;
 }
 div.our-clients-carousel div.carousel-item:first-child div.client-logo img {
-  max-width: 100%;
   max-height: 70px;
   margin: 0 auto;
   transform-style: preserve-3d;
@@ -2096,13 +2093,11 @@ div.our-clients-carousel div.carousel-item:nth-child(2) {
 }
 div.our-clients-carousel div.carousel-item:nth-child(2) div.client-logo {
   box-sizing: border-box;
-  max-width: 100%;
   margin-top: 30px;
   padding-bottom: 50px;
   display: flex;
 }
 div.our-clients-carousel div.carousel-item:nth-child(2) div.client-logo img {
-  max-width: 100%;
   max-height: 70px;
   margin: 0 auto;
   transform-style: preserve-3d;
@@ -2162,13 +2157,11 @@ div.our-clients-carousel div.carousel-item:nth-child(3) {
 }
 div.our-clients-carousel div.carousel-item:nth-child(3) div.client-logo {
   box-sizing: border-box;
-  max-width: 100%;
   margin-top: 30px;
   padding-bottom: 50px;
   display: flex;
 }
 div.our-clients-carousel div.carousel-item:nth-child(3) div.client-logo img {
-  max-width: 100%;
   max-height: 70px;
   margin: 0 auto;
   transform-style: preserve-3d;
@@ -2228,13 +2221,11 @@ div.our-clients-carousel div.carousel-item:nth-child(4) {
 }
 div.our-clients-carousel div.carousel-item:nth-child(4) div.client-logo {
   box-sizing: border-box;
-  max-width: 100%;
   margin-top: 30px;
   padding-bottom: 50px;
   display: flex;
 }
 div.our-clients-carousel div.carousel-item:nth-child(4) div.client-logo img {
-  max-width: 100%;
   max-height: 70px;
   margin: 0 auto;
   transform-style: preserve-3d;
@@ -2310,13 +2301,11 @@ div.our-clients-carousel div.carousel-item:nth-child(5) {
 }
 div.our-clients-carousel div.carousel-item:nth-child(5) div.client-logo {
   box-sizing: border-box;
-  max-width: 100%;
   margin-top: 30px;
   padding-bottom: 50px;
   display: flex;
 }
 div.our-clients-carousel div.carousel-item:nth-child(5) div.client-logo img {
-  max-width: 100%;
   max-height: 70px;
   margin: 0 auto;
   transform-style: preserve-3d;
@@ -2392,13 +2381,11 @@ div.our-clients-carousel div.carousel-item:last-child {
 }
 div.our-clients-carousel div.carousel-item:last-child div.client-logo {
   box-sizing: border-box;
-  max-width: 100%;
   margin-top: 30px;
   padding-bottom: 50px;
   display: flex;
 }
 div.our-clients-carousel div.carousel-item:last-child div.client-logo img {
-  max-width: 100%;
   max-height: 70px;
   margin: 0 auto;
   transform-style: preserve-3d;
