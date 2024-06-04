@@ -5,9 +5,10 @@
     position: relative;
     width: 280px;
     div.client-logo{
+        box-sizing: border-box;
         max-width: 100%;
         margin-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         display: flex;
         @include client-partners-logo;
         &:hover{

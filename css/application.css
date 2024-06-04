@@ -1835,6 +1835,8 @@ div.container div.latest-news-headline a {
 div.container div.latest-news-headline a.sm {
   display: block;
   text-align: center;
+  margin-top: -40px;
+  padding-bottom: 25px;
 }
 div.container div.latest-news-headline a.md {
   display: none;
@@ -2009,9 +2011,10 @@ div.our-clients-carousel div.carousel-item:first-child {
   width: 280px;
 }
 div.our-clients-carousel div.carousel-item:first-child div.client-logo {
+  box-sizing: border-box;
   max-width: 100%;
   margin-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   display: flex;
 }
 div.our-clients-carousel div.carousel-item:first-child div.client-logo img {
@@ -2090,9 +2093,10 @@ div.our-clients-carousel div.carousel-item:nth-child(2) {
   width: 280px;
 }
 div.our-clients-carousel div.carousel-item:nth-child(2) div.client-logo {
+  box-sizing: border-box;
   max-width: 100%;
   margin-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   display: flex;
 }
 div.our-clients-carousel div.carousel-item:nth-child(2) div.client-logo img {
@@ -2155,9 +2159,10 @@ div.our-clients-carousel div.carousel-item:nth-child(3) {
   width: 280px;
 }
 div.our-clients-carousel div.carousel-item:nth-child(3) div.client-logo {
+  box-sizing: border-box;
   max-width: 100%;
   margin-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   display: flex;
 }
 div.our-clients-carousel div.carousel-item:nth-child(3) div.client-logo img {
@@ -2220,9 +2225,10 @@ div.our-clients-carousel div.carousel-item:nth-child(4) {
   width: 280px;
 }
 div.our-clients-carousel div.carousel-item:nth-child(4) div.client-logo {
+  box-sizing: border-box;
   max-width: 100%;
   margin-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   display: flex;
 }
 div.our-clients-carousel div.carousel-item:nth-child(4) div.client-logo img {
@@ -2301,9 +2307,10 @@ div.our-clients-carousel div.carousel-item:nth-child(5) {
   width: 280px;
 }
 div.our-clients-carousel div.carousel-item:nth-child(5) div.client-logo {
+  box-sizing: border-box;
   max-width: 100%;
   margin-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   display: flex;
 }
 div.our-clients-carousel div.carousel-item:nth-child(5) div.client-logo img {
@@ -2382,9 +2389,10 @@ div.our-clients-carousel div.carousel-item:last-child {
   width: 280px;
 }
 div.our-clients-carousel div.carousel-item:last-child div.client-logo {
+  box-sizing: border-box;
   max-width: 100%;
   margin-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   display: flex;
 }
 div.our-clients-carousel div.carousel-item:last-child div.client-logo img {
