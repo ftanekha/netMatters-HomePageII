@@ -1,0 +1,26 @@
+@mixin carousel-item($button-bg-color){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 280px;
+    div.client-logo{
+        max-width: 100%;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        @include client-partners-logo;
+        &:hover{
+            + div {opacity: 1}
+        }
+    }
+    div.tooltip{
+        //to help the tooltip overlay 'div#about-netmatters'
+        position: absolute;
+        bottom: 150px;
+        z-index: 1000;
+        // 
+        opacity: 0;
+        @include tooltip($button-bg-color);
+    }
+}

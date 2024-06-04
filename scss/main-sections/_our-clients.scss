@@ -1,127 +1,23 @@
-div.our-clients-container{
-    background-color: white;
-    margin: 50px 0 20px 0;
-    width: 100%;
-    height: 100px;
+div.our-clients-carousel{
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: hidden;
-    position: relative;
-    //affects all imag
-    @include client-partners;
-    //
     div.carousel-item{
-        &:first-child{
-            div.tooltip-container{
-                display: none;
-            }
-            &:hover{
-                div.tooltip-container{
-                    display: block;
-                    position: relative;
-                    z-index: 5000;
-                    bottom: 200px;
-                    div.toolptip{
-                        @include tooltip(bs);
-                    }
-                }
-            }
+        &:first-child{//black swan
+            @include carousel-item(bs);
         }
-        &:nth-child(2){
-            div.tooltip-container{
-                display: none;
-            }
-            img{}
-            &:hover{
-                div.tooltip-container{
-                    display: block;
-                    @include tooltip(null);
-                }
-            }
+        &:nth-child(2){//beat
+            @include carousel-item(null);
         }
-        &:nth-child(3){
-            div.tooltip-container{
-                display: none;
-            }
-            img{}
-            &:hover{
-                div.tooltip-container{
-                    display: block;
-                    @include tooltip(null);
-                }
-            }
+        &:nth-child(3){//survey solutions
+            @include carousel-item(null);
         }
-        &:nth-child(4){
-            div.tooltip-container{
-                display: none;
-            }
-            img{}
-            &:hover{
-                div.tooltip-container{
-                    display: block;
-                    @include tooltip(null);
-                }
-            }
+        &:nth-child(4){//girl guiding
+            @include carousel-item(it);
         }
-        &:nth-child(5){
-            div.tooltip-container{
-                display: none;
-            }
-            img{}
-            &:hover{
-                div.tooltip-container{
-                    display: block;
-                    @include tooltip(it);
-                }
-            }
+        &:nth-child(5){//sweetzy
+            @include carousel-item(dm);
         }
-        &:nth-child(6){
-            div.tooltip-container{
-                display: none;
-            }
-            img{}
-            &:hover{
-                div.tooltip-container{
-                    display: block;
-                    @include tooltip(dm);
-                }
-            }
-        }
-        &:nth-child(7){
-            div.tooltip-container{
-                display: none;
-            }
-            img{}
-            &:hover{
-                div.tooltip-container{
-                    display: block;
-                    @include tooltip(dm);
-                }
-            }
-        }
-        &:nth-child(8){
-            div.tooltip-container{
-                display: none;
-            }
-            img{}
-            &:hover{
-                div.tooltip-container{
-                    display: block;
-                    @include tooltip(wd);
-                }
-            }
-        }
-        &:last-child{
-            div.tooltip-container{
-                display: none;
-            }
-            img{}
-            &:hover{
-                div.tooltip-container{
-                    display: block;
-                    @include tooltip(wd);
-                }
-            }
+        &:last-child{//one Traveller
+            @include carousel-item(wd);
         }
     }
 }

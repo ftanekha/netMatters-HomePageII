@@ -1,9 +1,9 @@
 //carousel
-@mixin client-partners{
+@mixin client-partners-logo{
     img{
-        width: 174x;
-        height: 70px;
-        margin: 0 50px;
+        max-width: 100%;
+        max-height: 70px;
+        margin: 0 auto;
         transform-style: preserve-3d;
         filter: grayscale(100%);
         &:hover{

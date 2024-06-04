@@ -1,22 +1,21 @@
 @mixin tooltip($bg-color){
     background-color: #333645;
-    padding: 20px;
-    max-width: 280px;
-    margin: 0 auto 50px;
-    color: white; 
+    width: 280px;
     *{
-        color: #fff;
+        color: white; 
         text-align: center;
     }
     h3{
-        margin: 0;
-        margin-bottom: -20px;
-        padding-bottom: 17px;
+        margin: 10px auto;
+        padding-top: 10px;
         font-size: 1.125rem;
         font-weight: 400;
     }
     p{
-        font-size: .875rem;
+        font-size: .8125rem;
+        line-height: 1.375rem;
+        margin-bottom: 0;
+        padding: 10px 15px;
     }
     a{
         display: flex;
