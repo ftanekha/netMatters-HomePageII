@@ -18,6 +18,8 @@
         //to help the tooltip overlay 'div#about-netmatters'
         position: absolute;
         bottom: 150px;
+        //and center the arrow
+        left: -40px;
         z-index: 1000;
         // 
         opacity: 0;

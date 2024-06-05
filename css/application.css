@@ -2015,6 +2015,7 @@ div.our-clients-carousel div.carousel-item:first-child div.client-logo:hover + d
 div.our-clients-carousel div.carousel-item:first-child div.tooltip {
   position: absolute;
   bottom: 150px;
+  left: -40px;
   z-index: 1000;
   opacity: 0;
   background-color: #333645;
@@ -2095,6 +2096,7 @@ div.our-clients-carousel div.carousel-item:nth-child(2) div.client-logo:hover + 
 div.our-clients-carousel div.carousel-item:nth-child(2) div.tooltip {
   position: absolute;
   bottom: 150px;
+  left: -40px;
   z-index: 1000;
   opacity: 0;
   background-color: #333645;
@@ -2159,6 +2161,7 @@ div.our-clients-carousel div.carousel-item:nth-child(3) div.client-logo:hover + 
 div.our-clients-carousel div.carousel-item:nth-child(3) div.tooltip {
   position: absolute;
   bottom: 150px;
+  left: -40px;
   z-index: 1000;
   opacity: 0;
   background-color: #333645;
@@ -2223,6 +2226,7 @@ div.our-clients-carousel div.carousel-item:nth-child(4) div.client-logo:hover + 
 div.our-clients-carousel div.carousel-item:nth-child(4) div.tooltip {
   position: absolute;
   bottom: 150px;
+  left: -40px;
   z-index: 1000;
   opacity: 0;
   background-color: #333645;
@@ -2303,6 +2307,7 @@ div.our-clients-carousel div.carousel-item:nth-child(5) div.client-logo:hover + 
 div.our-clients-carousel div.carousel-item:nth-child(5) div.tooltip {
   position: absolute;
   bottom: 150px;
+  left: -40px;
   z-index: 1000;
   opacity: 0;
   background-color: #333645;
@@ -2383,6 +2388,7 @@ div.our-clients-carousel div.carousel-item:last-child div.client-logo:hover + di
 div.our-clients-carousel div.carousel-item:last-child div.tooltip {
   position: absolute;
   bottom: 150px;
+  left: -40px;
   z-index: 1000;
   opacity: 0;
   background-color: #333645;
