@@ -1984,7 +1984,6 @@ div.container div#latest-news-main-container div#latest-news div.latest-news-ite
 }
 
 div.our-clients-carousel {
-  overflow-x: hidden;
   display: flex;
   gap: 90px;
 }
