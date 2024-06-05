@@ -736,7 +736,7 @@ nav div.container div a:nth-child(7) div span:last-child {
 
 div.banner-container div.image-container {
   height: 550px !important;
-  background-image: url("../assets/images/banners/why--choose--us.png"), url("../assets/images/banners/why--choose--us.jpg");
+  background-image: url("../assets/images/banners/why--choose--us.png");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -2558,6 +2558,7 @@ div#footer-contatiner-wrapper {
   background: #212330;
 }
 div#footer-contatiner-wrapper div.container div#main-footer {
+  overflow: hidden;
   margin: 0 auto;
   letter-spacing: 0.04rem;
   display: flex;
@@ -2600,7 +2601,7 @@ body {
   line-height: 1.42857143;
   color: #666;
   background-color: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body div#container {
   height: 100%;
