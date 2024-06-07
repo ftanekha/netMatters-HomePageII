@@ -2615,7 +2615,6 @@ body div#container {
 }
 body div#container div.main-outer {
   height: 100%;
-  overflow: auto;
 }
 body .container {
   margin: 0 auto;
