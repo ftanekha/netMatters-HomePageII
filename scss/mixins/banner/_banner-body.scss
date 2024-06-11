@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @mixin banner-body($image-id){
     height: 100%;
     margin: auto;
@@ -42,8 +44,8 @@
             font-weight: 400;
             border: 1px solid transparent;
             &:hover{
-                background-color: #7e57a0;
-                border-color: #735093;
+                background-color: map.get(get-banner--button--hover--bg-color($image-id), "hover-bg-color");
+                border-color: map.get(get-banner--button--hover--bg-color($image-id), "hover-bdr-color");
             }
         }
     }
