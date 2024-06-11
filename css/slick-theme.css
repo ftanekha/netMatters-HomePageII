@@ -40,7 +40,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: transparent;
+    background-color: transparent;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -49,7 +49,7 @@
 {
     color: transparent;
     outline: none;
-    background: transparent;
+    background-color: transparent;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -123,7 +123,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: 50px;
 
     display: block;
 
@@ -134,17 +134,25 @@
     list-style: none;
 
     text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .slick-dots li
 {
-    position: relative;
-
-    display: inline-block;
-
-    width: 20px;
-    height: 20px;
+    box-sizing: content-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    /* white on active */
+    border: solid 2px transparent;
+    /*  */
+    border-radius: 50%;
+    background-color: transparent;
     margin: 0 5px;
-    padding: 0;
 
     cursor: pointer;
 }
@@ -155,21 +163,22 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
-    padding: 5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
 
     cursor: pointer;
 
     color: transparent;
     border: 0;
     outline: none;
-    background: transparent;
+    background-color: #d6d6d6;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
 {
     outline: none;
+    background-color: #869791;
 }
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
@@ -179,7 +188,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 60px;
     line-height: 20px;
 
     position: absolute;
@@ -189,17 +198,20 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: '';
     text-align: center;
 
     opacity: .25;
-    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.slick-dots li.slick-active button:before
+/* active link & nested button*/
+.slick-dots li.slick-active
 {
-    opacity: .75;
-    color: black;
+    border-color:  white;
+}
+.slick-dots li.slick-active button
+{
+    background-color: white;
 }

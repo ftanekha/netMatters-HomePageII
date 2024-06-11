@@ -736,7 +736,6 @@ nav div.container div a:nth-child(7) div span:last-child {
 
 div.banner-item-container div.bg-image-container {
   height: 550px !important;
-  background-image: url("../assets/images/banners/why-choose-us.png");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -815,7 +814,6 @@ div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper a
 
 div.banner-item-container div.bg-image-container {
   height: 550px !important;
-  background-image: url("../assets/images/banners/bespoke-software.jpg");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -876,7 +874,7 @@ div.banner-item-container div.bg-image-container div.bespoke-software div.wrappe
 }
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper {
-    padding-top: 5%;
+    padding-top: 10%;
     text-align: left;
   }
   div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper h1 {
@@ -894,7 +892,6 @@ div.banner-item-container div.bg-image-container div.bespoke-software div.wrappe
 
 div.banner-item-container div.bg-image-container {
   height: 550px !important;
-  background-image: url("../assets/images/banners/it-support.png");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -955,7 +952,7 @@ div.banner-item-container div.bg-image-container div.it-support div.wrapper a:ho
 }
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.it-support div.wrapper {
-    padding-top: 5%;
+    padding-top: 10%;
     text-align: left;
   }
   div.banner-item-container div.bg-image-container div.it-support div.wrapper h1 {
@@ -973,7 +970,6 @@ div.banner-item-container div.bg-image-container div.it-support div.wrapper a:ho
 
 div.banner-item-container div.bg-image-container {
   height: 550px !important;
-  background-image: url("../assets/images/banners/digital-marketing.png");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -1034,7 +1030,7 @@ div.banner-item-container div.bg-image-container div.digital-marketing div.wrapp
 }
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper {
-    padding-top: 5%;
+    padding-top: 10%;
     text-align: left;
   }
   div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper h1 {
@@ -1052,7 +1048,6 @@ div.banner-item-container div.bg-image-container div.digital-marketing div.wrapp
 
 div.banner-item-container div.bg-image-container {
   height: 550px !important;
-  background-image: url("../assets/images/banners/telecoms-services.png");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -1113,7 +1108,7 @@ div.banner-item-container div.bg-image-container div.telecoms-services div.wrapp
 }
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper {
-    padding-top: 5%;
+    padding-top: 10%;
     text-align: left;
   }
   div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper h1 {
@@ -1131,7 +1126,6 @@ div.banner-item-container div.bg-image-container div.telecoms-services div.wrapp
 
 div.banner-item-container div.bg-image-container {
   height: 550px !important;
-  background-image: url("../assets/images/banners/web-design.jpg");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -1192,7 +1186,7 @@ div.banner-item-container div.bg-image-container div.web-design div.wrapper a:ho
 }
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.web-design div.wrapper {
-    padding-top: 5%;
+    padding-top: 10%;
     text-align: left;
   }
   div.banner-item-container div.bg-image-container div.web-design div.wrapper h1 {
@@ -1210,7 +1204,6 @@ div.banner-item-container div.bg-image-container div.web-design div.wrapper a:ho
 
 div.banner-item-container div.bg-image-container {
   height: 550px !important;
-  background-image: url("../assets/images/banners/cyber-security.png");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -1271,7 +1264,7 @@ div.banner-item-container div.bg-image-container div.cyber-security div.wrapper 
 }
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.cyber-security div.wrapper {
-    padding-top: 5%;
+    padding-top: 10%;
     text-align: left;
   }
   div.banner-item-container div.bg-image-container div.cyber-security div.wrapper h1 {
