@@ -1,4 +1,4 @@
-@mixin banner($image-id: "why-choose-us"){
+@mixin banner-body($image-id){
     height: 100%;
     margin: auto;
     padding: 0;
@@ -27,8 +27,10 @@
             margin-top: 1.938rem;
             margin-bottom: 1.125rem;
             color: #fff;
-            background-color: $wisteria;
-            border-color: $wisteria;
+            // bg and col go here
+            background-color: get-banner-button-bg-color($image-id);
+            border-color: get-banner-button-bg-color($image-id);
+            //
             line-height: 50px;
             width: 249.717px;
             // width: 224.467px;

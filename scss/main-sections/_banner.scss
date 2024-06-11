@@ -1,42 +1,45 @@
-div.banner-item-container{
-    div.bg-image-container{
-        height: 550px !important;
-        background-image: url("../assets/images/banners/#{get-banner-image-url('it-support')}");
-        background-attachment: local;
-        background-size: cover;
-        background-position: center;
-        background-color: rgb(94, 91, 91);
-        // background-blend-mode: hard-light;
-        
-        div.why-choose-us{
-            position: relative;
-            background-image: linear-gradient(to right, #1b1c24, transparent);
-            @media (min-width: 992px){
-                background-image: linear-gradient(to right, black, transparent);
-            }
-            @include banner("why-choose-us");
-        }
-        // div.bespoke--software{
-        //     @include banner($bespoke--software);
-        // }
-        // div.it--support{
-        //     @include banner($it--support);
-        // }
-        // div.digital--marketing{
-        //     @include banner($digital--marketing);
-        // }
-        // div.telecoms--services{
-        //     @include banner($telecoms--services);
-        // }
-        // div.web--design{
-        //     @include banner($web--design);
-        // }
-        // div.cyber--security{
-        //     @include banner($cyber--security);
-        // }  
+@include banner-item('why-choose-us');
 
-        // div.initially-hidden{
-        //     display: none;
-        // }
-    }
-}
+
+// div.banner-item-container{
+//     div.bg-image-container{
+//         height: 550px !important;
+//         background-image: url("../assets/images/banners/#{get-banner-image-url('it-support')}");
+//         background-attachment: local;
+//         background-size: cover;
+//         background-position: center;
+//         background-color: rgb(94, 91, 91);
+//         // background-blend-mode: hard-light;
+        
+//         div.why-choose-us{
+//             position: relative;
+//             background-image: linear-gradient(to right, #1b1c24, transparent);
+//             @media (min-width: 992px){
+//                 background-image: linear-gradient(to right, black, transparent);
+//             }
+//             @include banner-body("why-choose-us");
+//         }
+//         // div.bespoke--software{
+//         //     @include banner($bespoke--software);
+//         // }
+//         // div.it--support{
+//         //     @include banner($it--support);
+//         // }
+//         // div.digital--marketing{
+//         //     @include banner($digital--marketing);
+//         // }
+//         // div.telecoms--services{
+//         //     @include banner($telecoms--services);
+//         // }
+//         // div.web--design{
+//         //     @include banner($web--design);
+//         // }
+//         // div.cyber--security{
+//         //     @include banner($cyber--security);
+//         // }  
+
+//         // div.initially-hidden{
+//         //     display: none;
+//         // }
+//     }
+// }
