@@ -759,7 +759,6 @@ div.banner-item-container div.bg-image-container div.why-choose-us {
 div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper {
   height: 360.6px;
   padding-top: 20%;
-  margin-bottom: 120px;
 }
 div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper h1 {
   font-size: 2.5rem;
@@ -810,6 +809,480 @@ div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper a
     line-height: 2.5rem;
   }
   div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper a {
+    align-self: flex-start;
+  }
+}
+
+div.banner-item-container div.bg-image-container {
+  height: 550px !important;
+  background-image: url("../assets/images/banners/bespoke-software.jpg");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(94, 91, 91);
+}
+div.banner-item-container div.bg-image-container div.bespoke-software {
+  position: relative;
+  background-image: linear-gradient(to right, #1b1c24, transparent);
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 992px) {
+  div.banner-item-container div.bg-image-container div.bespoke-software {
+    background-image: linear-gradient(to right, black, transparent);
+  }
+}
+div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper {
+  height: 360.6px;
+  padding-top: 20%;
+}
+div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 0 0 1.25rem;
+  color: #fff;
+  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper p {
+  margin-bottom: 0.375rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper a {
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  color: #fff;
+  background-color: #f7b322;
+  border-color: #f7b322;
+  line-height: 50px;
+  width: 249.717px;
+  height: 61.6px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  border: 1px solid transparent;
+}
+div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper a:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+@media (min-width: 992px) {
+  div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper {
+    padding-top: 5%;
+    text-align: left;
+  }
+  div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper h1 {
+    font-size: 4rem !important;
+    line-height: 5rem !important;
+  }
+  div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
+  div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper a {
+    align-self: flex-start;
+  }
+}
+
+div.banner-item-container div.bg-image-container {
+  height: 550px !important;
+  background-image: url("../assets/images/banners/it-support.png");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(94, 91, 91);
+}
+div.banner-item-container div.bg-image-container div.it-support {
+  position: relative;
+  background-image: linear-gradient(to right, #1b1c24, transparent);
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 992px) {
+  div.banner-item-container div.bg-image-container div.it-support {
+    background-image: linear-gradient(to right, black, transparent);
+  }
+}
+div.banner-item-container div.bg-image-container div.it-support div.wrapper {
+  height: 360.6px;
+  padding-top: 20%;
+}
+div.banner-item-container div.bg-image-container div.it-support div.wrapper h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 0 0 1.25rem;
+  color: #fff;
+  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.it-support div.wrapper p {
+  margin-bottom: 0.375rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.it-support div.wrapper a {
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  color: #fff;
+  background-color: #4183d7;
+  border-color: #4183d7;
+  line-height: 50px;
+  width: 249.717px;
+  height: 61.6px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  border: 1px solid transparent;
+}
+div.banner-item-container div.bg-image-container div.it-support div.wrapper a:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+@media (min-width: 992px) {
+  div.banner-item-container div.bg-image-container div.it-support div.wrapper {
+    padding-top: 5%;
+    text-align: left;
+  }
+  div.banner-item-container div.bg-image-container div.it-support div.wrapper h1 {
+    font-size: 4rem !important;
+    line-height: 5rem !important;
+  }
+  div.banner-item-container div.bg-image-container div.it-support div.wrapper p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
+  div.banner-item-container div.bg-image-container div.it-support div.wrapper a {
+    align-self: flex-start;
+  }
+}
+
+div.banner-item-container div.bg-image-container {
+  height: 550px !important;
+  background-image: url("../assets/images/banners/digital-marketing.png");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(94, 91, 91);
+}
+div.banner-item-container div.bg-image-container div.digital-marketing {
+  position: relative;
+  background-image: linear-gradient(to right, #1b1c24, transparent);
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 992px) {
+  div.banner-item-container div.bg-image-container div.digital-marketing {
+    background-image: linear-gradient(to right, black, transparent);
+  }
+}
+div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper {
+  height: 360.6px;
+  padding-top: 20%;
+}
+div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 0 0 1.25rem;
+  color: #fff;
+  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper p {
+  margin-bottom: 0.375rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper a {
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  color: #fff;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+  line-height: 50px;
+  width: 249.717px;
+  height: 61.6px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  border: 1px solid transparent;
+}
+div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper a:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+@media (min-width: 992px) {
+  div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper {
+    padding-top: 5%;
+    text-align: left;
+  }
+  div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper h1 {
+    font-size: 4rem !important;
+    line-height: 5rem !important;
+  }
+  div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
+  div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper a {
+    align-self: flex-start;
+  }
+}
+
+div.banner-item-container div.bg-image-container {
+  height: 550px !important;
+  background-image: url("../assets/images/banners/telecoms-services.png");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(94, 91, 91);
+}
+div.banner-item-container div.bg-image-container div.telecoms-services {
+  position: relative;
+  background-image: linear-gradient(to right, #1b1c24, transparent);
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 992px) {
+  div.banner-item-container div.bg-image-container div.telecoms-services {
+    background-image: linear-gradient(to right, black, transparent);
+  }
+}
+div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper {
+  height: 360.6px;
+  padding-top: 20%;
+}
+div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 0 0 1.25rem;
+  color: #fff;
+  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper p {
+  margin-bottom: 0.375rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper a {
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  color: #fff;
+  background-color: #d64541;
+  border-color: #d64541;
+  line-height: 50px;
+  width: 249.717px;
+  height: 61.6px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  border: 1px solid transparent;
+}
+div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper a:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+@media (min-width: 992px) {
+  div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper {
+    padding-top: 5%;
+    text-align: left;
+  }
+  div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper h1 {
+    font-size: 4rem !important;
+    line-height: 5rem !important;
+  }
+  div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
+  div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper a {
+    align-self: flex-start;
+  }
+}
+
+div.banner-item-container div.bg-image-container {
+  height: 550px !important;
+  background-image: url("../assets/images/banners/web-design.jpg");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(94, 91, 91);
+}
+div.banner-item-container div.bg-image-container div.web-design {
+  position: relative;
+  background-image: linear-gradient(to right, #1b1c24, transparent);
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 992px) {
+  div.banner-item-container div.bg-image-container div.web-design {
+    background-image: linear-gradient(to right, black, transparent);
+  }
+}
+div.banner-item-container div.bg-image-container div.web-design div.wrapper {
+  height: 360.6px;
+  padding-top: 20%;
+}
+div.banner-item-container div.bg-image-container div.web-design div.wrapper h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 0 0 1.25rem;
+  color: #fff;
+  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.web-design div.wrapper p {
+  margin-bottom: 0.375rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.web-design div.wrapper a {
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  color: #fff;
+  background-color: #926fb1;
+  border-color: #926fb1;
+  line-height: 50px;
+  width: 249.717px;
+  height: 61.6px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  border: 1px solid transparent;
+}
+div.banner-item-container div.bg-image-container div.web-design div.wrapper a:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+@media (min-width: 992px) {
+  div.banner-item-container div.bg-image-container div.web-design div.wrapper {
+    padding-top: 5%;
+    text-align: left;
+  }
+  div.banner-item-container div.bg-image-container div.web-design div.wrapper h1 {
+    font-size: 4rem !important;
+    line-height: 5rem !important;
+  }
+  div.banner-item-container div.bg-image-container div.web-design div.wrapper p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
+  div.banner-item-container div.bg-image-container div.web-design div.wrapper a {
+    align-self: flex-start;
+  }
+}
+
+div.banner-item-container div.bg-image-container {
+  height: 550px !important;
+  background-image: url("../assets/images/banners/cyber-security.png");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(94, 91, 91);
+}
+div.banner-item-container div.bg-image-container div.cyber-security {
+  position: relative;
+  background-image: linear-gradient(to right, #1b1c24, transparent);
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 992px) {
+  div.banner-item-container div.bg-image-container div.cyber-security {
+    background-image: linear-gradient(to right, black, transparent);
+  }
+}
+div.banner-item-container div.bg-image-container div.cyber-security div.wrapper {
+  height: 360.6px;
+  padding-top: 20%;
+}
+div.banner-item-container div.bg-image-container div.cyber-security div.wrapper h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 0 0 1.25rem;
+  color: #fff;
+  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.cyber-security div.wrapper p {
+  margin-bottom: 0.375rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.cyber-security div.wrapper a {
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  color: #fff;
+  background-color: #f62459;
+  border-color: #f62459;
+  line-height: 50px;
+  width: 249.717px;
+  height: 61.6px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  border: 1px solid transparent;
+}
+div.banner-item-container div.bg-image-container div.cyber-security div.wrapper a:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+@media (min-width: 992px) {
+  div.banner-item-container div.bg-image-container div.cyber-security div.wrapper {
+    padding-top: 5%;
+    text-align: left;
+  }
+  div.banner-item-container div.bg-image-container div.cyber-security div.wrapper h1 {
+    font-size: 4rem !important;
+    line-height: 5rem !important;
+  }
+  div.banner-item-container div.bg-image-container div.cyber-security div.wrapper p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
+  div.banner-item-container div.bg-image-container div.cyber-security div.wrapper a {
     align-self: flex-start;
   }
 }

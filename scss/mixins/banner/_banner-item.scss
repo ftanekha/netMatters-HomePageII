@@ -9,7 +9,7 @@
             background-color: rgb(94, 91, 91);
             // background-blend-mode: hard-light;
             
-            div.why-choose-us{
+            div.#{$image-id}{
                 position: relative;
                 background-image: linear-gradient(to right, #1b1c24, transparent);
                 @media (min-width: 992px){
