@@ -1,23 +1,25 @@
-@function get-hero-bgcolor($image-id){
-    @if($image-id == "why--choose--us"){
-        @return "why--choose--us";
+@function get-banner-image-url($image-id){
+    @if($image-id == 'bespoke-software' or $image-id == 'web-design'){
+        @return '#{$image-id}.jpg';
+    }@else{
+        @return '#{$image-id}.png';
     }
-    @if($image-id == $bespoke--software){
-        @return "bespoke--software";
-    }
-    @if($image-id == $it--support){
-        @return "it--support";
-    }
-    @if($image-id == $digital--marketing){
-        @return "digital--marketing";
-    }
-    @if($image-id == $telecoms--services){
-        @return "telecoms--services";
-    }
-    @if($image-id == $web--design){
-        @return "web--design";
-    }
-    @if($image-id == $cyber--security){
-        @return "cyber--security";
-    }
+    // @if($image-id == $bespoke--software){
+    //     @return "bespoke--software";
+    // }
+    // @if($image-id == $it--support){
+    //     @return "it--support";
+    // }
+    // @if($image-id == $digital--marketing){
+    //     @return "digital--marketing";
+    // }
+    // @if($image-id == $telecoms--services){
+    //     @return "telecoms--services";
+    // }
+    // @if($image-id == $web--design){
+    //     @return "web--design";
+    // }
+    // @if($image-id == $cyber--security){
+    //     @return "cyber--security";
+    // }
 }

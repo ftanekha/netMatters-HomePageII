@@ -1,7 +1,7 @@
-div.banner-container{
-    div.image-container{
+div.banner-item-container{
+    div.bg-image-container{
         height: 550px !important;
-        background-image: url("../assets/images/banners/why--choose--us.png");
+        background-image: url("../assets/images/banners/#{get-banner-image-url('it-support')}");
         background-attachment: local;
         background-size: cover;
         background-position: center;
@@ -14,29 +14,7 @@ div.banner-container{
             @media (min-width: 992px){
                 background-image: linear-gradient(to right, black, transparent);
             }
-            @include banner("why--choose--us");
-
-            // div#owl-dots{
-            //     display: flex;
-            //     justify-content: center;
-            //     span.owl-dot{
-            //         display: inline-block;
-            //         width: 11px;
-            //         height: 11px;
-            //         margin: 0 10px;
-            //         margin-top: 10px;
-            //         background-color: hsla(0, 0%, 100%, .5);
-            //         color: #666;
-            //         border-radius: 30px;
-            //         transition: opacity .2s ease; 
-            //         // &:click{
-            //         //     background-color: #d6d6d6;
-            //         // }
-            //         &:hover{
-            //             background-color: #869791;
-            //         }
-            //     }
-            // }
+            @include banner("why-choose-us");
         }
         // div.bespoke--software{
         //     @include banner($bespoke--software);
