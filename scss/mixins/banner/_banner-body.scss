@@ -43,9 +43,29 @@
             margin-bottom: 0;
             font-weight: 400;
             border: 1px solid transparent;
-            &:hover{
-                background-color: map.get(get-banner--button--hover--bg-color($image-id), "hover-bg-color");
-                border-color: map.get(get-banner--button--hover--bg-color($image-id), "hover-bdr-color");
+            &.why-choose-us-btn:hover, &.web-design-btn:hover{
+                background-color: $wisteria-clients-hover-bg-color;
+                border-color: $wisteria-clients-hover-border-color;
+            }
+            &.bespoke-software-btn:hover{
+                background-color: $buttercup-hover;
+                border-color: $buttercup-hover-border-color;
+            }
+            &.it-support-btn:hover{
+                background-color: $havelockBlue-clients-hover-bg-color;
+                border-color: $havelockBlue-clients-hover-border-color;
+            }
+            &.digital-marketing-btn:hover{
+                background-color: $shamrock-clients-hover-bg-color;
+                border-color: $shamrock-clients-hover-border-color;
+            }
+            &.telecoms-services-btn:hover{
+                background-color: $valencia-clients-hover-bg-color,;
+                border-color: $valencia-clients-hover-border-color;
+            }
+            &.cyber-security-btn:hover{
+                background-color: $radicalRed-clients-hover-bg-color;
+                border-color: $radicalRed-clients-hover-border-color;
             }
         }
     }

@@ -23,39 +23,39 @@
     }
 }
 //banner button HOVER background color
-@function get-banner--button--hover--bg-color($image-id){
-    @if($image-id == 'why-choose-us' or $image-id == 'web-design'){
-        @return (
-            "hover-bg-color": $wisteria-clients-hover-bg-color,
-            "hover-bdr-color": $wisteria-clients-hover-border-color
-        );
-    }@else if $image-id == 'bespoke-software'{
-        @return (
-            "hover-bg-color": $buttercup-hover,
-            "hover-bdr-color": $buttercup-hover-border-color
-        );
-    }@else if $image-id == 'it-support'{
-        @return (
-            "hover-bg-color": $havelockBlue-clients-hover-bg-color,
-            "hover-bdr-color": $havelockBlue-clients-hover-border-color
-        );
-    }@else if $image-id == 'digital-marketing'{
-        @return (
-            "hover-bg-color": $shamrock-clients-hover-bg-color,
-            "hover-bdr-color": $shamrock-clients-hover-border-color
-        );
-    }@else if $image-id == 'telecoms-services'{
-        @return (
-            "hover-bg-color": $valencia-clients-hover-bg-color,
-            "hover-bdr-color": $valencia-clients-hover-border-color
-        );
-    }@else if $image-id == 'cyber-security'{
-        @return (
-            "hover-bg-color": $radicalRed-clients-hover-bg-color,
-            "hover-bdr-color": $radicalRed-clients-hover-border-color
-        );
-    }
-}
+// @function get-banner--button--hover--bg-color($image-id){
+//     @if($image-id == 'why-choose-us' or $image-id == 'web-design'){
+//         @return (
+//             "hover-bg-color": $wisteria-clients-hover-bg-color,
+//             "hover-bdr-color": $wisteria-clients-hover-border-color
+//         );
+//     }@else if $image-id == 'bespoke-software'{
+//         @return (
+//             "hover-bg-color": $buttercup-hover,
+//             "hover-bdr-color": $buttercup-hover-border-color
+//         );
+//     }@else if $image-id == 'it-support'{
+//         @return (
+//             "hover-bg-color": $havelockBlue-clients-hover-bg-color,
+//             "hover-bdr-color": $havelockBlue-clients-hover-border-color
+//         );
+//     }@else if $image-id == 'digital-marketing'{
+//         @return (
+//             "hover-bg-color": $shamrock-clients-hover-bg-color,
+//             "hover-bdr-color": $shamrock-clients-hover-border-color
+//         );
+//     }@else if $image-id == 'telecoms-services'{
+//         @return (
+//             "hover-bg-color": $valencia-clients-hover-bg-color,
+//             "hover-bdr-color": $valencia-clients-hover-border-color
+//         );
+//     }@else if $image-id == 'cyber-security'{
+//         @return (
+//             "hover-bg-color": $radicalRed-clients-hover-bg-color,
+//             "hover-bdr-color": $radicalRed-clients-hover-border-color
+//         );
+//     }
+// }
 //banner content wrapper - padding top @media screen >= 992px
 @function get-banner--body-wrapper--padding-top($image-id){
     @if $image-id == 'why-choose-us'{
