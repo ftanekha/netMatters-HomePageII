@@ -5,6 +5,7 @@
 ;
 
 body{
+    position: relative;
     padding: 0px;
     font-family: Poppins, sans-serif;
     font-size: 1rem;
@@ -13,7 +14,26 @@ body{
     color: #666;
     background-color: #fff;
     overflow-x: hidden;
+    //for side-menu
+    display: grid;
+    //main page contant takes up as much space as available: 1fr
+    grid-template-columns: 1fr 350px;
+    //
+    .container{
+        margin: 0 auto;
+        padding: 0 15px;
+        @media (min-width: 768px){
+            width: 750px;
+        }
+        @media (min-width: 992px){
+            width: 970px;
+        }
+        @media (min-width: 1260px){
+            width: 1200px;
+        }
+    }
     div#container{
+        // display: none;
         height: 100%;
         position: relative;
         overflow: hidden;
@@ -34,17 +54,7 @@ body{
             div#footer-bottom{}    
         }
     }
-    .container{
-        margin: 0 auto;
-        padding: 0 15px;
-        @media (min-width: 768px){
-            width: 750px;
-        }
-        @media (min-width: 992px){
-            width: 970px;
-        }
-        @media (min-width: 1260px){
-            width: 1200px;
-        }
+    div#side-menu{
+        // display: none;
     }
 }

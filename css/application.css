@@ -1,19 +1,55 @@
 @charset "UTF-8";
-button.cookie-settings-btn {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 20;
-  background: #75788a;
-  padding: 0 10px;
+div#side-menu {
+  background-color: #272936;
+}
+div#side-menu div.side-menu-list * {
+  font-weight: 400;
+  width: 100%;
+}
+div#side-menu div.side-menu-list a {
+  text-decoration: none;
   color: white;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: capitalize;
-  line-height: 22px;
-  border: solid #75788a;
-  border-width: 1px 1px 0 0;
-  border-top-right-radius: 10px;
+}
+div#side-menu div.side-menu-list ul {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  transition: 0.1s;
+}
+div#side-menu div.side-menu-list ul:hover li:first-child {
+  background-color: #3a3d4e;
+}
+div#side-menu div.side-menu-list ul li {
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 20px 0;
+  font-size: 0.85rem;
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+div#side-menu div.side-menu-list ul li:first-child {
+  height: 56px;
+  background-color: #333645;
+  font-size: 1rem;
+}
+div#side-menu div.side-menu-list ul li:first-child a.first-child-a:before {
+  content: ">>";
+  display: inline-flex;
+  width: 23.5px;
+  visibility: hidden;
+}
+div#side-menu div.side-menu-list ul li a:not(.first-child-a):before {
+  content: "»";
+  width: 47px;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  letter-spacing: -4px;
+  padding: 0;
+  margin: 0;
+  color: white;
 }
 
 header div.inner {
@@ -3065,6 +3101,7 @@ div#footer-contatiner-wrapper div.container div#main-footer p:last-child {
 }
 
 body {
+  position: relative;
   padding: 0px;
   font-family: Poppins, sans-serif;
   font-size: 1rem;
@@ -3073,14 +3110,8 @@ body {
   color: #666;
   background-color: #fff;
   overflow-x: hidden;
-}
-body div#container {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-body div#container div.main-outer {
-  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 350px;
 }
 body .container {
   margin: 0 auto;
@@ -3100,6 +3131,14 @@ body .container {
   body .container {
     width: 1200px;
   }
+}
+body div#container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+body div#container div.main-outer {
+  height: 100%;
 }
 
 /*# sourceMappingURL=application.css.map */

@@ -1,0 +1,67 @@
+// @mixin side-menu--button($size){
+//     width:;
+//     height:;
+//     background-color: ;
+//     margin:;
+//     padding:;
+//     border: ;
+//     outline: ;
+//     transition:;
+//     color:;
+// }
+
+@mixin side-menu--list{
+    *{
+        font-weight: 400; 
+        width: 100%
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    ul{
+        list-style-type: none;
+        list-style-position: inside;
+        padding: 0;
+        margin: 0;
+        transition: .1s;
+        &:hover{
+            //only the leading li (heading) changes bgcolor
+            li:first-child{
+                    background-color: lighten(#333645, 3%);
+                }
+            }
+        li{
+            &:first-child{
+                height: 56px;
+                background-color: #333645;
+                font-size: 1rem;
+                a.first-child-a:before{
+                    content: ">>";
+                    display: inline-flex;
+                    width: calc(47px / 2);
+                    visibility: hidden;
+                }
+            }
+            border-top: 1px solid hsla(0, 0%, 100%, .1);
+            border-bottom: 1px solid rgba(0, 0, 0, .25);
+            padding: 20px 0;
+            font-size: .85rem;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            //create double chevron right arrow/ french brackets
+            a:not(.first-child-a):before{
+                content: "»";
+                width: 47px;
+                display: inline-flex;
+                justify-content: center;
+                font-size: .9rem;
+                letter-spacing: -4px;
+                padding: 0;
+                margin: 0;
+                color: white;
+            }
+        }
+    }
+}
