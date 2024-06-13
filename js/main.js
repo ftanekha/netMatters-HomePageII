@@ -32,7 +32,8 @@ $(document).ready(()=>{
             .addClass('toggle-side-menu-in')
             //force side menu to remain on-screen
             .css('right', '0px')
-
+        // resive page main content container with accordingly
+        $('div#container').addClass('reduced-width')
         // $('div').on('click', ()=> slideOutSideMenu(sideMenu))
     }
     function slideOutSideMenu(sideMenu){
@@ -44,6 +45,9 @@ $(document).ready(()=>{
                 visibility:'hidden', 
                 right: '-350px'
             })
+
+        // resive page main content container with accordingly
+        $('div#container').removeClass('reduced-width')
     }
     /*CAROUSEL/////////////////
     container for carousel*/

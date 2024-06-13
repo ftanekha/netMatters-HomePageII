@@ -14,12 +14,6 @@ body{
     color: #666;
     background-color: #fff;
     overflow-x: hidden;
-    // //for side-menu
-    // display: grid;
-    // grid-template-columns: 1fr 350px;
-    //main page contant takes up as much space as available: 1fr
-    // grid-template-columns: 1fr ;
-    //
     .container{
         margin: 0 auto;
         padding: 0 15px;
@@ -40,13 +34,15 @@ body{
         width: 350px;
         // display: none;
         visibility: hidden;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(.55,.055,.675,.19);
         &.toggle-side-menu-in{
             animation-name: slide-in;
-            animation-duration: 3s;
+            animation-duration: 1s;
         }
         &.toggle-side-menu-out{
             animation-name: slide-out;
-            animation-duration: 3s;
+            animation-duration: 1s;
         }
     }
     div#main-outer-container{
@@ -56,6 +52,11 @@ body{
             height: 100%;
             position: relative;
             overflow: hidden;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+            &.reduced-width{
+                width: calc(100% - 350px);
+            }
             div.main-outer{
                 height: 100%; 
                 div.main-inner{

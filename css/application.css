@@ -3136,20 +3136,27 @@ body div#side-menu {
   right: -350px;
   width: 350px;
   visibility: hidden;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 body div#side-menu.toggle-side-menu-in {
   animation-name: slide-in;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 body div#side-menu.toggle-side-menu-out {
   animation-name: slide-out;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 body div#main-outer-container div#container {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+body div#main-outer-container div#container.reduced-width {
+  width: calc(100% - 350px);
 }
 body div#main-outer-container div#container div.main-outer {
   height: 100%;
