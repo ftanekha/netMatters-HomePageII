@@ -40,13 +40,16 @@ $(document).ready(()=>{
     
     $hamburgerMenuIcon.on('click', ()=>{
         const $sideMenu = $('div#side-menu')
-        if($sideMenu.css('display') === 'block'){
+        if($sideMenu.css('visibility') === 'hidden'){
             // console.log('yes')
             // hamburgerToCross()
-            $sideMenu.blindRightToggle()
+            $sideMenu
+                .css('visibility','visible')
+                .addClass('toggle-side-menu')
+                //force side menu to remain on screen
+                .css('right', '0px')
         }else{
             // crossToHamburger()
-            $sideMenu.blindLeftToggle()
         }  
     })
 })

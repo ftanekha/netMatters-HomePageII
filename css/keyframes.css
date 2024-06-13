@@ -1,0 +1,10 @@
+@keyframes slide {
+    from {
+        top: 0;
+        right: -350px;
+    }
+    to {
+        top: 0;
+        right: 0;
+    }
+}
