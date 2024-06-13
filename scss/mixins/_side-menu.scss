@@ -28,6 +28,7 @@
         &:hover{
             //only the leading li (heading) changes bgcolor
             li:first-child{
+                    // background-color: #999aa2;
                     background-color: lighten(#333645, 3%);
                 }
             }

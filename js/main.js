@@ -1,4 +1,5 @@
 $(document).ready(()=>{
+    //transfor hamburger menu icon to cross 
     function hamburgerToCross(){
         $hamburgerMenuIcon.css({
             position: 'relative',
@@ -25,29 +26,29 @@ $(document).ready(()=>{
             bottom: '0'
         })
     }
-    function slideInSideMenu(sideMenu){
+    function showSideMenu(sideMenu){
         hamburgerToCross()
-        sideMenu
-            .css('visibility','visible')
-            .addClass('toggle-side-menu-in')
-            //force side menu to remain on-screen
-            .css('right', '0px')
         // resive page main content container with accordingly
-        $('div#container').addClass('reduced-width')
-        // $('div').on('click', ()=> slideOutSideMenu(sideMenu))
+        $('div#container')
+        .addClass('reduced-width')
+        .css('filter', 'grayscale(40%)')
+        sideMenu
+            .show()
+            .addClass('toggle-side-menu-in')
+            .css('right', '0')
+        // //show side menu
+        // setTimeout(
+        //     ()=> sideMenu.css('display','block'), 300
+        // )
     }
-    function slideOutSideMenu(sideMenu){
+    function hideSideMenu(sideMenu){
         crossToHamburger()
+        $('div#container').removeClass('reduced-width')
+        .css('filter', 'grayscale(0%)')
         sideMenu
             .removeClass('toggle-side-menu-in')
             .addClass('toggle-side-menu-out')
-            .css({//force side menu to remain off-screen
-                visibility:'hidden', 
-                right: '-350px'
-            })
-
-        // resive page main content container with accordingly
-        $('div#container').removeClass('reduced-width')
+            .hide(0)
     }
     /*CAROUSEL/////////////////
     container for carousel*/
@@ -64,12 +65,10 @@ $(document).ready(()=>{
     
     $hamburgerMenuIcon.on('click', ()=>{
         const $sideMenu = $('div#side-menu')
-        if($sideMenu.css('visibility') === 'hidden'){
-            slideInSideMenu($sideMenu)
-
-            
+        if($sideMenu.css('display') === 'none'){
+            showSideMenu($sideMenu)
         }else{
-            slideOutSideMenu($sideMenu)
+            hideSideMenu($sideMenu)
         }  
     })
 })

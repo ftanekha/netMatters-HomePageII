@@ -6,14 +6,14 @@
     }
     to {
         top: 0;
-        right: 0;
+        right: -350px;
     }
 }
 
 @keyframes slide-out{
     from {
         top: 0;
-        right: 0;
+        right: -350px;
     }
     to {
         top: 0;
