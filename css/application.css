@@ -167,6 +167,8 @@ header div.inner div.container div.row div.flex-wrapper div.actions-container di
   position: relative;
   font-size: 1.438rem;
   line-height: 45px;
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button span.hamburger-box span.hamburger-inner {
   width: 33px;
@@ -175,8 +177,6 @@ header div.inner div.container div.row div.flex-wrapper div.actions-container di
   transition-property: transform;
   background-color: #fff;
   border-radius: 0;
-  transition-duration: 0.22s;
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   display: block;
   top: 50%;
   margin-top: -1.5px;
@@ -3137,8 +3137,12 @@ body div#side-menu {
   width: 350px;
   visibility: hidden;
 }
-body div#side-menu.toggle-side-menu {
-  animation-name: slide;
+body div#side-menu.toggle-side-menu-in {
+  animation-name: slide-in;
+  animation-duration: 3s;
+}
+body div#side-menu.toggle-side-menu-out {
+  animation-name: slide-out;
   animation-duration: 3s;
 }
 body div#main-outer-container div#container {

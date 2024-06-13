@@ -1,4 +1,5 @@
-@keyframes slide {
+/* Animations for Side Menu */
+@keyframes slide-in{
     from {
         top: 0;
         right: -350px;
@@ -6,5 +7,16 @@
     to {
         top: 0;
         right: 0;
+    }
+}
+
+@keyframes slide-out{
+    from {
+        top: 0;
+        right: 0;
+    }
+    to {
+        top: 0;
+        right: -350px;
     }
 }

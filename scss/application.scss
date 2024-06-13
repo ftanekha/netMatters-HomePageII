@@ -40,8 +40,12 @@ body{
         width: 350px;
         // display: none;
         visibility: hidden;
-        &.toggle-side-menu{
-            animation-name: slide;
+        &.toggle-side-menu-in{
+            animation-name: slide-in;
+            animation-duration: 3s;
+        }
+        &.toggle-side-menu-out{
+            animation-name: slide-out;
             animation-duration: 3s;
         }
     }

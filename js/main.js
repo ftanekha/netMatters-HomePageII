@@ -13,9 +13,9 @@ $(document).ready(()=>{
         })
     }
     function crossToHamburger(){
+        // reset css properties
         $hamburgerMenuIcon.css({
-            // position: 'relative',
-            padingTop: '10px'
+            paddingTop: '5px'
         })
         $('.hamburger-box.left').css('rotate', '0deg')
         $('.hamburger-box.middle').show()
@@ -24,6 +24,26 @@ $(document).ready(()=>{
             // position: 'relative',
             bottom: '0'
         })
+    }
+    function slideInSideMenu(sideMenu){
+        hamburgerToCross()
+        sideMenu
+            .css('visibility','visible')
+            .addClass('toggle-side-menu-in')
+            //force side menu to remain on-screen
+            .css('right', '0px')
+
+        // $('div').on('click', ()=> slideOutSideMenu(sideMenu))
+    }
+    function slideOutSideMenu(sideMenu){
+        crossToHamburger()
+        sideMenu
+            .removeClass('toggle-side-menu-in')
+            .addClass('toggle-side-menu-out')
+            .css({//force side menu to remain off-screen
+                visibility:'hidden', 
+                right: '-350px'
+            })
     }
     /*CAROUSEL/////////////////
     container for carousel*/
@@ -35,21 +55,17 @@ $(document).ready(()=>{
         }
     )
     /* SIDE MENU
-    // toggle Side Menu*/
+    // toggle the Side Menu using the hamburger menu button*/
     const $hamburgerMenuIcon = $('div.actions button[data-toggle="sidebar"]')
     
     $hamburgerMenuIcon.on('click', ()=>{
         const $sideMenu = $('div#side-menu')
         if($sideMenu.css('visibility') === 'hidden'){
-            // console.log('yes')
-            // hamburgerToCross()
-            $sideMenu
-                .css('visibility','visible')
-                .addClass('toggle-side-menu')
-                //force side menu to remain on screen
-                .css('right', '0px')
+            slideInSideMenu($sideMenu)
+
+            
         }else{
-            // crossToHamburger()
+            slideOutSideMenu($sideMenu)
         }  
     })
 })

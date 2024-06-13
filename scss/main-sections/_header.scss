@@ -113,6 +113,9 @@ header{
                                     position: relative;
                                     font-size: 1.438rem;
                                     line-height: 45px;
+                                    //transform from cross to hamburger & vise versa
+                                    transition-duration: .22s;
+                                    transition-timing-function: cubic-bezier(.55,.055,.675,.19);
                                     span.hamburger-inner{
                                         width: 33px;
                                         //calculated from hamburger height / 5
@@ -122,8 +125,6 @@ header{
                                         transition-property: transform;
                                         background-color: #fff;
                                         border-radius: 0;
-                                        transition-duration: .22s;
-                                        transition-timing-function: cubic-bezier(.55,.055,.675,.19);
                                         display: block;
                                         top: 50%;
                                         margin-top: -1.5px;
