@@ -3111,7 +3111,7 @@ body {
   background-color: #fff;
   overflow-x: hidden;
   display: grid;
-  grid-template-columns: 1fr 350px;
+  grid-template-columns: calc(100% - 350px) 350px;
 }
 body .container {
   margin: 0 auto;
@@ -3139,6 +3139,9 @@ body div#container {
 }
 body div#container div.main-outer {
   height: 100%;
+}
+body div#side-menu {
+  width: 350px;
 }
 
 /*# sourceMappingURL=application.css.map */
