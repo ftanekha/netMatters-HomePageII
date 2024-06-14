@@ -36,10 +36,6 @@ $(document).ready(()=>{
             .show()
             .addClass('toggle-side-menu-in')
             .css('right', '0')
-        // //show side menu
-        // setTimeout(
-        //     ()=> sideMenu.css('display','block'), 300
-        // )
     }
     function hideSideMenu(sideMenu){
         crossToHamburger()
@@ -59,8 +55,8 @@ $(document).ready(()=>{
             dots: true
         }
     )
-    /* SIDE MENU
-    // toggle the Side Menu using the hamburger menu button*/
+    /* SIDE MENU////////////////////
+    toggle the Side Menu using the hamburger menu button*/
     const $hamburgerMenuIcon = $('div.actions button[data-toggle="sidebar"]')
     
     $hamburgerMenuIcon.on('click', ()=>{
@@ -70,5 +66,12 @@ $(document).ready(()=>{
         }else{
             hideSideMenu($sideMenu)
         }  
+    })
+    /* STICKY HEADER*/
+    $(document).on('scroll', ()=>{
+        // if()
+        $('div#header-wrapper').sticky({
+            topSpacing: 0
+        })
     })
 })

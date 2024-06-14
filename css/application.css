@@ -425,9 +425,6 @@ div#side-menu div.side-menu-list ul li {
   display: flex;
   align-items: center;
 }
-div#side-menu div.side-menu-list ul li a {
-  background: red;
-}
 div#side-menu div.side-menu-list ul li:first-child {
   height: 56px;
   background-color: #333645;
@@ -514,6 +511,10 @@ div#side-menu div.side-menu-list.bg-scrn-only {
       right: -350px;
     }
   }
+}
+header {
+  position: relative;
+  z-index: 1000000;
 }
 header div.inner {
   padding: 17px 0;
@@ -913,6 +914,8 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
 }
 
 nav {
+  position: relative;
+  z-index: 1000000;
   background-color: #333645;
   height: 99px;
 }
@@ -3633,6 +3636,10 @@ body div#main-outer-container div#container.reduced-width {
 }
 body div#main-outer-container div#container div.main-outer {
   height: 100%;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper {
+  position: relative;
+  z-index: 1000000000;
 }
 
 /*# sourceMappingURL=application.css.map */

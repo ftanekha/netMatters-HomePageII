@@ -23,129 +23,132 @@
                 <div class="main-outer">
                     <!-- main parent!? -->
                     <div class="main-inner">
-                        <!-- HEADER : contains HEADER & main nav-->
-                        <div id="header">
-                            <header>
-                                <div class="inner">
-                                    <!-- header CONTAINER: contains logo, actions and (mobile) search form-->
-                                    <div class="container">
-                                        <!-- row -->
-                                        <div class="row">
-                                            <div class="logo-container">
-                                                <a href="">
-                                                    <picture>
-                                                        <img src="assets/images/dark-logo.jpeg" alt="Netmatters logo">
-                                                    </picture>
-                                                </a>
-                                            </div>
-                                            <div class="flex-wrapper">
-                                                <div class="phone-in-icon-container">
-                                                    <a class="phone-in-link" href="tel:01603704020">
-                                                        <span class="icon-phone_in_talk"></span>
+                        <!-- Header -->
+                        <div id="header-wrapper">
+                            <!-- HEADER : contains HEADER & main nav-->
+                            <div id="header">
+                                <header>
+                                    <div class="inner">
+                                        <!-- header CONTAINER: contains logo, actions and (mobile) search form-->
+                                        <div class="container">
+                                            <!-- row -->
+                                            <div class="row">
+                                                <div class="logo-container">
+                                                    <a href="">
+                                                        <picture>
+                                                            <img src="assets/images/dark-logo.jpeg" alt="Netmatters logo">
+                                                        </picture>
                                                     </a>
                                                 </div>
-                                                <div class="actions-container">
-                                                    <div class="actions">
-                                                        <div class="show-md support">
-                                                            <a class="btn-support" href="#" target="_blank">
-                                                                <span class="icon-mouse"></span>Support
-                                                            </a>
+                                                <div class="flex-wrapper">
+                                                    <div class="phone-in-icon-container">
+                                                        <a class="phone-in-link" href="tel:01603704020">
+                                                            <span class="icon-phone_in_talk"></span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="actions-container">
+                                                        <div class="actions">
+                                                            <div class="show-md support">
+                                                                <a class="btn-support" href="#" target="_blank">
+                                                                    <span class="icon-mouse"></span>Support
+                                                                </a>
+                                                            </div>
+                                                            <div class="show-md contact">
+                                                                <a class="btn-contact" href="#" target="_blank">
+                                                                    <span class="icon-paperplane"></span>Contact
+                                                                </a>
+                                                            </div>
+                                                            <div class="search-form-wrapper--tablet">
+                                                                <form method="GET" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8">
+                                                                    <!-- <label for=""></label>...temp input name value -->
+                                                                    <input id="search-input" class="search-bar" type="text" name="##" value="" placeholder="Search...">
+                                                                    <button type="submit">
+                                                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                                                    </button>
+                                                                </form>
+                                                            </div>
+                                                            <!-- hamburger menu -->
+                                                            <button type="button" data-toggle="sidebar">
+                                                                <span class="hamburger-box left">
+                                                                    <span class="hamburger-inner"></span>
+                                                                </span>
+                                                                <span class="hamburger-box middle">
+                                                                    <span class="hamburger-inner"></span>
+                                                                </span>
+                                                                <span class="hamburger-box right">
+                                                                    <span class="hamburger-inner"></span>
+                                                                </span>
+                                                            </button>
                                                         </div>
-                                                        <div class="show-md contact">
-                                                            <a class="btn-contact" href="#" target="_blank">
-                                                                <span class="icon-paperplane"></span>Contact
-                                                            </a>
-                                                        </div>
-                                                        <div class="search-form-wrapper--tablet">
-                                                            <form method="GET" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8">
-                                                                <!-- <label for=""></label>...temp input name value -->
-                                                                <input id="search-input" class="search-bar" type="text" name="##" value="" placeholder="Search...">
-                                                                <button type="submit">
-                                                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                                                                </button>
-                                                            </form>
-                                                        </div>
-                                                        <!-- hamburger menu -->
-                                                        <button type="button" data-toggle="sidebar">
-                                                            <span class="hamburger-box left">
-                                                                <span class="hamburger-inner"></span>
-                                                            </span>
-                                                            <span class="hamburger-box middle">
-                                                                <span class="hamburger-inner"></span>
-                                                            </span>
-                                                            <span class="hamburger-box right">
-                                                                <span class="hamburger-inner"></span>
-                                                            </span>
-                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- search form wrapper -->
-                                        <div class="search-form-wrapper--mobile">
-                                            <form class="search-form" method="GET" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8">
-                                                <input id="search-input" type="text" name="keyword" placeholder="Search..."/>
-                                                <button id="search-submit" type="submit">
-                                                    <span class="glyphicon-search" aria-hidden="true"></span>
-                                                </button>
-                                            </form>
+                                            <!-- search form wrapper -->
+                                            <div class="search-form-wrapper--mobile">
+                                                <form class="search-form" method="GET" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8">
+                                                    <input id="search-input" type="text" name="keyword" placeholder="Search..."/>
+                                                    <button id="search-submit" type="submit">
+                                                        <span class="glyphicon-search" aria-hidden="true"></span>
+                                                    </button>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </header>
-                            <!-- main-navigation -->
-                            <div class="main-navigation"></div>
-                        </div>
-                        <!-- NAV -->
-                        <div id="nav">
-                            <nav>
-                                <div class="container"> 
-                                    <div>
-                                        <a href="#">
-                                            <div>
-                                                <span class="icon-apps"></span>
-                                                <small>bespoke</small><span>software</span>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div>
-                                                <span class="icon-display"></span>
-                                                <small>it</small><span>support</span>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div>
-                                                <span class="icon-bar-graph"></span>
-                                                <small>digital</small><span>marketing</span>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div>
-                                                <span class="icon-phone_in_talk"></span>
-                                                <small>telecoms</small><span>services</span>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div>
-                                                <span class="icon-code"></span>
-                                                <small>web</small><span>design</span>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div>
-                                                <span class="icon-security"></span>
-                                                <small>cyber</small><span>security</span>
-                                            </div>
-                                        </a>
+                                </header>
+                                <!-- main-navigation -->
+                                <div class="main-navigation"></div>
+                            </div>
+                            <!-- NAV -->
+                            <div id="nav">
+                                <nav>
+                                    <div class="container"> 
+                                        <div>
                                             <a href="#">
-                                            <div>
-                                                <span class="course-features-icon icon-school"></span>
-                                                <small>developer</small><span>course</span>
-                                            </div>
-                                        </a>
+                                                <div>
+                                                    <span class="icon-apps"></span>
+                                                    <small>bespoke</small><span>software</span>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div>
+                                                    <span class="icon-display"></span>
+                                                    <small>it</small><span>support</span>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div>
+                                                    <span class="icon-bar-graph"></span>
+                                                    <small>digital</small><span>marketing</span>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div>
+                                                    <span class="icon-phone_in_talk"></span>
+                                                    <small>telecoms</small><span>services</span>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div>
+                                                    <span class="icon-code"></span>
+                                                    <small>web</small><span>design</span>
+                                                </div>
+                                            </a>
+                                            <a href="#">
+                                                <div>
+                                                    <span class="icon-security"></span>
+                                                    <small>cyber</small><span>security</span>
+                                                </div>
+                                            </a>
+                                                <a href="#">
+                                                <div>
+                                                    <span class="course-features-icon icon-school"></span>
+                                                    <small>developer</small><span>course</span>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </nav>
+                                </nav>
+                            </div>
                         </div>
                         <!-- BANNER -->
                         <div id="banner">
@@ -798,6 +801,7 @@
                             </div>
                         </div>
                     </footer>
+                    <!-- Copyright -->
                     <div id="footer-bottom">
                         <div id="footer-contatiner-wrapper">
                             <div class="container">
@@ -812,6 +816,7 @@
                 </div>
             </div>
         </div>
+        <!-- SIDE MENU -->
         <div id="side-menu">
             <div class="side-menu-misc-list sm-scrn-only">
                 <a class="side-menu-button" href="#">
@@ -1180,6 +1185,7 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <!-- <script type="text/javascript" src="js/jquery-custom-animations.js"></script> -->
     <!-- <script type="text/javascript" src="js/utilities.mjs"></script> -->
+     <script src="js/jquery.sticky.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

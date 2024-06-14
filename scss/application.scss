@@ -71,8 +71,12 @@ body{
                 height: 100%; 
                 div.main-inner{
                     div#cookie-app{} 
-                    div#header{} 
-                    div#nav{}
+                    div#header-wrapper{
+                        position: relative;
+                        z-index: 1000000000;
+                        div#header{} 
+                        div#nav{}
+                    }
                     div#banner{} 
                     div#middle{}
                     div#accreditations{}
