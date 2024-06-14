@@ -1,27 +1,66 @@
 div#side-menu{
-    background-color: #272936;
+    background-color: #333645;
+    width: 100%;
     div.side-menu-misc-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a.side-menu-button, div.side-menu-misc-sublist{
+            width: 231.4px;
+            align-self: center;
+            margin: 10px auto;
+            text-transform: uppercase;
+        }
         a.side-menu-button{
             &:first-of-type{
-                @include side-menu--button($hoki);
+                @include side-menu--button(null);
             }
             &:nth-of-type(2){
-                @include nav-item($havelockBlue);
+                @include side-menu--button($hoki);
             }
             &:nth-of-type(3){
-                @include nav-item($shamrock);
+                @include side-menu--button($havelockBlue);
             }
             &:nth-of-type(4){
-                @include nav-item($valencia);
+                @include side-menu--button($shamrock);
             }
             &:nth-of-type(5){
-                @include nav-item($wisteria);
+                @include side-menu--button($valencia);
             }
             &:nth-of-type(6){
-                @include nav-item($radicalRed);
+                @include side-menu--button($wisteria);
+            }
+            &:nth-of-type(7){
+                @include side-menu--button($radicalRed);
             }
             &:last-of-type{
-                @include nav-item($punch);
+                @include side-menu--button($punch);
+            }
+        }
+        div.side-menu-misc-sublist{
+            ul{
+                list-style-type: none;
+                width: 100%;
+                margin: auto;
+                margin-bottom: 14px;
+                padding: 0;
+                background-color: rgba(0,0,0,.25);
+                border-radius: 5px;
+                li{
+                    border-top: 1px solid hsla(0, 0%, 100%, .1);
+                    border-bottom: 1px solid rgba(0, 0, 0, .25);
+                    padding: 10px;
+                    font-size: .85rem;
+                    // height: 52px;
+                    display: flex;
+                    justify-content: center;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }
