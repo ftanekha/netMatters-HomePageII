@@ -1,5 +1,5 @@
 $(document).ready(()=>{
-    //transfor hamburger menu icon to cross 
+    //transform hamburger menu icon to cross 
     function hamburgerToCross(){
         $hamburgerMenuIcon.css({
             position: 'relative',
@@ -14,7 +14,7 @@ $(document).ready(()=>{
         })
     }
     function crossToHamburger(){
-        // reset css properties
+        //reset css properties
         $hamburgerMenuIcon.css({
             paddingTop: '5px'
         })
@@ -28,7 +28,7 @@ $(document).ready(()=>{
     }
     function showSideMenu(sideMenu){
         hamburgerToCross()
-        // resive page main content container with accordingly
+        // resize page main container with accordingly
         $('div#container')
         .addClass('reduced-width')
         .css('filter', 'grayscale(40%)')

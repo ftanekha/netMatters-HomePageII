@@ -2,6 +2,315 @@
 div#side-menu {
   background-color: #272936;
 }
+div#side-menu div.side-menu-misc-list a.side-menu-button:first-of-type {
+  display: block;
+  width: 757.4px;
+  height: 233px;
+  padding: 20px;
+  font-size: 1.438rem;
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:first-of-type:hover {
+  background-color: #67809f;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:first-of-type:hover span:first-child {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:first-of-type:link {
+  text-decoration: none;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:first-of-type:link, div#side-menu div.side-menu-misc-list a.side-menu-button:first-of-type:visited {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:first-of-type div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:first-of-type div * {
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:first-of-type div span:first-child {
+  color: #67809f;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:first-of-type div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:first-of-type div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(2) {
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(2):hover {
+  background-color: #4183d7;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(2):hover span:first-child {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(2):link {
+  text-decoration: none;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(2):link, div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(2):visited {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(2) div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(2) div * {
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(2) div span:first-child {
+  color: #4183d7;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(2) div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(2) div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(3) {
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(3):hover {
+  background-color: #2ecc71;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(3):hover span:first-child {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(3):link {
+  text-decoration: none;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(3):link, div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(3):visited {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(3) div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(3) div * {
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(3) div span:first-child {
+  color: #2ecc71;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(3) div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(3) div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(4) {
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(4):hover {
+  background-color: #d64541;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(4):hover span:first-child {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(4):link {
+  text-decoration: none;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(4):link, div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(4):visited {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(4) div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(4) div * {
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(4) div span:first-child {
+  color: #d64541;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(4) div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(4) div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(5) {
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(5):hover {
+  background-color: #926fb1;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(5):hover span:first-child {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(5):link {
+  text-decoration: none;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(5):link, div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(5):visited {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(5) div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(5) div * {
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(5) div span:first-child {
+  color: #926fb1;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(5) div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(5) div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(6) {
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(6):hover {
+  background-color: #f62459;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(6):hover span:first-child {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(6):link {
+  text-decoration: none;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(6):link, div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(6):visited {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(6) div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(6) div * {
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(6) div span:first-child {
+  color: #f62459;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(6) div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:nth-of-type(6) div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:last-of-type {
+  display: block;
+  width: 14.2857142857%;
+  padding: 15px;
+  font-size: 1.438rem;
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:last-of-type:hover {
+  background-color: #ce4125;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:last-of-type:hover span:first-child {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:last-of-type:link {
+  text-decoration: none;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:last-of-type:link, div#side-menu div.side-menu-misc-list a.side-menu-button:last-of-type:visited {
+  color: white;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:last-of-type div {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:last-of-type div * {
+  text-align: center;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:last-of-type div span:first-child {
+  color: #ce4125;
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:last-of-type div small {
+  display: block;
+  padding-bottom: 1px;
+  font-size: 0.481rem;
+}
+div#side-menu div.side-menu-misc-list a.side-menu-button:last-of-type div span:last-child {
+  display: inline-block;
+  margin-top: -0.2rem;
+  font-size: 1.12rem;
+}
 div#side-menu div.side-menu-list * {
   font-weight: 400;
   width: 100%;
@@ -51,7 +360,68 @@ div#side-menu div.side-menu-list ul li a:not(.first-child-a):before {
   margin: 0;
   color: white;
 }
+@media (min-width: 992px) {
+  div#side-menu div.side-menu-list *.sm-scrn-only {
+    display: none;
+  }
+}
+div#side-menu div.side-menu-list.bg-scrn-only {
+  display: none;
+}
+@media (min-width: 992px) {
+  div#side-menu div.sm-scrn-only {
+    display: none;
+  }
+  div#side-menu div.bg-scrn-only {
+    display: block;
+  }
+}
 
+/* Keyframes/ Animations for Side Menu */
+@media (max-width: 992px) {
+  @keyframes slide-in {
+    from {
+      top: 0;
+      right: -275px;
+    }
+    to {
+      top: 0;
+      right: -275px;
+    }
+  }
+  @keyframes slide-out {
+    from {
+      top: 0;
+      right: -275px;
+    }
+    to {
+      top: 0;
+      right: -275px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  @keyframes slide-in {
+    from {
+      top: 0;
+      right: -350px;
+    }
+    to {
+      top: 0;
+      right: -350px;
+    }
+  }
+  @keyframes slide-out {
+    from {
+      top: 0;
+      right: -350px;
+    }
+    to {
+      top: 0;
+      right: -350px;
+    }
+  }
+}
 header div.inner {
   padding: 17px 0;
 }
@@ -461,46 +831,46 @@ nav {
 nav div.container div {
   display: flex;
 }
-nav div.container div a:nth-child(1) {
+nav div.container div a:first-child {
   display: block;
   width: 14.2857142857%;
   padding: 15px;
   font-size: 1.438rem;
   text-align: center;
 }
-nav div.container div a:nth-child(1):hover {
+nav div.container div a:first-child:hover {
   background-color: #67809f;
 }
-nav div.container div a:nth-child(1):hover span:first-child {
+nav div.container div a:first-child:hover span:first-child {
   color: white;
 }
-nav div.container div a:nth-child(1):link {
+nav div.container div a:first-child:link {
   text-decoration: none;
 }
-nav div.container div a:nth-child(1):link, nav div.container div a:nth-child(1):visited {
+nav div.container div a:first-child:link, nav div.container div a:first-child:visited {
   color: white;
 }
-nav div.container div a:nth-child(1) div {
+nav div.container div a:first-child div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-nav div.container div a:nth-child(1) div * {
+nav div.container div a:first-child div * {
   text-align: center;
 }
-nav div.container div a:nth-child(1) div span:first-child {
+nav div.container div a:first-child div span:first-child {
   color: #67809f;
   font-size: 1.438rem;
   display: block;
   padding-bottom: 10px;
 }
-nav div.container div a:nth-child(1) div small {
+nav div.container div a:first-child div small {
   display: block;
   padding-bottom: 1px;
   font-size: 0.481rem;
 }
-nav div.container div a:nth-child(1) div span:last-child {
+nav div.container div a:first-child div span:last-child {
   display: inline-block;
   margin-top: -0.2rem;
   font-size: 1.12rem;
@@ -725,46 +1095,46 @@ nav div.container div a:nth-child(6) div span:last-child {
   margin-top: -0.2rem;
   font-size: 1.12rem;
 }
-nav div.container div a:nth-child(7) {
+nav div.container div a:last-child {
   display: block;
   width: 14.2857142857%;
   padding: 15px;
   font-size: 1.438rem;
   text-align: center;
 }
-nav div.container div a:nth-child(7):hover {
+nav div.container div a:last-child:hover {
   background-color: #ce4125;
 }
-nav div.container div a:nth-child(7):hover span:first-child {
+nav div.container div a:last-child:hover span:first-child {
   color: white;
 }
-nav div.container div a:nth-child(7):link {
+nav div.container div a:last-child:link {
   text-decoration: none;
 }
-nav div.container div a:nth-child(7):link, nav div.container div a:nth-child(7):visited {
+nav div.container div a:last-child:link, nav div.container div a:last-child:visited {
   color: white;
 }
-nav div.container div a:nth-child(7) div {
+nav div.container div a:last-child div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-nav div.container div a:nth-child(7) div * {
+nav div.container div a:last-child div * {
   text-align: center;
 }
-nav div.container div a:nth-child(7) div span:first-child {
+nav div.container div a:last-child div span:first-child {
   color: #ce4125;
   font-size: 1.438rem;
   display: block;
   padding-bottom: 10px;
 }
-nav div.container div a:nth-child(7) div small {
+nav div.container div a:last-child div small {
   display: block;
   padding-bottom: 1px;
   font-size: 0.481rem;
 }
-nav div.container div a:nth-child(7) div span:last-child {
+nav div.container div a:last-child div span:last-child {
   display: inline-block;
   margin-top: -0.2rem;
   font-size: 1.12rem;
@@ -3131,7 +3501,7 @@ body .container {
   }
 }
 body div#side-menu {
-  width: 350px;
+  width: 275px;
   position: absolute;
   top: 0;
   z-index: 60;
@@ -3148,6 +3518,11 @@ body div#side-menu.toggle-side-menu-out {
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+@media (min-width: 992px) {
+  body div#side-menu {
+    width: 350px;
+  }
+}
 body div#main-outer-container div#container {
   width: 100%;
   height: 100%;
@@ -3156,7 +3531,12 @@ body div#main-outer-container div#container {
   overflow: hidden;
 }
 body div#main-outer-container div#container.reduced-width {
-  width: calc(100% - 350px);
+  width: calc(100% - 275px);
+}
+@media (min-width: 992px) {
+  body div#main-outer-container div#container.reduced-width {
+    width: calc(100% - 350px);
+  }
 }
 body div#main-outer-container div#container div.main-outer {
   height: 100%;

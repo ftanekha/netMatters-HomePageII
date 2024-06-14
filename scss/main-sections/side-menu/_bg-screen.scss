@@ -1,6 +1,50 @@
 div#side-menu{
     background-color: #272936;
+    div.side-menu-misc-list{
+        a.side-menu-button{
+            &:first-of-type{
+                @include side-menu--button($hoki);
+            }
+            &:nth-of-type(2){
+                @include nav-item($havelockBlue);
+            }
+            &:nth-of-type(3){
+                @include nav-item($shamrock);
+            }
+            &:nth-of-type(4){
+                @include nav-item($valencia);
+            }
+            &:nth-of-type(5){
+                @include nav-item($wisteria);
+            }
+            &:nth-of-type(6){
+                @include nav-item($radicalRed);
+            }
+            &:last-of-type{
+                @include nav-item($punch);
+            }
+        }
+    }
     div.side-menu-list{
         @include side-menu--list;
+        &.bg-scrn-only{
+            display: none;
+        }
     }
+    @media (min-width: 992px){
+        div.sm-scrn-only{
+            display: none;
+        }
+        div.bg-scrn-only{
+            display: block;
+        } 
+    }
+}
+
+/* Keyframes/ Animations for Side Menu */
+@media (max-width: 992px){
+    @include slide-effect-keyframe(-275px);
+}
+@media (min-width: 992px){
+    @include slide-effect-keyframe(-350px);
 }

@@ -1,19 +1,54 @@
-// @mixin side-menu--button($size){
-//     width:;
-//     height:;
-//     background-color: ;
-//     margin:;
-//     padding:;
-//     border: ;
-//     outline: ;
-//     transition:;
-//     color:;
-// }
+@mixin side-menu--button($color){
+    display: block;
+    width: 757.4px;
+    height: 233px;
+    padding: 20px;
+    font-size: 1.438rem;          
+    text-align: center;
+    &:hover{
+        background-color: $color;
+        span:first-child{
+            color: white;
+        }
+    }
+    &:link{
+        text-decoration: none;
+    }
+    &:link, &:visited{
+        color: white;
+    }
+    div{
+        text-transform: uppercase;
+        display: inline-flex;
+        flex-direction: column;
+        padding: 2rem auto;
+        *{
+            text-align: center;
+        }
+        //icon
+        span:first-child{
+            color: $color;
+            font-size: 1.438rem;
+            display: block;
+            padding-bottom: 10px;
+        }//
+        small{
+            display: block;
+            padding-bottom: 1px;
+            font-size: .481rem;
+        }
+        span:last-child{
+            display: inline-block;
+            margin-top: -.2rem;
+            font-size: 1.12rem;
+        }
+    }
+}
 
 @mixin side-menu--list{
     *{
         font-weight: 400; 
-        width: 100%
+        width: 100%;
     }
     a{
         text-decoration: none;
@@ -63,6 +98,35 @@
                 margin: 0;
                 color: white;
             }
+        }
+    }
+    @media (min-width: 992px){
+        *.sm-scrn-only{
+            display: none;
+        }
+    }
+}
+
+//slide effect keyframe
+@mixin slide-effect-keyframe($side-menu-width){
+    @keyframes slide-in{
+        from {
+            top: 0;
+            right: $side-menu-width;
+        }
+        to {
+            top: 0;
+            right: $side-menu-width;
+        }
+    }
+    @keyframes slide-out{
+        from {
+            top: 0;
+            right: $side-menu-width;
+        }
+        to {
+            top: 0;
+            right: $side-menu-width;
         }
     }
 }

@@ -9,7 +9,7 @@ nav{
             //nav-items
             display: flex;
             a{
-                &:nth-child(1){
+                &:first-child{
                     @include nav-item($hoki);
                 }
                 &:nth-child(2){
@@ -27,7 +27,7 @@ nav{
                 &:nth-child(6){
                     @include nav-item($radicalRed);
                 }
-                &:nth-child(7){
+                &:last-child{
                     @include nav-item($punch);
                 }
             }

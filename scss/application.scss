@@ -28,7 +28,7 @@ body{
         }
     }
     div#side-menu{
-        width: 350px;
+        width: 275px;
         position: absolute;
         top: 0;
         // right: -350px;
@@ -48,6 +48,9 @@ body{
             transition-duration: .22s;
             transition-timing-function: cubic-bezier(.55,.055,.675,.19);
         }
+        @media (min-width: 992px){
+            width: 350px;
+        }
     }
     div#main-outer-container{
         div#container{
@@ -59,7 +62,10 @@ body{
             overflow: hidden;
             // transition-duration: 1s;
             &.reduced-width{
-                width: calc(100% - 350px);
+                width: calc(100% - 275px);
+                @media (min-width: 992px){
+                    width: calc(100% - 350px);
+                }
             }
             div.main-outer{
                 height: 100%; 
