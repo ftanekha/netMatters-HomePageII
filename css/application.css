@@ -425,20 +425,26 @@ div#side-menu div.side-menu-list ul li {
   display: flex;
   align-items: center;
 }
+div#side-menu div.side-menu-list ul li a {
+  background: red;
+}
 div#side-menu div.side-menu-list ul li:first-child {
   height: 56px;
   background-color: #333645;
   font-size: 1rem;
 }
 div#side-menu div.side-menu-list ul li:first-child a.first-child-a:before {
-  content: ">>";
+  content: "»";
   display: inline-flex;
   width: 23.5px;
   visibility: hidden;
 }
+div#side-menu div.side-menu-list ul li a:not(.first-child-a) {
+  display: grid;
+  grid-template-columns: 47px auto;
+}
 div#side-menu div.side-menu-list ul li a:not(.first-child-a):before {
   content: "»";
-  width: 47px;
   display: inline-flex;
   justify-content: center;
   font-size: 0.9rem;
