@@ -1,13 +1,4 @@
 div#side-menu{
-    // position: fixed;
-    // top: 0;
-    // right: 0;
-    // padding: 0; 
-    // margin: 0;
-    
-    // overflow-y: scroll;
-    // small screen
-    // width: 275px;
     background-color: #272936;
     div.side-menu-list{
         @include side-menu--list;
