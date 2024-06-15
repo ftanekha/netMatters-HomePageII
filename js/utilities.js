@@ -1,5 +1,6 @@
-function hamburgerToCross(){
-    $hamburgerMenuIcon.css({
+//transform hamburger menu icon to cross 
+function hamburgerToCross(hamburgerMenuIcon){
+    hamburgerMenuIcon.css({
         position: 'relative',
         paddingTop: '15px'
     })
@@ -11,9 +12,9 @@ function hamburgerToCross(){
         bottom: '9px'
     })
 }
-function crossToHamburger(){
-    // reset css properties
-    $hamburgerMenuIcon.css({
+function crossToHamburger(hamburgerMenuIcon){
+    //reset css properties
+    hamburgerMenuIcon.css({
         paddingTop: '5px'
     })
     $('.hamburger-box.left').css('rotate', '0deg')
@@ -24,27 +25,46 @@ function crossToHamburger(){
         bottom: '0'
     })
 }
-function slideInSideMenu(sideMenu){
-    hamburgerToCross()
+function showSideMenu(hamburgerMenuIcon, sideMenu){
+    hamburgerToCross(hamburgerMenuIcon)
+    // resize page main container with accordingly
+    $('div#container')
+    .addClass('reduced-width')
+    .css('filter', 'grayscale(40%)')
     sideMenu
-        .css('visibility','visible')
+        .show()
         .addClass('toggle-side-menu-in')
-        //force side menu to remain on-screen
-        .css('right', '0px')
-    // resive page main content container with accordingly
-    $('div#container').addClass('reduced-width')
-    // $('div').on('click', ()=> slideOutSideMenu(sideMenu))
+        .css('right', '0')
 }
-function slideOutSideMenu(sideMenu){
-    crossToHamburger()
+function hideSideMenu(hamburgerMenuIcon, sideMenu){
+    crossToHamburger(hamburgerMenuIcon)
+    $('div#container').removeClass('reduced-width')
+    .css('filter', 'grayscale(0%)')
     sideMenu
         .removeClass('toggle-side-menu-in')
         .addClass('toggle-side-menu-out')
-        .css({//force side menu to remain off-screen
-            visibility:'hidden', 
-            right: '-350px'
-        })
-
-    // resive page main content container with accordingly
-    $('div#container').removeClass('reduced-width')
+        .hide(0)
 }
+function toggleStickyHeader(){
+    let prevScrollTop = $(document).scrollTop()
+    let prevScrollDirection = ''
+    
+    $(document).on('scroll', ()=>{
+        const currentScrollTop = $(document).scrollTop()
+        if(currentScrollTop > prevScrollTop) {
+            //update scroll direction
+            if(prevScrollDirection !== 'down') prevScrollDirection = 'down'
+            //remove the sticky header if user scrolling down
+            $('div#header-wrapper').unstick()
+        }else if(currentScrollTop  < prevScrollTop){
+            if(prevScrollDirection !== 'up') prevScrollDirection = 'up'
+            //add the sticky header if user scrolling down
+            $('div#header-wrapper').sticky({topSpacing: 0})           
+        }
+        //update scroll ositon
+        //also, for Mobile or negative scrolling
+        prevScrollTop = currentScrollTop  <= 0 ? 0 : currentScrollTop
+    })
+}
+
+export {showSideMenu, hideSideMenu, toggleStickyHeader}
