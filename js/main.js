@@ -46,6 +46,24 @@ $(document).ready(()=>{
             .addClass('toggle-side-menu-out')
             .hide(0)
     }
+    function toggleStickyHeader(){
+        $(document).on('scroll', ()=>{
+            const currentScrollTop = $(document).scrollTop()
+            if(currentScrollTop > prevScrollTop) {
+                //update scroll direction
+                if(prevScrollDirection !== 'down') prevScrollDirection = 'down'
+                //remove the sticky header if user scrolling down
+                $('div#header-wrapper').unstick()
+            }else if(currentScrollTop  < prevScrollTop){
+                if(prevScrollDirection !== 'up') prevScrollDirection = 'up'
+                //add the sticky header if user scrolling down
+                $('div#header-wrapper').sticky({topSpacing: 0})           
+            }
+            //update scroll ositon
+            //also, for Mobile or negative scrolling
+            prevScrollTop = currentScrollTop  <= 0 ? 0 : currentScrollTop
+        })
+    }
     /*CAROUSEL/////////////////
     container for carousel*/
     $('div#banner').slick(
@@ -72,20 +90,5 @@ $(document).ready(()=>{
     let prevScrollDirection = ''
     //determine the scroll direction using the scroll position on the document object
     //only show the sticky header wher the user scrolls UP
-    $(document).on('scroll', ()=>{
-        const currentScrollTop = $(document).scrollTop()
-        if(currentScrollTop > prevScrollTop) {
-            //update scroll direction
-            if(prevScrollDirection !== 'down') prevScrollDirection = 'down'
-            //remove the sticky header if user scrolling down
-            $('div#header-wrapper').unstick()
-        }else if(currentScrollTop  < prevScrollTop) {
-            if(prevScrollDirection !== 'up') prevScrollDirection = 'up'
-            //add the sticky header if user scrolling down
-            $('div#header-wrapper').sticky({topSpacing: 0})           
-        }
-        //update scroll ositon
-        //also, for Mobile or negative scrolling
-        prevScrollTop = currentScrollTop  <= 0 ? 0 : currentScrollTop
-    })
+    toggleStickyHeader()
 })
