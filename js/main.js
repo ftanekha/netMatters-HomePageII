@@ -68,15 +68,24 @@ $(document).ready(()=>{
         }  
     })
     /* STICKY HEADER*/
-    $(document).on('scrollend', ()=>{
-        if(
-             $(document).scrollTop() > ( .5 * $(document).height() ) //roughly where the 'latest-news' section begins, as on live site
-        ){
-            $('div#header-wrapper').sticky({
-                topSpacing: 0
-            })
-        }else{
+    let prevScrollTop = $(document).scrollTop()
+    let prevScrollDirection = ''
+    //determine the scroll direction using the scroll position on the document object
+    //only show the sticky header wher the user scrolls UP
+    $(document).on('scroll', ()=>{
+        const currentScrollTop = $(document).scrollTop()
+        if(currentScrollTop > prevScrollTop) {
+            //update scroll direction
+            if(prevScrollDirection !== 'down') prevScrollDirection = 'down'
+            //remove the sticky header if user scrolling down
             $('div#header-wrapper').unstick()
+        }else if(currentScrollTop  < prevScrollTop) {
+            if(prevScrollDirection !== 'up') prevScrollDirection = 'up'
+            //add the sticky header if user scrolling down
+            $('div#header-wrapper').sticky({topSpacing: 0})           
         }
+        //update scroll ositon
+        //also, for Mobile or negative scrolling
+        prevScrollTop = currentScrollTop  <= 0 ? 0 : currentScrollTop
     })
 })
