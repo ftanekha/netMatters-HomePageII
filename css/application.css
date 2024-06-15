@@ -2984,7 +2984,6 @@ div.our-clients-carousel div.carousel-item:first-child div.tooltip {
   position: absolute;
   bottom: 150px;
   left: -40px;
-  z-index: 1000;
   opacity: 0;
   background-color: #333645;
   width: 280px;
@@ -3065,7 +3064,6 @@ div.our-clients-carousel div.carousel-item:nth-child(2) div.tooltip {
   position: absolute;
   bottom: 150px;
   left: -40px;
-  z-index: 1000;
   opacity: 0;
   background-color: #333645;
   width: 280px;
@@ -3130,7 +3128,6 @@ div.our-clients-carousel div.carousel-item:nth-child(3) div.tooltip {
   position: absolute;
   bottom: 150px;
   left: -40px;
-  z-index: 1000;
   opacity: 0;
   background-color: #333645;
   width: 280px;
@@ -3195,7 +3192,6 @@ div.our-clients-carousel div.carousel-item:nth-child(4) div.tooltip {
   position: absolute;
   bottom: 150px;
   left: -40px;
-  z-index: 1000;
   opacity: 0;
   background-color: #333645;
   width: 280px;
@@ -3276,7 +3272,6 @@ div.our-clients-carousel div.carousel-item:nth-child(5) div.tooltip {
   position: absolute;
   bottom: 150px;
   left: -40px;
-  z-index: 1000;
   opacity: 0;
   background-color: #333645;
   width: 280px;
@@ -3357,7 +3352,6 @@ div.our-clients-carousel div.carousel-item:last-child div.tooltip {
   position: absolute;
   bottom: 150px;
   left: -40px;
-  z-index: 1000;
   opacity: 0;
   background-color: #333645;
   width: 280px;
@@ -3638,8 +3632,30 @@ body div#main-outer-container div#container div.main-outer {
   height: 100%;
 }
 body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper {
+  background-color: white;
   position: relative;
   z-index: 1000000000;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#banner {
+  z-index: -1000;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#middle {
+  position: relative;
+  z-index: -1000;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#accreditations {
+  position: relative;
+  z-index: -1000;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#about-netmatters {
+  z-index: -100;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#latest-news {
+  z-index: -100;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#our-clients {
+  position: relative;
+  z-index: -1000;
 }
 
 /*# sourceMappingURL=application.css.map */

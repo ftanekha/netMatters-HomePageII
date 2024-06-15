@@ -71,18 +71,31 @@ body{
                 height: 100%; 
                 div.main-inner{
                     div#cookie-app{} 
+                    //sticky header is on div#header-wrappr
                     div#header-wrapper{
+                        background-color: white;
                         position: relative;
                         z-index: 1000000000;
                         div#header{} 
                         div#nav{}
                     }
-                    div#banner{} 
-                    div#middle{}
-                    div#accreditations{}
-                    div#about-netmatters{}
-                    div#latest-news{} 
-                    div#our-clients{}
+                    //the exagerated z-index's below are necessary 
+                    //for the sticky header to show properly
+                    div#banner{z-index: -1000} 
+                    div#middle{
+                        position: relative;
+                        z-index: -1000;
+                    }
+                    div#accreditations{
+                        position: relative;
+                        z-index: -1000;
+                    }
+                    div#about-netmatters{z-index: -100}
+                    div#latest-news{z-index: -100} 
+                    div#our-clients{
+                        position: relative;
+                        z-index: -1000;
+                    }
                 }   
                 footer{}
                 div#footer-bottom{}    
