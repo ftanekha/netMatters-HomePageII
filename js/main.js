@@ -68,10 +68,15 @@ $(document).ready(()=>{
         }  
     })
     /* STICKY HEADER*/
-    $(document).on('scroll', ()=>{
-        // if()
-        $('div#header-wrapper').sticky({
-            topSpacing: 0
-        })
+    $(document).on('scrollend', ()=>{
+        if(
+             $(document).scrollTop() > ( .5 * $(document).height() ) //roughly where the 'latest-news' section begins, as on live site
+        ){
+            $('div#header-wrapper').sticky({
+                topSpacing: 0
+            })
+        }else{
+            $('div#header-wrapper').unstick()
+        }
     })
 })
