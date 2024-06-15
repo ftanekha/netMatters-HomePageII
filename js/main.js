@@ -10,6 +10,7 @@ $(document).ready(()=>{
             dots: true
         }
     )
+    $('.slick-dots li button').css('cursor', 'pointer')
     /* SIDE MENU////////////////////
     toggle the Side Menu using the hamburger menu button*/
     const $hamburgerMenuIcon = $('div.actions button[data-toggle="sidebar"]')

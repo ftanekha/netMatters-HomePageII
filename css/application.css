@@ -3637,25 +3637,25 @@ body div#main-outer-container div#container div.main-outer div.main-inner div#he
   z-index: 1000000000;
 }
 body div#main-outer-container div#container div.main-outer div.main-inner div#banner {
-  z-index: -1000;
+  z-index: 0;
 }
 body div#main-outer-container div#container div.main-outer div.main-inner div#middle {
   position: relative;
-  z-index: -1000;
+  z-index: 0;
 }
 body div#main-outer-container div#container div.main-outer div.main-inner div#accreditations {
   position: relative;
-  z-index: -1000;
+  z-index: 0;
 }
 body div#main-outer-container div#container div.main-outer div.main-inner div#about-netmatters {
-  z-index: -100;
+  z-index: 0;
 }
 body div#main-outer-container div#container div.main-outer div.main-inner div#latest-news {
-  z-index: -100;
+  z-index: 0;
 }
 body div#main-outer-container div#container div.main-outer div.main-inner div#our-clients {
   position: relative;
-  z-index: -1000;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=application.css.map */

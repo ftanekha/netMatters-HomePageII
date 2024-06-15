@@ -81,20 +81,20 @@ body{
                     }
                     //the exagerated z-index's below are necessary 
                     //for the sticky header to show properly
-                    div#banner{z-index: -1000} 
+                    div#banner{z-index: 0} 
                     div#middle{
                         position: relative;
-                        z-index: -1000;
+                        z-index: 0;
                     }
                     div#accreditations{
                         position: relative;
-                        z-index: -1000;
+                        z-index: 0;
                     }
-                    div#about-netmatters{z-index: -100}
-                    div#latest-news{z-index: -100} 
+                    div#about-netmatters{z-index: 0}
+                    div#latest-news{z-index: 0} 
                     div#our-clients{
                         position: relative;
-                        z-index: -1000;
+                        z-index: 0;
                     }
                 }   
                 footer{}
