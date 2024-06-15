@@ -59,7 +59,7 @@ function toggleStickyHeader(){
         }else if(currentScrollTop  < prevScrollTop){
             if(prevScrollDirection !== 'up') prevScrollDirection = 'up'
             //add the sticky header if user scrolling down
-            $('div#header-wrapper').sticky({topSpacing: 0})           
+            $('div#header-wrapper').sticky({topSpacing: 0})         
         }
         //update scroll ositon
         //also, for Mobile or negative scrolling
