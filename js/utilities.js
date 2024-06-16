@@ -66,5 +66,23 @@ function toggleStickyHeader(){
         prevScrollTop = currentScrollTop  <= 0 ? 0 : currentScrollTop
     })
 }
-
-export {showSideMenu, hideSideMenu, toggleStickyHeader}
+// display cookie modal
+function displayCookieModal(){
+    const hasCookieBeenDisplayed = localStorage.getItem('hasCookieBeenDisplayed')
+    if(hasCookieBeenDisplayed){
+        //if cookie policy has already been display, keep it hidden
+        $('#cookie-policy-popup-container').css('display', 'none')
+    }else{
+        $('#cookie-policy-popup-container').css({
+            visibility: 'visible', //show cookie modal
+            backgroundColor : 'rgba(0, 0, 0, .7)'//darken background
+        })
+        $('.cookie-policy-button').on('click', ()=>{
+            //update local storage
+            localStorage.setItem('hasCookieBeenDisplayed', true)
+            //hide cookie policy
+            $('#cookie-policy-popup-container').fadeOut(100)
+        })
+    }
+}
+export {showSideMenu, hideSideMenu, toggleStickyHeader, displayCookieModal}

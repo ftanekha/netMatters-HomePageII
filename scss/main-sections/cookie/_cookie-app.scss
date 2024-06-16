@@ -1,0 +1,22 @@
+button.cookie-settings-btn{
+    color: white;
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 22px;
+    background-color: transparent;
+    border: solid #75788a;
+    padding: 0 10px;
+    font-size: .8rem;
+    line-height: 1.15;
+    margin: 0; 
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    &:hover{
+        background-color: transparent;
+        border-color: #999aa2;
+        box-shadow: 0 3px 35px rgba(0,0,0,.1);
+    }
+}

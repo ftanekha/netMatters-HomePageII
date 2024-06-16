@@ -1,6 +1,8 @@
-import {showSideMenu, hideSideMenu, toggleStickyHeader} from './utilities.js'
+import {showSideMenu, hideSideMenu, toggleStickyHeader, displayCookieModal} from './utilities.js'
 
 $(document).ready(()=>{
+    /*COOKIE POPUP/ POLICY*/
+    displayCookieModal()
     /*CAROUSEL/////////////////
     container for carousel*/
     $('div#banner').slick(

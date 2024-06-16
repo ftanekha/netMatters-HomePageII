@@ -1,0 +1,89 @@
+div.cookie-policy-popup{
+    width: 600px;
+    box-sizing: content-box;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    background-clip: padding-box;
+    outline: none;
+    h4{
+        width: 100vw;
+        margin: 0;
+        margin-left: 20px;
+        line-height: 1.42857143;
+        font-size: 1.625rem;
+        font-weight: 400;
+        color: #333645;
+        box-sizing: content-box;
+        padding: 0 0 5px 0;
+    }
+    hr{
+        border: 1px solid #e5e5e5;
+    }
+    p{
+        line-height: 1.875rem;
+        font-size: 1rem;
+        margin: 0 0 10px;
+        margin-left: 20px;
+        padding-bottom: 30px;
+        a{
+        color: #333645;
+        text-decoration: none;
+            &:hover{
+                color: #121419;
+                text-decoration: underline;
+            }
+        }
+    }
+    div.cookie-policy-button-container{ 
+        margin: 0 20px;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        
+        @media (min-width: 768px){
+            flex-direction: row;
+        }
+
+        a.cookie-policy-button{
+            display: block;
+            color: white;
+            height: auto;
+            line-height: 35px;
+            padding: 5px 15px;
+            text-transform: uppercase;
+            font-size: 1.063rem;
+            border-radius: 3px;
+            white-space: normal;
+            font-weight: 400;
+            text-align: center;
+            // vertical-align: middle;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid     transparent;
+            width: 100%;
+        }
+        .gray{
+            background-color: #999aa2;
+            border-color: #999aa2;
+            &:hover{
+                outline: none;
+                background-color: #84858f;
+                border-color: #797a85;
+            }
+        }
+        .wisteria{
+            background-color: #926fb1;
+            border-color: #926fb1; 
+            &:hover{
+                outline: none;
+                background-color: #7e57a0;
+                border-color: #735093;
+            }
+        }
+    }
+}
