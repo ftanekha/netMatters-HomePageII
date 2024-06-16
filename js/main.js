@@ -1,8 +1,10 @@
 import {showSideMenu, hideSideMenu, toggleStickyHeader, displayCookieModal} from './utilities.js'
 
 $(document).ready(()=>{
-    /*COOKIE POPUP/ POLICY*/
+    /*COOKIE POPUP POLICY & consent management*/
     displayCookieModal()
+    const cookiSettingsButton = $('.cookie-settings-btn')
+    cookiSettingsButton.on('click', ()=> displayCookieModal(true))
     /*CAROUSEL/////////////////
     container for carousel*/
     $('div#banner').slick(

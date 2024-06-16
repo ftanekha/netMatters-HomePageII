@@ -67,19 +67,26 @@ function toggleStickyHeader(){
     })
 }
 // display cookie modal
-function displayCookieModal(){
+function displayCookieModal(didUserClickManageConsentButton = false){
     const hasCookieBeenDisplayed = localStorage.getItem('hasCookieBeenDisplayed')
-    if(hasCookieBeenDisplayed){
-        //if cookie policy has already been display, keep it hidden
+    if(hasCookieBeenDisplayed && !didUserClickManageConsentButton){
+        //if cookie policy has already been displayed, keep it hidden
         $('#cookie-policy-popup-container').css('display', 'none')
-    }else{
+    }else if(!hasCookieBeenDisplayed || didUserClickManageConsentButton){
+        //prepare cookie modal
         $('#cookie-policy-popup-container').css({
+            display: 'flex',
             visibility: 'visible', //show cookie modal
             backgroundColor : 'rgba(0, 0, 0, .7)'//darken background
         })
         $('.cookie-policy-button').on('click', ()=>{
             //update local storage
             localStorage.setItem('hasCookieBeenDisplayed', true)
+            //reset modal css
+            $('#cookie-policy-popup-container').css({
+                visibility: 'hidden', 
+                backgroundColor : 'transparent'
+            })
             //hide cookie policy
             $('#cookie-policy-popup-container').fadeOut(100)
         })
