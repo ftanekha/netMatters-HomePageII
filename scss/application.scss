@@ -92,7 +92,8 @@ body{
                 div.main-inner{
                     //sticky header is on div#header-wrappr
                     div#header-wrapper{
-                        // position: relative; z-index: 10;
+                        position: relative; 
+                        z-index: 1000000;
                         // background-color: white;
                         div#header{} 
                         div#nav{}

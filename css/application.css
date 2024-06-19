@@ -3774,5 +3774,9 @@ body div#main-outer-container div#container.reduced-width {
 body div#main-outer-container div#container div.main-outer {
   height: 100%;
 }
+body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper {
+  position: relative;
+  z-index: 1000000;
+}
 
 /*# sourceMappingURL=application.css.map */
