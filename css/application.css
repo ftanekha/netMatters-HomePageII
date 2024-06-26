@@ -124,17 +124,14 @@ div#side-menu {
   top: 0;
   z-index: 60000;
   display: none;
+  overflow: scroll;
 }
 div#side-menu.toggle-side-menu-in {
   display: block;
   animation-name: slide-in;
-  transition-duration: 0.22s;
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 div#side-menu.toggle-side-menu-out {
   animation-name: slide-out;
-  transition-duration: 0.22s;
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 @media (min-width: 992px) {
   div#side-menu {
@@ -535,6 +532,11 @@ div#side-menu div.side-menu-misc-list div.side-menu-misc-sublist ul li a {
   text-align: center;
   font-size: 1rem;
 }
+@media (min-width: 992px) {
+  div#side-menu div.side-menu-misc-list {
+    display: none;
+  }
+}
 div#side-menu div.side-menu-list * {
   font-weight: 400;
   width: 100%;
@@ -589,7 +591,7 @@ div#side-menu div.side-menu-list ul li a:not(.first-child-a):before {
   color: white;
 }
 @media (min-width: 992px) {
-  div#side-menu div.side-menu-list *.sm-scrn-only {
+  div#side-menu div.side-menu-list li.sm-scrn-only {
     display: none;
   }
 }
@@ -597,10 +599,7 @@ div#side-menu div.side-menu-list.bg-scrn-only {
   display: none;
 }
 @media (min-width: 992px) {
-  div#side-menu div.sm-scrn-only {
-    display: none;
-  }
-  div#side-menu div.bg-scrn-only {
+  div#side-menu div.side-menu-list.bg-scrn-only {
     display: block;
   }
 }
@@ -3768,15 +3767,24 @@ body div#main-outer-container div#container {
   z-index: 100;
   overflow: hidden;
 }
-body div#main-outer-container div#container.reduced-width {
-  width: calc(100% - 275px);
+body div#main-outer-container div#container.slide-left {
+  left: -275px;
+}
+@media (min-width: 992px) {
+  body div#main-outer-container div#container.slide-left {
+    left: -350px;
+  }
+}
+body div#main-outer-container div#container.slide-right {
+  left: 0;
 }
 body div#main-outer-container div#container div.main-outer {
   height: 100%;
 }
 body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper {
   position: relative;
-  z-index: 1000000;
+  z-index: 100000000;
+  background-color: white;
 }
 
 /*# sourceMappingURL=application.css.map */

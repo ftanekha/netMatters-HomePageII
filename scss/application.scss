@@ -58,15 +58,6 @@ body{
         background-color: transparent;
     }
     div#side-menu-container{
-        // div.toggle-side-menu{
-        //     width: calc(100% - 275px);
-        //     height: 100vh;
-        //     background-color: yellow;
-        //     @media (min-width: 992px){
-        //         width: calc(100% - 350px);
-        //     }
-        // }
-        
         div#side-menu{
             overflow: scroll !important;
         }
@@ -79,12 +70,14 @@ body{
             //greater than side-menu z-index
             z-index: 100;
             overflow: hidden;
-            // transition-duration: 1s;
-            &.reduced-width{
-                width: calc(100% - 275px);
-                // @media (min-width: 992px){
-                //     width: calc(100% - 350px);
-                // }
+            &.slide-left{
+                left: -275px;
+                @media (min-width: 992px){
+                    left: -350px;
+                }
+            }
+            &.slide-right{
+                left: 0;
             }
             div.main-outer{
                 // display: none;
@@ -93,8 +86,8 @@ body{
                     //sticky header is on div#header-wrappr
                     div#header-wrapper{
                         position: relative; 
-                        z-index: 1000000;
-                        // background-color: white;
+                        z-index: 100000000;
+                        background-color: white;
                         div#header{} 
                         div#nav{}
                     }

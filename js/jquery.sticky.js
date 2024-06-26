@@ -33,8 +33,7 @@
       center: false,
       getWidthFrom: '',
       widthFromWrapper: true, // works only when .getWidthFrom is empty
-      responsiveWidth: false,
-      zIndex: 'inherit'
+      responsiveWidth: false
     },
     $window = $(window),
     $document = $(document),
@@ -91,7 +90,6 @@
               .css('width', newWidth)
               .css('position', 'fixed')
               .css('top', newTop)
-              .css('z-index', s.zIndex);
 
             s.stickyElement.parent().addClass(s.className);
 
@@ -128,7 +126,6 @@
               .css('position', 'fixed')
               .css('top', newTop)
               .css('bottom', '')
-              .css('z-index', s.zIndex);
           }
         }
       }

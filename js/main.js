@@ -23,8 +23,11 @@ $(document).ready(()=>{
         const $sideMenu = $('div#side-menu')
         if($sideMenu.css('display') === 'none'){
             showSideMenu($hamburgerMenuIcon, $sideMenu)
+            // togglePageSize()
         }else{
             hideSideMenu($hamburgerMenuIcon, $sideMenu)
+            $sideMenu.css('display','none')
+            // togglePageSize()
         }  
     })
     /* STICKY HEADER*/

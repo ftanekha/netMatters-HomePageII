@@ -5,23 +5,18 @@ div#side-menu{
     top: 0;
     z-index: 60000;
     display: none;
-    // transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+    overflow: scroll;
     &.toggle-side-menu-in{
         display: block;
         animation-name: slide-in;
-        // animation-duration: 1s;
-        transition-duration: .22s;
-        transition-timing-function: cubic-bezier(.55,.055,.675,.19);
     }
     &.toggle-side-menu-out{
         animation-name: slide-out;
-        // animation-duration: .3s;
-        transition-duration: .22s;
-        transition-timing-function: cubic-bezier(.55,.055,.675,.19);
     }
     @media (min-width: 992px){
         width: 350px;
     }
+    //////////////////////////////////////////////////////////
     div.side-menu-misc-list{
         display: flex;
         flex-direction: column;
@@ -84,20 +79,19 @@ div#side-menu{
                 }
             }
         }
+        @media (min-width: 992px){
+            display: none;
+        }
     }
+    /////////////////////////////////////////////////////////////////////////
     div.side-menu-list{
         @include side-menu--list;
         &.bg-scrn-only{
             display: none;
+            @media (min-width: 992px){
+                display: block;
+            }
         }
-    }
-    @media (min-width: 992px){
-        div.sm-scrn-only{
-            display: none;
-        }
-        div.bg-scrn-only{
-            display: block;
-        } 
     }
 }
 
