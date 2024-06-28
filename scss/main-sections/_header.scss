@@ -72,11 +72,11 @@ header{
                                 height: 56px;
                                 padding: 5px 15px;
                                 float: left;
-                                background-color: #333645;
+                                background-color: #333645 !important;
                                 background-image: none;
                                 border: 0;
                                 border-radius: 3px;
-                                border-color: #333645;
+                                border-color: #333645 !important;
                                 text-align: center;
                                 text-transform: uppercase;
                                 color: #fff;
@@ -105,8 +105,8 @@ header{
                                     outline-offset: -2px;
                                 }
                                 &:hover, &:active, &:focus{
-                                    background-color: #22242e;
-                                    border-color: #191a22;
+                                    background-color: #22242e !important;
+                                    border-color: #191a22 !important;
                                 }
                                 span.hamburger-box{
                                     display: block;

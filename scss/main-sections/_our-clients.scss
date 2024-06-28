@@ -1,25 +1,28 @@
 div.our-clients-carousel{
-    // overflow-x: hidden;
-    display: flex;
-    gap: 90px;
-    div.carousel-item{
-        &:first-child{//black swan
-            @include carousel-item(bs);
-        }
-        &:nth-child(2){//beat
-            @include carousel-item(null);
-        }
-        &:nth-child(3){//survey solutions
-            @include carousel-item(null);
-        }
-        &:nth-child(4){//girl guiding
-            @include carousel-item(it);
-        }
-        &:nth-child(5){//sweetzy
-            @include carousel-item(dm);
-        }
-        &:last-child{//one Traveller
-            @include carousel-item(wd);
+    div.slick-list{
+        div.slick-track{
+            display: flex;
+            gap: 90px;
+            div.carousel-item{
+                &:first-child{//black swan
+                    @include carousel-item(bs);
+                }
+                &:nth-child(2){//beat
+                    @include carousel-item(null);
+                }
+                &:nth-child(3){//survey solutions
+                    @include carousel-item(null);
+                }
+                &:nth-child(4){//girl guiding
+                    @include carousel-item(it);
+                }
+                &:nth-child(5){//sweetzy
+                    @include carousel-item(dm);
+                }
+                &:last-child{//one Traveller
+                    @include carousel-item(wd);
+                }
+            }
         }
     }
 }

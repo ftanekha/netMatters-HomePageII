@@ -83,7 +83,7 @@ body{
                 // display: none;
                 height: 100%; 
                 div.main-inner{
-                    //sticky header is on div#header-wrappr
+                    //sticky header
                     div#header-wrapper{
                         position: relative; 
                         z-index: 100000000;
@@ -91,22 +91,15 @@ body{
                         div#header{} 
                         div#nav{}
                     }
-                    //the exagerated z-index's below are necessary 
-                    //for the sticky header to show properly
                     div#banner{} 
                     div#middle{
-                        // position: relative;
-                        // z-index: -10;
+                        
                     }
                     div#accreditations{
-                    //     position: relative;
-                    //     z-index: -10;
                     }
                     div#about-netmatters{}
                     div#latest-news{} 
                     div#our-clients{
-                        // position: relative;
-                        // z-index: -10;
                     }
                 }   
                 footer{}

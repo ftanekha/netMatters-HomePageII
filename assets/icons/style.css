@@ -58,6 +58,55 @@
 .icon-display:before {
   content: "\e926";
 }
+/* icomoon-flask */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon-flask/icomoon.eot?xr5ujp');
+  src:  url('fonts/icomoon-flask/icomoon.eot?xr5ujp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon-flask/icomoon.ttf?xr5ujp') format('truetype'),
+    url('fonts/icomoon-flask/icomoon.woff?xr5ujp') format('woff'),
+    url('fonts/icomoon-flask/icomoon.svg?xr5ujp#icomoon') format('svg');
+}
+.icon-flask:before {
+  content: "\e900";
+}
+/* icomoon-dollar */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon-dollar/icomoon.eot?6y9rq8');
+  src:  url('fonts/icomoon-dollar/icomoon.eot?6y9rq8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon-dollar/icomoon.ttf?6y9rq8') format('truetype'),
+    url('fonts/icomoon-dollar/icomoon.woff?6y9rq8') format('woff'),
+    url('fonts/icomoon-dollar/icomoon.svg?6y9rq8#icomoon') format('svg');
+}
+.icon-dollar:before {
+  content: "\e901";
+}
+/* trending-up */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon-trendin-up/icomoon.eot?ss34vv');
+  src:  url('fonts/icomoon-trendin-up/icomoon.eot?ss34vv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon-trendin-up/icomoon.ttf?ss34vv') format('truetype'),
+    url('fonts/icomoon-trendin-up/icomoon.woff?ss34vv') format('woff'),
+    url('fonts/icomoon-trendin-up/icomoon.svg?ss34vv#icomoon') format('svg');
+}
+.icon-trending-up:before {
+  content: "\e900";
+}
+/*  phone-square*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon-phone-square/icomoon.eot?5hryrq');
+  src:  url('fonts/icomoon-phone-square/icomoon.eot?5hryrq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon-phone-square/icomoon.ttf?5hryrq') format('truetype'),
+    url('fonts/icomoon-phone-square/icomoon.woff?5hryrq') format('woff'),
+    url('fonts/icomoon-phone-square/icomoon.svg?5hryrq#icomoon') format('svg');
+}
+.icon-phone-square:before {
+  content: "\e901";
+}
+/*  */
 .icon-bar-graph:before {
   content: "\e927";
 }

@@ -1,0 +1,33 @@
+div#main-navigation-dropdown{
+    display: none;
+    margin-top: -15px;
+    div#main-navigation-dropdown-container{
+        div.main-navigation-dropdown-option-container{
+            display: none;
+            width: 78%;
+            margin: -20px 0 0 4%;
+            padding: 60px 0 40px 0;
+            &:first-child{
+                @include dropdown-option;
+            }
+            &:nth-child(2){
+                @include dropdown-option;
+            }
+            &:nth-child(3){
+                @include dropdown-option;
+            }
+            &:nth-child(4){
+                @include dropdown-option;
+            }
+            &:nth-child(5){
+                @include dropdown-option;
+            }
+            &:nth-child(6){
+                @include dropdown-option;
+            }
+            &:last-child{
+                @include dropdown-option;   
+            }  
+        }
+    }
+}
