@@ -1,0 +1,28 @@
+@mixin tooltip($theme){
+    // display: none;
+    background-color: #333645;
+    color: #fff;
+    padding: 20px 15px;
+    font-size: .875rem;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: $tooltip_z-index;
+    h3{
+        // position: relative;
+        font-size: 1.125rem;
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.1;
+        text-align: center;
+    }
+    p{
+        padding: 10px;
+        line-height: 1.6
+    }
+    a{
+        @include case-study-link($theme);
+        span{}
+    }
+}

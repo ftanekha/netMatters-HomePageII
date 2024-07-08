@@ -31,7 +31,7 @@ body{
         position: fixed;
         bottom: 0;
         left: 0;
-        z-index: 200000;
+        z-index: $cookie-app_z-index;
         background: #75788a;
         border: solid #75788a;
         border-width: 1px 1px 0 0;
@@ -52,7 +52,7 @@ body{
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 999999;
+        z-index: $cookie-policy-popup-container_z-index;
         align-items: center;
         justify-content: center;
         background-color: transparent;
@@ -68,7 +68,7 @@ body{
             height: 100%;
             position: relative;
             //greater than side-menu z-index
-            z-index: 100;
+            z-index: $div-container_z-index;
             overflow: hidden;
             &.slide-left{
                 left: -275px;
@@ -80,13 +80,12 @@ body{
                 left: 0;
             }
             div.main-outer{
-                // display: none;
                 height: 100%; 
                 div.main-inner{
                     //sticky header
                     div#header-wrapper{
                         position: relative; 
-                        z-index: 100000000;
+                        z-index: $sticky-header-wrapper_z-index;
                         background-color: white;
                         div#header{} 
                         div#nav{}
@@ -98,8 +97,9 @@ body{
                     div#accreditations{
                     }
                     div#about-netmatters{}
-                    div#latest-news{} 
-                    div#our-clients{
+                    div#latest-news{
+                    } 
+                    div#our-clients{  
                     }
                 }   
                 footer{}

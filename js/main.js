@@ -1,4 +1,4 @@
-import {showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, displayCookieModal} from './utilities.js'
+import {showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, toggleClientTooltip, displayCookieModal} from './utilities.js'
 
 $(document).ready(()=>{
     /*COOKIE POPUP POLICY & consent management*/
@@ -38,11 +38,12 @@ $(document).ready(()=>{
         autoplaySpeed: 2000,
         arrows: false,
         dots: false,
-        infinite: true,
+        // infinite: true,
         slidesToShow: 6
     }
     /*CAROUSEL///Acccreditations///*/
     $('div.accreditations-container').slick(carouselSettings)
     /*CAROUSEL///Clients & Partners///*/
     $('div.our-clients-carousel').slick(carouselSettings)
+    toggleClientTooltip()
 })

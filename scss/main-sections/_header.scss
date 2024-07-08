@@ -1,6 +1,6 @@
 header{
     position: relative;
-    z-index: 1000000;
+    z-index: $header_z-index;
     div.inner{
         padding: 17px 0;
         div.container{

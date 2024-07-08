@@ -1,0 +1,10 @@
+@mixin client-logo{
+    height: 80px;
+    width: auto !important;
+    max-width: 200px;
+    transform-style: preserve-3d;
+    filter: grayscale(100%);
+    &:hover{
+        filter: grayscale(0%);
+    }
+}

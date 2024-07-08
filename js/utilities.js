@@ -1,15 +1,3 @@
-// {
-//     const $navItem = $('nav div.container > div > a')[0]
-//     const $navItemWidth = $navItem.outerWidth()
-
-//     const $triangles = $('.triangle')
-
-//     for(let i = 1; i = $triangles.length; i++){
-//         ($triangles[i]).css('left', $navItemWidth * i)
-//     }
-
-// }
-
 function showNavigationDropDown(){
     const $mainNavigationDropdown = $('#main-navigation-dropdown')
     const dropDownMenuBgColorOptions = {
@@ -192,6 +180,39 @@ function toggleStickyHeader(){
     })
 }
 //////////////////////////////////////////////////////////////////////////////////
+// $(()=>{
+//     $('.two').on('mouseover', ()=> $('.one').css('display', 'flex'))
+//     $('.one').on('mouseleave', ()=> $('.one').css('display', 'none'))
+//   })
+function toggleClientTooltip(){
+    const clients = ['black-swan', 'beat', 'survey-solutions', 'girl-guiding', 'sweetzy', 'one-traveller', 'xupes']
+    clients.forEach(
+        client => {
+            //show tooltip
+            $(`div.client-logo-container.${client}`)
+            .on(
+                'mouseover', 
+                ()=>{
+                    $(`div.tooltip-container.${client}`).css({
+                        display : 'flex'
+                    })
+                }
+            )
+            //hide tooltip
+            $(`div.carousel-item.${client}`)
+            .on(
+                'mouseleave', 
+                ()=> {
+                    $(`div.tooltip-container.${client}`)
+                    .css({
+                        display : 'none'
+                    })
+                }
+            )
+        }
+    )
+}
+//////////////////////////////////////////////////////////////////////////////////
 // display cookie modal
 function displayCookieModal(didUserClickManageConsentButton = false){
     const hasCookieBeenDisplayed = localStorage.getItem('hasCookieBeenDisplayed')
@@ -222,4 +243,4 @@ function displayCookieModal(didUserClickManageConsentButton = false){
     }
 }
 ///////////////////////////////////////////////////////////////////////////
-export {showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, displayCookieModal}
+export {showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, toggleClientTooltip, displayCookieModal}

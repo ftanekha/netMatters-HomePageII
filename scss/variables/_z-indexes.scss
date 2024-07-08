@@ -1,0 +1,13 @@
+$sticky-header-wrapper_z-index: 100;
+$header_z-index: $sticky-header-wrapper_z-index;
+$nav_z-index: $sticky-header-wrapper_z-index;
+
+$div-container_z-index: 10;
+$side-menu_z-index: 10;
+
+$tooltip-container_z-index: 30;
+$tooltip_z-index: $tooltip-container_z-index;
+$tooltip-arrow_z-index: $tooltip-container_z-index;
+
+$cookie-app_z-index: 50;
+$cookie-policy-popup-container_z-index: $cookie-app_z-index;

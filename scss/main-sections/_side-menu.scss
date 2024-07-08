@@ -3,7 +3,7 @@ div#side-menu{
     width: 275px;
     position: absolute;
     top: 0;
-    z-index: 60000;
+    z-index: $side-menu_z-index;
     display: none;
     overflow: scroll;
     &.toggle-side-menu-in{
