@@ -38,12 +38,11 @@ $(document).ready(()=>{
         autoplaySpeed: 2000,
         arrows: false,
         dots: false,
-        // infinite: true,
         slidesToShow: 6
     }
     /*CAROUSEL///Acccreditations///*/
     $('div.accreditations-container').slick(carouselSettings)
     /*CAROUSEL///Clients & Partners///*/
-    $('div.our-clients-carousel').slick(carouselSettings)
+    $('div.our-clients-carousel').slick({...carouselSettings})
     toggleClientTooltip()
 })

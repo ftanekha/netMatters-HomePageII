@@ -3504,26 +3504,31 @@ div.container div#latest-news-main-container div#latest-news div.latest-news-ite
   padding-left: 20px;
 }
 
+div.our-clients-carousel {
+  margin: 0 auto 50px;
+}
 div.our-clients-carousel div.slick-list {
-  background-color: green;
+  overflow: visible;
 }
 div.our-clients-carousel div.slick-list div.slick-track {
+  width: 100%;
+  height: 120px;
   display: flex;
-  gap: 110px;
-  padding: 50px 0 60px 0;
-  position: relative;
+  flex-wrap: nowrap;
+  gap: 90px;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item {
+  width: 300px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100% !important;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:first-child div.tooltip-container {
+  width: 300px;
   display: none;
   position: absolute;
-  bottom: 170px;
-  z-index: 30;
+  bottom: 150px;
   flex-direction: column;
   align-items: center;
 }
@@ -3532,11 +3537,11 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:first-
   color: #fff;
   padding: 20px 15px;
   font-size: 0.875rem;
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
+  width: 100%;
   position: relative;
-  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:first-child div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
@@ -3548,6 +3553,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:first-
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:first-child div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
+  text-align: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:first-child div.tooltip-container div.tooltip a {
   width: auto;
@@ -3575,8 +3581,8 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:first-
   border-color: #d49308;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:first-child div.tooltip-container div.tooltip-arrow {
+  display: none;
   position: relative;
-  z-index: 30;
   width: 0;
   height: 0;
   border-left: 40px solid transparent;
@@ -3584,7 +3590,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:first-
   border-top: 40px solid #333645;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:first-child div.client-logo-container {
-  height: 100px;
+  height: 150px;
   display: flex;
   align-items: center;
 }
@@ -3599,10 +3605,10 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:first-
   filter: grayscale(0%);
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(2) div.tooltip-container {
+  width: 300px;
   display: none;
   position: absolute;
-  bottom: 170px;
-  z-index: 30;
+  bottom: 150px;
   flex-direction: column;
   align-items: center;
 }
@@ -3611,11 +3617,11 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   color: #fff;
   padding: 20px 15px;
   font-size: 0.875rem;
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
+  width: 100%;
   position: relative;
-  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(2) div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
@@ -3627,6 +3633,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(2) div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
+  text-align: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(2) div.tooltip-container div.tooltip a {
   width: auto;
@@ -3648,8 +3655,8 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   user-select: none;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(2) div.tooltip-container div.tooltip-arrow {
+  display: none;
   position: relative;
-  z-index: 30;
   width: 0;
   height: 0;
   border-left: 40px solid transparent;
@@ -3657,7 +3664,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   border-top: 40px solid #333645;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(2) div.client-logo-container {
-  height: 100px;
+  height: 150px;
   display: flex;
   align-items: center;
 }
@@ -3672,10 +3679,10 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   filter: grayscale(0%);
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(3) div.tooltip-container {
+  width: 300px;
   display: none;
   position: absolute;
-  bottom: 170px;
-  z-index: 30;
+  bottom: 150px;
   flex-direction: column;
   align-items: center;
 }
@@ -3684,11 +3691,11 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   color: #fff;
   padding: 20px 15px;
   font-size: 0.875rem;
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
+  width: 100%;
   position: relative;
-  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(3) div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
@@ -3700,6 +3707,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(3) div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
+  text-align: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(3) div.tooltip-container div.tooltip a {
   width: auto;
@@ -3721,8 +3729,8 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   user-select: none;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(3) div.tooltip-container div.tooltip-arrow {
+  display: none;
   position: relative;
-  z-index: 30;
   width: 0;
   height: 0;
   border-left: 40px solid transparent;
@@ -3730,7 +3738,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   border-top: 40px solid #333645;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(3) div.client-logo-container {
-  height: 100px;
+  height: 150px;
   display: flex;
   align-items: center;
 }
@@ -3745,10 +3753,10 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   filter: grayscale(0%);
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(4) div.tooltip-container {
+  width: 300px;
   display: none;
   position: absolute;
-  bottom: 170px;
-  z-index: 30;
+  bottom: 150px;
   flex-direction: column;
   align-items: center;
 }
@@ -3757,11 +3765,11 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   color: #fff;
   padding: 20px 15px;
   font-size: 0.875rem;
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
+  width: 100%;
   position: relative;
-  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(4) div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
@@ -3773,6 +3781,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(4) div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
+  text-align: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(4) div.tooltip-container div.tooltip a {
   width: auto;
@@ -3800,8 +3809,8 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   border-color: #2665b5;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(4) div.tooltip-container div.tooltip-arrow {
+  display: none;
   position: relative;
-  z-index: 30;
   width: 0;
   height: 0;
   border-left: 40px solid transparent;
@@ -3809,7 +3818,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   border-top: 40px solid #333645;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(4) div.client-logo-container {
-  height: 100px;
+  height: 150px;
   display: flex;
   align-items: center;
 }
@@ -3824,10 +3833,10 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   filter: grayscale(0%);
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(5) div.tooltip-container {
+  width: 300px;
   display: none;
   position: absolute;
-  bottom: 170px;
-  z-index: 30;
+  bottom: 150px;
   flex-direction: column;
   align-items: center;
 }
@@ -3836,11 +3845,11 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   color: #fff;
   padding: 20px 15px;
   font-size: 0.875rem;
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
+  width: 100%;
   position: relative;
-  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(5) div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
@@ -3852,6 +3861,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(5) div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
+  text-align: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(5) div.tooltip-container div.tooltip a {
   width: auto;
@@ -3879,8 +3889,8 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   border-color: #239a55;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(5) div.tooltip-container div.tooltip-arrow {
+  display: none;
   position: relative;
-  z-index: 30;
   width: 0;
   height: 0;
   border-left: 40px solid transparent;
@@ -3888,7 +3898,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   border-top: 40px solid #333645;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(5) div.client-logo-container {
-  height: 100px;
+  height: 150px;
   display: flex;
   align-items: center;
 }
@@ -3903,10 +3913,10 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   filter: grayscale(0%);
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(6) div.tooltip-container {
+  width: 300px;
   display: none;
   position: absolute;
-  bottom: 170px;
-  z-index: 30;
+  bottom: 150px;
   flex-direction: column;
   align-items: center;
 }
@@ -3915,11 +3925,11 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   color: #fff;
   padding: 20px 15px;
   font-size: 0.875rem;
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
+  width: 100%;
   position: relative;
-  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(6) div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
@@ -3931,6 +3941,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(6) div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
+  text-align: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(6) div.tooltip-container div.tooltip a {
   width: auto;
@@ -3958,8 +3969,8 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   border-color: #735093;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(6) div.tooltip-container div.tooltip-arrow {
+  display: none;
   position: relative;
-  z-index: 30;
   width: 0;
   height: 0;
   border-left: 40px solid transparent;
@@ -3967,7 +3978,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   border-top: 40px solid #333645;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-child(6) div.client-logo-container {
-  height: 100px;
+  height: 150px;
   display: flex;
   align-items: center;
 }
@@ -3982,10 +3993,10 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:nth-ch
   filter: grayscale(0%);
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:last-child div.tooltip-container {
+  width: 300px;
   display: none;
   position: absolute;
-  bottom: 170px;
-  z-index: 30;
+  bottom: 150px;
   flex-direction: column;
   align-items: center;
 }
@@ -3994,11 +4005,11 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:last-c
   color: #fff;
   padding: 20px 15px;
   font-size: 0.875rem;
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
+  width: 100%;
   position: relative;
-  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:last-child div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
@@ -4010,6 +4021,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:last-c
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:last-child div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
+  text-align: center;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:last-child div.tooltip-container div.tooltip a {
   width: auto;
@@ -4031,8 +4043,8 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:last-c
   user-select: none;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:last-child div.tooltip-container div.tooltip-arrow {
+  display: none;
   position: relative;
-  z-index: 30;
   width: 0;
   height: 0;
   border-left: 40px solid transparent;
@@ -4040,7 +4052,7 @@ div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:last-c
   border-top: 40px solid #333645;
 }
 div.our-clients-carousel div.slick-list div.slick-track div.carousel-item:last-child div.client-logo-container {
-  height: 100px;
+  height: 150px;
   display: flex;
   align-items: center;
 }

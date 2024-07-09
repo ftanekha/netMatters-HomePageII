@@ -1,16 +1,14 @@
 @mixin tooltip($theme){
-    // display: none;
     background-color: #333645;
     color: #fff;
     padding: 20px 15px;
     font-size: .875rem;
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
+    width: 100%;
     position: relative;
-    z-index: $tooltip_z-index;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     h3{
-        // position: relative;
         font-size: 1.125rem;
         font-weight: 400;
         margin: 0;
@@ -19,10 +17,10 @@
     }
     p{
         padding: 10px;
-        line-height: 1.6
+        line-height: 1.6;
+        text-align: center;
     }
     a{
         @include case-study-link($theme);
-        span{}
     }
 }

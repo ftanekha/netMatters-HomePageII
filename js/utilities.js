@@ -196,6 +196,9 @@ function toggleClientTooltip(){
                     $(`div.tooltip-container.${client}`).css({
                         display : 'flex'
                     })
+                    $(`div.tooltip-container.${client} div.tooltip-arrow`).css({
+                        display : 'block'
+                    })
                 }
             )
             //hide tooltip
@@ -203,8 +206,10 @@ function toggleClientTooltip(){
             .on(
                 'mouseleave', 
                 ()=> {
-                    $(`div.tooltip-container.${client}`)
-                    .css({
+                    $(`div.tooltip-container.${client}`).css({
+                        display : 'none'
+                    })
+                    $(`div.tooltip-container.${client} div.tooltip-arrow`).css({
                         display : 'none'
                     })
                 }

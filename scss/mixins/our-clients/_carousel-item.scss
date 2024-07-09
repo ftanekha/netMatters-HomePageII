@@ -1,9 +1,9 @@
 @mixin carousel-item($theme){
     div.tooltip-container{
+        width: 300px;
         display: none;
         position: absolute;
-        bottom: 170px;
-        z-index: $tooltip-container_z-index;
+        bottom: 150px;
         flex-direction: column;
         align-items: center;
         div.tooltip{
@@ -14,7 +14,7 @@
         }
     }
     div.client-logo-container{
-        height: 100px;
+        height: 150px;
         display: flex;
         align-items: center;
         img {
