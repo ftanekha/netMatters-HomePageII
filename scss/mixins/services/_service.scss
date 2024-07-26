@@ -1,4 +1,5 @@
 @import "service-theme";
+
 @mixin block{
     display: block;
     border: 1px solid #ccc;
@@ -6,7 +7,6 @@
     box-shadow: 0 3px 35px rgba(0,0,0,.1);
 }
 
-// @mixin service($position: top, $bg: transparent, $theme){
 @mixin service($name){
     list-style-type: none;
     a{
@@ -33,18 +33,21 @@
             border-color: transparent;
             top: -10px;
             transition: .5s ease;
-            div{
+            div.service-info-container{
                 span{
                     background-color: white !important;
                 }
-                button{
+                div.service-button{
                     background-color: white;
                     border-color: transparent;
                 }
             }
         }
-        div{
+        div.service-info-container{
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             span{
                 display: block;
                 border-radius: 50%;
@@ -71,9 +74,7 @@
                 margin-bottom: 13px;
                 font-weight: 400;
             }
-            button{
-                //from cass btn
-                height: auto;
+            div.service-button{
                 line-height: 35px;
                 padding: 5px 15px;
                 text-transform: uppercase;
@@ -85,11 +86,10 @@
                 border: 1px solid transparent;
                 border-radius: 3px;;
                 font-weight: 400;
-                //calcl
-                width: 127.737px;
+                //calculated
+                // width: 127.737px;
+                width: 130px;
                 height: 45px;
-                //
-                padding: 5px 15px;
             }
         }
     }

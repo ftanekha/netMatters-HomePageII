@@ -2,9 +2,7 @@ div#middle{
     div.container{
         div.our-services-headline{
             color: #333645;
-            //temp margin, tbc
             margin: 30px auto;
-            //
             h2{
                 margin: 50px 0;
                 strong{
@@ -27,11 +25,6 @@ div#middle{
                     text-decoration: underline;
                     outline: 0;
                 }
-                
-                // span{
-                // cant find the right arrow
-                //     em{}
-                // }
             }
             @media (min-width: 768px){
                 display: flex;
@@ -47,24 +40,21 @@ div#middle{
             div#top-services{
                 ul{
                     padding: 0;
-
-                    li:first-child{ @include service(bs);}
-                    li:nth-child(2){ @include service(it);}
-                    li:last-child{ @include service(dm);}
-
+                    li:first-child{ @include service(bs)}
+                    li:nth-child(2){ @include service(it)}
+                    li:last-child{ @include service(dm)}
                     @media (min-width: 992px){
                         display: flex;
                         gap: 30px;
-
                         li{
                             width: calc(100% / 3);
                             display: flex;
                             a{
-                                div{
+                                div.service-info-container{
                                     display: flex;
                                     flex-direction: column;
                                     align-items: center;
-                                    button{
+                                    div.service-button{
                                         margin-top: auto;
                                     }
                                 }
@@ -74,33 +64,29 @@ div#middle{
                 }
             }
             div#bottom-services{
-                // display: none;
                 ul{
                     padding: 0;
-
                     li:first-child{ @include service(ts);}
                     li:nth-child(2){ @include service(wd);}
                     li:nth-child(3){ @include service(cs);}
                     li:last-child{ @include service(dt);}
                 }
-
                 @media (min-width: 768px){
-                    //remove unwanted extra space
+                    //remove extra space
                     margin-top: -16px;
                     //
                     ul{
                         display: grid;
                         grid-template-columns: repeat(2, calc( (100% - ( 30px * 2)) / 2) );
                         column-gap: 30px;
-
                         li{
                             display: flex;
                             a{
-                                div{
+                                div.service-info-container{
                                     display: flex;
                                     flex-direction: column;
                                     align-items: center;
-                                    button{
+                                    div.service-button{
                                         margin-top: auto;
                                     }
                                 }
@@ -108,7 +94,7 @@ div#middle{
                         }
                     }
                 }
-                @media (min-width: 1260px){
+                @media (min-width: 1220px){
                     ul{
                         grid-template-columns: repeat(4, calc( (100% - (30px * 3)) / 4) );
                     }
