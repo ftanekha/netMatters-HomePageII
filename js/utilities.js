@@ -1,54 +1,120 @@
 function showNavigationDropDown(){
     const $mainNavigationDropdown = $('#main-navigation-dropdown')
     const dropDownMenuBgColorOptions = {
-        bs: '#526781',
-        it: '#286abd',
-        dm: '#25a25a',
-        ts: '#bc2c28',
-        wd: '#79539a',
-        cs: '#de093f',
-        dc: '#a3331d'
+        'bs': {
+            navItemHover: '#67809f;',
+            info:'#526781'
+        },
+        'it': {
+            navItemHover: '#4183d7',
+            info:'#286abd'
+        },
+        'dm': {
+            navItemHover: '#2ecc71',
+            info:'#25a25a'
+        },
+        'ts': {
+            navItemHover: '#d64541',
+            info:'#bc2c28'
+        },
+        'wd': {
+            navItemHover: '#926fb1',
+            info:'#79539a'
+        },
+        'cs': {
+            navItemHover: '#f62459',
+            info:'#de093f'
+        },
+        'dc': {
+            navItemHover: '#ce4125',
+            info:'#a3331d'
+        }
+    }
+
+    const activeNavItemConfig = {
+        link: false, 
+        info: false,
+        prevActiveNavItemClassSuffix: '',
+        activeNavItemInfoDisplay: 'none',
     };
 
     ['bs', 'it', 'dm', 'ts', 'wd', 'cs', 'dc']
     .forEach(
         classSuffix => {
-            $(`.nav-${classSuffix}`).on(
-                'mouseover',
-                ()=> {
-                    $mainNavigationDropdown.css(
-                        {
-                            display: 'block',
-                            'background-color': dropDownMenuBgColorOptions[classSuffix]
+            $(`.nav-item-${classSuffix}`).on(
+                'mouseenter', ()=> {
+                    if(activeNavItemConfig.prevActiveNavItemClassSuffix){
+                        activeNavItemConfig.prevActiveNavItemClassSuffix = classSuffix
+                        // if(activeNavItemConfig.prevActiveNavItemClassSuffix === classSuffix){
+                        //     $(this).css('background', dropDownMenuBgColorOptions[classSuffix].navItemHover)
+                        // }
+                        $(this).css('background-color', dropDownMenuBgColorOptions[classSuffix].navItemHover)
+                        // console.log(activeNavItemConfig.prevActiveNavItemClassSuffix)
+                        // $(`.nav-item-info-${[activeNavItemConfig.prevActiveNavItemClassSuffix]}`).css('display',  'none')
+                        
+                        $mainNavigationDropdown.css('display',  'none')
+                        $(`.nav-item-info-${[activeNavItemConfig.prevActiveNavItemClassSuffix]}`).css('display',  'none')
+                    }
+                    if($mainNavigationDropdown.css('display') === 'none'){
+                        $mainNavigationDropdown.css(
+                            {
+                                display: 'block',
+                                'background-color': dropDownMenuBgColorOptions[classSuffix].info
+                            }
+                        ) 
+                    }
+                   
+
+                    $(`.nav-item-info-${[classSuffix]}`).css('display',  'block')
+                    // navItem-mouseLEAVE
+                    $(`.nav-item-${classSuffix}`).on(
+                        'mouseleave', 
+                        ()=> $(this).css('background-color', '#333645')
+                        // ()=> activeNavItemConfig.prevActiveNavItemClassSuffix = classSuffix
+                    )
+                    // navItem-Dropdown-Arrow mouseENTER
+                    $(`.nav-item-${classSuffix} .triangle`).on(
+                        'mouseenter',
+                        ()=> {
+                            // console.log($(`#nav-item-${classSuffix}_icon-container`))
+                            // $(`.nav-${activeNavItemConfig.prevActiveNavItemClassSuffix}`).css('background-color', dropDownMenuBgColorOptions[classSuffix].navItemHover)
+                            // $(`.nav-${classSuffix} span`).css('color', 'white')
+                            console.log($(`.nav-item-${classSuffix} .triangle`).parent().css('background-color', ))
+                            // console.log(activeNavItemConfig.prevActiveNavItemClassSuffix === classSuffix)
                         }
                     )
+                    // navItem-Dropdown-mouseENTER
+                    $mainNavigationDropdown.on(
+                        'mouseenter',
+                        ()=> {
+                            // console.log($(`#nav-item-${classSuffix}_icon-container`))
+                            $(`.nav-${activeNavItemConfig.prevActiveNavItemClassSuffix}`).css('background-color', dropDownMenuBgColorOptions[classSuffix].navItemHover)
+                            $(`.nav-${classSuffix} span`).css('color', 'white')
+                            
+                            // console.log(activeNavItemConfig.prevActiveNavItemClassSuffix === classSuffix)
+                        }
+                    )
+                    // navItem-Dropdown-mouseLEAVE
+                    $mainNavigationDropdown.on(
+                        'mouseleave',
+                        ()=>{
+                                $mainNavigationDropdown.css('display', 'none') 
+                                $(`.nav-item-info-${[classSuffix]}`).css('display',  'none')
+                                activeNavItemConfig.prevActiveNavItemClassSuffix = classSuffix
+                                // $(`.nav-item-${classSuffix}`).css('background-color', '#333645');
+                                // console.log('old suffix', classSuffix)
 
-                    $(`div.dropdown-${classSuffix}`).css('display', 'block')
-
-                    $(`div.triangle.${classSuffix}`).css('display', 'block')
+                                $(`.nav-${classSuffix}`).css('background-color', '#333645')
+                        }
+                    )
+        
                 }
             )
+
+            
         }
-    );
+    )
     
-    ['bs', 'it', 'dm', 'ts', 'wd', 'cs', 'dc']
-    .forEach(
-        classSuffix => {
-            $(`.nav-${classSuffix}`).on(
-                'mouseleave',
-                ()=> {
-                    $(`div.triangle.${classSuffix}`).css('display', 'none')
-                    $(`.dropdown-${classSuffix}`).css('display', 'none')
-                    $mainNavigationDropdown.css('display', 'none')
-                }
-            )
-        }
-    )
-
-    $mainNavigationDropdown.on(
-        'mouseleave',
-        ()=> $(this).css('display', 'none')
-    )
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 function togglePageSize(bodyOverflow){

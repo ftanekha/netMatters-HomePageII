@@ -1,6 +1,8 @@
 div#main-navigation-dropdown{
     display: none;
     margin-top: -15px;
+    position: relative;
+    z-index: $main-navigation-dropdown_z-index;
     div#main-navigation-dropdown-container{
         div.main-navigation-dropdown-option-container{
             display: none;

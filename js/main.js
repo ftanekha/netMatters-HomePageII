@@ -1,4 +1,5 @@
-import {showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, toggleClientTooltip, displayCookieModal} from './utilities.js'
+// showNavigationDropDown, 
+import {showSideMenu, hideSideMenu, toggleStickyHeader, toggleClientTooltip, displayCookieModal} from './utilities.js'
 
 $(document).ready(()=>{
     /*COOKIE POPUP POLICY & consent management*/
@@ -6,7 +7,7 @@ $(document).ready(()=>{
     const cookiSettingsButton = $('.cookie-settings-btn')
     cookiSettingsButton.on('click', ()=> displayCookieModal(true))
     /*NAVIGATION DROP-DOWN MENU*/
-    showNavigationDropDown()
+    // showNavigationDropDown()
     /*CAROUSEL///Banner///*/
     $('div#banner').slick(
         {//configuration object

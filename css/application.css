@@ -931,9 +931,7 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
   header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a.btn-support {
     display: block;
     border: 0 !important;
-    background-color: #4183d7;
     color: #fff;
-    border-color: #4183d7;
     text-transform: uppercase;
     font-size: 1.063rem;
     border-radius: 3px;
@@ -944,11 +942,6 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
     background-image: none;
     border: 1px solid transparent;
     line-height: 46px;
-  }
-  header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a.btn-support:active, header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a.btn-support:hover {
-    color: #fff;
-    background-color: #2a6ec6;
-    border-color: #2665b5;
   }
   header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions div.support a.btn-support span.icon-mouse {
     float: left !important;
@@ -1101,7 +1094,8 @@ nav div.container div a:first-child div span:first-child {
 nav div.container div a:first-child div small {
   display: block;
   padding-bottom: 1px;
-  font-size: 0.481rem;
+  font-size: 0.625rem;
+  margin-top: -0.1rem;
 }
 nav div.container div a:first-child div span:last-child {
   display: inline-block;
@@ -1165,7 +1159,8 @@ nav div.container div a:nth-child(2) div span:first-child {
 nav div.container div a:nth-child(2) div small {
   display: block;
   padding-bottom: 1px;
-  font-size: 0.481rem;
+  font-size: 0.625rem;
+  margin-top: -0.1rem;
 }
 nav div.container div a:nth-child(2) div span:last-child {
   display: inline-block;
@@ -1229,7 +1224,8 @@ nav div.container div a:nth-child(3) div span:first-child {
 nav div.container div a:nth-child(3) div small {
   display: block;
   padding-bottom: 1px;
-  font-size: 0.481rem;
+  font-size: 0.625rem;
+  margin-top: -0.1rem;
 }
 nav div.container div a:nth-child(3) div span:last-child {
   display: inline-block;
@@ -1293,7 +1289,8 @@ nav div.container div a:nth-child(4) div span:first-child {
 nav div.container div a:nth-child(4) div small {
   display: block;
   padding-bottom: 1px;
-  font-size: 0.481rem;
+  font-size: 0.625rem;
+  margin-top: -0.1rem;
 }
 nav div.container div a:nth-child(4) div span:last-child {
   display: inline-block;
@@ -1357,7 +1354,8 @@ nav div.container div a:nth-child(5) div span:first-child {
 nav div.container div a:nth-child(5) div small {
   display: block;
   padding-bottom: 1px;
-  font-size: 0.481rem;
+  font-size: 0.625rem;
+  margin-top: -0.1rem;
 }
 nav div.container div a:nth-child(5) div span:last-child {
   display: inline-block;
@@ -1421,7 +1419,8 @@ nav div.container div a:nth-child(6) div span:first-child {
 nav div.container div a:nth-child(6) div small {
   display: block;
   padding-bottom: 1px;
-  font-size: 0.481rem;
+  font-size: 0.625rem;
+  margin-top: -0.1rem;
 }
 nav div.container div a:nth-child(6) div span:last-child {
   display: inline-block;
@@ -1485,7 +1484,8 @@ nav div.container div a:last-child div span:first-child {
 nav div.container div a:last-child div small {
   display: block;
   padding-bottom: 1px;
-  font-size: 0.481rem;
+  font-size: 0.625rem;
+  margin-top: -0.1rem;
 }
 nav div.container div a:last-child div span:last-child {
   display: inline-block;
@@ -1515,6 +1515,8 @@ nav div.container div a:last-child div.triangle {
 div#main-navigation-dropdown {
   display: none;
   margin-top: -15px;
+  position: relative;
+  z-index: 20;
 }
 div#main-navigation-dropdown div#main-navigation-dropdown-container div.main-navigation-dropdown-option-container {
   display: none;
@@ -2337,20 +2339,17 @@ div.banner-item-container div.bg-image-container div.cyber-security div.wrapper 
 
 div#middle div.container div.our-services-headline {
   color: #333645;
-  margin: 30px auto;
-}
-div#middle div.container div.our-services-headline h2 {
-  margin: 50px 0;
+  margin: 50px auto;
 }
 div#middle div.container div.our-services-headline h2 strong {
   font-size: 2.7rem;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 400;
 }
 div#middle div.container div.our-services-headline a {
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.625rem;
+  font-size: 2.25rem;
   color: #333645;
 }
 div#middle div.container div.our-services-headline a.sm {
@@ -2363,6 +2362,9 @@ div#middle div.container div.our-services-headline a.md {
 div#middle div.container div.our-services-headline a:hover {
   text-decoration: underline;
   outline: 0;
+}
+div#middle div.container div.our-services-headline a em {
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   div#middle div.container div.our-services-headline {
@@ -3329,24 +3331,22 @@ div.container div.latest-news-headline {
   margin: 30px auto;
 }
 div.container div.latest-news-headline h2 {
-  margin: 50px 0;
+  margin: 60px 0 0 0;
 }
 div.container div.latest-news-headline h2 strong {
-  font-size: 2.7rem;
+  font-size: 2.25rem;
   line-height: 1.1;
   font-weight: 600;
 }
 div.container div.latest-news-headline a {
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.625rem;
+  font-size: 1.75rem;
   color: #333645;
 }
 div.container div.latest-news-headline a.sm {
   display: block;
   text-align: center;
-  margin-top: -40px;
-  padding-bottom: 25px;
 }
 div.container div.latest-news-headline a.md {
   display: none;
@@ -3354,6 +3354,9 @@ div.container div.latest-news-headline a.md {
 div.container div.latest-news-headline a:hover {
   text-decoration: underline;
   outline: 0;
+}
+div.container div.latest-news-headline a em {
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   div.container div.latest-news-headline {
