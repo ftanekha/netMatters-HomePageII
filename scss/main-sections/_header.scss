@@ -13,8 +13,11 @@ header{
                     display: flex;
                     align-items: center;
                     a{
+                        position: relative;
                         display: block;
                         picture{
+                            position: inherit;
+                            top: -5px;
                             img{
                                 max-width: min(374.167px, 100%);
                             }

@@ -667,7 +667,12 @@ header div.inner div.container div.row div.logo-container {
   align-items: center;
 }
 header div.inner div.container div.row div.logo-container a {
+  position: relative;
   display: block;
+}
+header div.inner div.container div.row div.logo-container a picture {
+  position: inherit;
+  top: -5px;
 }
 header div.inner div.container div.row div.logo-container a picture img {
   max-width: min(374.167px, 100%);
