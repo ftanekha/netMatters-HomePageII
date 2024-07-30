@@ -1059,6 +1059,7 @@ nav div.container div {
 nav div.container div a:first-child {
   display: block;
   width: 14.2857142857%;
+  height: 99px;
   padding: 15px;
   font-size: 1.438rem;
   text-align: center;
@@ -1091,6 +1092,9 @@ nav div.container div a:first-child div span:first-child {
   display: block;
   padding-bottom: 10px;
 }
+nav div.container div a:first-child div span:first-child.first {
+  font-size: 1.7rem;
+}
 nav div.container div a:first-child div small {
   display: block;
   padding-bottom: 1px;
@@ -1099,7 +1103,7 @@ nav div.container div a:first-child div small {
 }
 nav div.container div a:first-child div span:last-child {
   display: inline-block;
-  margin-top: -0.2rem;
+  margin-top: -0.4rem;
   font-size: 1.12rem;
 }
 nav div.container div a:first-child div.triangle {
@@ -1124,6 +1128,7 @@ nav div.container div a:first-child div.triangle {
 nav div.container div a:nth-child(2) {
   display: block;
   width: 14.2857142857%;
+  height: 99px;
   padding: 15px;
   font-size: 1.438rem;
   text-align: center;
@@ -1156,6 +1161,9 @@ nav div.container div a:nth-child(2) div span:first-child {
   display: block;
   padding-bottom: 10px;
 }
+nav div.container div a:nth-child(2) div span:first-child.first {
+  font-size: 1.7rem;
+}
 nav div.container div a:nth-child(2) div small {
   display: block;
   padding-bottom: 1px;
@@ -1164,7 +1172,7 @@ nav div.container div a:nth-child(2) div small {
 }
 nav div.container div a:nth-child(2) div span:last-child {
   display: inline-block;
-  margin-top: -0.2rem;
+  margin-top: -0.4rem;
   font-size: 1.12rem;
 }
 nav div.container div a:nth-child(2) div.triangle {
@@ -1189,6 +1197,7 @@ nav div.container div a:nth-child(2) div.triangle {
 nav div.container div a:nth-child(3) {
   display: block;
   width: 14.2857142857%;
+  height: 99px;
   padding: 15px;
   font-size: 1.438rem;
   text-align: center;
@@ -1221,6 +1230,9 @@ nav div.container div a:nth-child(3) div span:first-child {
   display: block;
   padding-bottom: 10px;
 }
+nav div.container div a:nth-child(3) div span:first-child.first {
+  font-size: 1.7rem;
+}
 nav div.container div a:nth-child(3) div small {
   display: block;
   padding-bottom: 1px;
@@ -1229,7 +1241,7 @@ nav div.container div a:nth-child(3) div small {
 }
 nav div.container div a:nth-child(3) div span:last-child {
   display: inline-block;
-  margin-top: -0.2rem;
+  margin-top: -0.4rem;
   font-size: 1.12rem;
 }
 nav div.container div a:nth-child(3) div.triangle {
@@ -1254,6 +1266,7 @@ nav div.container div a:nth-child(3) div.triangle {
 nav div.container div a:nth-child(4) {
   display: block;
   width: 14.2857142857%;
+  height: 99px;
   padding: 15px;
   font-size: 1.438rem;
   text-align: center;
@@ -1286,6 +1299,9 @@ nav div.container div a:nth-child(4) div span:first-child {
   display: block;
   padding-bottom: 10px;
 }
+nav div.container div a:nth-child(4) div span:first-child.first {
+  font-size: 1.7rem;
+}
 nav div.container div a:nth-child(4) div small {
   display: block;
   padding-bottom: 1px;
@@ -1294,7 +1310,7 @@ nav div.container div a:nth-child(4) div small {
 }
 nav div.container div a:nth-child(4) div span:last-child {
   display: inline-block;
-  margin-top: -0.2rem;
+  margin-top: -0.4rem;
   font-size: 1.12rem;
 }
 nav div.container div a:nth-child(4) div.triangle {
@@ -1319,6 +1335,7 @@ nav div.container div a:nth-child(4) div.triangle {
 nav div.container div a:nth-child(5) {
   display: block;
   width: 14.2857142857%;
+  height: 99px;
   padding: 15px;
   font-size: 1.438rem;
   text-align: center;
@@ -1351,6 +1368,9 @@ nav div.container div a:nth-child(5) div span:first-child {
   display: block;
   padding-bottom: 10px;
 }
+nav div.container div a:nth-child(5) div span:first-child.first {
+  font-size: 1.7rem;
+}
 nav div.container div a:nth-child(5) div small {
   display: block;
   padding-bottom: 1px;
@@ -1359,7 +1379,7 @@ nav div.container div a:nth-child(5) div small {
 }
 nav div.container div a:nth-child(5) div span:last-child {
   display: inline-block;
-  margin-top: -0.2rem;
+  margin-top: -0.4rem;
   font-size: 1.12rem;
 }
 nav div.container div a:nth-child(5) div.triangle {
@@ -1384,6 +1404,7 @@ nav div.container div a:nth-child(5) div.triangle {
 nav div.container div a:nth-child(6) {
   display: block;
   width: 14.2857142857%;
+  height: 99px;
   padding: 15px;
   font-size: 1.438rem;
   text-align: center;
@@ -1416,6 +1437,9 @@ nav div.container div a:nth-child(6) div span:first-child {
   display: block;
   padding-bottom: 10px;
 }
+nav div.container div a:nth-child(6) div span:first-child.first {
+  font-size: 1.7rem;
+}
 nav div.container div a:nth-child(6) div small {
   display: block;
   padding-bottom: 1px;
@@ -1424,7 +1448,7 @@ nav div.container div a:nth-child(6) div small {
 }
 nav div.container div a:nth-child(6) div span:last-child {
   display: inline-block;
-  margin-top: -0.2rem;
+  margin-top: -0.4rem;
   font-size: 1.12rem;
 }
 nav div.container div a:nth-child(6) div.triangle {
@@ -1449,6 +1473,7 @@ nav div.container div a:nth-child(6) div.triangle {
 nav div.container div a:last-child {
   display: block;
   width: 14.2857142857%;
+  height: 99px;
   padding: 15px;
   font-size: 1.438rem;
   text-align: center;
@@ -1481,6 +1506,9 @@ nav div.container div a:last-child div span:first-child {
   display: block;
   padding-bottom: 10px;
 }
+nav div.container div a:last-child div span:first-child.first {
+  font-size: 1.7rem;
+}
 nav div.container div a:last-child div small {
   display: block;
   padding-bottom: 1px;
@@ -1489,7 +1517,7 @@ nav div.container div a:last-child div small {
 }
 nav div.container div a:last-child div span:last-child {
   display: inline-block;
-  margin-top: -0.2rem;
+  margin-top: -0.4rem;
   font-size: 1.12rem;
 }
 nav div.container div a:last-child div.triangle {
