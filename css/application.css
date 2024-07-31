@@ -2372,7 +2372,9 @@ div.banner-item-container div.bg-image-container div.cyber-security div.wrapper 
 
 div#middle div.container div.our-services-headline {
   color: #333645;
-  margin: 50px auto;
+}
+div#middle div.container div.our-services-headline h2 {
+  padding: 25px 0 15px 0;
 }
 div#middle div.container div.our-services-headline h2 strong {
   font-size: 2.7rem;
@@ -2396,20 +2398,33 @@ div#middle div.container div.our-services-headline a:hover {
   text-decoration: underline;
   outline: 0;
 }
+div#middle div.container div.our-services-headline a span {
+  font-size: 1.625rem;
+}
 div#middle div.container div.our-services-headline a em {
   font-weight: 600;
+  font-size: 2rem;
+  position: relative;
+  top: 0.25rem;
 }
 @media (min-width: 768px) {
   div#middle div.container div.our-services-headline {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin: -20px 0 0 0;
   }
   div#middle div.container div.our-services-headline a.sm {
     display: none;
   }
   div#middle div.container div.our-services-headline a.md {
     display: inline-block;
+  }
+  div#middle div.container div.our-services-headline a span {
+    font-size: 2.5rem;
+  }
+  div#middle div.container div.our-services-headline a em {
+    font-size: 2.25rem;
   }
 }
 div#middle div.container div#our-services-container div#top-services ul {
@@ -3390,6 +3405,7 @@ div.container div.latest-news-headline a:hover {
 }
 div.container div.latest-news-headline a em {
   font-weight: 600;
+  font-size: 1.625rem;
 }
 @media (min-width: 768px) {
   div.container div.latest-news-headline {
@@ -3435,7 +3451,7 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
 div.container div#latest-news-main-container div#latest-news-container div.latest-news-item:hover {
   top: -10px;
 }
-div.container div#latest-news-main-container div#latest-news-container div.latest-news-item img {
+div.container div#latest-news-main-container div#latest-news-container div.latest-news-item img.latest-news-photo {
   max-width: 100%;
   max-height: 50%;
 }
@@ -3446,12 +3462,15 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
 }
 div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body {
   margin: 30px auto;
-  margin-top: -6px;
+  margin-top: -26px;
   padding: 30px;
   border-left: solid #ccc 1px;
   border-bottom: solid #ccc 1px;
   border-right: solid #ccc 1px;
   border-radius: 3px;
+}
+div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body h3 {
+  font-size: 1rem;
 }
 div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body h3.shamrock a {
   color: #2ecc71 !important;
@@ -3471,7 +3490,6 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
   transition: 0.5s ease;
 }
 div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body p {
-  margin: 0 0 10px;
   color: #666;
   line-height: 1.375rem;
   font-size: 0.8125rem;
@@ -3485,7 +3503,7 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
   text-align: center;
   letter-spacing: 0.4px;
   border: 1px solid transparent;
-  margin-top: 30px;
+  margin-top: 15px;
   padding: 5px 15px;
   font-size: 1.063rem;
   text-transform: uppercase;
@@ -3501,7 +3519,7 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
   text-align: center;
   letter-spacing: 0.4px;
   border: 1px solid transparent;
-  margin-top: 30px;
+  margin-top: 15px;
   padding: 5px 15px;
   font-size: 1.063rem;
   text-transform: uppercase;
@@ -3517,7 +3535,7 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
   text-align: center;
   letter-spacing: 0.4px;
   border: 1px solid transparent;
-  margin-top: 30px;
+  margin-top: 15px;
   padding: 5px 15px;
   font-size: 1.063rem;
   text-transform: uppercase;
