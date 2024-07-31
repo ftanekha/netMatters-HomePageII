@@ -1,11 +1,8 @@
 div.container{
     div.latest-news-headline{
         color: #333645;
-        //temp margin, tbc
-        // margin: 30px auto;
-        //
         h2{
-            // background-color: green;
+            
             margin: 50px 0 10px 0;
             strong{
                 font-size: 2.25rem;
@@ -14,6 +11,8 @@ div.container{
             }
         }
         a{
+            margin-top: -20px;
+            padding-bottom: 25px;
             text-decoration: none;
             font-weight: 600;
             font-size: 1.75rem;
@@ -36,6 +35,7 @@ div.container{
             display: flex;
             justify-content: space-between;
             align-items: baseline;
+            h2{margin-bottom: -20px;}
             a{
                 &.sm{ display: none;}
                 &.md{ display: inline-block;}
