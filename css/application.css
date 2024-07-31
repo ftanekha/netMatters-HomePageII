@@ -2510,8 +2510,7 @@ div#middle div.container div#our-services-container div#top-services ul li:first
   font-size: 1.3rem;
   font-weight: 400;
   position: relative;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 0;
 }
 div#middle div.container div#our-services-container div#top-services ul li:first-child a div.service-info-container p {
   font-size: 0.8125rem;
@@ -2613,8 +2612,7 @@ div#middle div.container div#our-services-container div#top-services ul li:nth-c
   font-size: 1.3rem;
   font-weight: 400;
   position: relative;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 0;
 }
 div#middle div.container div#our-services-container div#top-services ul li:nth-child(2) a div.service-info-container p {
   font-size: 0.8125rem;
@@ -2716,8 +2714,7 @@ div#middle div.container div#our-services-container div#top-services ul li:last-
   font-size: 1.3rem;
   font-weight: 400;
   position: relative;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 0;
 }
 div#middle div.container div#our-services-container div#top-services ul li:last-child a div.service-info-container p {
   font-size: 0.8125rem;
@@ -2840,8 +2837,7 @@ div#middle div.container div#our-services-container div#bottom-services ul li:fi
   font-size: 1.3rem;
   font-weight: 400;
   position: relative;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 0;
 }
 div#middle div.container div#our-services-container div#bottom-services ul li:first-child a div.service-info-container p {
   font-size: 0.8125rem;
@@ -2940,8 +2936,7 @@ div#middle div.container div#our-services-container div#bottom-services ul li:nt
   font-size: 1.3rem;
   font-weight: 400;
   position: relative;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 0;
 }
 div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(2) a div.service-info-container p {
   font-size: 0.8125rem;
@@ -3040,8 +3035,7 @@ div#middle div.container div#our-services-container div#bottom-services ul li:nt
   font-size: 1.3rem;
   font-weight: 400;
   position: relative;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 0;
 }
 div#middle div.container div#our-services-container div#bottom-services ul li:nth-child(3) a div.service-info-container p {
   font-size: 0.8125rem;
@@ -3140,8 +3134,7 @@ div#middle div.container div#our-services-container div#bottom-services ul li:la
   font-size: 1.3rem;
   font-weight: 400;
   position: relative;
-  padding-bottom: 10px;
-  margin: 0 0 11px;
+  margin: 0;
 }
 div#middle div.container div#our-services-container div#bottom-services ul li:last-child a div.service-info-container p {
   font-size: 0.8125rem;
@@ -3169,7 +3162,7 @@ div#middle div.container div#our-services-container div#bottom-services ul li:la
   }
   div#middle div.container div#our-services-container div#bottom-services ul {
     display: grid;
-    grid-template-columns: repeat(2, calc((100% - 60px) / 2));
+    grid-template-columns: repeat(2, calc((100% - 30px) / 2));
     column-gap: 30px;
   }
   div#middle div.container div#our-services-container div#bottom-services ul li {
@@ -3190,6 +3183,11 @@ div#middle div.container div#our-services-container div#bottom-services ul li:la
   }
 }
 
+@media (min-width: 768px) {
+  div.accreditations-container {
+    margin-top: 60px;
+  }
+}
 div.accreditations-container div.slick-list div.slick-track {
   background-color: white;
   margin: 40px 0 20px;
