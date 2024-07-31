@@ -3376,10 +3376,9 @@ div#about-netmatters div.container div.handy-wrapper div#client-review footer a:
 
 div.container div.latest-news-headline {
   color: #333645;
-  margin: 30px auto;
 }
 div.container div.latest-news-headline h2 {
-  margin: 60px 0 0 0;
+  margin: 50px 0 10px 0;
 }
 div.container div.latest-news-headline h2 strong {
   font-size: 2.25rem;
@@ -3566,7 +3565,8 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
 }
 
 div.our-clients-carousel {
-  margin: 0 auto 50px;
+  margin: 0 auto 35px;
+  padding-top: 20px;
 }
 div.our-clients-carousel div.slick-list {
   overflow: visible;
