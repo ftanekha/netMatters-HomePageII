@@ -1,11 +1,13 @@
 div#side-menu{
     background-color: #333645;
     width: 275px;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    bottom: 0;
     z-index: $side-menu_z-index;
     display: none;
+    height: 100vh;
     overflow: scroll;
+    transition: .3s;
     &.toggle-side-menu-in{
         display: block;
         animation-name: slide-in;

@@ -7,9 +7,9 @@
         line-height: 1.1;
     }
     div.dropdown-option-wrapper{
-        display: flex;
-        justify-content: space-between;
+        width: 80%;
         ul{
+            width: 33%;
             margin: -20px 0;
             padding-left: 0;
             display: inline-block;
