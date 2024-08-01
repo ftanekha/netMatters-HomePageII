@@ -1,43 +1,43 @@
 function showNavigationDropDown(){
-    const navBgColor = '#333645'
-    const $mainNavigationDropdown = $('#main-navigation-dropdown')
-    const dropDownMenuBgColorOptions = {
-        'bs': {
-            navItemHover: '#67809f;',
-            info:'#526781'
-        },
-        'it': {
-            navItemHover: '#4183d7',
-            info:'#286abd'
-        },
-        'dm': {
-            navItemHover: '#2ecc71',
-            info:'#25a25a'
-        },
-        'ts': {
-            navItemHover: '#d64541',
-            info:'#bc2c28'
-        },
-        'wd': {
-            navItemHover: '#926fb1',
-            info:'#79539a'
-        },
-        'cs': {
-            navItemHover: '#f62459',
-            info:'#de093f'
-        },
-        'dc': {
-            navItemHover: '#ce4125',
-            info:'#a3331d'
-        }
-    }
+    // const navBgColor = '#333645'
+    // const $mainNavigationDropdown = $('#main-navigation-dropdown')
+    // const dropDownMenuBgColorOptions = {
+    //     'bs': {
+    //         navItemHover: '#67809f;',
+    //         info:'#526781'
+    //     },
+    //     'it': {
+    //         navItemHover: '#4183d7',
+    //         info:'#286abd'
+    //     },
+    //     'dm': {
+    //         navItemHover: '#2ecc71',
+    //         info:'#25a25a'
+    //     },
+    //     'ts': {
+    //         navItemHover: '#d64541',
+    //         info:'#bc2c28'
+    //     },
+    //     'wd': {
+    //         navItemHover: '#926fb1',
+    //         info:'#79539a'
+    //     },
+    //     'cs': {
+    //         navItemHover: '#f62459',
+    //         info:'#de093f'
+    //     },
+    //     'dc': {
+    //         navItemHover: '#ce4125',
+    //         info:'#a3331d'
+    //     }
+    // }
 
-    const activeNavItemConfig = {
-        link: false, 
-        info: false,
-        prevActiveNavItemClassSuffix: '',
-        activeNavItemInfoDisplay: 'none',
-    };
+    // const activeNavItemConfig = {
+    //     link: false, 
+    //     info: false,
+    //     prevActiveNavItemClassSuffix: '',
+    //     activeNavItemInfoDisplay: 'none',
+    // };
 
     // ['bs', 'it', 'dm', 'ts', 'wd', 'cs', 'dc']
     // .forEach(

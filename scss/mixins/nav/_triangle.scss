@@ -1,0 +1,21 @@
+@mixin triangle($color){
+    width: 0px;
+    // height: 20px;
+    border-style: solid;
+    border-width: 40px 84px 0 84px;
+    border-color: $color transparent transparent transparent;
+    transform: rotate(0deg);
+}
+
+// @mixin tringle($color){
+//         // display: none;
+//         position: absolute;
+//         margin: 0 auto;
+//         height: 20px;
+//         bottom: -40.5px;
+//         left: -1px;
+//         @media (min-width: 1220px){
+//             left: -1px;
+//             border-width: 40px 84px 0 84px;;
+//         }
+// }

@@ -1413,6 +1413,63 @@ nav div.nav-links-container a:last-child div span:last-child {
   font-size: 1.12rem;
 }
 
+div.triangles {
+  background-color: green;
+  display: flex;
+}
+div.triangles div.triangle {
+  width: 100%;
+}
+div.triangles div.triangle:first-child {
+  width: 0px;
+  border-style: solid;
+  border-width: 40px 84px 0 84px;
+  border-color: #67809f transparent transparent transparent;
+  transform: rotate(0deg);
+}
+div.triangles div.triangle:nth-child(2) {
+  width: 0px;
+  border-style: solid;
+  border-width: 40px 84px 0 84px;
+  border-color: #4183d7 transparent transparent transparent;
+  transform: rotate(0deg);
+}
+div.triangles div.triangle:nth-child(3) {
+  width: 0px;
+  border-style: solid;
+  border-width: 40px 84px 0 84px;
+  border-color: #2ecc71 transparent transparent transparent;
+  transform: rotate(0deg);
+}
+div.triangles div.triangle:nth-child(4) {
+  width: 0px;
+  border-style: solid;
+  border-width: 40px 84px 0 84px;
+  border-color: #d64541 transparent transparent transparent;
+  transform: rotate(0deg);
+}
+div.triangles div.triangle:nth-child(5) {
+  width: 0px;
+  border-style: solid;
+  border-width: 40px 84px 0 84px;
+  border-color: #926fb1 transparent transparent transparent;
+  transform: rotate(0deg);
+}
+div.triangles div.triangle:nth-child(6) {
+  width: 0px;
+  border-style: solid;
+  border-width: 40px 84px 0 84px;
+  border-color: #f62459 transparent transparent transparent;
+  transform: rotate(0deg);
+}
+div.triangles div.triangle:last-child {
+  width: 0px;
+  border-style: solid;
+  border-width: 40px 84px 0 84px;
+  border-color: #ce4125 transparent transparent transparent;
+  transform: rotate(0deg);
+}
+
 div#main-navigation-dropdown {
   display: none;
   margin-top: -15px;
