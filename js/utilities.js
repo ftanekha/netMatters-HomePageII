@@ -239,24 +239,22 @@ function changeRebeccaTextContent(){
     const rebeccaTextOptions = {
         sm: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time each month to highlight ...', 
         md: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time ...',
-        lg: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time each month to highlight the accomplishments of ... '
+        lg: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time each month to highlight the accomplishments of ...'
     }
 
     const mediaQueries = {
         sm: window.matchMedia('(min-width: 768px)'),
         md: window.matchMedia('(min-width: 992px)'),
         lg: window.matchMedia('(min-width: 1220px)')
-    }
+    };
 
-    if(mediaQueries.sm.matches){
-        $latestNewsItemRebeccaTextContent.text(rebeccaTextOptions.sm)
-    }
-    if(mediaQueries.md.matches){
-        $latestNewsItemRebeccaTextContent.text(rebeccaTextOptions.md)
-    }
-    if(mediaQueries.lg.matches){
-        $latestNewsItemRebeccaTextContent.text(rebeccaTextOptions.lg)
-    }
+    ['sm', 'md', 'lg'].forEach(
+        breakPoint => {
+            if(mediaQueries[breakPoint].matches){
+                $latestNewsItemRebeccaTextContent.text(rebeccaTextOptions[breakPoint])
+            }
+        }
+    )
 }
 //////////////////////////////////////////////////////////////////////////////////
 function toggleClientTooltip(){
