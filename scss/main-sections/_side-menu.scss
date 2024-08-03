@@ -6,7 +6,7 @@ div#side-menu{
     z-index: $side-menu_z-index;
     display: none;
     height: 100vh;
-    overflow: scroll;
+    overflow: auto;
     transition: .3s;
     &.toggle-side-menu-in{
         display: block;

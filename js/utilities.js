@@ -1,43 +1,44 @@
 function showNavigationDropDown(){
-    // const navBgColor = '#333645'
-    // const $mainNavigationDropdown = $('#main-navigation-dropdown')
-    // const dropDownMenuBgColorOptions = {
-    //     'bs': {
-    //         navItemHover: '#67809f;',
-    //         info:'#526781'
-    //     },
-    //     'it': {
-    //         navItemHover: '#4183d7',
-    //         info:'#286abd'
-    //     },
-    //     'dm': {
-    //         navItemHover: '#2ecc71',
-    //         info:'#25a25a'
-    //     },
-    //     'ts': {
-    //         navItemHover: '#d64541',
-    //         info:'#bc2c28'
-    //     },
-    //     'wd': {
-    //         navItemHover: '#926fb1',
-    //         info:'#79539a'
-    //     },
-    //     'cs': {
-    //         navItemHover: '#f62459',
-    //         info:'#de093f'
-    //     },
-    //     'dc': {
-    //         navItemHover: '#ce4125',
-    //         info:'#a3331d'
-    //     }
-    // }
+    const navBgColor = '#333645'
+    const $triangles = $('#triangles')
+    const $mainNavigationDropdown = $('#main-navigation-dropdown')
+    const dropDownMenuBgColorOptions = {
+        'bs': {
+            navItemHover: '#67809f;',
+            navItemInfo:'#526781'
+        },
+        'it': {
+            navItemHover: '#4183d7',
+            navItemInfo:'#286abd'
+        },
+        'dm': {
+            navItemHover: '#2ecc71',
+           navItemInfo:'#25a25a'
+        },
+        'ts': {
+            navItemHover: '#d64541',
+           navItemInfo:'#bc2c28'
+        },
+        'wd': {
+            navItemHover: '#926fb1',
+           navItemInfo:'#79539a'
+        },
+        'cs': {
+            navItemHover: '#f62459',
+           navItemInfo:'#de093f'
+        },
+        'dc': {
+            navItemHover: '#ce4125',
+           navItemInfo:'#a3331d'
+        }
+    }
 
-    // const activeNavItemConfig = {
-    //     link: false, 
-    //     info: false,
-    //     prevActiveNavItemClassSuffix: '',
-    //     activeNavItemInfoDisplay: 'none',
-    // };
+    const activeNavItemConfig = {
+        link: false, 
+        info: false,
+        prevActiveNavItemClassSuffix: '',
+        activeNavItemInfoDisplay: 'none',
+    };
 
     // ['bs', 'it', 'dm', 'ts', 'wd', 'cs', 'dc']
     // .forEach(
@@ -45,52 +46,65 @@ function showNavigationDropDown(){
     //         $(`.nav-item-${classSuffix}`).on(
     //             'mouseenter', ()=> {
     //                 if(activeNavItemConfig.prevActiveNavItemClassSuffix && activeNavItemConfig.prevActiveNavItemClassSuffix != classSuffix){
+    //                     //hide drop-down content
     //                     $(`.nav-item-info-${activeNavItemConfig.prevActiveNavItemClassSuffix}`).css('display',  'none')
     //                 }
-    //                 $(this).css('background-color', dropDownMenuBgColorOptions[classSuffix].navItemHover)
-
+    //                 // update previous suffix
     //                 activeNavItemConfig.prevActiveNavItemClassSuffix = classSuffix
                     
+    //                 // display arrow
+    //                 $triangles.css('display', 'flex')
+    //                 $(`#nav-item-triangle-${classSuffix}`).css('display', 'block')
+    //                 //display info for current/active nav item
     //                 $mainNavigationDropdown.css(
     //                     {
     //                         display: 'flex',
-    //                         'background-color': dropDownMenuBgColorOptions[classSuffix].info
+    //                         'flex-direction': 'column',
+    //                         'background-color': dropDownMenuBgColorOptions[classSuffix].navItemInfo
     //                     }
     //                 ) 
-    //                 $(`.nav-item-info-${classSuffix}`).css('display',  'block')
+    //                 $(`#nav-item-info-${classSuffix}`).css({
+    //                     display: 'block',
+    //                     'background-color': dropDownMenuBgColorOptions[classSuffix].navItemInfo
+    //                 })
+    //                 $(`#nav-item-dropdown-option-wrapper-${classSuffix}`).css('display', 'block')
+
+    //                 // $mainNavigationDropdown.on(
+    //                 //     'mouseover',
+    //                 //     ()=> {
+    //                 //         $(`.nav-item-${classSuffix}`).css({
+    //                 //             color: 'white',
+    //                 //             'background-color': dropDownMenuBgColorOptions[classSuffix].navItemHover
+    //                 //         })
+    //                 //         $(`.nav-icon-${classSuffix}`).css('color', 'white')
+    //                 //     }
+    //                 // )
 
     //                 $mainNavigationDropdown.on(
-    //                     'mouseover',
-    //                     ()=> {
-    //                         $(`.nav-item-${classSuffix}`).css({
-    //                             color: 'white',
-    //                             'background-color': dropDownMenuBgColorOptions[classSuffix].navItemHover
-    //                         })
-    //                         $(`.nav-icon-${classSuffix}`).css('color', 'white')
-    //                     }
-    //                 )
-    //                 $mainNavigationDropdown.on(
     //                     'mouseleave', ()=> {
-    //                         $(`.nav-item-${classSuffix}`).css('background-color', navBgColor)
+    //                         $(`#nav-item-dropdown-option-wrapper-${classSuffix}`).css('display', 'none')
+    //                         $(`#nav-item-info-${classSuffix}`).css('display', 'none')
+    //                         $mainNavigationDropdown.css('display', 'none')
+    //                         $(`#nav-item-triangle-${classSuffix}`).css('display', 'none')
+    //                         $triangles.css('display', 'none')
     //                     }
     //                 )
     //             }
     //         )
-    //         $(`.nav-item-${classSuffix}`).on(
-    //             'mouseleave', ()=> {
-    //                 $(this).css('background-color', navBgColor)
-    //             }
-    //         )
-    //         $(`.nav-item-${classSuffix} .triangle`).on(
-    //             'mouseover',
-    //             ()=> {
-    //                 // console.log(classSuffix)
-    //                 $(`.nav-item-${classSuffix}`).css({
-    //                     color: 'white',
-    //                     'background-color': dropDownMenuBgColorOptions[classSuffix].navItemHover
-    //                 })
-    //             }
-    //         )
+    //         // $(`.nav-item-${classSuffix}`).on(
+    //         //     'mouseleave', ()=> {
+    //         //         $(this).css('background-color', navBgColor)
+    //         //     }
+    //         // )
+    //         // $(`.nav-item-${classSuffix} .triangle`).on(
+    //         //     'mouseover',
+    //         //     ()=> {
+    //         //         $(`.nav-item-${classSuffix}`).css({
+    //         //             color: 'white',
+    //         //             'background-color': dropDownMenuBgColorOptions[classSuffix].navItemHover
+    //         //         })
+    //         //     }
+    //         // )
     //     }
     // )
     

@@ -9,7 +9,6 @@ header{
                 justify-content: space-between;
                 width: 100%;
                 div.logo-container{
-                    width: 6fr;
                     display: flex;
                     align-items: center;
                     a{
@@ -27,7 +26,6 @@ header{
                 div.flex-wrapper{
                     display: flex;
                     div.phone-in-icon-container{
-                        width: 3fr;
                         a.phone-in-link{
                             width: 32.4pf;
                             height: 32.8px;
@@ -48,7 +46,6 @@ header{
                         }
                     }
                     div.actions-container{
-                        width: 3fr;
                         max-width: 100%;
                         min-height: 1px;
                         position: relative;

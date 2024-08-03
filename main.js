@@ -34,16 +34,26 @@ $(document).ready(()=>{
     //only show the sticky header wher the user scrolls UP
     toggleStickyHeader()
 
-    const carouselSettings = {
+    const accreditationsCarouselSettings = {
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
         dots: false,
         slidesToShow: 6
     }
+    const clientsCarouselSettings = {
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        draggable: false,
+        slidesToShow: 6
+        // slidesToScroll: 3
+    }
+    
     /*CAROUSEL///Acccreditations///*/
-    $('div.accreditations-container').slick(carouselSettings)
+    $('div.accreditations-container').slick(accreditationsCarouselSettings)
     /*CAROUSEL///Clients & Partners///*/
-    $('div.our-clients-carousel').slick({...carouselSettings})
+    $('div.our-clients-carousel').slick(clientsCarouselSettings)
     toggleClientTooltip()
 })

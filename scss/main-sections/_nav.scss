@@ -1,0 +1,176 @@
+div#nav{
+    position: relative;
+    z-index: $nav_z-index;
+    nav{
+        height: 99px;
+        @media (max-width: 992px){
+            display: none;
+        }
+        div.container{
+            div.wrapper{
+                display: flex;
+                //bs
+                div.nav-links-container-bs{
+                    width: calc(100% / 7);
+                    a.nav-item-bs{
+                        display: block;
+                        width: 100%;
+                        @include nav-item($hoki);
+                    }
+                    div.triangle {
+                        display: none;
+                        @include triangle($hoki);
+                    }
+                    div.dropdown-option-wrapper{
+                        display: none;
+                        @include dropdown-option($bg-drop-down-bespoke-software);
+                    };
+                    &:hover{
+                        background-color: $hoki;
+                        *.bs{
+                            display: block;
+                        }
+                    }
+                }
+                //it
+                div.nav-links-container-it{
+                    width: calc(100% / 7);
+                    a.nav-item-it{
+                        display: block;
+                        width: 100%;
+                        @include nav-item($havelockBlue);
+                    }
+                    div.triangle {
+                        display: none;
+                        @include triangle($havelockBlue);
+                    }
+                    div.dropdown-option-wrapper{
+                        display: none;
+                        @include dropdown-option($bg-drop-down-it-support);
+                    };
+                    &:hover{
+                        background-color: $havelockBlue;
+                        *.it{
+                            display: block;
+                        }
+                    }
+                }
+                //dm
+                div.nav-links-container-dm{
+                    width: calc(100% / 7);
+                    a.nav-item-dm{
+                        display: block;
+                        width: 100%;
+                        @include nav-item($shamrock);
+                    }
+                    div.triangle {
+                        display: none;
+                        @include triangle($shamrock);
+                    }
+                    div.dropdown-option-wrapper{
+                        display: none;
+                        @include dropdown-option($bg-drop-down-digital-marketing);
+                    };
+                    &:hover{
+                        background-color: $shamrock;
+                        *.dm{
+                            display: block;
+                        }
+                    }
+                }
+                //ts
+                div.nav-links-container-ts{
+                    width: calc(100% / 7);
+                    a.nav-item-ts{
+                        display: block;
+                        width: 100%;
+                        @include nav-item($valencia);
+                    }
+                    div.triangle {
+                        display: none;
+                        @include triangle($valencia);
+                    }
+                    div.dropdown-option-wrapper{
+                        display: none;
+                        @include dropdown-option($bg-drop-down-telecoms-services);
+                    };
+                    &:hover{
+                        background-color: $valencia;
+                        > *.ts{
+                            display: block;
+                        }
+                    }
+                }
+                // //wd
+                div.nav-links-container-wd{
+                    width: calc(100% / 7);
+                    a.nav-item-wd{
+                        display: block;
+                        width: 100%;
+                        @include nav-item($wisteria);
+                    }
+                    div.triangle {
+                        display: none;
+                        @include triangle($wisteria);
+                    }
+                    div.dropdown-option-wrapper{
+                        display: none;
+                        @include dropdown-option($bg-drop-down-web-design);
+                    };
+                    &:hover{
+                        background-color: $wisteria;
+                        > *.wd{
+                            display: block;
+                        }
+                    }
+                }
+                // //cs
+                div.nav-links-container-cs{
+                    width: calc(100% / 7);
+                    a.nav-item-cs{
+                        display: block;
+                        width: 100%;
+                        @include nav-item($radicalRed);
+                    }
+                    div.triangle {
+                        display: none;
+                        @include triangle($radicalRed);
+                    }
+                    div.dropdown-option-wrapper{
+                        display: none;
+                        @include dropdown-option($bg-drop-down-cyber-security);
+                    };
+                    &:hover{
+                        background-color: $radicalRed;
+                        > *.cs{
+                            display: block;
+                        }
+                    }
+                }
+                // //dc
+                div.nav-links-container-dc{
+                    width: calc(100% / 7);
+                    a.nav-item-dc{
+                        display: block;
+                        width: 100%;
+                        @include nav-item($punch);
+                    }
+                    div.triangle {
+                        display: none;
+                        @include triangle($punch);
+                    }
+                    div.dropdown-option-wrapper{
+                        display: none;
+                        @include dropdown-option($bg-drop-down-developer-course);
+                    };
+                    &:hover{
+                        background-color: $punch;
+                        > *.dc{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

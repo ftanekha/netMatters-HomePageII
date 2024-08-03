@@ -1,24 +1,33 @@
-@mixin dropdown-option{
+@mixin dropdown-option($bg-color){
+    background-color: $bg-color;
+    position: absolute;
+    top: 99px;
+    left: 0;
+    width: 100%;
+    z-index: $nav-drop-down-option_z-index;
     *{color: white;}
-    h3{
-        margin-top: 15px;
-        font-weight: 500;
-        font-size: 2rem;
-        line-height: 1.1;
-    }
-    div.dropdown-option-wrapper{
+    div.drop-downn-option-content-wrapper{
         width: 80%;
+        margin: auto;
+        h3{
+            padding: 35px 0;
+            margin: 20px 0 0 0;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 1.1;
+        }
         ul{
-            width: 33%;
-            margin: -20px 0;
-            padding-left: 0;
-            display: inline-block;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space;
             list-style-type: none;
             list-style-position: outside;
             li{
-                box-sizing: border-box;
+                width: 33%;
+                padding: 0 0 35px 0;
                 line-height: 22.85px;
-                margin: 30px 0;
                 a{
                     font-size: 1.2rem;
                     line-height: 1.313rem;

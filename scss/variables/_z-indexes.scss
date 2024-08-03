@@ -1,8 +1,11 @@
 $main-navigation-dropdown_z-index: 20;
-
 $sticky-header-wrapper_z-index: 100;
+
 $header_z-index: $sticky-header-wrapper_z-index;
 $nav_z-index: $sticky-header-wrapper_z-index;
+
+$nav-drop-down-option_z-index: 10;
+$nav-drop-down-triangle_z-index: $main-navigation-dropdown_z-index;
 
 $div-container_z-index: 10;
 $side-menu_z-index: 10;
