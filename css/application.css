@@ -1106,11 +1106,13 @@ div#nav nav div.container div.wrapper div.nav-links-container-bs a.nav-item-bs d
 div#nav nav div.container div.wrapper div.nav-links-container-bs div.triangle {
   display: none;
   position: relative;
-  top: 0.5px;
   z-index: 20;
   border-style: solid;
   border-color: #67809f transparent transparent transparent;
   border-width: 35px 68px 0;
+}
+div#nav nav div.container div.wrapper div.nav-links-container-bs div.triangle:not(#nav-item-triangle-bs) {
+  top: 1px;
 }
 @media (min-width: 1220px) {
   div#nav nav div.container div.wrapper div.nav-links-container-bs div.triangle {
@@ -1227,11 +1229,13 @@ div#nav nav div.container div.wrapper div.nav-links-container-it a.nav-item-it d
 div#nav nav div.container div.wrapper div.nav-links-container-it div.triangle {
   display: none;
   position: relative;
-  top: 0.5px;
   z-index: 20;
   border-style: solid;
   border-color: #4183d7 transparent transparent transparent;
   border-width: 35px 68px 0;
+}
+div#nav nav div.container div.wrapper div.nav-links-container-it div.triangle:not(#nav-item-triangle-bs) {
+  top: 1px;
 }
 @media (min-width: 1220px) {
   div#nav nav div.container div.wrapper div.nav-links-container-it div.triangle {
@@ -1348,11 +1352,13 @@ div#nav nav div.container div.wrapper div.nav-links-container-dm a.nav-item-dm d
 div#nav nav div.container div.wrapper div.nav-links-container-dm div.triangle {
   display: none;
   position: relative;
-  top: 0.5px;
   z-index: 20;
   border-style: solid;
   border-color: #2ecc71 transparent transparent transparent;
   border-width: 35px 68px 0;
+}
+div#nav nav div.container div.wrapper div.nav-links-container-dm div.triangle:not(#nav-item-triangle-bs) {
+  top: 1px;
 }
 @media (min-width: 1220px) {
   div#nav nav div.container div.wrapper div.nav-links-container-dm div.triangle {
@@ -1469,11 +1475,13 @@ div#nav nav div.container div.wrapper div.nav-links-container-ts a.nav-item-ts d
 div#nav nav div.container div.wrapper div.nav-links-container-ts div.triangle {
   display: none;
   position: relative;
-  top: 0.5px;
   z-index: 20;
   border-style: solid;
   border-color: #d64541 transparent transparent transparent;
   border-width: 35px 68px 0;
+}
+div#nav nav div.container div.wrapper div.nav-links-container-ts div.triangle:not(#nav-item-triangle-bs) {
+  top: 1px;
 }
 @media (min-width: 1220px) {
   div#nav nav div.container div.wrapper div.nav-links-container-ts div.triangle {
@@ -1590,11 +1598,13 @@ div#nav nav div.container div.wrapper div.nav-links-container-wd a.nav-item-wd d
 div#nav nav div.container div.wrapper div.nav-links-container-wd div.triangle {
   display: none;
   position: relative;
-  top: 0.5px;
   z-index: 20;
   border-style: solid;
   border-color: #926fb1 transparent transparent transparent;
   border-width: 35px 68px 0;
+}
+div#nav nav div.container div.wrapper div.nav-links-container-wd div.triangle:not(#nav-item-triangle-bs) {
+  top: 1px;
 }
 @media (min-width: 1220px) {
   div#nav nav div.container div.wrapper div.nav-links-container-wd div.triangle {
@@ -1711,11 +1721,13 @@ div#nav nav div.container div.wrapper div.nav-links-container-cs a.nav-item-cs d
 div#nav nav div.container div.wrapper div.nav-links-container-cs div.triangle {
   display: none;
   position: relative;
-  top: 0.5px;
   z-index: 20;
   border-style: solid;
   border-color: #f62459 transparent transparent transparent;
   border-width: 35px 68px 0;
+}
+div#nav nav div.container div.wrapper div.nav-links-container-cs div.triangle:not(#nav-item-triangle-bs) {
+  top: 1px;
 }
 @media (min-width: 1220px) {
   div#nav nav div.container div.wrapper div.nav-links-container-cs div.triangle {
@@ -1832,11 +1844,13 @@ div#nav nav div.container div.wrapper div.nav-links-container-dc a.nav-item-dc d
 div#nav nav div.container div.wrapper div.nav-links-container-dc div.triangle {
   display: none;
   position: relative;
-  top: 0.5px;
   z-index: 20;
   border-style: solid;
   border-color: #ce4125 transparent transparent transparent;
   border-width: 35px 68px 0;
+}
+div#nav nav div.container div.wrapper div.nav-links-container-dc div.triangle:not(#nav-item-triangle-bs) {
+  top: 1px;
 }
 @media (min-width: 1220px) {
   div#nav nav div.container div.wrapper div.nav-links-container-dc div.triangle {

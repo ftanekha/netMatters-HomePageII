@@ -1,10 +1,12 @@
 @mixin triangle($bg-color){
   position: relative;
-  top: .5px;
   z-index: $nav-drop-down-triangle_z-index;
   border-style: solid;
   border-color: $bg-color transparent transparent transparent;
   border-width: 35px 68px 0;
+  &:not(#nav-item-triangle-bs){
+    top: 1px;
+  }
   @media (min-width: 1220px){
     border-width: 35px 83.5px 0;
   }
