@@ -4233,6 +4233,9 @@ div.footer-top div.container {
   div.footer-top div.container {
     flex-direction: row;
   }
+  div.footer-top div.container div#social-media-company-logo-container {
+    padding-top: 25px;
+  }
 }
 div.footer-top div.container div#social-media-company-logo-container {
   width: 400px;

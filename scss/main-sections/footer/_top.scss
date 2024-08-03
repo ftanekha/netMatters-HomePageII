@@ -7,6 +7,9 @@ div.footer-top{
         gap: 30px;
         @media (min-width: 1220px){
             flex-direction: row;
+            div#social-media-company-logo-container{
+                padding-top: 25px;
+            }
         }
         div#social-media-company-logo-container{
             width: 400px;
