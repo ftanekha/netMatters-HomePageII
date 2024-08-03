@@ -34,8 +34,6 @@ div.footer-top{
                 flex-wrap: wrap;
                 justify-content: flex-start;
                 gap: 10px;
-                //REALLY looks like 8px
-                // gap: 8px;
                 a{
                     @include social-media-company-logo;
                 }
