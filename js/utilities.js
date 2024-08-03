@@ -233,10 +233,32 @@ function toggleStickyHeader(){
     })
 }
 //////////////////////////////////////////////////////////////////////////////////
-// $(()=>{
-//     $('.two').on('mouseover', ()=> $('.one').css('display', 'flex'))
-//     $('.one').on('mouseleave', ()=> $('.one').css('display', 'none'))
-//   })
+function changeRebeccaTextContent(){
+    const $latestNewsItemRebeccaTextContent = $('p#latest-news-item-rebecca-text-content')
+
+    const rebeccaTextOptions = {
+        sm: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time each month to highlight ...', 
+        md: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time ...',
+        lg: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time each month to highlight the accomplishments of ... '
+    }
+
+    const mediaQueries = {
+        sm: window.matchMedia('(min-width: 768px)'),
+        md: window.matchMedia('(min-width: 992px)'),
+        lg: window.matchMedia('(min-width: 1220px)')
+    }
+
+    if(mediaQueries.sm.matches){
+        $latestNewsItemRebeccaTextContent.text(rebeccaTextOptions.sm)
+    }
+    if(mediaQueries.md.matches){
+        $latestNewsItemRebeccaTextContent.text(rebeccaTextOptions.md)
+    }
+    if(mediaQueries.lg.matches){
+        $latestNewsItemRebeccaTextContent.text(rebeccaTextOptions.lg)
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////
 function toggleClientTooltip(){
     const clients = ['black-swan', 'beat', 'survey-solutions', 'girl-guiding', 'sweetzy', 'one-traveller', 'xupes']
     clients.forEach(
@@ -301,4 +323,4 @@ function displayCookieModal(didUserClickManageConsentButton = false){
     }
 }
 ///////////////////////////////////////////////////////////////////////////
-export {showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, toggleClientTooltip, displayCookieModal}
+export {showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, changeRebeccaTextContent, toggleClientTooltip, displayCookieModal}

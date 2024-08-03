@@ -1,5 +1,5 @@
 // showNavigationDropDown, 
-import {showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, toggleClientTooltip, displayCookieModal} from './js/utilities.js'
+import {showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, changeRebeccaTextContent, toggleClientTooltip, displayCookieModal} from './js/utilities.js'
 
 $(document).ready(()=>{
     /*COOKIE POPUP POLICY & consent management*/
@@ -50,4 +50,6 @@ $(document).ready(()=>{
     $('div.our-clients-carousel').slick(clientsCarouselSettings)
     ///
     toggleClientTooltip()
+    /*LATEST NEWS*/ 
+    changeRebeccaTextContent()
 })

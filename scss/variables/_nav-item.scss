@@ -1,0 +1,52 @@
+// @mixin nav-item($color){
+//     // position: relative;
+//     // z-index: 10;
+//     width: calc((100% / 7));
+//     // height: 100%;
+//     padding: 15px;
+//     font-size: 1.438rem;          
+//     text-align: center;
+//     position: relative;
+//     &:hover{
+//         background-color: $color;
+//         span:first-child{
+//             color: white;
+//         }
+//     }
+//     &:link{
+//         text-decoration: none;
+//     }
+//     &:link, &:visited{
+//         color: white;
+//     }
+//     div{
+//         text-transform: uppercase;
+//         display: inline-flex;
+//         flex-direction: column;
+//         padding: 2rem auto;
+//         *{
+//             text-align: center;
+//         }
+//         //icon
+//         span:first-child{
+//             color: $color;
+//             font-size: 1.438rem;
+//             display: block;
+//             padding-bottom: 10px;
+//             &.first{
+//                 font-size: 1.7rem;
+//             }
+//         }//
+//         small{
+//             display: block;
+//             padding-bottom: 1px;
+//             font-size: .625rem;
+//             margin-top: -.1rem;
+//         }
+//         span:last-child{
+//             display: inline-block;
+//             margin-top: -.4rem;
+//             font-size: 1.12rem;
+//         }
+//     }
+// }

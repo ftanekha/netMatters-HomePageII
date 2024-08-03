@@ -3560,8 +3560,24 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
   outline: 0;
 }
 div.container div#latest-news-main-container div#latest-news-container div.latest-news-item img.latest-news-photo {
-  max-width: 100%;
-  max-height: 50%;
+  width: 100%;
+  height: auto;
+  transition: all 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@media (min-width: 768px) {
+  div.container div#latest-news-main-container div#latest-news-container div.latest-news-item img.latest-news-photo[src="assets/images/news/rebecca-resized2.png"] {
+    min-height: 200px;
+  }
+}
+@media (min-width: 992px) {
+  div.container div#latest-news-main-container div#latest-news-container div.latest-news-item img.latest-news-photo[src="assets/images/news/rebecca-resized2.png"] {
+    min-height: 262px;
+  }
+}
+@media (min-width: 1220px) {
+  div.container div#latest-news-main-container div#latest-news-container div.latest-news-item img.latest-news-photo[src="assets/images/news/rebecca-resized2.png"] {
+    min-height: 214px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1220px) {
   div.container div#latest-news-main-container div#latest-news-container div.latest-news-item.md-screen-hidden {
