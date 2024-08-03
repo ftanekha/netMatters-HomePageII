@@ -67,6 +67,9 @@ div.container{
                 &:hover{
                     top: -10px;
                 }
+                a.latest-news-item-category{
+                    @include latest-news-categrogy-tag($hoki);
+                }
                 img.latest-news-photo{
                     max-width: 100%;
                     max-height: 50%;

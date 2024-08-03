@@ -42,18 +42,12 @@ $(document).ready(()=>{
         slidesToShow: 6
     }
     const clientsCarouselSettings = {
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        dots: false,
-        draggable: false,
-        slidesToShow: 6
-        // slidesToScroll: 3
+        ...accreditationsCarouselSettings, draggable: false,
     }
-    
     /*CAROUSEL///Acccreditations///*/
     $('div.accreditations-container').slick(accreditationsCarouselSettings)
     /*CAROUSEL///Clients & Partners///*/
     $('div.our-clients-carousel').slick(clientsCarouselSettings)
+    ///
     toggleClientTooltip()
 })

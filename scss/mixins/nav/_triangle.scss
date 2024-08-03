@@ -1,6 +1,6 @@
 @mixin triangle($bg-color){
   position: relative;
-  top: 1px;
+  top: .5px;
   z-index: $nav-drop-down-triangle_z-index;
   border-style: solid;
   border-color: $bg-color transparent transparent transparent;
