@@ -1,5 +1,8 @@
 // showNavigationDropDown, 
-import {showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, changeRebeccaTextContent, toggleClientTooltip, displayCookieModal} from './js/utilities.js'
+import {
+    showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, 
+    changeRebeccaTextContent, toggleClientTooltip, determineOwlCarouselItems, displayCookieModal
+} from './js/utilities.js'
 
 $(document).ready(()=>{
     /*COOKIE POPUP POLICY & consent management*/
@@ -48,7 +51,15 @@ $(document).ready(()=>{
     $('div.accreditations-container').slick(accreditationsCarouselSettings)
     /*CAROUSEL///Clients & Partners///*/
     // $('div.our-clients-carousel').slick(clientsCarouselSettings)
-    $('.owl-carousel').owlCarousel({items: 6, loop: true, autoplay: true, autoplaySpeed: 2000})
+    $('.owl-carousel')
+    .owlCarousel({
+        items: determineOwlCarouselItems(), 
+        loop: true, 
+        autoplay: true, 
+        // autoplaySpeed: 500,
+        autoplayTimeout: 3000,
+        autoplayHoverPause:true
+    })
     ///
     toggleClientTooltip()
     /*LATEST NEWS*/ 

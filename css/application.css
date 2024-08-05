@@ -3909,19 +3909,20 @@ div.our-clients-carousel {
 div.our-clients-carousel div.owl-stage-outer {
   overflow: visible;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item {
   width: 300px;
   height: 120px;
+  margin: 0 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   z-index: inherit;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item:hover > div.tooltip-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item:hover > div.tooltip-container {
   display: flex;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.black-swan div.tooltip-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan div.tooltip-container {
   width: 300px;
   display: none;
   position: absolute;
@@ -3930,7 +3931,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.bla
   flex-direction: column;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.black-swan div.tooltip-container div.tooltip {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan div.tooltip-container div.tooltip {
   background-color: #333645;
   color: #fff;
   padding: 20px 15px;
@@ -3941,19 +3942,19 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.bla
   flex-direction: column;
   justify-content: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.black-swan div.tooltip-container div.tooltip h3 {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
   font-weight: 400;
   margin: 0;
   line-height: 1.1;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.black-swan div.tooltip-container div.tooltip p {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.black-swan div.tooltip-container div.tooltip a {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan div.tooltip-container div.tooltip a {
   width: auto;
   display: block;
   color: #fff;
@@ -3974,11 +3975,11 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.bla
   background-color: #f7b322;
   border-color: #f7b322;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.black-swan div.tooltip-container div.tooltip a:hover {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan div.tooltip-container div.tooltip a:hover {
   background-color: #e8a008;
   border-color: #d49308;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.black-swan div.tooltip-container div.tooltip-arrow {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
   height: 0;
@@ -3986,22 +3987,22 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.bla
   border-right: 40px solid transparent;
   border-top: 40px solid #333645;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.black-swan div.client-logo-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan div.client-logo-container {
   height: 150px;
   display: flex;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.black-swan div.client-logo-container img {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan div.client-logo-container img {
   height: 80px;
   width: auto !important;
   max-width: 200px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.black-swan div.client-logo-container img:hover {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan div.client-logo-container img:hover {
   filter: grayscale(0%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.beat div.tooltip-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.tooltip-container {
   width: 300px;
   display: none;
   position: absolute;
@@ -4010,7 +4011,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.bea
   flex-direction: column;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.beat div.tooltip-container div.tooltip {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.tooltip-container div.tooltip {
   background-color: #333645;
   color: #fff;
   padding: 20px 15px;
@@ -4021,19 +4022,19 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.bea
   flex-direction: column;
   justify-content: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.beat div.tooltip-container div.tooltip h3 {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
   font-weight: 400;
   margin: 0;
   line-height: 1.1;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.beat div.tooltip-container div.tooltip p {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.beat div.tooltip-container div.tooltip a {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.tooltip-container div.tooltip a {
   width: auto;
   display: block;
   color: #fff;
@@ -4052,7 +4053,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.bea
   border: 1px solid transparent;
   user-select: none;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.beat div.tooltip-container div.tooltip-arrow {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
   height: 0;
@@ -4060,22 +4061,22 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.bea
   border-right: 40px solid transparent;
   border-top: 40px solid #333645;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.beat div.client-logo-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.client-logo-container {
   height: 150px;
   display: flex;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.beat div.client-logo-container img {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.client-logo-container img {
   height: 80px;
   width: auto !important;
   max-width: 200px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.beat div.client-logo-container img:hover {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.client-logo-container img:hover {
   filter: grayscale(0%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.survey-solutions div.tooltip-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.tooltip-container {
   width: 300px;
   display: none;
   position: absolute;
@@ -4084,7 +4085,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sur
   flex-direction: column;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.survey-solutions div.tooltip-container div.tooltip {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.tooltip-container div.tooltip {
   background-color: #333645;
   color: #fff;
   padding: 20px 15px;
@@ -4095,19 +4096,19 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sur
   flex-direction: column;
   justify-content: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.survey-solutions div.tooltip-container div.tooltip h3 {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
   font-weight: 400;
   margin: 0;
   line-height: 1.1;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.survey-solutions div.tooltip-container div.tooltip p {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.survey-solutions div.tooltip-container div.tooltip a {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.tooltip-container div.tooltip a {
   width: auto;
   display: block;
   color: #fff;
@@ -4126,7 +4127,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sur
   border: 1px solid transparent;
   user-select: none;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.survey-solutions div.tooltip-container div.tooltip-arrow {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
   height: 0;
@@ -4134,22 +4135,22 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sur
   border-right: 40px solid transparent;
   border-top: 40px solid #333645;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.survey-solutions div.client-logo-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.client-logo-container {
   height: 150px;
   display: flex;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.survey-solutions div.client-logo-container img {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.client-logo-container img {
   height: 80px;
   width: auto !important;
   max-width: 200px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.survey-solutions div.client-logo-container img:hover {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.client-logo-container img:hover {
   filter: grayscale(0%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.girl-guiding div.tooltip-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding div.tooltip-container {
   width: 300px;
   display: none;
   position: absolute;
@@ -4158,7 +4159,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.gir
   flex-direction: column;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.girl-guiding div.tooltip-container div.tooltip {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding div.tooltip-container div.tooltip {
   background-color: #333645;
   color: #fff;
   padding: 20px 15px;
@@ -4169,19 +4170,19 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.gir
   flex-direction: column;
   justify-content: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.girl-guiding div.tooltip-container div.tooltip h3 {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
   font-weight: 400;
   margin: 0;
   line-height: 1.1;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.girl-guiding div.tooltip-container div.tooltip p {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.girl-guiding div.tooltip-container div.tooltip a {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding div.tooltip-container div.tooltip a {
   width: auto;
   display: block;
   color: #fff;
@@ -4202,11 +4203,11 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.gir
   background-color: #4183d7;
   border-color: #4183d7;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.girl-guiding div.tooltip-container div.tooltip a:hover {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding div.tooltip-container div.tooltip a:hover {
   background-color: #2a6ec6;
   border-color: #2665b5;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.girl-guiding div.tooltip-container div.tooltip-arrow {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
   height: 0;
@@ -4214,22 +4215,22 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.gir
   border-right: 40px solid transparent;
   border-top: 40px solid #333645;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.girl-guiding div.client-logo-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding div.client-logo-container {
   height: 150px;
   display: flex;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.girl-guiding div.client-logo-container img {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding div.client-logo-container img {
   height: 80px;
   width: auto !important;
   max-width: 200px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.girl-guiding div.client-logo-container img:hover {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding div.client-logo-container img:hover {
   filter: grayscale(0%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sweetzy div.tooltip-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy div.tooltip-container {
   width: 300px;
   display: none;
   position: absolute;
@@ -4238,7 +4239,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.swe
   flex-direction: column;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sweetzy div.tooltip-container div.tooltip {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy div.tooltip-container div.tooltip {
   background-color: #333645;
   color: #fff;
   padding: 20px 15px;
@@ -4249,19 +4250,19 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.swe
   flex-direction: column;
   justify-content: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sweetzy div.tooltip-container div.tooltip h3 {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
   font-weight: 400;
   margin: 0;
   line-height: 1.1;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sweetzy div.tooltip-container div.tooltip p {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sweetzy div.tooltip-container div.tooltip a {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy div.tooltip-container div.tooltip a {
   width: auto;
   display: block;
   color: #fff;
@@ -4282,11 +4283,11 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.swe
   background-color: #2ecc71;
   border-color: #2ecc71;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sweetzy div.tooltip-container div.tooltip a:hover {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy div.tooltip-container div.tooltip a:hover {
   background-color: #26ab5f;
   border-color: #239a55;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sweetzy div.tooltip-container div.tooltip-arrow {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
   height: 0;
@@ -4294,22 +4295,22 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.swe
   border-right: 40px solid transparent;
   border-top: 40px solid #333645;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sweetzy div.client-logo-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy div.client-logo-container {
   height: 150px;
   display: flex;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sweetzy div.client-logo-container img {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy div.client-logo-container img {
   height: 80px;
   width: auto !important;
   max-width: 200px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.sweetzy div.client-logo-container img:hover {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy div.client-logo-container img:hover {
   filter: grayscale(0%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one-traveller div.tooltip-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.tooltip-container {
   width: 300px;
   display: none;
   position: absolute;
@@ -4318,7 +4319,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one
   flex-direction: column;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one-traveller div.tooltip-container div.tooltip {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.tooltip-container div.tooltip {
   background-color: #333645;
   color: #fff;
   padding: 20px 15px;
@@ -4329,19 +4330,19 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one
   flex-direction: column;
   justify-content: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one-traveller div.tooltip-container div.tooltip h3 {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
   font-weight: 400;
   margin: 0;
   line-height: 1.1;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one-traveller div.tooltip-container div.tooltip p {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one-traveller div.tooltip-container div.tooltip a {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.tooltip-container div.tooltip a {
   width: auto;
   display: block;
   color: #fff;
@@ -4362,11 +4363,11 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one
   background-color: #926fb1;
   border-color: #926fb1;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one-traveller div.tooltip-container div.tooltip a:hover {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.tooltip-container div.tooltip a:hover {
   background-color: #7e57a0;
   border-color: #735093;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one-traveller div.tooltip-container div.tooltip-arrow {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
   height: 0;
@@ -4374,22 +4375,22 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one
   border-right: 40px solid transparent;
   border-top: 40px solid #333645;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one-traveller div.client-logo-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.client-logo-container {
   height: 150px;
   display: flex;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one-traveller div.client-logo-container img {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.client-logo-container img {
   height: 80px;
   width: auto !important;
   max-width: 200px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.one-traveller div.client-logo-container img:hover {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.client-logo-container img:hover {
   filter: grayscale(0%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xupes div.tooltip-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.tooltip-container {
   width: 300px;
   display: none;
   position: absolute;
@@ -4398,7 +4399,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xup
   flex-direction: column;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xupes div.tooltip-container div.tooltip {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.tooltip-container div.tooltip {
   background-color: #333645;
   color: #fff;
   padding: 20px 15px;
@@ -4409,19 +4410,19 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xup
   flex-direction: column;
   justify-content: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xupes div.tooltip-container div.tooltip h3 {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.tooltip-container div.tooltip h3 {
   font-size: 1.125rem;
   font-weight: 400;
   margin: 0;
   line-height: 1.1;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xupes div.tooltip-container div.tooltip p {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.tooltip-container div.tooltip p {
   padding: 10px;
   line-height: 1.6;
   text-align: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xupes div.tooltip-container div.tooltip a {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.tooltip-container div.tooltip a {
   width: auto;
   display: block;
   color: #fff;
@@ -4440,7 +4441,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xup
   border: 1px solid transparent;
   user-select: none;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xupes div.tooltip-container div.tooltip-arrow {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
   height: 0;
@@ -4448,19 +4449,19 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xup
   border-right: 40px solid transparent;
   border-top: 40px solid #333645;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xupes div.client-logo-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.client-logo-container {
   height: 150px;
   display: flex;
   align-items: center;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xupes div.client-logo-container img {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.client-logo-container img {
   height: 80px;
   width: auto !important;
   max-width: 200px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.carousel-item.xupes div.client-logo-container img:hover {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.client-logo-container img:hover {
   filter: grayscale(0%);
 }
 

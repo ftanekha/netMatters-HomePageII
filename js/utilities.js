@@ -291,6 +291,25 @@ function toggleClientTooltip(){
     )
 }
 //////////////////////////////////////////////////////////////////////////////////
+function determineOwlCarouselItems(){
+    let items;
+
+    const mediaQueries = {
+        xs: window.matchMedia('(min-width: 576px)'),
+        sm: window.matchMedia('(min-width: 768px)'),
+        md: window.matchMedia('(min-width: 992px)'),
+        lg: window.matchMedia('(min-width: 1220px)')
+    }
+
+    if(mediaQueries['lg'].matches){
+        return items = 6
+    }else if(mediaQueries['md'].matches){
+        return items = 4
+    }else{
+        return items = 3
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////
 // display cookie modal
 function displayCookieModal(didUserClickManageConsentButton = false){
     const hasCookieBeenDisplayed = localStorage.getItem('hasCookieBeenDisplayed')
@@ -321,4 +340,7 @@ function displayCookieModal(didUserClickManageConsentButton = false){
     }
 }
 ///////////////////////////////////////////////////////////////////////////
-export {showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, changeRebeccaTextContent, toggleClientTooltip, displayCookieModal}
+export {
+    showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, 
+    changeRebeccaTextContent, toggleClientTooltip, determineOwlCarouselItems, displayCookieModal
+}
