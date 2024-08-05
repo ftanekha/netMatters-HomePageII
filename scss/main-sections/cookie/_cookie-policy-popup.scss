@@ -1,6 +1,6 @@
 div.cookie-policy-popup{
     // width: 600px;
-    width: 87%;
+    width: 90%;
     margin: auto;
     box-sizing: content-box;
     background-color: #fff;
@@ -41,7 +41,7 @@ div.cookie-policy-popup{
     }
     div.cookie-policy-button-container{ 
         margin: 0 20px;
-        padding: 20px 0;
+        padding: 10px 0 0 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -83,7 +83,10 @@ div.cookie-policy-popup{
                 border-color: #735093;
             }
         }
-        @media (min-width: 768px){
+    }
+    @media (min-width: 768px){
+        width: 598.4px;
+        div.cookie-policy-button-container{
             flex-direction: row;
             gap: 30px;
             a.cookie-policy-button{

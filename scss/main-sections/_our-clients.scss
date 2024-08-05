@@ -1,51 +1,52 @@
 div.our-clients-carousel{
     margin: 0 auto 35px;
     padding-top: 20px;
-    div.slick-list{
-        overflow: visible;
-        div.slick-track{
-            width: 100%;
-            height: 120px;
-            display: flex;
-            flex-wrap: nowrap;
-            gap: 90px;
-            div.carousel-item{
-                width: 300px;
-                height: 120px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                position: relative;
-                &:hover{
-                    div.tooltip-container{
-                        display: block;
+            position: relative;
+            z-index: $carousel-item_z-index;
+            overflow: visible;
+            div.owl-stage-outer{
+                overflow: visible;
+                div.owl-stage{
+                    div.carousel-item{
+                        width: 300px;
+                        height: 120px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: relative;
+                        z-index: inherit;
+                        &:hover{
+                            > div.tooltip-container{
+                                display: flex;
+                            }
+                        }
+        
+                        &.black-swan{//black swan
+                            @include carousel-item($buttercup)
+                        }
+                        &.beat{//beat
+                            @include carousel-item(null)
+                        }
+                        &.survey-solutions{//survey solutions
+                            @include carousel-item(null)
+                        }
+                        &.girl-guiding{//girl guiding
+                            @include carousel-item($havelockBlue)
+                        }
+                        &.sweetzy{//sweetzy
+                            @include carousel-item($shamrock)
+                        }
+                        &.one-traveller{//one traveller
+                            @include carousel-item($wisteria)
+                        }
+                        &.xupes{//xupes
+                            @include carousel-item(null)
+                        }
                     }
                 }
-
-                &:first-child{//black swan
-                    @include carousel-item($buttercup)
-                }
-                &:nth-child(2){//beat
-                    @include carousel-item(null)
-                }
-                &:nth-child(3){//survey solutions
-                    @include carousel-item(null)
-                }
-                &:nth-child(4){//girl guiding
-                    @include carousel-item($havelockBlue)
-                }
-                &:nth-child(5){//sweetzy
-                    @include carousel-item($shamrock)
-                }
-                &:nth-child(6){//one traveller
-                    @include carousel-item($wisteria)
-                }
-                &:last-child{//xupes
-                    @include carousel-item(null)
-                }
             }
-        }
-    }
+    //     }
+    // }
 }
 
 

@@ -47,7 +47,8 @@ $(document).ready(()=>{
     /*CAROUSEL///Acccreditations///*/
     $('div.accreditations-container').slick(accreditationsCarouselSettings)
     /*CAROUSEL///Clients & Partners///*/
-    $('div.our-clients-carousel').slick(clientsCarouselSettings)
+    // $('div.our-clients-carousel').slick(clientsCarouselSettings)
+    $('.owl-carousel').owlCarousel({items: 6, loop: true, autoplay: true, autoplaySpeed: 2000})
     ///
     toggleClientTooltip()
     /*LATEST NEWS*/ 

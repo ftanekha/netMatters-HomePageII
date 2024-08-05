@@ -3,7 +3,8 @@
         width: 300px;
         display: none;
         position: absolute;
-        bottom: 130px;
+        z-index: $carousel-item_z-index;
+        bottom: 120px;
         flex-direction: column;
         align-items: center;
         div.tooltip{

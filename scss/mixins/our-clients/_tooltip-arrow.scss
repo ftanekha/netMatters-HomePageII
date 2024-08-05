@@ -1,7 +1,5 @@
 @mixin tooltip-arrow{
-    // display: none;
     position: relative;
-    // z-index: $tooltip-arrow_z-index;
     width: 0; 
     height: 0; 
     border-left: 40px solid transparent;
