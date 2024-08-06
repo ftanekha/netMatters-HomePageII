@@ -11,7 +11,7 @@
         margin: auto;
         h3{
             padding: 35px 0;
-            margin: 20px 0 0 0;
+            margin: 20px 0 0 5px;
             font-weight: 500;
             font-size: 2rem;
             line-height: 1.1;
@@ -19,6 +19,7 @@
         ul{
             padding: 0;
             margin: 0;
+            margin-left: 5px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space;
