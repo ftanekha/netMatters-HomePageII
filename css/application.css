@@ -3478,9 +3478,9 @@ div#middle div.container div#our-services-container div#bottom-services ul li:la
 }
 div.accreditations-container div.slick-list div.slick-track {
   background-color: white;
-  margin: 40px 0 20px;
+  margin: 40px 0 70px 20px;
   width: 100%;
-  height: 100px;
+  height: 70px;
   display: flex;
   flex-wrap: nowrap;
   gap: 90px;
@@ -3494,6 +3494,47 @@ div.accreditations-container div.slick-list div.slick-track img {
 }
 div.accreditations-container div.slick-list div.slick-track img:hover {
   filter: grayscale(0%);
+}
+div.accreditations-container div.slick-list div.slick-track img.living-wage-logo {
+  width: 88px;
+}
+div.accreditations-container div.slick-list div.slick-track img.norfolk-prohelp-logo {
+  width: 171px;
+}
+div.accreditations-container div.slick-list div.slick-track img.investing-in-future-growth-logo {
+  width: 175px;
+  height: 58px;
+}
+div.accreditations-container div.slick-list div.slick-track img.norfolk-norfolk-carbon-charter-logo {
+  width: 173px;
+}
+div.accreditations-container div.slick-list div.slick-track img.ppc-logo {
+  width: 174px;
+}
+div.accreditations-container div.slick-list div.slick-track img.princess-royal-training-logo {
+  width: 274px;
+}
+div.accreditations-container div.slick-list div.slick-track img.future-50-logo {
+  width: 44px;
+}
+div.accreditations-container div.slick-list div.slick-track img.qms-logo {
+  width: 142px;
+}
+div.accreditations-container div.slick-list div.slick-track img.iso-27001-logo {
+  width: 142px;
+}
+div.accreditations-container div.slick-list div.slick-track img.skills-of-tomorrow-logo {
+  width: 175px;
+  height: 58px;
+}
+div.accreditations-container div.slick-list div.slick-track img.cyber-essentials-logo {
+  width: 149px;
+}
+div.accreditations-container div.slick-list div.slick-track img.google-partners-logo {
+  width: 169px;
+}
+div.accreditations-container div.slick-list div.slick-track img.ashcroft-logo {
+  width: 169px;
 }
 
 div#about-netmatters {
