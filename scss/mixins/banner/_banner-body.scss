@@ -8,7 +8,15 @@
     color: white;
     div.wrapper{
         height: 360.6px;
-        padding-top: 20%;
+        padding-top: 35%;
+        // &#first-banner-item{
+        //     height: 100%;
+        //     padding-top: 20%;
+        //     ul.slick-dots{
+        //         position: relative;
+        //         top: 100px;
+        //     }
+        // }
         h1{
             font-size: 2.5rem;
             line-height: 3rem;
@@ -47,6 +55,12 @@
                 background-color: map.get(get-banner--button--hover--bg-color($image-id), "hover-bg-color");
                 border-color: map.get(get-banner--button--hover--bg-color($image-id), "hover-bdr-color");
             }
+        }
+        &#first-banner-item{
+            background-color: green;
+            padding-top: 10%;
+            h1{color: red !important}
+            // padding-top: 20%;
         }
     }
     @media (min-width: 992px){

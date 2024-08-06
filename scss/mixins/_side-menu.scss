@@ -2,14 +2,12 @@
     @if $color {
         height: 112.6px;
     }@else{
-        //contact us button/link is shorter
         height: auto;
         margin-top: 20px;
     }
     display: block;
     border: 1px solid rgba(0,0,0,.45);
-    border-radius: 3px;
-    // font-size: 1.438rem;          
+    border-radius: 3px;        
     text-align: center;
     font-size: 1.125rem;
     padding: 20px 0;
@@ -112,30 +110,6 @@
     @media (min-width: 992px){
         li.sm-scrn-only{
             display: none;
-        }
-    }
-}
-
-//slide effect keyframe
-@mixin slide-effect-keyframe($side-menu-width){
-    @keyframes slide-in{
-        from {
-            top: 0;
-            right: $side-menu-width;
-        }
-        to {
-            top: 0;
-            right: $side-menu-width;
-        }
-    }
-    @keyframes slide-out{
-        from {
-            top: 0;
-            right: $side-menu-width;
-        }
-        to {
-            top: 0;
-            right: $side-menu-width;
         }
     }
 }

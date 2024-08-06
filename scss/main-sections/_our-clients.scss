@@ -1,76 +1,49 @@
 div.our-clients-carousel{
     margin: 0 auto 35px;
     padding-top: 20px;
-            position: relative;
-            z-index: $carousel-item_z-index;
-            overflow: visible;
-            div.owl-stage-outer{
+    position: relative;
+    z-index: $carousel-item_z-index;
+    overflow: visible;
+    div.owl-stage-outer{
+        div.owl-stage{
+            display: flex;
+            flex-wrap: nowrap;
+            div.owl-item{
                 overflow: visible;
-                div.owl-stage{
-                    div.owl-item{
-                        div.carousel-item{
-                            width: 300px;
-                            height: 120px;
-                            margin: 0 90px;
+                div.carousel-item{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    z-index: inherit;
+                    &:hover{
+                        > div.tooltip-container{
                             display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            position: relative;
-                            z-index: inherit;
-                            &:hover{
-                                > div.tooltip-container{
-                                    display: flex;
-                                }
-                            }
-            
-                            &.black-swan{//black swan
-                                @include carousel-item($buttercup)
-                            }
-                            &.beat{//beat
-                                @include carousel-item(null)
-                            }
-                            &.survey-solutions{//survey solutions
-                                @include carousel-item(null)
-                            }
-                            &.girl-guiding{//girl guiding
-                                @include carousel-item($havelockBlue)
-                            }
-                            &.sweetzy{//sweetzy
-                                @include carousel-item($shamrock)
-                            }
-                            &.one-traveller{//one traveller
-                                @include carousel-item($wisteria)
-                            }
-                            &.xupes{//xupes
-                                @include carousel-item(null)
-                            }
                         }
+                    }
+                    &.black-swan{//black swan
+                        @include carousel-item($buttercup)
+                    }
+                    &.beat{//beat
+                        @include carousel-item(null)
+                    }
+                    &.survey-solutions{//survey solutions
+                        @include carousel-item(null)
+                    }
+                    &.girl-guiding{//girl guiding
+                        @include carousel-item($havelockBlue)
+                    }
+                    &.sweetzy{//sweetzy
+                        @include carousel-item($shamrock)
+                    }
+                    &.one-traveller{//one traveller
+                        @include carousel-item($wisteria)
+                    }
+                    &.xupes{//xupes
+                        @include carousel-item(null)
                     }
                 }
             }
-    //     }
-    // }
+        }
+    }
 }
-
-
-
-
-
-// &:first-child{//black swan
-                //     @include carousel-item(bs);
-                // }
-                // &:nth-child(2){//beat
-                //     @include carousel-item(null);
-                // }
-                // &:nth-child(3){//survey solutions
-                //     @include carousel-item(null);
-                // }
-                // &:nth-child(4){//girl guiding
-                //     @include carousel-item(it);
-                // }
-                // &:nth-child(5){//sweetzy
-                //     @include carousel-item(dm);
-                // }
-                // &:last-child{//one Traveller
-                //     @include carousel-item(wd);
-                // }

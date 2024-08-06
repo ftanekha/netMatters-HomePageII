@@ -1,24 +1,4 @@
 div#side-menu{
-    background-color: #333645;
-    width: 275px;
-    position: fixed;
-    bottom: 0;
-    z-index: $side-menu_z-index;
-    display: none;
-    height: 100vh;
-    overflow: auto;
-    transition: .3s;
-    &.toggle-side-menu-in{
-        display: block;
-        animation-name: slide-in;
-    }
-    &.toggle-side-menu-out{
-        animation-name: slide-out;
-    }
-    @media (min-width: 992px){
-        width: 350px;
-    }
-    //////////////////////////////////////////////////////////
     div.side-menu-misc-list{
         display: flex;
         flex-direction: column;
@@ -69,7 +49,6 @@ div#side-menu{
                     border-bottom: 1px solid rgba(0, 0, 0, .25);
                     padding: 10px;
                     font-size: .85rem;
-                    // height: 52px;
                     display: flex;
                     justify-content: center;
                     a{
@@ -95,12 +74,4 @@ div#side-menu{
             }
         }
     }
-}
-
-/* Keyframes/ Animations for Side Menu */
-@media (max-width: 992px){
-    @include slide-effect-keyframe(-275px);
-}
-@media (min-width: 992px){
-    @include slide-effect-keyframe(-350px);
 }

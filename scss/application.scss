@@ -1,7 +1,7 @@
 @import
-    "../OwlCarousel/src/scss/owl.carousel.scss",
     "variables/index.scss",
     "mixins/index.scss",
+    "../OwlCarousel/src/scss/owl.carousel.scss",
     "main-sections/index"
 ;
 
@@ -15,17 +15,25 @@ body{
     color: #666;
     background-color: #fff;
     overflow-x: hidden;
-    .container{
-        margin: 0 auto;
-        padding: 0 15px;
-        @media (min-width: 768px){
-            width: 750px;
-        }
-        @media (min-width: 992px){
-            width: 970px;
-        }
-        @media (min-width: 1220px){
-            width: 1200px;
+    div#main-outer-container{
+        background-color: #fff;
+        position: relative;
+        z-index: $main-outer-container_z-index;
+        div#container{
+            transition: 3s;
+            div.container{
+                margin: 0 auto;
+                padding: 0 15px;
+                @media (min-width: 768px){
+                    width: 750px;
+                }
+                @media (min-width: 992px){
+                    width: 970px;
+                }
+                @media (min-width: 1220px){
+                    width: 1200px;
+                }
+            }
         }
     }
     div#cookie-app{
@@ -42,12 +50,13 @@ body{
             border-color: #999aa2;
             box-shadow: 0 3px 35px rgba(0,0,0,.1);
         }
+        display: none;
     }
     div#cookie-policy-popup-container{
         visibility: hidden;//initially hidden on page load
         display: flex;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         justify-content: center;
         align-items: center;
         position: fixed;
@@ -57,16 +66,67 @@ body{
         align-items: center;
         justify-content: center;
         background-color: transparent;
+        display: none;
     }
     div#side-menu-container{
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: $side-menu-container_z-index;
+        width: 100%;
+        height: 100vh;
+        transition: .5s;
+        &.toggle-side-menu-in{
+            display: block;
+            animation-name: slide-in;
+        }
+        &.toggle-side-menu-out{
+            animation-name: slide-out;
+        }
+        div#side-menu{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0; margin: 0;
+            background-color: #333645;
+            width: 275px;
+            height: 100vh;
+            overflow: auto;
+            transition: .3s;
+            &.toggle-side-menu-in{
+                display: block;
+                animation-name: slide-in;
+            }
+            &.toggle-side-menu-out{
+                animation-name: slide-out;
+            }
+            @media (min-width: 992px){
+                width: 350px;
+            }
+        }
+        div#side-menu_background-filter{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 100vh;
+            width: calc(100% - 275px);
+            transition: .3s ease;
+            @media (min-width: 992px){
+                width: calc(100% - 350px);
+            }
+        }
     }
     div#main-outer-container{
+        // display: none;
+        overflow-x: hidden;
         div#container{
             width: 100%;
             height: 100%;
             position: relative;
             //greater than side-menu z-index
-            z-index: $div-container_z-index;
+            z-index: $main-outer-container_z-index;
             transition: .1s;
             &.slide-left{
                 left: -275px;

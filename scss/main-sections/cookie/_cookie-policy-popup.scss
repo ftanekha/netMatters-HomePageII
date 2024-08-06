@@ -1,5 +1,4 @@
 div.cookie-policy-popup{
-    // width: 600px;
     width: 90%;
     margin: auto;
     box-sizing: content-box;
@@ -41,13 +40,13 @@ div.cookie-policy-popup{
     }
     div.cookie-policy-button-container{ 
         margin: 0 20px;
-        padding: 10px 0 0 0;
+        padding: 10px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         a.cookie-policy-button{
             margin-top: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             display: block;
             color: white;
             height: auto;
@@ -62,7 +61,7 @@ div.cookie-policy-popup{
             // vertical-align: middle;
             cursor: pointer;
             background-image: none;
-            border: 1px solid     transparent;
+            border: 1px solid transparent;
             width: 100%;
         }
         .gray{

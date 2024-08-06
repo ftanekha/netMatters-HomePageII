@@ -1,7 +1,5 @@
 @mixin client-logo{
-    height: 80px;
-    width: auto !important;
-    max-width: 200px;
+    max-height: 70px;
     transform-style: preserve-3d;
     filter: grayscale(100%);
     &:hover{

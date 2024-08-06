@@ -1,7 +1,6 @@
-// showNavigationDropDown, 
 import {
-    showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, 
-    changeRebeccaTextContent, toggleClientTooltip, determineOwlCarouselItems, displayCookieModal
+    hideSideMenu, showSideMenu, toggleStickyHeader, 
+    changeRebeccaTextContent, toggleClientTooltip, displayCookieModal
 } from './js/utilities.js'
 
 $(document).ready(()=>{
@@ -9,8 +8,6 @@ $(document).ready(()=>{
     displayCookieModal()
     const cookiSettingsButton = $('.cookie-settings-btn')
     cookiSettingsButton.on('click', ()=> displayCookieModal(true))
-    /*NAVIGATION DROP-DOWN MENU*/
-    showNavigationDropDown()
     /*CAROUSEL///Banner///*/
     $('div#banner').slick(
         {//configuration object
@@ -23,20 +20,40 @@ $(document).ready(()=>{
     toggle the Side Menu using the hamburger menu button*/
     const $hamburgerMenuIcon = $('div.actions button[data-toggle="sidebar"]')
     
-    $hamburgerMenuIcon.on('click', ()=>{
-        const $sideMenu = $('div#side-menu')
-        if($sideMenu.css('display') === 'none'){
-            showSideMenu($hamburgerMenuIcon, $sideMenu)
+    $hamburgerMenuIcon
+    .on('click', ()=>{
+        const $sideMenuContainer = $('div#side-menu-container')
+        if($sideMenuContainer.css('display') === 'none'){
+            showSideMenu($hamburgerMenuIcon, $sideMenuContainer)
         }else{
-            hideSideMenu($hamburgerMenuIcon, $sideMenu)
-            $sideMenu.css('display','none')
+            hideSideMenu($hamburgerMenuIcon, $sideMenuContainer)
+            $sideMenuContainercss('display','none')
         }  
     })
+    .on('mouseover',
+        ()=> {
+            $hamburgerMenuIcon.css(
+                {
+                    'background-color': '#22242e',
+                    'border-color': '#191a22'
+                }
+            )
+        }
+    )
     /* STICKY HEADER*/
     //determine the scroll direction using the scroll position on the document object
     //only show the sticky header wher the user scrolls UP
-    toggleStickyHeader()
-
+    toggleStickyHeader();
+    /* NAV drop-down menu*/
+    ['bs', 'it', 'dm', 'ts', 'wd', 'cs', 'dc'].forEach(
+        classSuffix => {
+            $(`.option-content-wrapper-${classSuffix}`)
+            .on('mouseover', 
+                ()=> $(`.nav-icon-${classSuffix}`).css('color', 'white')
+            )
+        }
+    )
+    /*CAROUSEL///Acccreditations///*/
     const accreditationsCarouselSettings = {
         autoplay: true,
         autoplaySpeed: 2000,
@@ -44,21 +61,35 @@ $(document).ready(()=>{
         dots: false,
         slidesToShow: 6
     }
-    const clientsCarouselSettings = {
-        ...accreditationsCarouselSettings, draggable: false,
-    }
-    /*CAROUSEL///Acccreditations///*/
     $('div.accreditations-container').slick(accreditationsCarouselSettings)
     /*CAROUSEL///Clients & Partners///*/
-    // $('div.our-clients-carousel').slick(clientsCarouselSettings)
     $('.owl-carousel')
     .owlCarousel({
-        items: determineOwlCarouselItems(), 
+        items: 6,
         loop: true, 
         autoplay: true, 
-        // autoplaySpeed: 500,
         autoplayTimeout: 3000,
-        autoplayHoverPause:true
+        autoplayHoverPause:true,
+        responsive:{
+            0: {
+                items: 1
+            },
+            400: {
+                items: 2
+            },
+            650: {
+                items: 3
+            },
+            992: {
+                items: 4
+            },
+            1220: {
+                items: 5
+            },
+            1340:{
+                items: 6
+            }
+        }
     })
     ///
     toggleClientTooltip()

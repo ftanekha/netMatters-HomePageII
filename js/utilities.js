@@ -1,115 +1,4 @@
-function showNavigationDropDown(){
-    const navBgColor = '#333645'
-    const $triangles = $('#triangles')
-    const $mainNavigationDropdown = $('#main-navigation-dropdown')
-    const dropDownMenuBgColorOptions = {
-        'bs': {
-            navItemHover: '#67809f;',
-            navItemInfo:'#526781'
-        },
-        'it': {
-            navItemHover: '#4183d7',
-            navItemInfo:'#286abd'
-        },
-        'dm': {
-            navItemHover: '#2ecc71',
-           navItemInfo:'#25a25a'
-        },
-        'ts': {
-            navItemHover: '#d64541',
-           navItemInfo:'#bc2c28'
-        },
-        'wd': {
-            navItemHover: '#926fb1',
-           navItemInfo:'#79539a'
-        },
-        'cs': {
-            navItemHover: '#f62459',
-           navItemInfo:'#de093f'
-        },
-        'dc': {
-            navItemHover: '#ce4125',
-           navItemInfo:'#a3331d'
-        }
-    }
 
-    const activeNavItemConfig = {
-        link: false, 
-        info: false,
-        prevActiveNavItemClassSuffix: '',
-        activeNavItemInfoDisplay: 'none',
-    };
-
-    // ['bs', 'it', 'dm', 'ts', 'wd', 'cs', 'dc']
-    // .forEach(
-    //     classSuffix => {
-    //         $(`.nav-item-${classSuffix}`).on(
-    //             'mouseenter', ()=> {
-    //                 if(activeNavItemConfig.prevActiveNavItemClassSuffix && activeNavItemConfig.prevActiveNavItemClassSuffix != classSuffix){
-    //                     //hide drop-down content
-    //                     $(`.nav-item-info-${activeNavItemConfig.prevActiveNavItemClassSuffix}`).css('display',  'none')
-    //                 }
-    //                 // update previous suffix
-    //                 activeNavItemConfig.prevActiveNavItemClassSuffix = classSuffix
-                    
-    //                 // display arrow
-    //                 $triangles.css('display', 'flex')
-    //                 $(`#nav-item-triangle-${classSuffix}`).css('display', 'block')
-    //                 //display info for current/active nav item
-    //                 $mainNavigationDropdown.css(
-    //                     {
-    //                         display: 'flex',
-    //                         'flex-direction': 'column',
-    //                         'background-color': dropDownMenuBgColorOptions[classSuffix].navItemInfo
-    //                     }
-    //                 ) 
-    //                 $(`#nav-item-info-${classSuffix}`).css({
-    //                     display: 'block',
-    //                     'background-color': dropDownMenuBgColorOptions[classSuffix].navItemInfo
-    //                 })
-    //                 $(`#nav-item-dropdown-option-wrapper-${classSuffix}`).css('display', 'block')
-
-    //                 // $mainNavigationDropdown.on(
-    //                 //     'mouseover',
-    //                 //     ()=> {
-    //                 //         $(`.nav-item-${classSuffix}`).css({
-    //                 //             color: 'white',
-    //                 //             'background-color': dropDownMenuBgColorOptions[classSuffix].navItemHover
-    //                 //         })
-    //                 //         $(`.nav-icon-${classSuffix}`).css('color', 'white')
-    //                 //     }
-    //                 // )
-
-    //                 $mainNavigationDropdown.on(
-    //                     'mouseleave', ()=> {
-    //                         $(`#nav-item-dropdown-option-wrapper-${classSuffix}`).css('display', 'none')
-    //                         $(`#nav-item-info-${classSuffix}`).css('display', 'none')
-    //                         $mainNavigationDropdown.css('display', 'none')
-    //                         $(`#nav-item-triangle-${classSuffix}`).css('display', 'none')
-    //                         $triangles.css('display', 'none')
-    //                     }
-    //                 )
-    //             }
-    //         )
-    //         // $(`.nav-item-${classSuffix}`).on(
-    //         //     'mouseleave', ()=> {
-    //         //         $(this).css('background-color', navBgColor)
-    //         //     }
-    //         // )
-    //         // $(`.nav-item-${classSuffix} .triangle`).on(
-    //         //     'mouseover',
-    //         //     ()=> {
-    //         //         $(`.nav-item-${classSuffix}`).css({
-    //         //             color: 'white',
-    //         //             'background-color': dropDownMenuBgColorOptions[classSuffix].navItemHover
-    //         //         })
-    //         //     }
-    //         // )
-    //     }
-    // )
-    
-}
-//////////////////////////////////////////////////////////////////////////////////////////
 function togglePageSize(bodyOverflow){
     if(bodyOverflow === 'hidden'){
         $('body').css(
@@ -168,45 +57,41 @@ function crossToHamburger(hamburgerMenuIcon){
     togglePageSize('scroll')
 }
 /////////////////////////////////////////////////////////////////////
-function showSideMenu(hamburgerMenuIcon, sideMenu){
-    hamburgerToCross(hamburgerMenuIcon)
-    // resize page main container with accordingly
-    $('div#container')
-    .removeClass('slide-right')
-    .addClass('slide-left')
-    // .css('backgroundColor', 'rgba(0, 0, 0, .7)')
-
-    sideMenu
-    .show()
-    .addClass('toggle-side-menu-in')
-    .css('right', '0')
-}
-/////////////////////////////////////////////////////////////////////
-function hideSideMenu(hamburgerMenuIcon, sideMenu){
+function hideSideMenu(hamburgerMenuIcon, sideMenuContainer){
     crossToHamburger(hamburgerMenuIcon)
 
     $('div#container')
     .removeClass('slide-left')
     .addClass('slide-right')
-    // .css('filter', 'grayscale(0%)')
+    
+    hamburgerMenuIcon.css('background-color', '#333645')
 
-    sideMenu
+    sideMenuContainer
     .removeClass('toggle-side-menu-in')
     .addClass('toggle-side-menu-out')
-    .hide(0)
+    .css('z-index', 0)
+    .hide()
 
-    hamburgerMenuIcon
-    .css(
-        'background-color', '#333645'
-    )
-    .hover(
+}
+/////////////////////////////////////////////////////////////////////
+function showSideMenu(hamburgerMenuIcon, sideMenuContainer){
+    hamburgerToCross(hamburgerMenuIcon)
+    // resize page main container with accordingly
+    $('div#container')
+    .removeClass('slide-right')
+    .addClass('slide-left')
+
+    sideMenuContainer
+    .addClass('toggle-side-menu-in')
+    .css({
+        display: 'block',
+        'z-index': '100'
+    })
+
+    $('div#side-menu_background-filter')
+    .on('click',
         ()=> {
-            $(this).css(
-                {
-                    'background-color': '#22242e',
-                    'border-color': '#191a22'
-                }
-            )
+            hideSideMenu(hamburgerMenuIcon, sideMenuContainer)
         }
     )
 }
@@ -291,25 +176,6 @@ function toggleClientTooltip(){
     )
 }
 //////////////////////////////////////////////////////////////////////////////////
-function determineOwlCarouselItems(){
-    let items;
-
-    const mediaQueries = {
-        xs: window.matchMedia('(min-width: 576px)'),
-        sm: window.matchMedia('(min-width: 768px)'),
-        md: window.matchMedia('(min-width: 992px)'),
-        lg: window.matchMedia('(min-width: 1220px)')
-    }
-
-    if(mediaQueries['lg'].matches){
-        return items = 6
-    }else if(mediaQueries['md'].matches){
-        return items = 4
-    }else{
-        return items = 3
-    }
-}
-//////////////////////////////////////////////////////////////////////////////////
 // display cookie modal
 function displayCookieModal(didUserClickManageConsentButton = false){
     const hasCookieBeenDisplayed = localStorage.getItem('hasCookieBeenDisplayed')
@@ -341,6 +207,6 @@ function displayCookieModal(didUserClickManageConsentButton = false){
 }
 ///////////////////////////////////////////////////////////////////////////
 export {
-    showNavigationDropDown, showSideMenu, hideSideMenu, toggleStickyHeader, 
-    changeRebeccaTextContent, toggleClientTooltip, determineOwlCarouselItems, displayCookieModal
+    hideSideMenu, showSideMenu, toggleStickyHeader, 
+    changeRebeccaTextContent, toggleClientTooltip, displayCookieModal
 }

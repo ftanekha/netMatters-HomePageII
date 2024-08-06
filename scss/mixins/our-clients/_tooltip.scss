@@ -4,7 +4,6 @@
     padding: 20px 15px;
     font-size: .875rem;
     width: 100%;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +18,18 @@
         padding: 10px;
         line-height: 1.6;
         text-align: center;
+        > a.one-traveller-link{
+            text-decoration: none;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding: 0;
+            text-transform: capitalize;
+            font-size: .875rem;
+            &:hover{
+                background-color: transparent;
+            }
+        }
     }
     a{
         @include case-study-link($theme);
