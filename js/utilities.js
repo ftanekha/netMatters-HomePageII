@@ -69,7 +69,6 @@ function hideSideMenu(hamburgerMenuIcon, sideMenuContainer){
     sideMenuContainer
     .removeClass('toggle-side-menu-in')
     .addClass('toggle-side-menu-out')
-    .css('z-index', 0)
     .hide()
 
 }

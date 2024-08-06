@@ -3,7 +3,7 @@ import {
     changeRebeccaTextContent, toggleClientTooltip, displayCookieModal
 } from './js/utilities.js'
 
-$(document).ready(()=>{
+$(()=>{
     /*COOKIE POPUP POLICY & consent management*/
     displayCookieModal()
     const cookiSettingsButton = $('.cookie-settings-btn')
@@ -47,9 +47,9 @@ $(document).ready(()=>{
     /* NAV drop-down menu*/
     ['bs', 'it', 'dm', 'ts', 'wd', 'cs', 'dc'].forEach(
         classSuffix => {
-            $(`.option-content-wrapper-${classSuffix}`)
+            $(`.${classSuffix}`)
             .on('mouseover', 
-                ()=> $(`.nav-icon-${classSuffix}`).css('color', 'white')
+                ()=> $(`.${classSuffix}`).css('color', 'white')
             )
         }
     )
