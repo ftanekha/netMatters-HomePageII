@@ -10,6 +10,7 @@ div.our-clients-carousel{
             flex-wrap: nowrap;
             div.owl-item{
                 overflow: visible;
+                margin: 0 30px;
                 div.carousel-item{
                     display: flex;
                     flex-direction: column;
@@ -21,26 +22,44 @@ div.our-clients-carousel{
                             display: flex;
                         }
                     }
-                    &.black-swan{//black swan
-                        @include carousel-item($buttercup)
-                    }
-                    &.beat{//beat
-                        @include carousel-item(null)
-                    }
-                    &.survey-solutions{//survey solutions
-                        @include carousel-item(null)
-                    }
-                    &.girl-guiding{//girl guiding
-                        @include carousel-item($havelockBlue)
-                    }
-                    &.sweetzy{//sweetzy
-                        @include carousel-item($shamrock)
-                    }
-                    &.one-traveller{//one traveller
+                    &.ashcroft{
                         @include carousel-item($wisteria)
                     }
-                    &.xupes{//xupes
+                    &.one-traveller{
+                        @include carousel-item($wisteria)
+                    }
+                    &.searles{
+                        @include carousel-item($shamrock)
+                    }
+                    &.busseys{
                         @include carousel-item(null)
+                    }
+                    &.crane-garden-buildings{
+                        @include carousel-item(null)
+                    }
+                    &.black-swan{
+                        @include carousel-item($buttercup)
+                    }
+                    &.xupes{
+                        @include carousel-item(null)
+                    }
+                    &.beat{
+                        @include carousel-item(null)
+                    }
+                    &.survey-solutions{
+                        @include carousel-item(null)
+                    }
+                    &.girl-guiding{
+                        @include carousel-item($havelockBlue)
+                    }
+                    &.sweetzy{
+                        @include carousel-item($shamrock)
+                    }
+                    &.howes-percival{
+                        @include carousel-item(null)
+                    }
+                    &.gdst{
+                        @include carousel-item($shamrock)
                     }
                 }
             }

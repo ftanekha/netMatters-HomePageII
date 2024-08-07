@@ -1,8 +1,7 @@
 //carousel
 @mixin client-partners-logo{
     img{
-        width: auto !important;
-        max-height: 70px;
+        height: 70px;
         margin: 0 auto;
         transform-style: preserve-3d;
         filter: grayscale(100%);
@@ -13,7 +12,7 @@
             width: 88px;
         }
         &.norfolk-prohelp-logo{
-            width: 171px;
+            width: 171px; 
         }
         &.investing-in-future-growth-logo{
             width: 175px;
@@ -23,7 +22,7 @@
             width: 173px;
         }
         &.ppc-logo{
-            width: 174px;
+            width: 174px; 
         }
         &.princess-royal-training-logo{
             width: 274px;

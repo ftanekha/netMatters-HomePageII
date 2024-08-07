@@ -1,8 +1,56 @@
 @mixin client-logo{
-    max-height: 70px;
+    height: 70px;
+    max-height: 75px;
     transform-style: preserve-3d;
     filter: grayscale(100%);
     &:hover{
         filter: grayscale(0%);
+    }
+    &.ashcroft-logo{
+        width: 200px;
+        height: 42px;
+    }
+    &.one-traveller-logo{
+        width: 43px;
+        height: 75px;
+    }
+    &.searles-logo{
+        width: 179px;
+    }
+    &.busseys-logo{
+        width: 188px;
+    }
+    &.crane-garden-buildings-logo{
+        width: 200px;
+        height: 49px;
+    }
+    &.black-swan-logo{
+        width: 80px;
+    }
+    &.xupes-logo{
+        width: 200px;
+        height: 38px;
+    }
+    &.beat-logo{
+        width: 72px;
+    }
+    &.survey-solutions-logo{
+        width: 200px;
+        height: 48px;
+    }
+    &.girl-guiding-logo{
+        width: 119px;
+    }
+    &.sweezty-logo{
+        width: 200px;
+        height: 58px;
+    }   
+    &.howes-percival-logo{
+        width: 200px;
+        height: 61px;
+    }
+    &.gdst-logo{
+        width: 200px;
+        height: 61px;
     }
 }
