@@ -3943,7 +3943,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   position: relative;
   z-index: inherit;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item:hover > div.tooltip-container {
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.ashcroft:hover > div.tooltip-container {
   display: flex;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.ashcroft div.tooltip-container {
@@ -4084,6 +4084,9 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   width: 200px;
   height: 61px;
 }
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller:hover > div.tooltip-container {
+  display: flex;
+}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.tooltip-container {
   width: 300px;
   display: none;
@@ -4221,6 +4224,9 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.client-logo-container img.gdst-logo {
   width: 200px;
   height: 61px;
+}
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.searles:hover > div.tooltip-container {
+  display: flex;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.searles div.tooltip-container {
   width: 300px;
@@ -4360,6 +4366,9 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   width: 200px;
   height: 61px;
 }
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.busseys:hover > div.tooltip-container {
+  display: flex;
+}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.busseys div.tooltip-container {
   width: 300px;
   display: none;
@@ -4496,6 +4505,9 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   width: 200px;
   height: 61px;
 }
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.crane-garden-buildings:hover > div.tooltip-container {
+  display: flex;
+}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.crane-garden-buildings div.tooltip-container {
   width: 300px;
   display: none;
@@ -4631,6 +4643,9 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.crane-garden-buildings div.client-logo-container img.gdst-logo {
   width: 200px;
   height: 61px;
+}
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan:hover > div.tooltip-container {
+  display: flex;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan div.tooltip-container {
   width: 300px;
@@ -4770,6 +4785,9 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   width: 200px;
   height: 61px;
 }
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes:hover > div.tooltip-container {
+  display: flex;
+}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.tooltip-container {
   width: 300px;
   display: none;
@@ -4905,6 +4923,9 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.client-logo-container img.gdst-logo {
   width: 200px;
   height: 61px;
+}
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat:hover > div.tooltip-container {
+  display: flex;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.tooltip-container {
   width: 300px;
@@ -5042,6 +5063,9 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   width: 200px;
   height: 61px;
 }
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions:hover > div.tooltip-container {
+  display: flex;
+}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.tooltip-container {
   width: 300px;
   display: none;
@@ -5177,6 +5201,9 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.client-logo-container img.gdst-logo {
   width: 200px;
   height: 61px;
+}
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding:hover > div.tooltip-container {
+  display: flex;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding div.tooltip-container {
   width: 300px;
@@ -5316,6 +5343,9 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   width: 200px;
   height: 61px;
 }
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy:hover > div.tooltip-container {
+  display: flex;
+}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy div.tooltip-container {
   width: 300px;
   display: none;
@@ -5454,6 +5484,9 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   width: 200px;
   height: 61px;
 }
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.howes-percival:hover > div.tooltip-container {
+  display: flex;
+}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.howes-percival div.tooltip-container {
   width: 300px;
   display: none;
@@ -5589,6 +5622,9 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.howes-percival div.client-logo-container img.gdst-logo {
   width: 200px;
   height: 61px;
+}
+div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.gdst:hover > div.tooltip-container {
+  display: flex;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.gdst div.tooltip-container {
   width: 300px;

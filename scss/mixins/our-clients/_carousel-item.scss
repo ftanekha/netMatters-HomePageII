@@ -1,4 +1,9 @@
 @mixin carousel-item($theme){
+    &:hover{
+        > div.tooltip-container{
+            display: flex;
+        }
+    }
     div.tooltip-container{
         width: 300px;
         display: none;

@@ -141,39 +141,39 @@ function changeRebeccaTextContent(){
     )
 }
 //////////////////////////////////////////////////////////////////////////////////
-function toggleClientTooltip(){
-    const clients = ['black-swan', 'beat', 'survey-solutions', 'girl-guiding', 'sweetzy', 'one-traveller', 'xupes']
-    clients.forEach(
-        client => {
-            //show tooltip
-            $(`div.client-logo-container.${client}`)
-            .on(
-                'mouseover', 
-                ()=>{
-                    $(`div.tooltip-container.${client}`).css({
-                        display : 'flex'
-                    })
-                    $(`div.tooltip-container.${client} div.tooltip-arrow`).css({
-                        display : 'block'
-                    })
-                }
-            )
-            //hide tooltip
-            $(`div.carousel-item.${client}`)
-            .on(
-                'mouseleave', 
-                ()=> {
-                    $(`div.tooltip-container.${client}`).css({
-                        display : 'none'
-                    })
-                    $(`div.tooltip-container.${client} div.tooltip-arrow`).css({
-                        display : 'none'
-                    })
-                }
-            )
-        }
-    )
-}
+// function toggleClientTooltip(){
+//     const clients = ['black-swan', 'beat', 'survey-solutions', 'girl-guiding', 'sweetzy', 'one-traveller', 'xupes']
+//     clients.forEach(
+//         client => {
+//             //show tooltip
+//             $(`div.client-logo-container.${client}`)
+//             .on(
+//                 'mouseover', 
+//                 ()=>{
+//                     $(`div.tooltip-container.${client}`).css({
+//                         display : 'flex'
+//                     })
+//                     $(`div.tooltip-container.${client} div.tooltip-arrow`).css({
+//                         display : 'block'
+//                     })
+//                 }
+//             )
+//             //hide tooltip
+//             $(`div.carousel-item.${client}`)
+//             .on(
+//                 'mouseleave', 
+//                 ()=> {
+//                     $(`div.tooltip-container.${client}`).css({
+//                         display : 'none'
+//                     })
+//                     $(`div.tooltip-container.${client} div.tooltip-arrow`).css({
+//                         display : 'none'
+//                     })
+//                 }
+//             )
+//         }
+//     )
+// }
 //////////////////////////////////////////////////////////////////////////////////
 // display cookie modal
 function displayCookieModal(didUserClickManageConsentButton = false){
@@ -207,5 +207,5 @@ function displayCookieModal(didUserClickManageConsentButton = false){
 ///////////////////////////////////////////////////////////////////////////
 export {
     hideSideMenu, showSideMenu, toggleStickyHeader, 
-    changeRebeccaTextContent, toggleClientTooltip, displayCookieModal
+    changeRebeccaTextContent, displayCookieModal
 }

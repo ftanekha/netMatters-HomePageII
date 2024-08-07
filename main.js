@@ -1,10 +1,9 @@
 import {
     hideSideMenu, showSideMenu, toggleStickyHeader, 
-    changeRebeccaTextContent, toggleClientTooltip, displayCookieModal
+    changeRebeccaTextContent, displayCookieModal
 } from './js/utilities.js'
 
 $(()=>{
-    while($(document).scrollTop() > 500) console.log('yep')
     /*COOKIE POPUP POLICY & consent management*/
     displayCookieModal()
     const cookiSettingsButton = $('.cookie-settings-btn')
@@ -67,7 +66,6 @@ $(()=>{
     /*CAROUSEL///Clients & Partners///*/
     $('.owl-carousel')
     .owlCarousel({
-        items: 6,
         loop: true, 
         autoplay: true, 
         autoplayTimeout: 3000,
@@ -77,10 +75,10 @@ $(()=>{
             0: {
                 items: 1
             },
-            400: {
+            300: {
                 items: 2
             },
-            650: {
+            550: {
                 items: 3
             },
             992: {
@@ -95,7 +93,7 @@ $(()=>{
         }
     })
     ///
-    toggleClientTooltip()
+    // toggleClientTooltip()
     /*LATEST NEWS*/ 
     changeRebeccaTextContent()
 })

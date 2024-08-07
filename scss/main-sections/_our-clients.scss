@@ -17,11 +17,6 @@ div.our-clients-carousel{
                     align-items: center;
                     position: relative;
                     z-index: inherit;
-                    &:hover{
-                        > div.tooltip-container{
-                            display: flex;
-                        }
-                    }
                     &.ashcroft{
                         @include carousel-item($wisteria)
                     }
