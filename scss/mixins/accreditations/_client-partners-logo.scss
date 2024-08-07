@@ -1,7 +1,8 @@
 //carousel
 @mixin client-partners-logo{
     img{
-        height: 70px;
+        max-height: 70px;
+        min-height: 50px;
         margin: 0 auto;
         transform-style: preserve-3d;
         filter: grayscale(100%);

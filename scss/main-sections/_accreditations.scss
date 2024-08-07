@@ -7,9 +7,10 @@ div.accreditations-container{
             background-color: white;
             margin: 40px 0 70px 20px;
             width: 100%;
-            height: 70px;
             display: flex;
             flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
             gap: 90px;
             @include client-partners-logo;
         }

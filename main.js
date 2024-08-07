@@ -47,14 +47,14 @@ $(()=>{
     //only show the sticky header wher the user scrolls UP
     toggleStickyHeader();
     /* NAV drop-down menu*/
-    ['bs', 'it', 'dm', 'ts', 'wd', 'cs', 'dc'].forEach(
-        classSuffix => {
-            $(`.${classSuffix}`)
-            .on('mouseover', 
-                ()=> $(`.${classSuffix}`).css('color', 'white')
-            )
-        }
-    )
+    // ['bs', 'it', 'dm', 'ts', 'wd', 'cs', 'dc'].forEach(
+    //     classSuffix => {
+    //         $(`.${classSuffix}`)
+    //         .on('mouseover', 
+    //             ()=> $(`.${classSuffix}`).css('color', 'white')
+    //         )
+    //     }
+    // )
     /*CAROUSEL///Acccreditations///*/
     const accreditationsCarouselSettings = {
         autoplay: true,
@@ -72,6 +72,7 @@ $(()=>{
         autoplay: true, 
         autoplayTimeout: 3000,
         autoplayHoverPause:true,
+        mouseDrag: false,
         responsive:{
             0: {
                 items: 1

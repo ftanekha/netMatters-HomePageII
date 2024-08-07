@@ -35,5 +35,9 @@
             background-color: $wisteria-clients-hover-bg-color;
             border-color: $wisteria-clients-hover-border-color;
         }
+        @if($theme == null){
+            background-color: none;
+            border-color: none;
+        }
     }
 }

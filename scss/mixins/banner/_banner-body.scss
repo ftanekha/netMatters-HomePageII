@@ -8,7 +8,11 @@
     color: white;
     div.wrapper{
         height: 360.6px;
-        padding-top: 35%;
+        padding-top: 20%;
+        // @if $image-id == 'why-choose-us'{
+        //     padding-top: 0%;
+        //     @media 
+        // }
         h1{
             font-size: 2.5rem;
             line-height: 3rem;
