@@ -13,25 +13,16 @@ body{
     letter-spacing: .4px;
     line-height: 1.42857143;
     color: #666;
-    background-color: #fff;
     overflow-x: hidden;
     div#main-outer-container{
         background-color: #fff;
         position: relative;
         z-index: $main-outer-container_z-index;
-        div#container{
-            transition: 3s;
-            div.container{
-                margin: 0 auto;
-                padding: 0 15px;
-                @media (min-width: 768px){
-                    width: 750px;
-                }
-                @media (min-width: 992px){
-                    width: 970px;
-                }
-                @media (min-width: 1220px){
-                    width: 1200px;
+        div.main-inner{
+            div#header-wrapper-sticky-wrapper{
+                height: inherit !important;
+                div#container{
+                    transition: 3s;
                 }
             }
         }
@@ -119,7 +110,6 @@ body{
         }
     }
     div#main-outer-container{
-        // display: none;
         overflow-x: hidden;
         div#container{
             width: 100%;
@@ -144,7 +134,7 @@ body{
                     div#header-wrapper{
                         position: relative; 
                         z-index: $sticky-header-wrapper_z-index;
-                        background-color: white;
+                        background-color: #fff;
                         div#header{} 
                         div#nav{background-color: #333645;}
                     }

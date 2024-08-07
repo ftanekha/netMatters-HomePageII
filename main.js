@@ -4,6 +4,7 @@ import {
 } from './js/utilities.js'
 
 $(()=>{
+    while($(document).scrollTop() > 500) console.log('yep')
     /*COOKIE POPUP POLICY & consent management*/
     displayCookieModal()
     const cookiSettingsButton = $('.cookie-settings-btn')
@@ -40,6 +41,7 @@ $(()=>{
             )
         }
     )
+    .on('mouseleave', ()=> $hamburgerMenuIcon.css('background-color', '#333645'))
     /* STICKY HEADER*/
     //determine the scroll direction using the scroll position on the document object
     //only show the sticky header wher the user scrolls UP

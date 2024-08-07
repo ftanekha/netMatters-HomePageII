@@ -881,7 +881,6 @@ header div.inner div.container div.row div.flex-wrapper div.actions-container di
 }
 header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button[data-toggle=sidebar] {
   background-color: #333645;
-  border-color: #333645;
 }
 header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button[data-toggle=sidebar]:hover, header div.inner div.container div.row div.flex-wrapper div.actions-container div.actions button[data-toggle=sidebar]:active {
   background-color: #22242e;
@@ -4725,7 +4724,6 @@ body {
   letter-spacing: 0.4px;
   line-height: 1.42857143;
   color: #666;
-  background-color: #fff;
   overflow-x: hidden;
 }
 body div#main-outer-container {
@@ -4733,27 +4731,11 @@ body div#main-outer-container {
   position: relative;
   z-index: 10;
 }
-body div#main-outer-container div#container {
+body div#main-outer-container div.main-inner div#header-wrapper-sticky-wrapper {
+  height: inherit !important;
+}
+body div#main-outer-container div.main-inner div#header-wrapper-sticky-wrapper div#container {
   transition: 3s;
-}
-body div#main-outer-container div#container div.container {
-  margin: 0 auto;
-  padding: 0 15px;
-}
-@media (min-width: 768px) {
-  body div#main-outer-container div#container div.container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  body div#main-outer-container div#container div.container {
-    width: 970px;
-  }
-}
-@media (min-width: 1220px) {
-  body div#main-outer-container div#container div.container {
-    width: 1200px;
-  }
 }
 body div#cookie-app {
   position: fixed;
@@ -4869,7 +4851,7 @@ body div#main-outer-container div#container div.main-outer {
 body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper {
   position: relative;
   z-index: 50;
-  background-color: white;
+  background-color: #fff;
 }
 body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper div#nav {
   background-color: #333645;
