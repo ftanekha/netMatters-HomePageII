@@ -84,6 +84,7 @@ body{
             width: 275px;
             height: 100vh;
             overflow: auto;
+            scroll-behavior: smooth;
             transition: .3s;
             &.toggle-side-menu-in{
                 display: block;

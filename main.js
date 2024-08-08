@@ -46,21 +46,43 @@ $(()=>{
     //only show the sticky header wher the user scrolls UP
     toggleStickyHeader();
     /* NAV drop-down menu*/
-    // ['bs', 'it', 'dm', 'ts', 'wd', 'cs', 'dc'].forEach(
-    //     classSuffix => {
-    //         $(`.${classSuffix}`)
-    //         .on('mouseover', 
-    //             ()=> $(`.${classSuffix}`).css('color', 'white')
-    //         )
-    //     }
-    // )
+    const navItemIconColors = {
+        'bs': '#67809f',
+        'it': '#4183d7',
+        'dm': '#2ecc71', 
+        'ts': '#d64541', 
+        'wd': '#926fb1', 
+        'cs': '#f62459', 
+        'dc': '#ce4125'
+    }; 
+
+    ['bs', 'it', 'dm', 'ts', 'wd', 'cs', 'dc'].forEach(
+        classSuffix => {
+            $(`.${classSuffix}`)
+            .on('mouseover', 
+                ()=> $(`.${classSuffix}`).css('color', 'white')
+            )
+        }
+    );
+    
+    ['bs', 'it', 'dm', 'ts', 'wd', 'cs', 'dc'].forEach(
+        classSuffix => {
+            $(`.${classSuffix}`)
+            .on('mouseleave', 
+                ()=> $(`span.${classSuffix}`).css('color', navItemIconColors[classSuffix])
+            )
+        }
+    )
+    // <div id="nav-item-bs_icon-container">
+    //                                                     <span class="icon-apps bs first"></span>
     /*CAROUSEL///Acccreditations///*/
     const accreditationsCarouselSettings = {
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         arrows: false,
         dots: false,
-        slidesToShow: 6
+        slidesToShow: 6,
+        draggable: true
     }
     $('div.accreditations-container').slick(accreditationsCarouselSettings)
     /*CAROUSEL///Clients & Partners///*/
@@ -92,8 +114,6 @@ $(()=>{
             }
         }
     })
-    ///
-    // toggleClientTooltip()
     /*LATEST NEWS*/ 
     changeRebeccaTextContent()
 })
