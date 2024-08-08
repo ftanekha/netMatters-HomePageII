@@ -328,6 +328,9 @@ div.cookie-policy-popup div.cookie-policy-button-container .wisteria:hover {
   }
 }
 
+div#side-menu {
+  scroll-behavior: smooth;
+}
 div#side-menu div.side-menu-misc-list {
   display: flex;
   flex-direction: column;
@@ -6036,6 +6039,7 @@ body div#main-outer-container {
   overflow-x: hidden;
 }
 body div#main-outer-container div#container {
+  scroll-behavior: smooth;
   width: 100%;
   height: 100%;
   position: relative;
