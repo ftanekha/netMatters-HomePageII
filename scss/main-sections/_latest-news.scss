@@ -55,7 +55,7 @@ div.container{
                     width: calc(50% - 15px)
                 }
             }
-            @media (min-width: 1220px){
+            @media (min-width: 1260px){
                 gap: 30px;
                 justify-content: space-between;
             }
@@ -82,13 +82,13 @@ div.container{
                             //stretches a bit
                             min-height: 262px;
                         }
-                        @media (min-width: 1220px){
+                        @media (min-width: 1260px){
                             min-height: 214px;
                         }
                     }
                 }
                 &.md-screen-hidden{
-                    @media (min-width: 768px) and (max-width: 1220px){
+                    @media (min-width: 768px) and (max-width: 1260px){
                         display: none;
                     }
                 }

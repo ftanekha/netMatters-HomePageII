@@ -129,7 +129,7 @@ function changeRebeccaTextContent(){
     const mediaQueries = {
         sm: window.matchMedia('(min-width: 768px)'),
         md: window.matchMedia('(min-width: 992px)'),
-        lg: window.matchMedia('(min-width: 1220px)')
+        lg: window.matchMedia('(min-width: 1260px)')
     };
 
     ['sm', 'md', 'lg'].forEach(

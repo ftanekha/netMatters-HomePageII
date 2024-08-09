@@ -12,6 +12,7 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   scroll-behavior: smooth;
+  transition: right 0.5s, width 0.5s 
 }
 /* apply border-box in all css rules */
 /* selon CSS3 specification,only double colon notation should be used for pseudo-elements */
@@ -51,7 +52,7 @@ div.container{
   @media (min-width: 992px){
       width: 970px;
   }
-  @media (min-width: 1220px){
+  @media (min-width: 1260px){
       width: 1200px;
   }
 }

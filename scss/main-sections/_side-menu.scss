@@ -1,5 +1,6 @@
 div#side-menu{
     scroll-behavior: smooth;
+    transition: right 0.5s, width 0.5s;
     div.side-menu-misc-list{
         display: flex;
         flex-direction: column;
