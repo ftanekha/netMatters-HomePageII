@@ -1,18 +1,8 @@
 @use "sass:map";
 
 @mixin banner-body($image-id){
-    height: 100%;
-    margin: auto;
-    padding: 0;
-    text-align: center;
-    color: white;
     div.wrapper{
-        height: 360.6px;
-        padding-top: 20%;
-        // @if $image-id == 'why-choose-us'{
-        //     padding-top: 0%;
-        //     @media 
-        // }
+        margin-bottom: 70px;
         h1{
             font-size: 2.5rem;
             line-height: 3rem;
@@ -50,11 +40,6 @@
                 background-color: map.get(get-banner--button--hover--bg-color($image-id), "hover-bg-color");
                 border-color: map.get(get-banner--button--hover--bg-color($image-id), "hover-bdr-color");
             }
-        }
-        &#first-banner-item{
-            background-color: green;
-            padding-top: 10%;
-            h1{color: red !important}
         }
     }
     @media (min-width: 992px){

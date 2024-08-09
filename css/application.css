@@ -2059,18 +2059,19 @@ div#nav nav div.container div.wrapper div.nav-links-container-dc:hover > *.dc {
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px !important;
+  height: 550px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
 }
 div.banner-item-container div.bg-image-container div.why-choose-us {
+  display: flex;
+  align-items: center;
   position: relative;
   background-image: linear-gradient(to right, #1b1c24, transparent);
   height: 100%;
   margin: auto;
-  padding: 0;
   text-align: center;
   color: white;
 }
@@ -2080,8 +2081,7 @@ div.banner-item-container div.bg-image-container div.why-choose-us {
   }
 }
 div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper {
-  height: 360.6px;
-  padding-top: 20%;
+  margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper h1 {
   font-size: 2.5rem;
@@ -2118,13 +2118,6 @@ div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper a
   background-color: #7e57a0;
   border-color: #735093;
 }
-div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper#first-banner-item {
-  background-color: green;
-  padding-top: 10%;
-}
-div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper#first-banner-item h1 {
-  color: red !important;
-}
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper {
     padding-top: 5%;
@@ -2144,18 +2137,19 @@ div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper#f
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px !important;
+  height: 550px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
 }
 div.banner-item-container div.bg-image-container div.bespoke-software {
+  display: flex;
+  align-items: center;
   position: relative;
   background-image: linear-gradient(to right, #1b1c24, transparent);
   height: 100%;
   margin: auto;
-  padding: 0;
   text-align: center;
   color: white;
 }
@@ -2165,8 +2159,7 @@ div.banner-item-container div.bg-image-container div.bespoke-software {
   }
 }
 div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper {
-  height: 360.6px;
-  padding-top: 20%;
+  margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper h1 {
   font-size: 2.5rem;
@@ -2203,13 +2196,6 @@ div.banner-item-container div.bg-image-container div.bespoke-software div.wrappe
   background-color: #e8a008;
   border-color: #d49308;
 }
-div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper#first-banner-item {
-  background-color: green;
-  padding-top: 10%;
-}
-div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper#first-banner-item h1 {
-  color: red !important;
-}
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper {
     padding-top: 10%;
@@ -2229,18 +2215,19 @@ div.banner-item-container div.bg-image-container div.bespoke-software div.wrappe
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px !important;
+  height: 550px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
 }
 div.banner-item-container div.bg-image-container div.it-support {
+  display: flex;
+  align-items: center;
   position: relative;
   background-image: linear-gradient(to right, #1b1c24, transparent);
   height: 100%;
   margin: auto;
-  padding: 0;
   text-align: center;
   color: white;
 }
@@ -2250,8 +2237,7 @@ div.banner-item-container div.bg-image-container div.it-support {
   }
 }
 div.banner-item-container div.bg-image-container div.it-support div.wrapper {
-  height: 360.6px;
-  padding-top: 20%;
+  margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.it-support div.wrapper h1 {
   font-size: 2.5rem;
@@ -2288,13 +2274,6 @@ div.banner-item-container div.bg-image-container div.it-support div.wrapper a:ho
   background-color: #2a6ec6;
   border-color: #2665b5;
 }
-div.banner-item-container div.bg-image-container div.it-support div.wrapper#first-banner-item {
-  background-color: green;
-  padding-top: 10%;
-}
-div.banner-item-container div.bg-image-container div.it-support div.wrapper#first-banner-item h1 {
-  color: red !important;
-}
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.it-support div.wrapper {
     padding-top: 10%;
@@ -2314,18 +2293,19 @@ div.banner-item-container div.bg-image-container div.it-support div.wrapper#firs
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px !important;
+  height: 550px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
 }
 div.banner-item-container div.bg-image-container div.digital-marketing {
+  display: flex;
+  align-items: center;
   position: relative;
   background-image: linear-gradient(to right, #1b1c24, transparent);
   height: 100%;
   margin: auto;
-  padding: 0;
   text-align: center;
   color: white;
 }
@@ -2335,8 +2315,7 @@ div.banner-item-container div.bg-image-container div.digital-marketing {
   }
 }
 div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper {
-  height: 360.6px;
-  padding-top: 20%;
+  margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper h1 {
   font-size: 2.5rem;
@@ -2373,13 +2352,6 @@ div.banner-item-container div.bg-image-container div.digital-marketing div.wrapp
   background-color: #26ab5f;
   border-color: #239a55;
 }
-div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper#first-banner-item {
-  background-color: green;
-  padding-top: 10%;
-}
-div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper#first-banner-item h1 {
-  color: red !important;
-}
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper {
     padding-top: 10%;
@@ -2399,18 +2371,19 @@ div.banner-item-container div.bg-image-container div.digital-marketing div.wrapp
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px !important;
+  height: 550px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
 }
 div.banner-item-container div.bg-image-container div.telecoms-services {
+  display: flex;
+  align-items: center;
   position: relative;
   background-image: linear-gradient(to right, #1b1c24, transparent);
   height: 100%;
   margin: auto;
-  padding: 0;
   text-align: center;
   color: white;
 }
@@ -2420,8 +2393,7 @@ div.banner-item-container div.bg-image-container div.telecoms-services {
   }
 }
 div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper {
-  height: 360.6px;
-  padding-top: 20%;
+  margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper h1 {
   font-size: 2.5rem;
@@ -2458,13 +2430,6 @@ div.banner-item-container div.bg-image-container div.telecoms-services div.wrapp
   background-color: #c42e2a;
   border-color: #b32a27;
 }
-div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper#first-banner-item {
-  background-color: green;
-  padding-top: 10%;
-}
-div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper#first-banner-item h1 {
-  color: red !important;
-}
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper {
     padding-top: 10%;
@@ -2484,18 +2449,19 @@ div.banner-item-container div.bg-image-container div.telecoms-services div.wrapp
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px !important;
+  height: 550px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
 }
 div.banner-item-container div.bg-image-container div.web-design {
+  display: flex;
+  align-items: center;
   position: relative;
   background-image: linear-gradient(to right, #1b1c24, transparent);
   height: 100%;
   margin: auto;
-  padding: 0;
   text-align: center;
   color: white;
 }
@@ -2505,8 +2471,7 @@ div.banner-item-container div.bg-image-container div.web-design {
   }
 }
 div.banner-item-container div.bg-image-container div.web-design div.wrapper {
-  height: 360.6px;
-  padding-top: 20%;
+  margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.web-design div.wrapper h1 {
   font-size: 2.5rem;
@@ -2543,13 +2508,6 @@ div.banner-item-container div.bg-image-container div.web-design div.wrapper a:ho
   background-color: #7e57a0;
   border-color: #735093;
 }
-div.banner-item-container div.bg-image-container div.web-design div.wrapper#first-banner-item {
-  background-color: green;
-  padding-top: 10%;
-}
-div.banner-item-container div.bg-image-container div.web-design div.wrapper#first-banner-item h1 {
-  color: red !important;
-}
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.web-design div.wrapper {
     padding-top: 10%;
@@ -2569,18 +2527,19 @@ div.banner-item-container div.bg-image-container div.web-design div.wrapper#firs
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px !important;
+  height: 550px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
 }
 div.banner-item-container div.bg-image-container div.cyber-security {
+  display: flex;
+  align-items: center;
   position: relative;
   background-image: linear-gradient(to right, #1b1c24, transparent);
   height: 100%;
   margin: auto;
-  padding: 0;
   text-align: center;
   color: white;
 }
@@ -2590,8 +2549,7 @@ div.banner-item-container div.bg-image-container div.cyber-security {
   }
 }
 div.banner-item-container div.bg-image-container div.cyber-security div.wrapper {
-  height: 360.6px;
-  padding-top: 20%;
+  margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.cyber-security div.wrapper h1 {
   font-size: 2.5rem;
@@ -2627,13 +2585,6 @@ div.banner-item-container div.bg-image-container div.cyber-security div.wrapper 
 div.banner-item-container div.bg-image-container div.cyber-security div.wrapper a:hover {
   background-color: #e80a42;
   border-color: #d4093c;
-}
-div.banner-item-container div.bg-image-container div.cyber-security div.wrapper#first-banner-item {
-  background-color: green;
-  padding-top: 10%;
-}
-div.banner-item-container div.bg-image-container div.cyber-security div.wrapper#first-banner-item h1 {
-  color: red !important;
 }
 @media (min-width: 992px) {
   div.banner-item-container div.bg-image-container div.cyber-security div.wrapper {
@@ -3482,6 +3433,7 @@ div.accreditations-container div.slick-list div.slick-track {
   gap: 90px;
 }
 div.accreditations-container div.slick-list div.slick-track img {
+  max-height: 60px;
   margin: 0 auto;
   transform-style: preserve-3d;
   filter: grayscale(100%);
@@ -3489,48 +3441,48 @@ div.accreditations-container div.slick-list div.slick-track img {
 div.accreditations-container div.slick-list div.slick-track img:hover {
   filter: grayscale(0%);
 }
-div.accreditations-container div.slick-list div.slick-track img.living-wage-logo {
-  width: 88px !important;
+div.accreditations-container div.slick-list div.slick-track img.living-wage-logo.slick-slide {
+  width: 88px;
 }
 div.accreditations-container div.slick-list div.slick-track img.norfolk-prohelp-logo {
-  width: 171px !important;
+  width: 171px;
 }
 div.accreditations-container div.slick-list div.slick-track img.investing-in-future-growth-logo {
-  width: 175px !important;
-  height: 58px !important;
+  width: 175px;
+  height: 58px;
 }
-div.accreditations-container div.slick-list div.slick-track img.norfolk-norfolk-carbon-charter-logo {
-  width: 173px !important;
-  max-height: 80px !important;
+div.accreditations-container div.slick-list div.slick-track img.norfolk-norfolk-carbon-charter-logo.slick-slide {
+  width: 173px;
+  max-height: 80px;
 }
 div.accreditations-container div.slick-list div.slick-track img.ppc-logo {
-  width: 174px !important;
-  max-height: 80px !important;
+  width: 174px;
+  max-height: 80px;
 }
 div.accreditations-container div.slick-list div.slick-track img.princess-royal-training-logo {
-  width: 274px !important;
+  width: 274px;
 }
 div.accreditations-container div.slick-list div.slick-track img.future-50-logo {
-  width: 44px !important;
+  width: 44px;
 }
 div.accreditations-container div.slick-list div.slick-track img.qms-logo {
-  width: 142px !important;
+  width: 142px;
 }
 div.accreditations-container div.slick-list div.slick-track img.iso-27001-logo {
-  width: 142px !important;
+  width: 142px;
 }
 div.accreditations-container div.slick-list div.slick-track img.skills-of-tomorrow-logo {
-  width: 175px !important;
-  height: 58px !important;
+  width: 175px;
+  height: 58px;
 }
 div.accreditations-container div.slick-list div.slick-track img.cyber-essentials-logo {
-  width: 149px !important;
+  width: 149px;
 }
 div.accreditations-container div.slick-list div.slick-track img.google-partners-logo {
-  width: 169px !important;
+  width: 169px;
 }
 div.accreditations-container div.slick-list div.slick-track img.ashcroft-logo {
-  width: 169px !important;
+  width: 169px;
 }
 
 div#about-netmatters {
@@ -4031,7 +3983,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.ashcroft div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
@@ -4170,7 +4122,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.one-traveller div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
@@ -4309,7 +4261,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.searles div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
@@ -4428,10 +4380,6 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   border: 1px solid transparent;
   user-select: none;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.busseys div.tooltip-container div.tooltip a:hover {
-  background-color: none;
-  border-color: none;
-}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.busseys div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
@@ -4446,7 +4394,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.busseys div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
@@ -4565,10 +4513,6 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   border: 1px solid transparent;
   user-select: none;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.crane-garden-buildings div.tooltip-container div.tooltip a:hover {
-  background-color: none;
-  border-color: none;
-}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.crane-garden-buildings div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
@@ -4583,7 +4527,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.crane-garden-buildings div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
@@ -4722,7 +4666,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.black-swan div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
@@ -4841,10 +4785,6 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   border: 1px solid transparent;
   user-select: none;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.tooltip-container div.tooltip a:hover {
-  background-color: none;
-  border-color: none;
-}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
@@ -4859,7 +4799,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.xupes div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
@@ -4978,10 +4918,6 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   border: 1px solid transparent;
   user-select: none;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.tooltip-container div.tooltip a:hover {
-  background-color: none;
-  border-color: none;
-}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
@@ -4996,7 +4932,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.beat div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
@@ -5115,10 +5051,6 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   border: 1px solid transparent;
   user-select: none;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.tooltip-container div.tooltip a:hover {
-  background-color: none;
-  border-color: none;
-}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
@@ -5133,7 +5065,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.survey-solutions div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
@@ -5272,7 +5204,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.girl-guiding div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
@@ -5411,7 +5343,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.sweetzy div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
@@ -5530,10 +5462,6 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   border: 1px solid transparent;
   user-select: none;
 }
-div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.howes-percival div.tooltip-container div.tooltip a:hover {
-  background-color: none;
-  border-color: none;
-}
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.howes-percival div.tooltip-container div.tooltip-arrow {
   position: relative;
   width: 0;
@@ -5548,7 +5476,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.howes-percival div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }
@@ -5687,7 +5615,7 @@ div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.caro
   align-items: center;
 }
 div.our-clients-carousel div.owl-stage-outer div.owl-stage div.owl-item div.carousel-item.gdst div.client-logo-container img {
-  height: 70px;
+  max-height: 70px;
   transform-style: preserve-3d;
   filter: grayscale(100%);
 }

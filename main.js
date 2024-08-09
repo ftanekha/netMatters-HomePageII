@@ -11,7 +11,7 @@ $(()=>{
     /*CAROUSEL///Banner///*/
     $('div#banner').slick(
         {//configuration object
-            autoplay: true,
+            // autoplay: false,
             arrows: false,
             dots: true
         }
@@ -73,12 +73,9 @@ $(()=>{
             )
         }
     )
-    // <div id="nav-item-bs_icon-container">
-    //                                                     <span class="icon-apps bs first"></span>
     /*CAROUSEL///Acccreditations///*/
     const accreditationsCarouselSettings = {
         autoplay: true,
-        autoplaySpeed: 1000,
         arrows: false,
         dots: false,
         slidesToShow: 6,
@@ -90,7 +87,7 @@ $(()=>{
     .owlCarousel({
         loop: true, 
         autoplay: true, 
-        autoplayTimeout: 3000,
+        autoplayTimeout: 3100,
         autoplayHoverPause:true,
         mouseDrag: false,
         responsive:{

@@ -1,18 +1,23 @@
 @mixin banner-item($image-id){
     div.banner-item-container{
         div.bg-image-container{
-            height: 550px !important;
+            height: 550px;
             background-attachment: local;
             background-size: cover;
             background-position: center;
             background-color: rgb(94, 91, 91);
-            
             div.#{$image-id}{
+                display: flex;
+                align-items: center;
                 position: relative;
                 background-image: linear-gradient(to right, #1b1c24, transparent);
                 @media (min-width: 992px){
                     background-image: linear-gradient(to right, black, transparent);
                 }
+                height: 100%;
+                margin: auto;
+                text-align: center;
+                color: white;
                 @include banner-body($image-id);
             }
         }

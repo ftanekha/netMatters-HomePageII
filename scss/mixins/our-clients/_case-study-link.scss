@@ -19,25 +19,21 @@
     background-color: $theme;
     border-color: $theme;
     &:hover{
-        @if $theme == $buttercup{
+        @if $theme and $theme == $buttercup{
             background-color: $buttercup-hover;
             border-color: $buttercup-hover-border-color;
         }
-        @if $theme == $havelockBlue{
+        @if $theme and $theme == $havelockBlue{
             background-color:  $havelockBlue-clients-hover-bg-color;
             border-color: $havelockBlue-clients-hover-border-color;
         }
-        @if $theme == $shamrock{
+        @if $theme and $theme == $shamrock{
             background-color: $shamrock-clients-hover-bg-color;
             border-color: $shamrock-clients-hover-border-color;
         }
-        @if $theme == $wisteria{
+        @if $theme and $theme == $wisteria{
             background-color: $wisteria-clients-hover-bg-color;
             border-color: $wisteria-clients-hover-border-color;
-        }
-        @if($theme == null){
-            background-color: none;
-            border-color: none;
         }
     }
 }
