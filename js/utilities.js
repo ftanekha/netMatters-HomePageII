@@ -57,19 +57,18 @@ function toggleSideMenu(){
         hamburgerToCross()
 
         $mainOuterContainer
-        .removeClass('slide-origin').addClass(' slide-left').delay(2000)
+        .removeClass('slide-origin').addClass(' slide-left')
         .css({
             left: pos,
             'z-index': 0
         })
 
         $sideMenuBackgroundFilter.css('z-index', stickyHeaderWrapperZindex)
-        $sideMenuBackgroundFilter.on('click', toggleSideMenu)
     }else{
         crossToHamburger()
 
         $mainOuterContainer
-        .removeClass('slide-left').addClass(' slide-origin').delay(2000)
+        .removeClass('slide-left').addClass(' slide-origin')
         .css({
             left: 0,
             'z-index': mainOuterContainerZindex

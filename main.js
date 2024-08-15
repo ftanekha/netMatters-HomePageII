@@ -32,6 +32,8 @@ $(()=>{
         }
     )
     .on('mouseleave', ()=> $hamburgerMenuIcon.css('background-color', '#333645'))
+    //
+    $('#side-menu_background-filter').on('click', toggleSideMenu)
     /* STICKY HEADER*/
     //determine the scroll direction using the scroll position on the document object
     //only show the sticky header wher the user scrolls UP
