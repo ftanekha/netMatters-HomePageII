@@ -5802,15 +5802,35 @@ body {
   overflow-x: hidden;
 }
 body div#main-outer-container {
+  overflow-x: hidden;
   background-color: #fff;
   position: relative;
   z-index: 10;
 }
-body div#main-outer-container div.main-inner div#header-wrapper-sticky-wrapper {
-  height: inherit !important;
+body div#main-outer-container.slide-left {
+  animation: slide-left 0.5s;
 }
-body div#main-outer-container div.main-inner div#header-wrapper-sticky-wrapper div#container {
-  transition: 3s;
+body div#main-outer-container.slide-origin {
+  animation: slide-origin 0.5s;
+}
+body div#main-outer-container div#container {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+body div#main-outer-container div#container div.main-outer {
+  height: 100%;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper {
+  height: inherit !important;
+  position: relative;
+  z-index: 50;
+  background-color: #fff;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper div#nav {
+  background-color: #333645;
 }
 body div#cookie-app {
   position: fixed;
@@ -5845,11 +5865,9 @@ body div#cookie-policy-popup-container {
   display: none;
 }
 body div#side-menu-container {
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 0;
   width: 100%;
   height: 100vh;
   transition: 0.5s;
@@ -5890,6 +5908,7 @@ body div#side-menu-container div#side-menu_background-filter {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
   background-color: rgba(0, 0, 0, 0.7);
   height: 100vh;
   width: calc(100% - 275px);
@@ -5900,38 +5919,32 @@ body div#side-menu-container div#side-menu_background-filter {
     width: calc(100% - 350px);
   }
 }
-body div#main-outer-container {
-  overflow-x: hidden;
-}
-body div#main-outer-container div#container {
-  scroll-behavior: smooth;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 10;
-  transition: 0.1s;
-}
-body div#main-outer-container div#container.slide-left {
-  left: -275px;
-}
-@media (min-width: 992px) {
-  body div#main-outer-container div#container.slide-left {
-    left: -350px;
+
+@keyframes slide-left {
+  0% {
+    left: 0px;
+  }
+  100% {
+    @media (max-width: 992px) {
+      left: -275px;
+    }
+    @media (min-width: 992px) {
+      left: -350px;
+    }
   }
 }
-body div#main-outer-container div#container.slide-right {
-  left: 0;
-}
-body div#main-outer-container div#container div.main-outer {
-  height: 100%;
-}
-body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper {
-  position: relative;
-  z-index: 50;
-  background-color: #fff;
-}
-body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper div#nav {
-  background-color: #333645;
+@keyframes slide-origin {
+  0% {
+    @media (max-width: 992px) {
+      left: -275px;
+    }
+    @media (min-width: 992px) {
+      left: -350px;
+    }
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 /*# sourceMappingURL=application.css.map */

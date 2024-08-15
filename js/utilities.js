@@ -1,29 +1,6 @@
-
-function togglePageSize(bodyOverflow){
-    if(bodyOverflow === 'hidden'){
-        $('body').css(
-            {
-                'max-height': '100vh', 
-                'overflow-y': 'scroll'
-            }
-        )
-        $('div#side-menu').css('top', document.documentElement.scrollTop)
-    }else{
-        //reset body to normal width & height
-        $('body').css(
-            {
-                // 'min-height': '100vh', 
-                height: 'auto', 
-                width: '100%',
-                'overflow-y': 'scroll'
-            }
-        )
-    }
-}
-///////////////////////////////////////////////////////////////////
-//transform hamburger menu icon to cross 
-function hamburgerToCross(hamburgerMenuIcon){
-    hamburgerMenuIcon.css(
+function hamburgerToCross(){
+    const $hamburgerMenuIcon = $('div.actions button[data-toggle="sidebar"]')
+    $hamburgerMenuIcon.css(
         {
             position: 'relative', paddingTop: '15px'
         }
@@ -36,12 +13,12 @@ function hamburgerToCross(hamburgerMenuIcon){
             rotate: '-45deg', position: 'relative', bottom: '9px'
         }
     )
-    togglePageSize('hidden')
 }
 /////////////////////////////////////////////////////////////////////
-function crossToHamburger(hamburgerMenuIcon){
+function crossToHamburger(){
+    const $hamburgerMenuIcon = $('div.actions button[data-toggle="sidebar"]')
     //reset css properties
-    hamburgerMenuIcon.css(
+    $hamburgerMenuIcon.css(
         {
             paddingTop: '5px', 'background-color': '#333645'
         }
@@ -54,45 +31,52 @@ function crossToHamburger(hamburgerMenuIcon){
             rotate: '0deg', bottom: '0'
         }
     )
-    togglePageSize('scroll')
 }
 /////////////////////////////////////////////////////////////////////
-function hideSideMenu(hamburgerMenuIcon, sideMenuContainer){
-    crossToHamburger(hamburgerMenuIcon)
-
-    $('div#container')
-    .removeClass('slide-left')
-    .addClass('slide-right')
+function getSideMenuWidth(){
+    //device screen width greater than 992px?
+    if(window.matchMedia('(width < 992px)').matches) {
+        return '-275px'
+    }else {
+        return '-350px'
+    }
     
-    hamburgerMenuIcon.css('background-color', '#333645')
-
-    sideMenuContainer
-    .removeClass('toggle-side-menu-in')
-    .addClass('toggle-side-menu-out')
-    .hide()
-
 }
 /////////////////////////////////////////////////////////////////////
-function showSideMenu(hamburgerMenuIcon, sideMenuContainer){
-    hamburgerToCross(hamburgerMenuIcon)
-    // resize page main container with accordingly
-    $('div#container')
-    .removeClass('slide-right')
-    .addClass('slide-left')
+function toggleSideMenu(){
+    const sideMenuContainerZindex = 0
+    const mainOuterContainerZindex = 10
+    const stickyHeaderWrapperZindex = 50
 
-    sideMenuContainer
-    .addClass('toggle-side-menu-in')
-    .css({
-        display: 'block',
-        'z-index': '100'
-    })
+    const $sideMenuBackgroundFilter = $('#side-menu_background-filter')
+    const $mainOuterContainer = $('div#main-outer-container')
 
-    $('div#side-menu_background-filter')
-    .on('click',
-        ()=> {
-            hideSideMenu(hamburgerMenuIcon, sideMenuContainer)
-        }
-    )
+    let pos = getSideMenuWidth()
+
+    if($mainOuterContainer.hasClass('slide-origin')){
+        hamburgerToCross()
+
+        $mainOuterContainer
+        .removeClass('slide-origin').addClass(' slide-left').delay(2000)
+        .css({
+            left: pos,
+            'z-index': 0
+        })
+
+        $sideMenuBackgroundFilter.css('z-index', stickyHeaderWrapperZindex)
+        $sideMenuBackgroundFilter.on('click', toggleSideMenu)
+    }else{
+        crossToHamburger()
+
+        $mainOuterContainer
+        .removeClass('slide-left').addClass(' slide-origin').delay(2000)
+        .css({
+            left: 0,
+            'z-index': mainOuterContainerZindex
+        })
+
+        $sideMenuBackgroundFilter.css('z-index', sideMenuContainerZindex)
+    }
 }
 ///////////////////////////////////////////////////////////////////
 function toggleStickyHeader(){
@@ -171,6 +155,6 @@ function displayCookieModal(didUserClickManageConsentButton = false){
 }
 ///////////////////////////////////////////////////////////////////////////
 export {
-    hideSideMenu, showSideMenu, toggleStickyHeader, 
+    toggleSideMenu, toggleStickyHeader, 
     changeRebeccaTextContent, displayCookieModal
 }

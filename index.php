@@ -35,7 +35,7 @@
         </div>
     </div>
     <!-- MAIN CONTENT -->
-    <div id="main-outer-container">
+    <div id="main-outer-container" class="slide-origin">
         <div id="container">
             <div class="main">
                 <div class="main-outer">
