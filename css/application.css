@@ -5805,13 +5805,13 @@ body div#main-outer-container {
   overflow-x: hidden;
   background-color: #fff;
   position: relative;
+  transition: 0.5s;
   z-index: 10;
-}
-body div#main-outer-container.slide-left {
-  animation: slide-left 0.5s;
+  transition: 0.5s;
 }
 body div#main-outer-container.slide-origin {
-  animation: slide-origin 0.5s;
+  z-index: 10;
+  left: 0px;
 }
 body div#main-outer-container div#container {
   scroll-behavior: smooth;
@@ -5870,14 +5870,6 @@ body div#side-menu-container {
   right: 0;
   width: 100%;
   height: 100vh;
-  transition: 0.5s;
-}
-body div#side-menu-container.toggle-side-menu-in {
-  display: block;
-  animation-name: slide-in;
-}
-body div#side-menu-container.toggle-side-menu-out {
-  animation-name: slide-out;
 }
 body div#side-menu-container div#side-menu {
   position: absolute;
@@ -5917,33 +5909,6 @@ body div#side-menu-container div#side-menu_background-filter {
 @media (min-width: 992px) {
   body div#side-menu-container div#side-menu_background-filter {
     width: calc(100% - 350px);
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    left: 0px;
-  }
-  100% {
-    @media (max-width: 992px) {
-      left: -275px;
-    }
-    @media (min-width: 992px) {
-      left: -350px;
-    }
-  }
-}
-@keyframes slide-origin {
-  0% {
-    @media (max-width: 992px) {
-      left: -275px;
-    }
-    @media (min-width: 992px) {
-      left: -350px;
-    }
-  }
-  100% {
-    left: 0px;
   }
 }
 

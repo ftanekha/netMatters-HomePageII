@@ -18,12 +18,12 @@ body{
         overflow-x: hidden;
         background-color: #fff;
         position: relative;
+        transition: .5s;
         z-index: $main-outer-container_z-index;
-        &.slide-left{
-            animation: slide-left .5s;
-        }
+            transition: 0.5s;
         &.slide-origin{
-            animation: slide-origin .5s;
+            z-index: $main-outer-container_z-index; 
+            left: 0px;
         }
         div#container{
             scroll-behavior: smooth;
@@ -95,14 +95,6 @@ body{
         // z-index: $side-menu-container_z-index;
         width: 100%;
         height: 100vh;
-        transition: .5s;
-        &.toggle-side-menu-in{
-            display: block;
-            animation-name: slide-in;
-        }
-        &.toggle-side-menu-out{
-            animation-name: slide-out;
-        }
         div#side-menu{
             position: absolute;
             top: 0;
@@ -138,34 +130,5 @@ body{
                 width: calc(100% - 350px);
             }
         }
-    }
-}
-
-//////////////////////////**KEYFRAMES**/////////////////////////////
-@keyframes slide-left{     
-    0% {
-        left: 0px;
-    }
-    100% {
-        @media (max-width: 992px){
-            left: -275px;
-        }
-        @media (min-width: 992px){
-            left: -350px;
-        }
-    }
-}
-
-@keyframes slide-origin{   
-    0%{
-        @media (max-width: 992px){
-            left: -275px;
-        }
-        @media (min-width: 992px){
-            left: -350px;
-        }
-    }  
-    100% {
-        left: 0px;
     }
 }
