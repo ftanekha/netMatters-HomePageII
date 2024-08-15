@@ -427,7 +427,7 @@
                                         </div>
                                         <div class="latest-news-item">
                                             <a class="latest-news-item-category news_bespoke_software" href="#">News</a>
-                                            <img class="latest-news-photo" src="assets/images/news/rebecca-resized2.png" alt="East Anglian air ambulance" title="East Anglian air ambulance">
+                                            <img class="latest-news-photo" src="assets/images/news/rebecca-resized2.png" alt="photo of Rebecca" title="photo of Rebecca">
                                             <div class="news-item-body">
                                                 <h3 class="valencia">
                                                     <a href="#">
@@ -450,7 +450,7 @@
                                         </div>
                                         <div class="latest-news-item md-screen-hidden">
                                             <a class="latest-news-item-category news_bespoke_software news_telecoms-services" href="#">News</a>
-                                            <img class="latest-news-photo" src="assets/images/news/east-anglian.png" alt="East Anglian air ambulancr" title="East Anglian air ambulance">
+                                            <img class="latest-news-photo" src="assets/images/news/east-anglian.png" alt="East Anglian air ambulance" title="East Anglian air ambulance">
                                             <div class="news-item-body">
                                                 <h3 class="havelockBlue">
                                                     <a href="#">
