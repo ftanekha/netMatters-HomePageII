@@ -1,5 +1,5 @@
 import {
-    hideSideMenu, showSideMenu, toggleStickyHeader, 
+    toggleSideMenu, toggleStickyHeader, 
     changeRebeccaTextContent, displayCookieModal
 } from './js/utilities.js'
 
@@ -19,17 +19,8 @@ $(()=>{
     /* SIDE MENU////////////////////
     toggle the Side Menu using the hamburger menu button*/
     const $hamburgerMenuIcon = $('div.actions button[data-toggle="sidebar"]')
-    
     $hamburgerMenuIcon
-    .on('click', ()=>{
-        const $sideMenuContainer = $('div#side-menu-container')
-        if($sideMenuContainer.css('display') === 'none'){
-            showSideMenu($hamburgerMenuIcon, $sideMenuContainer)
-        }else{
-            hideSideMenu($hamburgerMenuIcon, $sideMenuContainer)
-            $sideMenuContainercss('display','none')
-        }  
-    })
+    .on('click', toggleSideMenu)
     .on('mouseover',
         ()=> {
             $hamburgerMenuIcon.css(
@@ -41,6 +32,8 @@ $(()=>{
         }
     )
     .on('mouseleave', ()=> $hamburgerMenuIcon.css('background-color', '#333645'))
+    //
+    $('#side-menu_background-filter').on('click', toggleSideMenu)
     /* STICKY HEADER*/
     //determine the scroll direction using the scroll position on the document object
     //only show the sticky header wher the user scrolls UP
@@ -86,8 +79,8 @@ $(()=>{
     $('.owl-carousel')
     .owlCarousel({
         loop: true, 
-        autoplay: true, 
-        autoplayTimeout: 3100,
+        // autoplay: true, 
+        // autoplayTimeout: 3100,
         autoplayHoverPause:true,
         mouseDrag: false,
         responsive:{

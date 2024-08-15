@@ -5802,15 +5802,35 @@ body {
   overflow-x: hidden;
 }
 body div#main-outer-container {
+  overflow-x: hidden;
   background-color: #fff;
+  position: relative;
+  transition: 0.5s;
+  z-index: 10;
+  transition: 0.5s;
+}
+body div#main-outer-container.slide-origin {
+  z-index: 10;
+  left: 0px;
+}
+body div#main-outer-container div#container {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
   position: relative;
   z-index: 10;
 }
-body div#main-outer-container div.main-inner div#header-wrapper-sticky-wrapper {
-  height: inherit !important;
+body div#main-outer-container div#container div.main-outer {
+  height: 100%;
 }
-body div#main-outer-container div.main-inner div#header-wrapper-sticky-wrapper div#container {
-  transition: 3s;
+body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper {
+  height: inherit !important;
+  position: relative;
+  z-index: 50;
+  background-color: #fff;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper div#nav {
+  background-color: #333645;
 }
 body div#cookie-app {
   position: fixed;
@@ -5845,21 +5865,11 @@ body div#cookie-policy-popup-container {
   display: none;
 }
 body div#side-menu-container {
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 0;
   width: 100%;
   height: 100vh;
-  transition: 0.5s;
-}
-body div#side-menu-container.toggle-side-menu-in {
-  display: block;
-  animation-name: slide-in;
-}
-body div#side-menu-container.toggle-side-menu-out {
-  animation-name: slide-out;
 }
 body div#side-menu-container div#side-menu {
   position: absolute;
@@ -5890,6 +5900,7 @@ body div#side-menu-container div#side-menu_background-filter {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
   background-color: rgba(0, 0, 0, 0.7);
   height: 100vh;
   width: calc(100% - 275px);
@@ -5899,39 +5910,6 @@ body div#side-menu-container div#side-menu_background-filter {
   body div#side-menu-container div#side-menu_background-filter {
     width: calc(100% - 350px);
   }
-}
-body div#main-outer-container {
-  overflow-x: hidden;
-}
-body div#main-outer-container div#container {
-  scroll-behavior: smooth;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 10;
-  transition: 0.1s;
-}
-body div#main-outer-container div#container.slide-left {
-  left: -275px;
-}
-@media (min-width: 992px) {
-  body div#main-outer-container div#container.slide-left {
-    left: -350px;
-  }
-}
-body div#main-outer-container div#container.slide-right {
-  left: 0;
-}
-body div#main-outer-container div#container div.main-outer {
-  height: 100%;
-}
-body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper {
-  position: relative;
-  z-index: 50;
-  background-color: #fff;
-}
-body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper div#nav {
-  background-color: #333645;
 }
 
 /*# sourceMappingURL=application.css.map */
