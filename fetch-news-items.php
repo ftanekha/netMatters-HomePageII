@@ -28,6 +28,11 @@ function fetchNewsItems(){
     {
         $newsItems[] = $row;
     }
+    //format date as dd [th/st/rd] / month / yyyy
+    foreach($newsItems as $newsItem)
+    {
+        $newsItem["date"] = date('d-F-Y', strtotime($newsItem["date"]));
+    }
     //terminate connection
     $db = null;
 
