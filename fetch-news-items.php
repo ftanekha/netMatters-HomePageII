@@ -14,7 +14,6 @@ function fetchNewsItems(){
             "mysql:host=$host;dbname=$dbname;", 
             $username, $password
         );
-        // echo "Connected to $dbname at $host successfully." . "\n\n";
     } 
     catch(PDOException $pe) 
     {
@@ -23,16 +22,14 @@ function fetchNewsItems(){
     //query database table
     $query = "SELECT * FROM news_items";
     $result = $conn->query($query);
-
+    //gather results in array
     $newsItems = [];
-
     foreach($result as $row)
     {
         $newsItems[] = $row;
     }
     //terminate connection
     $db = null;
-    // echo "Connection to database terminated" . "\n";
 
     return $newsItems;
 }
