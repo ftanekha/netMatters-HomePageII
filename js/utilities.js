@@ -88,12 +88,33 @@ function toggleStickyHeader(){
         if(currentScrollTop > prevScrollTop) {
             //update scroll direction
             if(prevScrollDirection !== 'down') prevScrollDirection = 'down'
+            $('div#header-wrapper')
+            .css({
+                position: 'relative'
+            })
+
+
             //remove the sticky header if user scrolling down
-            $('div#header-wrapper').unstick()
+            // $('div#header-wrapper').unstick()
         }else if(currentScrollTop  < prevScrollTop){
             if(prevScrollDirection !== 'up') prevScrollDirection = 'up'
             //add the sticky header if user scrolling down
-            $('div#header-wrapper').sticky({topSpacing: 0})         
+            $('div#header-wrapper')
+            .css({
+                width: '100%',
+                position: 'fixed',
+                top: 0
+            })
+            .slideToggle(1000)
+
+
+            // .slideDown(2000)
+            // .css({
+            //     position: 'fixed',
+            //     top: 0,
+            //     width: '100%'
+            // })
+            // .sticky({topSpacing: 0})   
         }
         //update scroll positon
         //also, for Mobile or negative scrolling

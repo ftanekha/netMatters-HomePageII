@@ -793,6 +793,7 @@ div#side-menu div.side-menu-list.bg-scrn-only {
 header {
   position: relative;
   z-index: 50;
+  transition: 2s;
 }
 header div.inner {
   padding: 20px 0 10px 0;
@@ -5828,6 +5829,7 @@ body div#main-outer-container div#container div.main-outer div.main-inner div#he
   position: relative;
   z-index: 50;
   background-color: #fff;
+  transition: 2s ease all;
 }
 body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper div#nav {
   background-color: #333645;

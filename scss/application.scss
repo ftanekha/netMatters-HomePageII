@@ -42,6 +42,16 @@ body{
                         position: relative; 
                         z-index: $sticky-header-wrapper_z-index;
                         background-color: #fff;
+                        transition: 2s ease all;
+                        // &.slide-up{
+                            // animation: slide-up 1.5s ease-in-out;
+                            // width: 100%;
+                            // position: fixed;
+                            // top: 0;
+                        // }
+                        // &.slide-down{
+                        //     position: static; 
+                        // }
                         div#header{} 
                         div#nav{background-color: #333645;}
                     }
@@ -133,3 +143,10 @@ body{
         }
     }
 }
+
+// @keyframes slide-up{
+//     100%{
+//         position: fixed;
+//         top: 0;
+//     }
+// }
