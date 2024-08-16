@@ -41,8 +41,102 @@
                 <div class="main-outer">
                     <!-- main inner -->
                     <div class="main-inner">
-                        <!-- Header -->
+                        <!-- HEADER -->
                         <?php include "includes/header.html" ?>
+                    </div>
+                    <!-- CONTACT US -->
+                    <div id="contact-us">
+                        <div id="contact-us-container">
+                            <div class="contact-us-heading">
+                                <h1>Our Offices</h1>
+                            </div>
+                            <div id="netmatters-offices">
+                            <div class="container">
+                                <div class="offices-container">
+                                    <div class="office cambridge">
+                                        <div class="image-container">
+                                            <a class="office-image-wrapper" href="#">
+                                                <img src="assets/images/offices/cambridge.jpg" alt="Cambridge Office">
+                                            </a>
+                                        </div>
+                                        <div class="office-address">
+                                            <p class="office-h2">
+                                                <a class="office-name" href="#">
+                                                    Cambridge Office
+                                                </a>
+                                            </p>
+                                            <address>
+                                            Unit 1.31,<br>
+                                            St John's Innovation Centre,<br>
+                                            Cowley Road, Milton,<br>
+                                            Cambridge,<br>
+                                            CB4 0WS
+                                            </address>
+                                            <a href="tel:01223375772" class="office-h3 text-web">
+                                                01223 37 57 72
+                                            </a>
+                                            <a href="#" class="office-view-more">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offices-container">
+                                    <div class="office wymondham">
+                                        <div class="image-container">
+                                            <a class="office-image-wrapper" href="#">
+                                                <img src="assets/images/offices/wymondham.jpg" alt="Wymondham Office">
+                                            </a>
+                                        </div>
+                                        <div class="office-address">
+                                            <p class="office-h2">
+                                                <a class="office-name" href="#">
+                                                    Wymondham Office
+                                                </a>
+                                            </p>
+                                            <address>
+                                            Unit 15,<br>
+                                            Penfold Drive,<br>
+                                            Gateway 11 Business Park,<br>
+                                            Wymondham, Norfolk,<br>
+                                            NR18 0WZ
+                                            </address>
+                                            <a href="tel:01603704020" class="office-h3 text-web">
+                                                01603 70 40 20
+                                            </a>
+                                            <a href="#" class="office-view-more">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offices-container">
+                                    <div class="office yarmouth">
+                                        <div class="image-container">
+                                            <a class="office-image-wrapper" href="#">
+                                                <img src="assets/images/offices/yarmouth.jpg" alt="Great Yarmouth Office">
+                                            </a>
+                                        </div>
+                                        <div class="office-address">
+                                            <p class="office-h2">
+                                                <a class="office-name" href="#">
+                                                    Great Yarmouth Office
+                                                </a>
+                                            </p>
+                                            <address>
+                                            Suite F23,<br>
+                                            Beacon Innovation Centre,<br>
+                                            Beacon Park, Gorleston,<br>
+                                            Great Yarmouth, Norfolk,<br>
+                                            NR31 7RA
+                                            </address>
+                                            <a href="tel:01493603204" class="office-h3 text-web">
+                                                01493 60 32 04
+                                            </a>
+                                            <a href="#" class="office-view-more">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                       
                     </div>
                     <!-- FOOTER -->
                     <?php include "includes/footer.html" ?>
