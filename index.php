@@ -402,75 +402,33 @@
                                 <!-- main content -->
                                 <div id="latest-news-main-container">
                                     <div id="latest-news-container">
-                                        <div class="latest-news-item">
-                                            <a class="latest-news-item-category news_it-support" href="#">News</a>
-                                            <img class="latest-news-photo" src="assets/images/news/jamie.png" alt="photo of Jamie Slater" title="photo of Jamie Slater">
-                                            <div class="news-item-body">
-                                                <!-- <article> -->
-                                                    <h3 class="shamrock">
-                                                        <a href="#">Jamie Slater - Netmatters 5 year Legend</a>
+                                        <?php
+                                            include "fetch-news-items.php";
+
+                                            $newsItems = fetchNewsItems();
+                                        ?>
+                                        <?php foreach($newsItems as $newsItem): ?>
+                                            <div class="latest-news-item <?=$newsItem["category"];?>">
+                                                <a class="latest-news-item-category news_bespoke_software news_<?=$newsItem["service_category"];?>" href="#">
+                                                <?=$newsItem["category"];?>
+                                                </a>
+                                                <img class="latest-news-photo" src="<?=$newsItem["photo_source"];?>" alt="<?=$newsItem["photo_alt"];?>" title="<?=$newsItem["photo_alt"];?>">
+                                                <div class="news-item-body">
+                                                    <h3 class="<?=$newsItem["theme"];?>">
+                                                        <a href="#"> <?=$newsItem["heading"];?> </a>
                                                     </h3>
-                                                    <p>
-                                                        Today, we celebrate the brilliant accomplishments of Jamie Slater as he receives 
-                                                        the Netmatters Long Service Award...
-                                                    </p>
-                                                    <button class="shamrock">READ MORE</button>
+                                                    <p> <?=$newsItem["leading_paragraph"];?>...</p>
+                                                    <button class="<?=$newsItem["theme"];?>">READ MORE</button>
                                                     <hr>
-                                                <!-- </article> -->
-                                                <footer class="latest-news-footer">
-                                                    <img src="assets/images/news/netmatters-mini-logo.webp" alt="netmatters logo">
-                                                    <strong>Posted by Netmatters</strong>
-                                                    <br>
-                                                    <small>10th March 2024</small>
-                                                </footer>
+                                                    <footer class="latest-news-footer">
+                                                        <img src="assets/images/news/netmatters-mini-logo.webp" alt="netmatters logo">
+                                                        <strong>Posted by <?=$newsItem["posted_by"];?></strong>
+                                                        <br>
+                                                        <small><?=$newsItem["date"];?></small>
+                                                    </footer>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="latest-news-item">
-                                            <a class="latest-news-item-category news_bespoke_software" href="#">News</a>
-                                            <img class="latest-news-photo" src="assets/images/news/rebecca-resized2.png" alt="photo of Rebecca" title="photo of Rebecca">
-                                            <div class="news-item-body">
-                                                <h3 class="valencia">
-                                                    <a href="#">
-                                                        February Notables 2024 - Celebrating Our Team
-                                                    </a>
-                                                </h3>
-                                                <p id="latest-news-item-rebecca-text-content">
-                                                    Celebrating the achievements and dedication of our staff, at Netmatters, 
-                                                    we put aside some time... 
-                                                </p>
-                                                <button class="valencia">READ MORE</button>
-                                                <hr>
-                                                <footer class="latest-news-footer">
-                                                    <img src="assets/images/news/netmatters-mini-logo.webp" alt="netmatters logo">
-                                                    <strong>Posted by Netmatters</strong>
-                                                    <br>
-                                                    <small>12th March 2024</small>
-                                                </footer>
-                                            </div>
-                                        </div>
-                                        <div class="latest-news-item md-screen-hidden">
-                                            <a class="latest-news-item-category news_bespoke_software news_telecoms-services" href="#">News</a>
-                                            <img class="latest-news-photo" src="assets/images/news/east-anglian.png" alt="East Anglian air ambulance" title="East Anglian air ambulance">
-                                            <div class="news-item-body">
-                                                <h3 class="havelockBlue">
-                                                    <a href="#">
-                                                        East Anglian Air Ambulance - Introducing a 3CX Call Flow
-                                                    </a>
-                                                </h3>
-                                                <p>
-                                                    The Championing &#8216;Your Local Life-Saving Charity&#8216; the East Anglian Air Ambulance 
-                                                    (EAAA) is a renowned and brilliant charity providing life-saving critical care 24 hours ...
-                                                </p>
-                                                <button class="havelockBlue">READ MORE</button>
-                                                <hr>
-                                                <footer class="latest-news-footer">
-                                                    <img src="assets/images/news/netmatters-mini-logo.webp" alt="netmatters logo">
-                                                    <strong>Posted by Netmatters</strong>
-                                                    <br>
-                                                    <small>13th March 2024</small>
-                                                </footer>
-                                            </div>
-                                        </div>
+                                        <?php endforeach; ?>
                                     </div>
                                 </div>
                                 <!-- bottom headline -->
