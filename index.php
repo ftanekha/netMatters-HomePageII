@@ -408,16 +408,12 @@
                                             $newsItems = fetchNewsItems();
                                         ?>
                                         <?php foreach($newsItems as $newsItem): ?>
-                                            <div class="latest-news-item <?=$newsItem["category"];?>">
-                                                <a class="latest-news-item-category news_bespoke_software news_<?=$newsItem["service_category"];?>" href="#">
-                                                <?=$newsItem["category"];?>
-                                                </a>
+                                            <div class="latest-news-item">
+                                                <a class="latest-news-item-category news_<?=$newsItem["service_category"];?>" href="#"><?=$newsItem["category"];?></a>
                                                 <img class="latest-news-photo" src="<?=$newsItem["photo_source"];?>" alt="<?=$newsItem["photo_alt"];?>" title="<?=$newsItem["photo_alt"];?>">
                                                 <div class="news-item-body">
-                                                    <h3 class="<?=$newsItem["theme"];?>">
-                                                        <a href="#"> <?=$newsItem["heading"];?> </a>
-                                                    </h3>
-                                                    <p> <?=$newsItem["leading_paragraph"];?>...</p>
+                                                    <h3 class="<?=$newsItem["theme"];?>"><a href="#"> <?=$newsItem["heading"];?></a></h3>
+                                                    <p><?=$newsItem["leading_paragraph"];?>...</p>
                                                     <button class="<?=$newsItem["theme"];?>">READ MORE</button>
                                                     <hr>
                                                     <footer class="latest-news-footer">
