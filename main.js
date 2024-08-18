@@ -11,7 +11,8 @@ $(()=>{
     /*CAROUSEL///Banner///*/
     $('div#banner').slick(
         {//configuration object
-            // autoplay: false,
+            autoplay: false,
+            adaptiveHeight: true,
             arrows: false,
             dots: true
         }
