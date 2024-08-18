@@ -4,6 +4,10 @@ div.our-clients-carousel{
     position: relative;
     z-index: $carousel-item_z-index;
     overflow: visible;
+    @media (min-width: 992px){
+        padding-top: 0;
+        margin-top: -20px;
+    }
     div.owl-stage-outer{
         div.owl-stage{
             display: flex;
