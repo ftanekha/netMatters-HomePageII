@@ -798,6 +798,7 @@ header div.inner {
   padding: 20px 0 10px 0;
 }
 header div.inner div.container div.row {
+  height: 74px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -812,9 +813,9 @@ header div.inner div.container div.row div.logo-container a {
 }
 header div.inner div.container div.row div.logo-container a picture {
   position: inherit;
-  top: -5px;
 }
 header div.inner div.container div.row div.logo-container a picture img {
+  margin-top: 6px;
   max-width: min(374.167px, 100%);
 }
 header div.inner div.container div.row div.flex-wrapper {
@@ -929,8 +930,9 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
 }
 header div.inner div.container div.search-form-wrapper--mobile form.search-form input#search-input--mobile {
   width: 100%;
-  height: 47px;
-  padding: 5px 15px;
+  height: 65px;
+  padding: 5px 20px;
+  margin: 8px 0px;
   background-color: rgba(0, 0, 0, 0.1);
   outline: 1px solid hsla(0, 0%, 100%, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.1) !important;
@@ -959,7 +961,7 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
 }
 header div.inner div.container div.search-form-wrapper--mobile form.search-form button span {
   position: relative;
-  top: 1px;
+  top: 12px;
   display: inline-block;
   font-family: Glyphicons Halflings;
   font-style: normal;
@@ -1023,6 +1025,9 @@ header div.inner div.container div.search-form-wrapper--mobile form.search-form 
   }
 }
 @media (min-width: 992px) {
+  header div.inner div.container div.row {
+    height: 80px;
+  }
   header div.inner div.container div.row div.logo-container {
     width: 33.3333333333%;
   }
@@ -5959,12 +5964,18 @@ body div#main-outer-container div#container div.main-outer div.main-inner {
   position: relative;
 }
 body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper-sticky-wrapper-support {
+  display: none;
   width: 100%;
   height: 209px;
   background-color: #333645;
   position: absolute;
   top: 0;
   z-index: 0;
+}
+@media (min-width: 992px) {
+  body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper-sticky-wrapper-support {
+    display: block;
+  }
 }
 body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper-sticky-wrapper {
   width: 100%;

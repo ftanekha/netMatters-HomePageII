@@ -77,7 +77,9 @@ function toggleSideMenu(){
         })
 
         $sideMenuBackgroundFilter.css('z-index', sideMenuContainerZindex)
-        $(window).css('height', auto)
+        //CHANGED - 1LINE
+        $(window).css('height', 'auto')
+        //END 
     }
 }
 ///////////////////////////////////////////////////////////////////
