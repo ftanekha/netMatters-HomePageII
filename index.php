@@ -46,11 +46,11 @@
                         <!-- BANNER -->
                         <div id="banner">
                             <div class="banner-item-container">
-                                <div id="first-banner-item" class="bg-image-container" style="background-image: url('assets/images/banners/why-choose-us.png')">
+                                <div class="bg-image-container first-banner-item" style="background-image: url('assets/images/banners/why-choose-us.png')">
                                     <div class="why-choose-us">
                                         <div class="container">
-                                            <div class="wrapper">
-                                                <h1>The East Of England's Leading Technology Company</h1>
+                                            <div class="wrapper first-banner-item-wrapper">
+                                                <h1 class="first-banner-item-h1">The East Of England's Leading Technology Company</h1>
                                                 <p>Performance-driven digital and technology services<br> with complete transparency.</p>
                                                 <a href="#">
                                                     WHY CHOOSE US

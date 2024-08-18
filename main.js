@@ -11,7 +11,8 @@ $(()=>{
     /*CAROUSEL///Banner///*/
     $('div#banner').slick(
         {//configuration object
-            // autoplay: false,
+            autoplay: false,
+            adaptiveHeight: true,
             arrows: false,
             dots: true
         }
@@ -79,8 +80,8 @@ $(()=>{
     $('.owl-carousel')
     .owlCarousel({
         loop: true, 
-        // autoplay: true, 
-        // autoplayTimeout: 3100,
+        autoplay: true, 
+        autoplayTimeout: 3100,
         autoplayHoverPause:true,
         mouseDrag: false,
         responsive:{

@@ -4,11 +4,17 @@
     div.wrapper{
         margin-bottom: 70px;
         h1{
+            color: #fff;
+            font-weight: 600;
             font-size: 2.5rem;
             line-height: 3rem;
             margin: 0 0 1.25rem;
-            color: #fff;
-            font-weight: 600;
+            &.first-banner-item-h1{
+                margin-top: 40px;
+            }
+            &:not(.first-banner-item-h1){
+                margin-top: 40px;
+            }
         }
         p{
             margin-bottom: .375rem;
@@ -49,6 +55,11 @@
             h1{
                 font-size: 4rem !important;
                 line-height: 5rem !important;
+                margin-top: -20px !important;
+                &:not(.first-banner-item-h1){
+                    margin-top: -40px !important;
+                    margin-bottom: 10px;
+                }
             }
             p{
                 font-size: 1.625rem;

@@ -44,12 +44,12 @@ function getSideMenuWidth(){
 }
 /////////////////////////////////////////////////////////////////////
 function toggleSideMenu(){
+    const $mainOuterContainer = $('div#main-outer-container')
+    const $sideMenuBackgroundFilter = $('#side-menu_background-filter')
+
     const sideMenuContainerZindex = 0
     const mainOuterContainerZindex = 10
     const stickyHeaderWrapperZindex = 50
-
-    const $sideMenuBackgroundFilter = $('#side-menu_background-filter')
-    const $mainOuterContainer = $('div#main-outer-container')
 
     let pos = getSideMenuWidth()
 
@@ -57,6 +57,7 @@ function toggleSideMenu(){
         hamburgerToCross()
 
         $mainOuterContainer
+        .delay(1000)
         .removeClass('slide-origin').addClass(' slide-left')
         .css({
             left: pos,
@@ -64,6 +65,7 @@ function toggleSideMenu(){
         })
 
         $sideMenuBackgroundFilter.css('z-index', stickyHeaderWrapperZindex)
+        $(window).css('height', '100vh')
     }else{
         crossToHamburger()
 
@@ -75,10 +77,14 @@ function toggleSideMenu(){
         })
 
         $sideMenuBackgroundFilter.css('z-index', sideMenuContainerZindex)
+        $(window).css('height', auto)
     }
 }
 ///////////////////////////////////////////////////////////////////
 function toggleStickyHeader(){
+    const $headerWrapper = $('#header-wrapper-sticky-wrapper')
+    const $headerWrapperSupport = $('#header-wrapper-sticky-wrapper-support')
+    
     let prevScrollTop = $(document).scrollTop()
     let prevScrollDirection = ''
     
@@ -88,11 +94,29 @@ function toggleStickyHeader(){
             //update scroll direction
             if(prevScrollDirection !== 'down') prevScrollDirection = 'down'
             //remove the sticky header if user scrolling down
-            $('div#header-wrapper').unstick()
+            $headerWrapperSupport.css('position', 'absolute')
+            $headerWrapper
+            .removeClass('slide-down')
+            .addClass(' slide-up')
+            .css({
+                width: '100%',
+                position: 'relative',
+                top: 0
+            })
         }else if(currentScrollTop  < prevScrollTop){
             if(prevScrollDirection !== 'up') prevScrollDirection = 'up'
             //add the sticky header if user scrolling down
-            $('div#header-wrapper').sticky({topSpacing: 0})         
+            if(currentScrollTop > 210){
+                $headerWrapper
+                .removeClass('slide-up')
+                .addClass(' slide-down')
+                .css({
+                    width: '100%',
+                    position: 'fixed',
+                    top: 0
+                })
+                $headerWrapperSupport.css('position', 'relative')
+            }
         }
         //update scroll positon
         //also, for Mobile or negative scrolling

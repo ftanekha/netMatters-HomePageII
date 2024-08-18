@@ -2060,11 +2060,19 @@ div#nav nav div.container div.wrapper div.nav-links-container-dc:hover > *.dc {
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px;
+  height: 600px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
+}
+@media (min-width: 425px) {
+  div.banner-item-container div.bg-image-container {
+    height: 550px;
+  }
+}
+div.banner-item-container div.bg-image-container:not(.first-banner-item) {
+  height: 550px !important;
 }
 div.banner-item-container div.bg-image-container div.why-choose-us {
   display: flex;
@@ -2085,11 +2093,17 @@ div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper {
   margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper h1 {
+  color: #fff;
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
-  color: #fff;
-  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper h1.first-banner-item-h1 {
+  margin-top: 40px;
+}
+div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper h1:not(.first-banner-item-h1) {
+  margin-top: 40px;
 }
 div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper p {
   margin-bottom: 0.375rem;
@@ -2127,6 +2141,11 @@ div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper a
   div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper h1 {
     font-size: 4rem !important;
     line-height: 5rem !important;
+    margin-top: -20px !important;
+  }
+  div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper h1:not(.first-banner-item-h1) {
+    margin-top: -40px !important;
+    margin-bottom: 10px;
   }
   div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper p {
     font-size: 1.625rem;
@@ -2138,11 +2157,19 @@ div.banner-item-container div.bg-image-container div.why-choose-us div.wrapper a
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px;
+  height: 600px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
+}
+@media (min-width: 425px) {
+  div.banner-item-container div.bg-image-container {
+    height: 550px;
+  }
+}
+div.banner-item-container div.bg-image-container:not(.first-banner-item) {
+  height: 550px !important;
 }
 div.banner-item-container div.bg-image-container div.bespoke-software {
   display: flex;
@@ -2163,11 +2190,17 @@ div.banner-item-container div.bg-image-container div.bespoke-software div.wrappe
   margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper h1 {
+  color: #fff;
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
-  color: #fff;
-  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper h1.first-banner-item-h1 {
+  margin-top: 40px;
+}
+div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper h1:not(.first-banner-item-h1) {
+  margin-top: 40px;
 }
 div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper p {
   margin-bottom: 0.375rem;
@@ -2205,6 +2238,11 @@ div.banner-item-container div.bg-image-container div.bespoke-software div.wrappe
   div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper h1 {
     font-size: 4rem !important;
     line-height: 5rem !important;
+    margin-top: -20px !important;
+  }
+  div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper h1:not(.first-banner-item-h1) {
+    margin-top: -40px !important;
+    margin-bottom: 10px;
   }
   div.banner-item-container div.bg-image-container div.bespoke-software div.wrapper p {
     font-size: 1.625rem;
@@ -2216,11 +2254,19 @@ div.banner-item-container div.bg-image-container div.bespoke-software div.wrappe
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px;
+  height: 600px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
+}
+@media (min-width: 425px) {
+  div.banner-item-container div.bg-image-container {
+    height: 550px;
+  }
+}
+div.banner-item-container div.bg-image-container:not(.first-banner-item) {
+  height: 550px !important;
 }
 div.banner-item-container div.bg-image-container div.it-support {
   display: flex;
@@ -2241,11 +2287,17 @@ div.banner-item-container div.bg-image-container div.it-support div.wrapper {
   margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.it-support div.wrapper h1 {
+  color: #fff;
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
-  color: #fff;
-  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.it-support div.wrapper h1.first-banner-item-h1 {
+  margin-top: 40px;
+}
+div.banner-item-container div.bg-image-container div.it-support div.wrapper h1:not(.first-banner-item-h1) {
+  margin-top: 40px;
 }
 div.banner-item-container div.bg-image-container div.it-support div.wrapper p {
   margin-bottom: 0.375rem;
@@ -2283,6 +2335,11 @@ div.banner-item-container div.bg-image-container div.it-support div.wrapper a:ho
   div.banner-item-container div.bg-image-container div.it-support div.wrapper h1 {
     font-size: 4rem !important;
     line-height: 5rem !important;
+    margin-top: -20px !important;
+  }
+  div.banner-item-container div.bg-image-container div.it-support div.wrapper h1:not(.first-banner-item-h1) {
+    margin-top: -40px !important;
+    margin-bottom: 10px;
   }
   div.banner-item-container div.bg-image-container div.it-support div.wrapper p {
     font-size: 1.625rem;
@@ -2294,11 +2351,19 @@ div.banner-item-container div.bg-image-container div.it-support div.wrapper a:ho
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px;
+  height: 600px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
+}
+@media (min-width: 425px) {
+  div.banner-item-container div.bg-image-container {
+    height: 550px;
+  }
+}
+div.banner-item-container div.bg-image-container:not(.first-banner-item) {
+  height: 550px !important;
 }
 div.banner-item-container div.bg-image-container div.digital-marketing {
   display: flex;
@@ -2319,11 +2384,17 @@ div.banner-item-container div.bg-image-container div.digital-marketing div.wrapp
   margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper h1 {
+  color: #fff;
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
-  color: #fff;
-  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper h1.first-banner-item-h1 {
+  margin-top: 40px;
+}
+div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper h1:not(.first-banner-item-h1) {
+  margin-top: 40px;
 }
 div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper p {
   margin-bottom: 0.375rem;
@@ -2361,6 +2432,11 @@ div.banner-item-container div.bg-image-container div.digital-marketing div.wrapp
   div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper h1 {
     font-size: 4rem !important;
     line-height: 5rem !important;
+    margin-top: -20px !important;
+  }
+  div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper h1:not(.first-banner-item-h1) {
+    margin-top: -40px !important;
+    margin-bottom: 10px;
   }
   div.banner-item-container div.bg-image-container div.digital-marketing div.wrapper p {
     font-size: 1.625rem;
@@ -2372,11 +2448,19 @@ div.banner-item-container div.bg-image-container div.digital-marketing div.wrapp
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px;
+  height: 600px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
+}
+@media (min-width: 425px) {
+  div.banner-item-container div.bg-image-container {
+    height: 550px;
+  }
+}
+div.banner-item-container div.bg-image-container:not(.first-banner-item) {
+  height: 550px !important;
 }
 div.banner-item-container div.bg-image-container div.telecoms-services {
   display: flex;
@@ -2397,11 +2481,17 @@ div.banner-item-container div.bg-image-container div.telecoms-services div.wrapp
   margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper h1 {
+  color: #fff;
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
-  color: #fff;
-  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper h1.first-banner-item-h1 {
+  margin-top: 40px;
+}
+div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper h1:not(.first-banner-item-h1) {
+  margin-top: 40px;
 }
 div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper p {
   margin-bottom: 0.375rem;
@@ -2439,6 +2529,11 @@ div.banner-item-container div.bg-image-container div.telecoms-services div.wrapp
   div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper h1 {
     font-size: 4rem !important;
     line-height: 5rem !important;
+    margin-top: -20px !important;
+  }
+  div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper h1:not(.first-banner-item-h1) {
+    margin-top: -40px !important;
+    margin-bottom: 10px;
   }
   div.banner-item-container div.bg-image-container div.telecoms-services div.wrapper p {
     font-size: 1.625rem;
@@ -2450,11 +2545,19 @@ div.banner-item-container div.bg-image-container div.telecoms-services div.wrapp
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px;
+  height: 600px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
+}
+@media (min-width: 425px) {
+  div.banner-item-container div.bg-image-container {
+    height: 550px;
+  }
+}
+div.banner-item-container div.bg-image-container:not(.first-banner-item) {
+  height: 550px !important;
 }
 div.banner-item-container div.bg-image-container div.web-design {
   display: flex;
@@ -2475,11 +2578,17 @@ div.banner-item-container div.bg-image-container div.web-design div.wrapper {
   margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.web-design div.wrapper h1 {
+  color: #fff;
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
-  color: #fff;
-  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.web-design div.wrapper h1.first-banner-item-h1 {
+  margin-top: 40px;
+}
+div.banner-item-container div.bg-image-container div.web-design div.wrapper h1:not(.first-banner-item-h1) {
+  margin-top: 40px;
 }
 div.banner-item-container div.bg-image-container div.web-design div.wrapper p {
   margin-bottom: 0.375rem;
@@ -2517,6 +2626,11 @@ div.banner-item-container div.bg-image-container div.web-design div.wrapper a:ho
   div.banner-item-container div.bg-image-container div.web-design div.wrapper h1 {
     font-size: 4rem !important;
     line-height: 5rem !important;
+    margin-top: -20px !important;
+  }
+  div.banner-item-container div.bg-image-container div.web-design div.wrapper h1:not(.first-banner-item-h1) {
+    margin-top: -40px !important;
+    margin-bottom: 10px;
   }
   div.banner-item-container div.bg-image-container div.web-design div.wrapper p {
     font-size: 1.625rem;
@@ -2528,11 +2642,19 @@ div.banner-item-container div.bg-image-container div.web-design div.wrapper a:ho
 }
 
 div.banner-item-container div.bg-image-container {
-  height: 550px;
+  height: 600px;
   background-attachment: local;
   background-size: cover;
   background-position: center;
   background-color: rgb(94, 91, 91);
+}
+@media (min-width: 425px) {
+  div.banner-item-container div.bg-image-container {
+    height: 550px;
+  }
+}
+div.banner-item-container div.bg-image-container:not(.first-banner-item) {
+  height: 550px !important;
 }
 div.banner-item-container div.bg-image-container div.cyber-security {
   display: flex;
@@ -2553,11 +2675,17 @@ div.banner-item-container div.bg-image-container div.cyber-security div.wrapper 
   margin-bottom: 70px;
 }
 div.banner-item-container div.bg-image-container div.cyber-security div.wrapper h1 {
+  color: #fff;
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
-  color: #fff;
-  font-weight: 600;
+}
+div.banner-item-container div.bg-image-container div.cyber-security div.wrapper h1.first-banner-item-h1 {
+  margin-top: 40px;
+}
+div.banner-item-container div.bg-image-container div.cyber-security div.wrapper h1:not(.first-banner-item-h1) {
+  margin-top: 40px;
 }
 div.banner-item-container div.bg-image-container div.cyber-security div.wrapper p {
   margin-bottom: 0.375rem;
@@ -2595,6 +2723,11 @@ div.banner-item-container div.bg-image-container div.cyber-security div.wrapper 
   div.banner-item-container div.bg-image-container div.cyber-security div.wrapper h1 {
     font-size: 4rem !important;
     line-height: 5rem !important;
+    margin-top: -20px !important;
+  }
+  div.banner-item-container div.bg-image-container div.cyber-security div.wrapper h1:not(.first-banner-item-h1) {
+    margin-top: -40px !important;
+    margin-bottom: 10px;
   }
   div.banner-item-container div.bg-image-container div.cyber-security div.wrapper p {
     font-size: 1.625rem;
@@ -5908,7 +6041,6 @@ body div#main-outer-container.slide-origin {
   left: 0px;
 }
 body div#main-outer-container div#container {
-  scroll-behavior: smooth;
   width: 100%;
   height: 100%;
   position: relative;
@@ -5917,14 +6049,40 @@ body div#main-outer-container div#container {
 body div#main-outer-container div#container div.main-outer {
   height: 100%;
 }
-body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper {
-  height: inherit !important;
+body div#main-outer-container div#container div.main-outer div.main-inner {
+  position: relative;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper-sticky-wrapper-support {
+  width: 100%;
+  height: 209px;
+  background-color: #333645;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper-sticky-wrapper {
+  width: 100%;
   position: relative;
   z-index: 50;
   background-color: #fff;
+  position: relative;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s;
 }
-body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper div#nav {
+body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper-sticky-wrapper.slide-down {
+  animation: slide-down 0.25s ease-in;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper-sticky-wrapper.slide-up {
+  animation: slide-up 0.25s linear;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper-sticky-wrapper div#header-wrapper {
+  height: inherit !important;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#header-wrapper-sticky-wrapper div#header-wrapper div#nav {
   background-color: #333645;
+}
+body div#main-outer-container div#container div.main-outer div.main-inner div#banner {
+  transition: all 0.3s;
 }
 body div#cookie-app {
   position: fixed;
@@ -5975,15 +6133,7 @@ body div#side-menu-container div#side-menu {
   width: 275px;
   height: 100vh;
   overflow: auto;
-  scroll-behavior: smooth;
   transition: 0.3s;
-}
-body div#side-menu-container div#side-menu.toggle-side-menu-in {
-  display: block;
-  animation-name: slide-in;
-}
-body div#side-menu-container div#side-menu.toggle-side-menu-out {
-  animation-name: slide-out;
 }
 @media (min-width: 992px) {
   body div#side-menu-container div#side-menu {
@@ -5995,14 +6145,34 @@ body div#side-menu-container div#side-menu_background-filter {
   top: 0;
   left: 0;
   z-index: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   height: 100vh;
   width: calc(100% - 275px);
-  transition: 0.3s ease;
 }
 @media (min-width: 992px) {
   body div#side-menu-container div#side-menu_background-filter {
     width: calc(100% - 350px);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    position: fixed;
+    top: -209px;
+  }
+  100% {
+    position: fixed;
+    top: 0;
+  }
+}
+@keyframes slide-up {
+  0% {
+    position: fixed;
+    top: 0;
+  }
+  100% {
+    position: relative;
+    top: -209;
   }
 }
 

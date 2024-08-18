@@ -1,7 +1,15 @@
 @mixin banner-item($image-id){
     div.banner-item-container{
         div.bg-image-container{
-            height: 550px;
+            //use adaptive height feature
+            height: 600px;
+            @media (min-width: 425px){
+                height: 550px;
+            }
+            &:not(.first-banner-item){
+                height: 550px !important;
+            }
+            //
             background-attachment: local;
             background-size: cover;
             background-position: center;
