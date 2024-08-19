@@ -3804,9 +3804,6 @@ div.container div.latest-news-headline a em {
     justify-content: space-between;
     align-items: baseline;
   }
-  div.container div.latest-news-headline h2 {
-    margin-bottom: -20px;
-  }
   div.container div.latest-news-headline a.sm {
     display: none;
   }
@@ -3820,7 +3817,7 @@ div.container div#latest-news-main-container {
   flex-direction: column;
 }
 div.container div#latest-news-main-container div#latest-news-container {
-  margin: 30px 0;
+  margin: 20px 0 30px 0;
 }
 @media (min-width: 768px) {
   div.container div#latest-news-main-container div#latest-news-container {
