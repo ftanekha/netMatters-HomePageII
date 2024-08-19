@@ -102,6 +102,4 @@ $(()=>{
             }
         }
     })
-    /*LATEST NEWS*/ 
-    // changeRebeccaTextContent()
 })

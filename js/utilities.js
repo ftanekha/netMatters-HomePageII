@@ -40,7 +40,6 @@ function getSideMenuWidth(){
     }else {
         return '-350px'
     }
-    
 }
 /////////////////////////////////////////////////////////////////////
 function toggleSideMenu(){
@@ -137,7 +136,7 @@ function displayCookieModal(didUserClickManageConsentButton = false){
             {
                 display: 'flex',
                 visibility: 'visible', //show cookie modal
-                backgroundColor : 'rgba(0, 0, 0, .7)'//darken background
+                backgroundColor : 'rgba(0, 0, 0, .7)'
             }
         )
         $('.cookie-policy-button').on('click', ()=>{
