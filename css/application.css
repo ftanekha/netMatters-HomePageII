@@ -3825,6 +3825,7 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
   position: relative;
   top: 0;
   transition: 0.5s ease;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 div.container div#latest-news-main-container div#latest-news-container div.latest-news-item:hover {
   top: -10px;
@@ -3866,13 +3867,28 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
     min-height: 214px;
   }
 }
+@media (min-width: 768px) {
+  div.container div#latest-news-main-container div#latest-news-container div.latest-news-item {
+    height: 590px;
+  }
+}
+@media (min-width: 992px) {
+  div.container div#latest-news-main-container div#latest-news-container div.latest-news-item {
+    height: 609px;
+  }
+}
+@media (min-width: 1260px) {
+  div.container div#latest-news-main-container div#latest-news-container div.latest-news-item {
+    height: 605px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1260px) {
   div.container div#latest-news-main-container div#latest-news-container div.latest-news-item.md-screen-hidden {
     display: none;
   }
 }
 div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body {
-  margin: 30px auto;
+  margin: 30px auto 0;
   margin-top: -26px;
   padding: 30px;
   border-left: solid #ccc 1px;
@@ -3921,6 +3937,16 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
   line-height: 35px;
   border-radius: 3px;
 }
+@media (min-width: 992px) {
+  div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body button.shamrock {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 1260px) {
+  div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body button.shamrock {
+    margin-top: 15px;
+  }
+}
 div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body button.valencia {
   width: 130px !important;
   height: 48px !important;
@@ -3937,6 +3963,17 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
   line-height: 35px;
   border-radius: 3px;
 }
+@media (min-width: 992px) {
+  div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body button.valencia {
+    margin-top: 5px;
+    margin-bottom: -12px;
+  }
+}
+@media (min-width: 1260px) {
+  div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body button.valencia {
+    margin-top: 27px;
+  }
+}
 div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body button.havelockBlue {
   width: 130px !important;
   height: 48px !important;
@@ -3952,6 +3989,16 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
   text-transform: uppercase;
   line-height: 35px;
   border-radius: 3px;
+}
+@media (min-width: 992px) {
+  div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body button.havelockBlue {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 1260px) {
+  div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body button.havelockBlue {
+    margin-top: 15px;
+  }
 }
 div.container div#latest-news-main-container div#latest-news-container div.latest-news-item div.news-item-body hr {
   margin: 30px 0;

@@ -1,7 +1,4 @@
-import {
-    toggleSideMenu, toggleStickyHeader, 
-    changeRebeccaTextContent, displayCookieModal
-} from './js/utilities.js'
+import { toggleSideMenu, toggleStickyHeader, displayCookieModal } from './js/utilities.js'
 
 $(()=>{
     /*COOKIE POPUP POLICY & consent management*/
@@ -106,5 +103,5 @@ $(()=>{
         }
     })
     /*LATEST NEWS*/ 
-    changeRebeccaTextContent()
+    // changeRebeccaTextContent()
 })

@@ -126,30 +126,6 @@ function toggleStickyHeader(){
     })
 }
 //////////////////////////////////////////////////////////////////////////////////
-function changeRebeccaTextContent(){
-    const $latestNewsItemRebeccaTextContent = $('p#latest-news-item-rebecca-text-content')
-
-    const rebeccaTextOptions = {
-        sm: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time each month to highlight ...', 
-        md: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time ...',
-        lg: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time each month to highlight the accomplishments of ...'
-    }
-
-    const mediaQueries = {
-        sm: window.matchMedia('(min-width: 768px)'),
-        md: window.matchMedia('(min-width: 992px)'),
-        lg: window.matchMedia('(min-width: 1260px)')
-    };
-
-    ['sm', 'md', 'lg'].forEach(
-        breakPoint => {
-            if(mediaQueries[breakPoint].matches){
-                $latestNewsItemRebeccaTextContent.text(rebeccaTextOptions[breakPoint])
-            }
-        }
-    )
-}
-//////////////////////////////////////////////////////////////////////////////////
 function displayCookieModal(didUserClickManageConsentButton = false){
     const hasCookieBeenDisplayed = localStorage.getItem('hasCookieBeenDisplayed')
     if(hasCookieBeenDisplayed && !didUserClickManageConsentButton){
@@ -179,7 +155,4 @@ function displayCookieModal(didUserClickManageConsentButton = false){
     }
 }
 ///////////////////////////////////////////////////////////////////////////
-export {
-    toggleSideMenu, toggleStickyHeader, 
-    changeRebeccaTextContent, displayCookieModal
-}
+export { toggleSideMenu, toggleStickyHeader, displayCookieModal }
