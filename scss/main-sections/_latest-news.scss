@@ -34,9 +34,6 @@ div.container{
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            h2{
-                // margin: 50px 0 -40px 0;
-            }
             a{
                 &.sm{ display: none;}
                 &.md{ display: inline-block;}
