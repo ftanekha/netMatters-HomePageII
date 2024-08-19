@@ -2,7 +2,6 @@ div.container{
     div.latest-news-headline{
         color: #333645;
         h2{
-            
             margin: 50px 0 10px 0;
             strong{
                 font-size: 2.25rem;
@@ -35,7 +34,6 @@ div.container{
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            h2{margin-bottom: -20px;}
             a{
                 &.sm{ display: none;}
                 &.md{ display: inline-block;}
@@ -47,7 +45,7 @@ div.container{
         display: flex;
         flex-direction: column;
         div#latest-news-container{
-            margin: 30px 0;
+            margin: 20px 0 30px 0;
             @media (min-width: 768px){
                 display: flex;
                 gap: 30px;
@@ -63,7 +61,7 @@ div.container{
                 position: relative;
                 top: 0;
                 transition: .5s ease;
-                // box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+                box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
                 &:hover{
                     top: -10px;
                 }
@@ -87,23 +85,35 @@ div.container{
                         }
                     }
                 }
+                
+                &{
+                    @media (min-width: 768px){
+                        height: 590px;
+                    }
+                }
+                &{
+                    @media (min-width: 992px){
+                        height: 609px;
+                    }
+                }
+                &{
+                    @media (min-width: 1260px){
+                        height: 605px;
+                    }
+                }
                 &.md-screen-hidden{
                     @media (min-width: 768px) and (max-width: 1260px){
                         display: none;
                     }
                 }
                 div.news-item-body{
-                    margin: 30px auto;
+                    margin: 30px auto 0;
                     margin-top: -26px;
                     padding: 30px;
                     border-left: solid #ccc 1px;
                     border-bottom: solid #ccc 1px;
                     border-right: solid #ccc 1px;
                     border-radius: 3px;
-                    // article{
-                    //     margin: 0;
-                    //     padding: 0;
-                    //     box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
                         h3{
                             font-size: 1rem;
                             &.shamrock{
@@ -134,7 +144,6 @@ div.container{
                             &.valencia{@include read-more-button($valencia)}
                             &.havelockBlue{@include read-more-button($havelockBlue)}
                         }
-                    // }
                     hr{
                         margin: 30px 0;
                         border: solid #ccc;

@@ -40,7 +40,6 @@ function getSideMenuWidth(){
     }else {
         return '-350px'
     }
-    
 }
 /////////////////////////////////////////////////////////////////////
 function toggleSideMenu(){
@@ -77,7 +76,9 @@ function toggleSideMenu(){
         })
 
         $sideMenuBackgroundFilter.css('z-index', sideMenuContainerZindex)
-        $(window).css('height', auto)
+        //CHANGED - 1LINE
+        $(window).css('height', 'auto')
+        //END 
     }
 }
 ///////////////////////////////////////////////////////////////////
@@ -124,30 +125,6 @@ function toggleStickyHeader(){
     })
 }
 //////////////////////////////////////////////////////////////////////////////////
-function changeRebeccaTextContent(){
-    const $latestNewsItemRebeccaTextContent = $('p#latest-news-item-rebecca-text-content')
-
-    const rebeccaTextOptions = {
-        sm: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time each month to highlight ...', 
-        md: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time ...',
-        lg: 'Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time each month to highlight the accomplishments of ...'
-    }
-
-    const mediaQueries = {
-        sm: window.matchMedia('(min-width: 768px)'),
-        md: window.matchMedia('(min-width: 992px)'),
-        lg: window.matchMedia('(min-width: 1260px)')
-    };
-
-    ['sm', 'md', 'lg'].forEach(
-        breakPoint => {
-            if(mediaQueries[breakPoint].matches){
-                $latestNewsItemRebeccaTextContent.text(rebeccaTextOptions[breakPoint])
-            }
-        }
-    )
-}
-//////////////////////////////////////////////////////////////////////////////////
 function displayCookieModal(didUserClickManageConsentButton = false){
     const hasCookieBeenDisplayed = localStorage.getItem('hasCookieBeenDisplayed')
     if(hasCookieBeenDisplayed && !didUserClickManageConsentButton){
@@ -159,7 +136,7 @@ function displayCookieModal(didUserClickManageConsentButton = false){
             {
                 display: 'flex',
                 visibility: 'visible', //show cookie modal
-                backgroundColor : 'rgba(0, 0, 0, .7)'//darken background
+                backgroundColor : 'rgba(0, 0, 0, .7)'
             }
         )
         $('.cookie-policy-button').on('click', ()=>{
@@ -177,7 +154,4 @@ function displayCookieModal(didUserClickManageConsentButton = false){
     }
 }
 ///////////////////////////////////////////////////////////////////////////
-export {
-    toggleSideMenu, toggleStickyHeader, 
-    changeRebeccaTextContent, displayCookieModal
-}
+export { toggleSideMenu, toggleStickyHeader, displayCookieModal }

@@ -1,7 +1,4 @@
-import {
-    toggleSideMenu, toggleStickyHeader, 
-    changeRebeccaTextContent, displayCookieModal
-} from './js/utilities.js'
+import { toggleSideMenu, toggleStickyHeader, displayCookieModal } from './js/utilities.js'
 
 $(()=>{
     /*COOKIE POPUP POLICY & consent management*/
@@ -81,7 +78,7 @@ $(()=>{
     .owlCarousel({
         loop: true, 
         autoplay: true, 
-        autoplayTimeout: 3100,
+        autoplayTimeout: 3200,
         autoplayHoverPause:true,
         mouseDrag: false,
         responsive:{
@@ -105,6 +102,4 @@ $(()=>{
             }
         }
     })
-    /*LATEST NEWS*/ 
-    changeRebeccaTextContent()
 })

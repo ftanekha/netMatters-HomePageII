@@ -5,7 +5,7 @@ div.accreditations-container{
     div.slick-list{
         div.slick-track{
             background-color: white;
-            margin: 40px 0 70px 20px;
+            margin: 40px 0 45px 20px;
             width: 100%;
             display: flex;
             flex-wrap: nowrap;
@@ -23,6 +23,12 @@ div.accreditations-container{
                 filter: grayscale(100%);
                 &:hover{
                     filter: grayscale(0%);
+                }
+            }
+            @media (min-width: 992px){
+                margin: 40px 0 55px 20px;
+                img.princess-royal-training-logo.slick-slide{
+                    height: 70px !important;
                 }
             }
         }
