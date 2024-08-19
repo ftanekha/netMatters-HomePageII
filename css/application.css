@@ -3839,6 +3839,7 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
   top: 0;
   transition: 0.5s ease;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 div.container div#latest-news-main-container div#latest-news-container div.latest-news-item:hover {
   top: -10px;
@@ -3883,6 +3884,7 @@ div.container div#latest-news-main-container div#latest-news-container div.lates
 @media (min-width: 768px) {
   div.container div#latest-news-main-container div#latest-news-container div.latest-news-item {
     height: 590px;
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 992px) {
