@@ -55,92 +55,95 @@
                             </div>
                             <div id="netmatters-offices">
                                 <div class="container">
-                                    <!-- office photos and addresses -->
-                                    <div class="offices-main-container">
-                                        <div class="office-container">
-                                            <div class="office cambridge">
-                                                <div class="image-container">
-                                                    <a class="office-image-wrapper" href="#">
-                                                        <img src="assets/images/offices/cambridge.jpg" alt="Cambridge Office">
-                                                    </a>
-                                                </div>
-                                                <div class="office-address">
-                                                    <p class="office-h2">
-                                                        <a class="office-name" href="#">
-                                                            Cambridge Office
+                                    <div id="netmatters-offices-top-container">
+                                        <!-- office photos and addresses -->
+                                        <div class="offices-main-container">
+                                            <div class="office-container">
+                                                <div class="office cambridge">
+                                                    <div class="image-container">
+                                                        <a class="office-image-wrapper" href="#">
+                                                            <img src="assets/images/offices/cambridge.jpg" alt="Cambridge Office">
                                                         </a>
-                                                    </p>
-                                                    <address>
-                                                        Unit 1.31,<br>
-                                                        St John's Innovation Centre,<br>
-                                                        Cowley Road, Milton,<br>
-                                                        Cambridge,<br>
-                                                        CB4 0WS
-                                                    </address>
-                                                    <a href="tel:01223375772" class="office-h3 text-web">
-                                                        01223 37 57 72
-                                                    </a>
-                                                    <a href="#" class="office-view-more">View More</a>
+                                                    </div>
+                                                    <div class="office-address">
+                                                        <p class="office-h2">
+                                                            <a class="office-name" href="#">
+                                                                Cambridge Office
+                                                            </a>
+                                                        </p>
+                                                        <address>
+                                                            Unit 1.31,<br>
+                                                            St John's Innovation Centre,<br>
+                                                            Cowley Road, Milton,<br>
+                                                            Cambridge,<br>
+                                                            CB4 0WS
+                                                        </address>
+                                                        <a href="tel:01223375772" class="office-h3 text-web">
+                                                            01223 37 57 72
+                                                        </a>
+                                                        <a href="#" class="office-view-more">View More</a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="office-container">
-                                            <div class="office wymondham">
-                                                <div class="image-container">
-                                                    <a class="office-image-wrapper" href="#">
-                                                        <img src="assets/images/offices/wymondham.jpg" alt="Wymondham Office">
-                                                    </a>
-                                                </div>
-                                                <div class="office-address">
-                                                    <p class="office-h2">
-                                                        <a class="office-name" href="#">
-                                                            Wymondham Office
+                                            <div class="office-container">
+                                                <div class="office wymondham">
+                                                    <div class="image-container">
+                                                        <a class="office-image-wrapper" href="#">
+                                                            <img src="assets/images/offices/wymondham.jpg" alt="Wymondham Office">
                                                         </a>
-                                                    </p>
-                                                    <address>
-                                                        Unit 15,<br>
-                                                        Penfold Drive,<br>
-                                                        Gateway 11 Business Park,<br>
-                                                        Wymondham, Norfolk,<br>
-                                                        NR18 0WZ
-                                                    </address>
-                                                    <a href="tel:01603704020" class="office-h3 text-web">
-                                                        01603 70 40 20
-                                                    </a>
-                                                    <a href="#" class="office-view-more">View More</a>
+                                                    </div>
+                                                    <div class="office-address">
+                                                        <p class="office-h2">
+                                                            <a class="office-name" href="#">
+                                                                Wymondham Office
+                                                            </a>
+                                                        </p>
+                                                        <address>
+                                                            Unit 15,<br>
+                                                            Penfold Drive,<br>
+                                                            Gateway 11 Business Park,<br>
+                                                            Wymondham, Norfolk,<br>
+                                                            NR18 0WZ
+                                                        </address>
+                                                        <a href="tel:01603704020" class="office-h3 text-web">
+                                                            01603 70 40 20
+                                                        </a>
+                                                        <a href="#" class="office-view-more">View More</a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="office-container">
-                                            <div class="office yarmouth">
-                                                <div class="image-container">
-                                                    <a class="office-image-wrapper" href="#">
-                                                        <img src="assets/images/offices/yarmouth.jpg" alt="Great Yarmouth Office">
-                                                    </a>
-                                                </div>
-                                                <div class="office-address">
-                                                    <p class="office-h2">
-                                                        <a class="office-name" href="#">
-                                                            Great Yarmouth Office
+                                            <div class="office-container">
+                                                <div class="office yarmouth">
+                                                    <div class="image-container">
+                                                        <a class="office-image-wrapper" href="#">
+                                                            <img src="assets/images/offices/yarmouth.jpg" alt="Great Yarmouth Office">
                                                         </a>
-                                                    </p>
-                                                    <address>
-                                                        Suite F23,<br>
-                                                        Beacon Innovation Centre,<br>
-                                                        Beacon Park, Gorleston,<br>
-                                                        Great Yarmouth, Norfolk,<br>
-                                                        NR31 7RA
-                                                    </address>
-                                                    <a href="tel:01493603204" class="office-h3 text-web">
-                                                        01493 60 32 04
-                                                    </a>
-                                                    <a href="#" class="office-view-more">View More</a>
+                                                    </div>
+                                                    <div class="office-address">
+                                                        <p class="office-h2">
+                                                            <a class="office-name" href="#">
+                                                                Great Yarmouth Office
+                                                            </a>
+                                                        </p>
+                                                        <address>
+                                                            Suite F23,<br>
+                                                            Beacon Innovation Centre,<br>
+                                                            Beacon Park, Gorleston,<br>
+                                                            Great Yarmouth, Norfolk,<br>
+                                                            NR31 7RA
+                                                        </address>
+                                                        <a href="tel:01493603204" class="office-h3 text-web">
+                                                            01493 60 32 04
+                                                        </a>
+                                                        <a href="#" class="office-view-more">View More</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- extra contact info -->
-                                     <div class="extra-contact-ifo">
+                                        <!-- extra contact info -->
+                                    <div id="netmatters-offices-bottom-container">
+                                        <div class="extra-contact-info">
                                             <p>
                                                 <strong>Email us on:</strong>
                                             </p>
@@ -159,7 +162,7 @@
                                                     <span class="glyphicon glyphicon-chevron-down" id="accordion-control"></span>
                                                 </strong>
                                             </p>
-                                            <div id="accordion">
+                                            <!-- <div id="accordion">
                                                 <p>
                                                     Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.
                                                 </p>
@@ -172,8 +175,55 @@
                                                 <p>
                                                     To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. 
                                                 </p>
-                                            </div>
-                                     </div>
+                                            </div> -->
+                                        </div>
+                                        <!-- form -->
+                                        <div class="form-container-outer">
+                                            <form action="#" methot="POST">
+                                                <div class="form-container-inner">
+                                                    <div class="col-med">
+                                                        <div class="form-group">
+                                                            <label for="name" class="required">Your Name&nbsp;</label>
+                                                            <input class="form-control" name="name" value="" id="name" 
+                                                                type="text" minlength="3" maxlength="100" required
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-med">
+                                                        <div class="form-group">
+                                                            <label for="company" class="">Company Name</label>
+                                                            <input class="form-control" name="company" value="" id="company"
+                                                                type="text" minlength="3" maxlength="100" required
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-med">
+                                                        <div class="form-group">
+                                                            <label for="email" class="required">Your Email&nbsp;</label>
+                                                            <input class="form-control" name="email" value="" id="email" 
+                                                                type="email" minlength="3" maxlength="345" required
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-med">
+                                                        <div class="form-group">
+                                                            <label for="telephone" class="required">Your Telephone Number&nbsp;</label>
+                                                            <input class="form-control" name="telephone" value="" id="telephone"
+                                                                type="text" minlength="7" maxlength="15" required
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-med">
+                                                    <div class="form-group">
+                                                        <label for="message" class="required">Message&nbsp;</label>
+                                                        <textarea class="form-control" name="message" rows="10" id="message"
+                                                            minlength="3" required>Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

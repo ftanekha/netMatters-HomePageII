@@ -25,7 +25,6 @@ div#contact-us{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: red;
         }
     }
     div#contact-us-container{
@@ -54,132 +53,225 @@ div#contact-us{
         }
         div#netmatters-offices{
             div.container{
-                div.offices-main-container{
-                    @media (min-width: 992px){
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        row-gap: 30px;
-                    }
-                    div.office-container{
-                        margin-bottom: 0;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        &:nth-child(2){
-                            @media (min-width: 992px){
-                                margin: 0 30px;
-                            }
+                div#netmatters-offices-top-container{
+                    div.offices-main-container{
+                        @media (min-width: 992px){
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            row-gap: 30px;
                         }
-                        div.office{
-                            box-shadow: 0 3px 35px rgba(0,0,0,.1);
-                            border-top-right-radius: 20px;
-                            border-top-left-radius: 20px;
-                            margin: 30px auto;
-                            &:first-child{
-                                margin-top: 50px;
-                            }
-                            div.image-container{
-                                a.office-image-wrapper{
-                                    display: block;
-                                    img{
-                                        border-top-right-radius: 20px;
-                                        border-top-left-radius: 20px;
-                                        max-width: 100%;
-                                        border: 0;
-                                        overflow-clip-margin: content-box;
-                                        overflow: clip;
-                                    }
+                        div.office-container{
+                            margin-bottom: 0;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            &:nth-child(2){
+                                @media (min-width: 992px){
+                                    margin: 0 30px;
                                 }
                             }
-                            div.office-address{
-                                margin-top: -30px;
-                                border-right: solid #ccc 1px;
-                                border-bottom: solid #ccc 1px;
-                                border-left: solid #ccc 1px;
-                                padding: 0 30px;
-                                p.office-h2{
-                                    font-size: 1.25rem;
-                                    margin-bottom: 10px;
-                                    a.office-name{
-                                        display: inline-block;
-                                        padding-top: 30px;
+                            div.office{
+                                box-shadow: 0 3px 35px rgba(0,0,0,.1);
+                                border-top-right-radius: 20px;
+                                border-top-left-radius: 20px;
+                                margin: 30px auto;
+                                &:first-child{
+                                    margin-top: 50px;
+                                }
+                                div.image-container{
+                                    a.office-image-wrapper{
+                                        display: block;
+                                        img{
+                                            border-top-right-radius: 20px;
+                                            border-top-left-radius: 20px;
+                                            max-width: 100%;
+                                            border: 0;
+                                            overflow-clip-margin: content-box;
+                                            overflow: clip;
+                                        }
+                                    }
+                                }
+                                div.office-address{
+                                    margin-top: -30px;
+                                    border-right: solid #ccc 1px;
+                                    border-bottom: solid #ccc 1px;
+                                    border-left: solid #ccc 1px;
+                                    padding: 0 30px;
+                                    p.office-h2{
+                                        font-size: 1.25rem;
+                                        margin-bottom: 10px;
+                                        a.office-name{
+                                            display: inline-block;
+                                            padding-top: 30px;
+                                            text-decoration: none;
+                                            color: $netmatters_black;
+                                            &:hover{
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    address{
+                                        font-style: normal;
+                                        font-size: .8125rem;
+                                        line-height: 1.375rem;
+                                        font-weight: 400;
+                                        margin-bottom: 10px;
+                                    }
+                                    a.office-h3{
+                                        color: $wisteria;
+                                        font-size:  1.625rem;
+                                        font-weight: 700;
                                         text-decoration: none;
-                                        color: $netmatters_black;
-                                        &:hover{
-                                            text-decoration: underline;
-                                        }
+                                            &:hover{
+                                                text-decoration: underline;
+                                            }
                                     }
-                                }
-                                address{
-                                    font-style: normal;
-                                    font-size: .8125rem;
-                                    line-height: 1.375rem;
-                                    font-weight: 400;
-                                    margin-bottom: 10px;
-                                }
-                                a.office-h3{
-                                    color: $wisteria;
-                                    font-size:  1.625rem;
-                                    font-weight: 700;
-                                    text-decoration: none;
+                                    a.office-view-more{
+                                        display: flex;
+                                        margin-top: 10px;
+                                        margin-bottom: 30px;
+                                        width: 142.025px;
+                                        height: 46px;
+                                        border: 1px solid $wisteria;
+                                        border-radius: 3px;
+                                        background-color: $wisteria;
+                                        color: #fff;
+                                        text-transform: uppercase;
+                                        justify-content: center;
+                                        align-items: center;
+                                        line-height: 35px;
+                                        font-size: .9em;
                                         &:hover{
-                                            text-decoration: underline;
+                                            background-color:#7e57a0;
+                                            border-color: #735093;
                                         }
-                                }
-                                a.office-view-more{
-                                    display: flex;
-                                    margin-top: 10px;
-                                    margin-bottom: 30px;
-                                    width: 142.025px;
-                                    height: 46px;
-                                    border: 1px solid $wisteria;
-                                    border-radius: 3px;
-                                    background-color: $wisteria;
-                                    color: #fff;
-                                    text-transform: uppercase;
-                                    justify-content: center;
-                                    align-items: center;
-                                    line-height: 35px;
-                                    font-size: .9em;
-                                    &:hover{
-                                        background-color:#7e57a0;
-                                        border-color: #735093;
                                     }
                                 }
                             }
+                                
                         }
-                            
                     }
                 }
-                div.extra-contact-ifo{
-                    p{
-                        line-height: 1.875rem;
-                        margin-bottom: 25px;
-                        color: #666;
-                        strong{
-                            font-weight: 600;
-                            color: $netmatters_black;
-                            span.glyphicon-chevron-down{
-                                position: relative;
-                                top: 3px;
-                                left: 5px;
-                            }
-                        }
-                        a{
-                            text-decoration: none;
-                            color: $netmatters_black;
-                            &.email-address{
-                                color: $wisteria;
-                                font-size: 1.625rem;
+                div#netmatters-offices-bottom-container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    div.extra-contact-info{
+                        margin: 0;
+                        padding-left: 0;
+                        p{
+                            line-height: 1.875rem;
+                            margin-bottom: 25px;
+                            color: #666;
+                            strong{
                                 font-weight: 600;
+                                color: $netmatters_black;
+                                span.glyphicon-chevron-down{
+                                    position: relative;
+                                    top: 3px;
+                                    left: 5px;
+                                }
                             }
-                            &:hover{
-                                text-decoration: underline;
+                            a{
+                                text-decoration: none;
+                                color: $netmatters_black;
+                                &.email-address{
+                                    color: $wisteria;
+                                    font-size: 1.625rem;
+                                    font-weight: 600;
+                                }
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                        div#accordion{
+                            transition: .5s ease-in-out;
+                            background-color: green;
+                        }
+                    }
+                    div.form-container-outer{
+                        width: 100%;
+                        background-color: #e6e7e9;
+                        border-radius: 10px;
+                        padding: 0 0 50px 0;
+                        form{
+                            width: 100%;
+                            padding: 30px;
+                            div.form-container-inner{
+                                div.col-med{
+                                    div.form-group{
+                                        padding: 0;
+                                        width: 100%;
+                                        label{
+                                            display: inline-flex;
+                                            align-items: flex-end;
+                                            height: 47px;
+                                            font-weight: 600;
+                                            margin-bottom: 5px;
+                                            &.required::after{
+                                                content: "*";
+                                                color: #d24d57 !important;
+                                            }
+                                        }
+                                        *.form-control{
+                                            color: #666;
+                                            padding: 5px 15px;
+                                            border-color: #ccc;
+                                            // outline: none;
+                                            width: 100%;
+                                            background-color: #fff;
+                                            border: 1px solid #e5e5e5;
+                                            border-radius: 2px;
+                                            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                                            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                                            &:focus{
+                                                border-color: #5bc0de;
+                                                outline: 0;
+                                                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                                                                0 0 8px rgba(91, 192, 222, 0.6);
+                                            }
+                                        }
+                                        input.form-control{
+                                            height: 47px;
+                                            width: 100%;
+                                        }
+                                        text-area.form-control{
+                                            min-height: 100px;
+                                            height: 100px !important;
+                                            font-size: 14px;
+                                            font-size: 14px;
+                                            line-height: 1.42857143;
+                                            box-sizing: border-box;
+                                        }
+                                    }
+                                    @media (min-width: 992px){
+                                        display: inline-block;
+                                        margin: 0;
+                                        width: calc(50% - 15px);
+                                        &:nth-child(odd){
+                                            margin-right: 25px;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
-                }
+                    @media (min-width: 1260px){
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        div.form-container-outer{
+                            width: 66%;
+                        }
+                        div.extra-contact-info{
+                            position: relative;
+                            left: -50px;
+                        }
+                    }
+                }          
             }
         }
     }
