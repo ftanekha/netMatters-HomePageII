@@ -1,10 +1,10 @@
 div#contact-us{
     background-color: #fff;
-    color: #333645;
+    color: $netmatters_black;
     div.contact-us-link{
         background-color: #fff;
         box-shadow: 0 5px 35px rgba(0,0,0,.1);
-        border-top: 1px solid #333645;
+        border-top: 1px solid $netmatters_black;
         margin-top: 20px;
         display: none;
         p{
@@ -17,7 +17,7 @@ div#contact-us{
                 padding-right: 8px;
                 margin: 0;
                 text-decoration: none;
-                color: #333645;
+                color: $netmatters_black;
                 font-weight: 700;
             }
         }
@@ -32,7 +32,7 @@ div#contact-us{
         background-color: #fff;
         div.contact-us-heading{
             width: 100%;
-            background-color: #333645;
+            background-color: $netmatters_black;
             padding-left: 12%;
 
             h1{
@@ -47,7 +47,7 @@ div#contact-us{
             @media (min-width: 992px){
                 background-color: #fff;
                 h1{
-                    color: #333645;
+                    color: $netmatters_black;
                     padding-left: 12%;
                 }
             }
@@ -100,13 +100,12 @@ div#contact-us{
                                 padding: 0 30px;
                                 p.office-h2{
                                     font-size: 1.25rem;
-                                    // position: relative;
                                     margin-bottom: 10px;
                                     a.office-name{
                                         display: inline-block;
                                         padding-top: 30px;
                                         text-decoration: none;
-                                        color: #333645;
+                                        color: $netmatters_black;
                                         &:hover{
                                             text-decoration: underline;
                                         }
@@ -120,7 +119,7 @@ div#contact-us{
                                     margin-bottom: 10px;
                                 }
                                 a.office-h3{
-                                    color: #926fb1;
+                                    color: $wisteria;
                                     font-size:  1.625rem;
                                     font-weight: 700;
                                     text-decoration: none;
@@ -134,9 +133,9 @@ div#contact-us{
                                     margin-bottom: 30px;
                                     width: 142.025px;
                                     height: 46px;
-                                    border: 1px solid #926fb1;
+                                    border: 1px solid $wisteria;
                                     border-radius: 3px;
-                                    background-color: #926fb1;
+                                    background-color: $wisteria;
                                     color: #fff;
                                     text-transform: uppercase;
                                     justify-content: center;
@@ -151,6 +150,34 @@ div#contact-us{
                             }
                         }
                             
+                    }
+                }
+                div.extra-contact-ifo{
+                    p{
+                        line-height: 1.875rem;
+                        margin-bottom: 25px;
+                        color: #666;
+                        strong{
+                            font-weight: 600;
+                            color: $netmatters_black;
+                            span.glyphicon-chevron-down{
+                                position: relative;
+                                top: 3px;
+                                left: 5px;
+                            }
+                        }
+                        a{
+                            text-decoration: none;
+                            color: $netmatters_black;
+                            &.email-address{
+                                color: $wisteria;
+                                font-size: 1.625rem;
+                                font-weight: 600;
+                            }
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
                     }
                 }
             }

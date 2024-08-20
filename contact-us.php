@@ -55,6 +55,7 @@
                             </div>
                             <div id="netmatters-offices">
                                 <div class="container">
+                                    <!-- office photos and addresses -->
                                     <div class="offices-main-container">
                                         <div class="office-container">
                                             <div class="office cambridge">
@@ -138,6 +139,41 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- extra contact info -->
+                                     <div class="extra-contact-ifo">
+                                            <p>
+                                                <strong>Email us on:</strong>
+                                            </p>
+                                            <p>
+                                                <a class="email-address" href="#">sales@netmatters.com</a>
+                                            </p>
+                                            <p>
+                                                <strong>Business hours:</strong>
+                                            </p>
+                                            <p>
+                                                <strong>Monday - Friday 07:00 - 18:00 </strong>
+                                            </p>
+                                            <p>
+                                                <strong>
+                                                    <a href="#">Out of Hours IT Support</a>
+                                                    <span class="glyphicon glyphicon-chevron-down" id="accordion-control"></span>
+                                                </strong>
+                                            </p>
+                                            <div id="accordion">
+                                                <p>
+                                                    Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.
+                                                </p>
+                                                <p>
+                                                    <strong>Monday - Friday 18:00 - 22:00</strong>
+                                                    <strong>Saturday 08:00 - 16:00</strong>
+                                                    <br>
+                                                    <strong>Sunday 10:00 - 18:00</strong>
+                                                </p>
+                                                <p>
+                                                    To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. 
+                                                </p>
+                                            </div>
+                                     </div>
                                 </div>
                             </div>
                         </div>

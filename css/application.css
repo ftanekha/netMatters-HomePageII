@@ -6169,6 +6169,32 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
   background-color: #7e57a0;
   border-color: #735093;
 }
+div#contact-us div#contact-us-container div#netmatters-offices div.container div.extra-contact-ifo p {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+  color: #666;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div.extra-contact-ifo p strong {
+  font-weight: 600;
+  color: #333645;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div.extra-contact-ifo p strong span.glyphicon-chevron-down {
+  position: relative;
+  top: 3px;
+  left: 5px;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div.extra-contact-ifo p a {
+  text-decoration: none;
+  color: #333645;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div.extra-contact-ifo p a.email-address {
+  color: #926fb1;
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div.extra-contact-ifo p a:hover {
+  text-decoration: underline;
+}
 
 body {
   position: relative;

@@ -102,4 +102,15 @@ $(()=>{
             }
         }
     })
+
+
+    //* CONTACT US*/
+    const $accordion = $('#accordion') 
+    const $accordionControl = $('#accordion-control') 
+    const $footer = $('footer')
+
+    $footer.css('transition', '.5s ease-in-out')
+
+    $accordion.slideUp('swing')
+    $accordionControl.on('click', ()=> $accordion.slideToggle('swing'))
 })
