@@ -1,9 +1,40 @@
 div#contact-us{
+    background-color: #fff;
+    color: #333645;
+    div.contact-us-link{
+        background-color: #fff;
+        box-shadow: 0 5px 35px rgba(0,0,0,.1);
+        border-top: 1px solid #333645;
+        margin-top: 20px;
+        display: none;
+        p{
+            background-color: #fff;
+            margin: 0;
+            padding-left: 12%;
+            font-size: .8125rem;
+            a{
+                display: inline-block;
+                padding-right: 8px;
+                margin: 0;
+                text-decoration: none;
+                color: #333645;
+                font-weight: 700;
+            }
+        }
+        @media (min-width: 768px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: red;
+        }
+    }
     div#contact-us-container{
+        background-color: #fff;
         div.contact-us-heading{
             width: 100%;
             background-color: #333645;
-            padding-left: 15px;
+            padding-left: 12%;
+
             h1{
                 max-width: 750px;
                 height: 88px;
@@ -13,91 +44,114 @@ div#contact-us{
                 display: flex;
                 align-items: center;
             }
+            @media (min-width: 992px){
+                background-color: #fff;
+                h1{
+                    color: #333645;
+                    padding-left: 12%;
+                }
+            }
         }
         div#netmatters-offices{
             div.container{
-                div.offices-container{
-                    margin-bottom: 0;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    div.office{
-                        box-shadow: 0 3px 35px rgba(0,0,0,.1);
-                        border-top-right-radius: 20px;
-                        border-top-left-radius: 20px;
-                        margin: 30px auto;
-                        div.image-container{
-                            a.office-image-wrapper{
-                                display: block;
-                                img{
-                                    border-top-right-radius: 20px;
-                                    border-top-left-radius: 20px;
-                                    max-width: 100%;
-                                    border: 0;
-                                    overflow-clip-margin: content-box;
-                                    overflow: clip;
-                                }
-                            }
-                        }
-                        div.office-address{
-                            margin-top: -27px;
-                            border-right: solid #ccc 1px;
-                            border-bottom: solid #ccc 1px;
-                            border-left: solid #ccc 1px;
-                            padding: 0 30px;
-                            p.office-h2{
-                                font-size: 1.25rem;
-                                // position: relative;
-                                margin-bottom: 15px;
-                                a.office-name{
-                                    display: inline-block;
-                                    padding-top: 30px;
-                                    text-decoration: none;
-                                    color: #333645;
-                                    &:hover{
-                                        text-decoration: underline;
-                                    }
-                                }
-                            }
-                            address{
-                                font-style: normal;
-                                font-size: .8125rem;
-                                line-height: 1.375rem;
-                                font-weight: 400;
-                                margin-bottom: 15px;
-                            }
-                            a.office-h3{
-                                color: #926fb1;
-                                font-size:  1.625rem;
-                                font-weight: 700;
-                                text-decoration: none;
-                                    &:hover{
-                                        text-decoration: underline;
-                                    }
-                            }
-                            a.office-view-more{
-                                display: flex;
-                                margin-top: 15px;
-                                margin-bottom: 30px;
-                                width: 142.025px;
-                                height: 46px;
-                                border: 1px solid #926fb1;
-                                border-radius: 3px;
-                                background-color: #926fb1;
-                                color: #fff;
-                                text-transform: uppercase;
-                                justify-content: center;
-                                align-items: center;
-                                line-height: 35px;
-                                font-size: .9em;
-                                &:hover{
-                                    background-color:#7e57a0;
-                                    border-color: #735093;
-                                }
-                            }
-                        }
+                div.offices-main-container{
+                    @media (min-width: 992px){
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        row-gap: 30px;
                     }
-                        
+                    div.office-container{
+                        margin-bottom: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        &:nth-child(2){
+                            @media (min-width: 992px){
+                                margin: 0 30px;
+                            }
+                        }
+                        div.office{
+                            box-shadow: 0 3px 35px rgba(0,0,0,.1);
+                            border-top-right-radius: 20px;
+                            border-top-left-radius: 20px;
+                            margin: 30px auto;
+                            &:first-child{
+                                margin-top: 50px;
+                            }
+                            div.image-container{
+                                a.office-image-wrapper{
+                                    display: block;
+                                    img{
+                                        border-top-right-radius: 20px;
+                                        border-top-left-radius: 20px;
+                                        max-width: 100%;
+                                        border: 0;
+                                        overflow-clip-margin: content-box;
+                                        overflow: clip;
+                                    }
+                                }
+                            }
+                            div.office-address{
+                                margin-top: -30px;
+                                border-right: solid #ccc 1px;
+                                border-bottom: solid #ccc 1px;
+                                border-left: solid #ccc 1px;
+                                padding: 0 30px;
+                                p.office-h2{
+                                    font-size: 1.25rem;
+                                    // position: relative;
+                                    margin-bottom: 10px;
+                                    a.office-name{
+                                        display: inline-block;
+                                        padding-top: 30px;
+                                        text-decoration: none;
+                                        color: #333645;
+                                        &:hover{
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                                address{
+                                    font-style: normal;
+                                    font-size: .8125rem;
+                                    line-height: 1.375rem;
+                                    font-weight: 400;
+                                    margin-bottom: 10px;
+                                }
+                                a.office-h3{
+                                    color: #926fb1;
+                                    font-size:  1.625rem;
+                                    font-weight: 700;
+                                    text-decoration: none;
+                                        &:hover{
+                                            text-decoration: underline;
+                                        }
+                                }
+                                a.office-view-more{
+                                    display: flex;
+                                    margin-top: 10px;
+                                    margin-bottom: 30px;
+                                    width: 142.025px;
+                                    height: 46px;
+                                    border: 1px solid #926fb1;
+                                    border-radius: 3px;
+                                    background-color: #926fb1;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    justify-content: center;
+                                    align-items: center;
+                                    line-height: 35px;
+                                    font-size: .9em;
+                                    &:hover{
+                                        background-color:#7e57a0;
+                                        border-color: #735093;
+                                    }
+                                }
+                            }
+                        }
+                            
+                    }
                 }
             }
         }
