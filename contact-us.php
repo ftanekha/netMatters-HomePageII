@@ -42,26 +42,19 @@
                     <!-- main inner -->
                     <div class="main-inner">
                         <!-- HEADER -->
-                        <?php include "includes/header.html" ?>
-
-                        <!-- HEADER end -->
-                    </div>
-
-
-
-
-
-
-
-                    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-                    <!-- CONTACT US -->
+                        <?php include "includes/header.html" ?> 
+                    </div><!-- CONTACT US -->
                     <div id="contact-us">
                          <div class="contact-us-link">
-                            <p><a href="#">Home</a>/    Our Offices</p>
+                            <div class="container">
+                                <p><a class="return-to-homepage-link" href="#">Home</a>/    Our Offices</p>
+                            </div>
                         </div>
                         <div id="contact-us-container">
                             <div class="contact-us-heading">
-                                <h1>Our Offices</h1>
+                                <div class="container">
+                                    <h1>Our Offices</h1>
+                                </div>
                             </div>
                             <div id="netmatters-offices">
                                 <div class="container">
@@ -154,7 +147,7 @@
                                         <!-- extra contact info -->
                                     <div id="netmatters-offices-bottom-container">
                                         <div class="extra-contact-info">
-                                            <p>
+                                            <p class="first-child">
                                                 <strong>Email us on:</strong>
                                             </p>
                                             <p>
@@ -172,7 +165,7 @@
                                                     <span class="glyphicon glyphicon-chevron-down" id="accordion-control"></span>
                                                 </strong>
                                             </p>
-                                            <!-- <div id="accordion">
+                                            <div id="accordion">
                                                 <p>
                                                     Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.
                                                 </p>
@@ -185,11 +178,14 @@
                                                 <p>
                                                     To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. 
                                                 </p>
-                                            </div> -->
+                                            </div>
                                         </div>
                                         <!-- form -->
                                         <div class="form-container-outer">
-                                            <form action="#">
+                                            <div id="success-message-container">
+                                                <p id="success-message">Your message has been sent!</p><span id="success-message-cross">x</span>
+                                             </div>
+                                            <form id="form" action="./post-form-data.php" method="POST">
                                                 <div class="form-container-inner">
                                                     <div class="col-med">
                                                         <div class="form-group">
@@ -223,23 +219,27 @@
                                                             >
                                                         </div>
                                                     </div>
-                                                    <div class="col-med">
+                                                    <div class="col-med" style="min-width: 100%">
                                                         <div class="form-group text-area">
                                                             <label for="message" class="required">Message&nbsp;</label>
-                                                            <textarea class="form-control" name="message" rows="10" id="message"
+                                                            <textarea class="form-control" name="message" rows="10" cols="50" id="message"
                                                                 minlength="3" required>Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div id="policies">
                                                     <div id="privacy-policy-container">
-                                                        <div class="checkbox">
-                                                            <input type="checkbox">
-                                                            <!-- <span class="glyphicon glyphicon-check"></span> -->
-                                                            <p>Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</p>
+                                                        <div id="checkbox-container">
+                                                            <input id="checkbox" type="text">
+                                                            <span id="checkmark">&check;</span>
                                                         </div>
+                                                        <p class="privacy-policy-info">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</p>
                                                     </div>
                                                     <p class="recaptcha">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
+                                                    <div class="policies-footer">
+                                                        <button type="submit" id="send-enquiry-button" href="#">send enquiry</button>
+                                                        <span class="required-info">&nbsp;Fields required</span>
+                                                    </div>
                                                 </div>
                                             </form>
                                         </div>
@@ -248,21 +248,11 @@
                             </div>
                         </div>
                     </div>
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-
-
-
-                    <!-- FOOTER -->
                     <?php include "includes/footer.html" ?>
                 </div>
             </div>
         </div>
     </div>
-    <!-- SIDE MENU -->
     <?php include "includes/side-menu.html" ?>
     <noscript>
         <div class="noscript">

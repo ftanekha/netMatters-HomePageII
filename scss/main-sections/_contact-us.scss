@@ -312,7 +312,7 @@ div#contact-us{
                                 div.policies-footer{
                                     display: flex;
                                     justify-content: space-between;
-                                    a#send-enquiry-button{
+                                    button#send-enquiry-button{
                                         @include offices-link_button($netmatters_black);
                                         width: 148.2px;
                                         height: 45px;

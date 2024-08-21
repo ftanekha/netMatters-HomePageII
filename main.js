@@ -138,9 +138,9 @@ $(()=>{
 
     /* FORM VALIDATION*/
     const $sendEnquiryButton = $('#send-enquiry-button')
-    $sendEnquiryButton.on('click', (ev)=>{
-        ev.preventDefault();
-        //check for empty fields
-        displaySuccessMessage()
-    })
+    // $sendEnquiryButton.on('click', (ev)=>{
+    //     // ev.preventDefault();
+    //     //check for empty fields
+    //     displaySuccessMessage()
+    // })
 })
