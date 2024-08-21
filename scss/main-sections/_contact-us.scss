@@ -5,11 +5,11 @@ div#contact-us{
         display: none;
         background-color: #fff;
         box-shadow: 0 5px 35px rgba(0,0,0,.1);
-        height: 45.563px;
+        height: 47.563px;
         margin-bottom: -25px;
         div.container{
             p{
-                height: 45.563px;
+                height: 47.563px;
                 margin: 0;
                 font-size: .8125rem;
                 display: flex;
@@ -30,7 +30,9 @@ div#contact-us{
     }
     div#contact-us-container{
         background-color: #fff;
+        margin-top: -23px;
         div.contact-us-heading{
+            margin-bottom: 30px;
             width: 100%;
             background-color: $netmatters_black;
             div.container{
@@ -47,6 +49,7 @@ div#contact-us{
             }
             @media (min-width: 992px){
                 background-color: #fff;
+                margin-bottom: 0px;
                 div.container{
                     h1{
                         color: $netmatters_black;
