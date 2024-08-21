@@ -166,77 +166,69 @@ function isUserEmailAddressValid(userEmailAddress){
 }
 ///////////////////////////////////////////////////////////////////////////
 function isUserTelephoneValid(userTelephone){
-    const regex = /^\+?(?:\d\s?){10,12}$/g
+    const regex = /^\+?(?:\d\s?){7,15}$/g
     const result = regex.test(userTelephone)
     return result
 }
-
-///////////////////////////////////////////////////////////////////////////
-function displayNotice(fields){
-    const $notice = $('div#notice')
-    const $noticeList = $('ul#notice-list')
-    
-    const messages = fields.map(
-        field => `<li>Please, include your ${field} in the form.</li>`
-    )
-    
-    messages.forEach(message => $noticeList.append(message))
-    
-    const timer = setTimeout(
-        ()=> {
-            $notice.css('display', 'none')
-            clearInterval(timer)
-        }, 7000
-    )
-}
 ///////////////////////////////////////////////////////////////////////////
 function hasEmptyFields(){
-    const $name = $('#name')
-    const $company = $('#company')
-    const $email = $('#email')
-    const $telephone = $('#telephone')
-    const $message = $('#message')
+    const name = document.querySelector('#name')
+    const email = document.querySelector('#email')
+    const telephone = document.querySelector('#telephone')
+    const message = document.querySelector('#message')
+    
+    let formHasEmptyFields = false
 
     const fields = []
 
-        if(!$name.val()){
+        if(!name.value){
             fields.push('name')
-
-            $name.css({
-                'border-color': '#d64541' 
-            })
+            name.style.borderColor = '#d64541' 
+            formHasEmptyFields = true
         }
-        if(!$company.val()){
-            fields.push('company')
-
-            $name.css({
-                'border-color': '#d64541' 
-            })
-        }
-        if(!$email.val()){
+        if(!email.value){
             fields.push('email')
 
-            $email.css({
-                'border-color': '#d64541' 
-            })
+            email.style.borderColor = '#d64541' 
+            formHasEmptyFields = true
         }
-        if(!$telephone.val()){
+        if(!telephone.value){
             fields.push('telephone')
 
-            $telephone.css({
-                'border-color': '#d64541' 
-            })
+            telephone.style.borderColor = '#d64541' 
+            formHasEmptyFields = true
         }
-        if(!$message.val()){
+        if(!message.value){
             fields.push('message')
 
-            $message.css({
-                'border-color': '#d64541' 
-            })
+            message.style.borderColor = '#d64541' 
+            formHasEmptyFields = true
         }
+
+        if(formHasEmptyFields) return true
+        return false
 }
 ///////////////////////////////////////////////////////////////////////////
+function displaySuccessMessage(){
+    const email = document.querySelector('#email')
+    const telephone = document.querySelector('#telephone')
+    const successMessageContainer = document.querySelector('div#success-message-container')
+    const successMessageCross = document.querySelector('span#success-message-cross')
+
+    if(!hasEmptyFields() && isUserEmailAddressValid(email.value) && isUserTelephoneValid(telephone.value)){
+        // email.style.borderColor = '#d64541' 
+        
+        successMessageContainer.style.display = 'flex'
+
+        successMessageCross.addEventListener('click',
+            ()=> successMessageContainer.style.display = 'none'
+        )
+        //reset form
+        document.querySelector('#form').reset()
+    }
+}
+//////////////////////////////////////////////////////////////////////////
+
 export { 
-    toggleSideMenu, toggleStickyHeader, displayCookieModal, 
-    isUserEmailAddressValid, isUserTelephoneValid, hasEmptyFields
+    toggleSideMenu, toggleStickyHeader, displayCookieModal, displaySuccessMessage
 }

@@ -6386,7 +6386,7 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
     left: -8px;
   }
 }
-div#contact-us div.success-message-container {
+div#contact-us div#success-message-container {
   display: none;
   width: 60%;
   margin: auto;
@@ -6398,12 +6398,12 @@ div#contact-us div.success-message-container {
   justify-content: space-between;
   margin-top: 30px;
 }
-div#contact-us div.success-message-container p#success-message {
+div#contact-us div#success-message-container p#success-message {
   width: calc(100% - 20px);
   margin: auto;
   color: white;
 }
-div#contact-us div.success-message-container span.cross {
+div#contact-us div#success-message-container span#success-message-cross {
   display: inline-block;
   font-weight: 700;
   line-height: 1;
@@ -6411,7 +6411,7 @@ div#contact-us div.success-message-container span.cross {
   opacity: 0.7;
   cursor: pointer;
 }
-div#contact-us div.success-message-container span.cross:hover {
+div#contact-us div#success-message-container span#success-message-cross:hover {
   opacity: 1;
 }
 

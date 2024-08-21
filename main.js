@@ -1,6 +1,5 @@
-import {
-    toggleSideMenu, toggleStickyHeader, displayCookieModal, 
-    isUserEmailAddressValid, isUserTelephoneValid, hasEmptyFields
+import { 
+    toggleSideMenu, toggleStickyHeader, displayCookieModal, displaySuccessMessage
 } from './js/utilities.js'
 
 $(()=>{
@@ -127,29 +126,21 @@ $(()=>{
     $checkBox.on(
         'focus', 
         ()=> {
-            console.log('clicked')
             if($checkMark.css('visibility') === 'hidden'){
                 $checkBox.css('background-color', netmattersBlack)
                 $checkMark.css('visibility', 'visible')
             }else{
                 $checkMark.css('visibility', 'hidden')
-                $checkBox.css('background-color', netmattersBlack)
+                $checkBox.css('background-color', 'white')
             }
         }
     )
 
     /* FORM VALIDATION*/
     const $sendEnquiryButton = $('#send-enquiry-button')
-    const $name = $('#name')
-    const $company = $('#company')
-    const $email = $('#email')
-    const $telephone = $('#telephone')
-    const $message = $('#message')
-    ////////////////////////////////
-
     $sendEnquiryButton.on('click', (ev)=>{
         ev.preventDefault();
         //check for empty fields
-        hasEmptyFields()
+        displaySuccessMessage()
     })
 })

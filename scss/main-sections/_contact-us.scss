@@ -351,8 +351,7 @@ div#contact-us{
         }
     }
     // form input notice (error message)
-    div.success-message-container{
-        // display: flex;
+    div#success-message-container{
         display: none;
         width: 60%;
         margin: auto;
@@ -368,7 +367,7 @@ div#contact-us{
             margin: auto;
             color: white;
         }
-        span.cross{
+        span#success-message-cross{
             display: inline-block;
             font-weight: 700;
             line-height: 1;
