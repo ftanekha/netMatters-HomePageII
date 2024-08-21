@@ -154,4 +154,94 @@ function displayCookieModal(didUserClickManageConsentButton = false){
     }
 }
 ///////////////////////////////////////////////////////////////////////////
-export { toggleSideMenu, toggleStickyHeader, displayCookieModal }
+function isUserEmailAddressValid(userEmailAddress){
+    /*check that user email address:*/
+    //comprises alphanumeric characters (dot excluded), and is 6 to 20 characters long (e.g. ghxnyab234)
+    //followed by the @ symbol
+    //followed by another series of alphanumeric characters, with a dot at the end (e.g. google.com or outlook.com)
+    const regex = /^[\w-\.]{2,30}@([\w-]+\.)+[\w-]{2,10}$/g
+    const result = regex.test(userEmailAddress)
+    //returns a boolean value
+    return result
+}
+///////////////////////////////////////////////////////////////////////////
+function isUserTelephoneValid(userTelephone){
+    const regex = /^\+?(?:\d\s?){10,12}$/g
+    const result = regex.test(userTelephone)
+    return result
+}
+///////////////////////////////////////////////////////////////////////////
+function hasEmptyFields(){
+    let hasEmptyFields = false
+
+        const fields = []
+
+        if(!$name.val()){
+            fields.push('name')
+
+            $name.css({
+                'border-color': '#d64541' 
+            })
+            hasEmptyFields = true
+        }
+        if(!$company.val()){
+            fields.push('company')
+
+            $name.css({
+                'border-color': '#d64541' 
+            })
+            hasEmptyFields = true
+        }
+        if(!$email.val()){
+            fields.push('email')
+
+            $email.css({
+                'border-color': '#d64541' 
+            })
+            hasEmptyFields = true
+        }
+        if(!$telephone.val()){
+            fields.push('telephone')
+
+            $telephone.css({
+                'border-color': '#d64541' 
+            })
+            hasEmptyFields = true
+        }
+        if(!$message.val()){
+            fields.push('message')
+
+            $message.css({
+                'border-color': '#d64541' 
+            })
+            hasEmptyFields = true
+        }
+
+        displayNotice(fields)
+
+        return hasEmptyFields
+}
+///////////////////////////////////////////////////////////////////////////
+function displayNotice(fields){
+    const $notice = $('div#notice')
+    const $noticeList = $('ul#notice-list')
+    
+    const messages = fields.map(
+        field => `<li>Please, include your ${field} in the form.</li>`
+    )
+    
+    $noticeList.html(messages)
+    
+    const timer = setTimeout(
+        ()=> {
+            $notice.css('display', 'none')
+            clearInterval(timer)
+        }, 7000
+    )
+}
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+export { 
+    toggleSideMenu, toggleStickyHeader, displayCookieModal, 
+    isUserEmailAddressValid, isUserTelephoneValid, displayNotice
+}

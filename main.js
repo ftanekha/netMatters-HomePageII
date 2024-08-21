@@ -1,4 +1,7 @@
-import { toggleSideMenu, toggleStickyHeader, displayCookieModal } from './js/utilities.js'
+import {
+    toggleSideMenu, toggleStickyHeader, displayCookieModal, 
+    isUserEmailAddressValid, isUserTelephoneValid, displayNotice
+} from './js/utilities.js'
 
 $(()=>{
     const netmattersBlack = '#333645'
@@ -115,7 +118,7 @@ $(()=>{
     $footer.css('transition', '.5s ease-in-out')
 
     $accordion.slideUp()
-    // $accordionControl.on('click', ()=> $accordion.slideToggle())
+    $accordionControl.on('click', ()=> $accordion.slideToggle())
 
     /*Checkbox*/ 
     const $checkBox = $('input#checkbox')
@@ -134,4 +137,19 @@ $(()=>{
             }
         }
     )
+
+    /* FORM VALIDATION*/
+    const $sendEnquiryButton = $('#send-enquiry-button')
+    const $name = $('#name')
+    const $company = $('#company')
+    const $email = $('#email')
+    const $telephone = $('#telephone')
+    const $message = $('#message')
+    ////////////////////////////////
+
+    $sendEnquiryButton.on('click', (ev)=>{
+        ev.preventDefault();
+        //check for empty fields
+        hasEmptyFields()
+    })
 })
