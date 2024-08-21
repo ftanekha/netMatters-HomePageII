@@ -6033,13 +6033,16 @@ div#contact-us div.contact-us-link div.container p {
   display: flex;
   align-items: center;
 }
-div#contact-us div.contact-us-link div.container p a {
+div#contact-us div.contact-us-link div.container p a.return-to-homepage-link {
   display: inline-block;
   padding-right: 8px;
   margin: 0;
   text-decoration: none;
   color: #333645;
   font-weight: 700;
+}
+div#contact-us div.contact-us-link div.container p a.return-to-homepage-link:hover {
+  text-decoration: underline;
 }
 @media (min-width: 768px) {
   div#contact-us div.contact-us-link {

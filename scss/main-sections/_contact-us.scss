@@ -14,13 +14,16 @@ div#contact-us{
                 font-size: .8125rem;
                 display: flex;
                 align-items: center;
-                a{
+                a.return-to-homepage-link{
                     display: inline-block;
                     padding-right: 8px;
                     margin: 0;
                     text-decoration: none;
                     color: $netmatters_black;
                     font-weight: 700;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
