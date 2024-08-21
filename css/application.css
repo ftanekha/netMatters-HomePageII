@@ -6051,6 +6051,7 @@ div#contact-us div#contact-us-container {
   background-color: #fff;
 }
 div#contact-us div#contact-us-container div.contact-us-heading {
+  display: none;
   width: 100%;
   background-color: #333645;
   padding-left: 12%;
@@ -6072,6 +6073,9 @@ div#contact-us div#contact-us-container div.contact-us-heading h1 {
     color: #333645;
     padding-left: 12%;
   }
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-top-container {
+  display: none;
 }
 @media (min-width: 992px) {
   div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-top-container div.offices-main-container {
@@ -6205,21 +6209,19 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
 }
 div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.extra-contact-info div#accordion {
   transition: 0.5s ease-in-out;
-  background-color: green;
 }
 div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer {
   width: 100%;
   background-color: #e6e7e9;
   border-radius: 10px;
-  padding: 0 0 50px 0;
+  margin-bottom: 40px;
 }
 div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form {
   width: 100%;
-  padding: 30px;
+  padding: 0 30px;
 }
 div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div.form-container-inner div.col-med div.form-group {
   padding: 0;
-  width: 100%;
 }
 div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div.form-container-inner div.col-med div.form-group label {
   display: inline-flex;
@@ -6269,6 +6271,99 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
   div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div.form-container-inner div.col-med:nth-child(odd) {
     margin-right: 25px;
   }
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies {
+  margin-top: 10px;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container {
+  display: flex;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container div#checkbox-container {
+  height: 32px;
+  width: 32px;
+  position: relative;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container div#checkbox-container input#checkbox {
+  border-radius: 3px;
+  border: 2.4px solid #333645;
+  height: 32px;
+  width: 32px;
+  float: left;
+  margin-right: 20px;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container div#checkbox-container span#checkmark {
+  line-height: 32px;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-weight: 600;
+  color: white;
+  visibility: hidden;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container p.privacy-policy-info {
+  margin-right: 10px;
+  font-weight: 600;
+  color: #333645;
+  position: relative;
+  top: -13px;
+  left: 20px;
+  line-height: 32px;
+  cursor: pointer;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container p.privacy-policy-info a {
+  text-decoration: underline;
+  color: #333645;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container p.privacy-policy-info a:hover {
+  color: #121419;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies p.recaptcha {
+  color: #333645;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  margin-top: -10px;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies p.recaptcha a {
+  text-decoration: underline;
+  color: #333645;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies p.recaptcha a:hover {
+  color: #121419;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div.policies-footer {
+  display: flex;
+  justify-content: space-between;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div.policies-footer a {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 142.025px;
+  height: 46px;
+  border: 1px solid #333645;
+  border-radius: 3px;
+  background-color: #333645;
+  color: #fff;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  line-height: 35px;
+  font-size: 0.9em;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div.policies-footer a:hover {
+  background-color: #22242e;
+  border-color: #191a22;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div.policies-footer span {
+  font-size: 85%;
+  display: inline-block;
+  padding-top: 25px;
+}
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div.policies-footer span::before {
+  content: "*";
+  color: #d24d57 !important;
 }
 @media (min-width: 1260px) {
   div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container {

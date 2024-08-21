@@ -2,6 +2,7 @@ div#contact-us{
     background-color: #fff;
     color: $netmatters_black;
     div.contact-us-link{
+        // display: none;
         background-color: #fff;
         box-shadow: 0 5px 35px rgba(0,0,0,.1);
         border-top: 1px solid $netmatters_black;
@@ -30,6 +31,7 @@ div#contact-us{
     div#contact-us-container{
         background-color: #fff;
         div.contact-us-heading{
+            display: none;
             width: 100%;
             background-color: $netmatters_black;
             padding-left: 12%;
@@ -54,6 +56,7 @@ div#contact-us{
         div#netmatters-offices{
             div.container{
                 div#netmatters-offices-top-container{
+                    display: none;
                     div.offices-main-container{
                         @media (min-width: 992px){
                             display: flex;
@@ -128,24 +131,7 @@ div#contact-us{
                                             }
                                     }
                                     a.office-view-more{
-                                        display: flex;
-                                        margin-top: 10px;
-                                        margin-bottom: 30px;
-                                        width: 142.025px;
-                                        height: 46px;
-                                        border: 1px solid $wisteria;
-                                        border-radius: 3px;
-                                        background-color: $wisteria;
-                                        color: #fff;
-                                        text-transform: uppercase;
-                                        justify-content: center;
-                                        align-items: center;
-                                        line-height: 35px;
-                                        font-size: .9em;
-                                        &:hover{
-                                            background-color:#7e57a0;
-                                            border-color: #735093;
-                                        }
+                                        @include offices-link_button($wisteria);
                                     }
                                 }
                             }
@@ -188,22 +174,20 @@ div#contact-us{
                         }
                         div#accordion{
                             transition: .5s ease-in-out;
-                            background-color: green;
                         }
                     }
                     div.form-container-outer{
                         width: 100%;
                         background-color: #e6e7e9;
                         border-radius: 10px;
-                        padding: 0 0 50px 0;
+                        margin-bottom: 40px;
                         form{
                             width: 100%;
-                            padding: 30px;
+                            padding: 0 30px;
                             div.form-container-inner{
                                 div.col-med{
                                     div.form-group{
                                         padding: 0;
-                                        width: 100%;
                                         label{
                                             display: inline-flex;
                                             align-items: flex-end;
@@ -244,6 +228,7 @@ div#contact-us{
                                             font-size: 14px;
                                             line-height: 1.42857143;
                                             box-sizing: border-box;
+                                            // width: 100%;
                                         }
                                     }
                                     @media (min-width: 992px){
@@ -252,6 +237,82 @@ div#contact-us{
                                         width: calc(50% - 15px);
                                         &:nth-child(odd){
                                             margin-right: 25px;
+                                        }
+                                    }
+                                }
+                            }
+                            div#policies{
+                                margin-top: 10px;
+                                div#privacy-policy-container{
+                                    display: flex;
+                                    div#checkbox-container{
+                                            height: 32px;
+                                            width: 32px;
+                                            position: relative;
+                                        input#checkbox{
+                                            border-radius: 3px;
+                                            border: 2.4px solid $netmatters_black;
+                                            height: 32px;
+                                            width: 32px;
+                                            float: left;
+                                            margin-right: 20px;
+                                        }
+                                        span#checkmark{
+                                            line-height: 32px;
+                                            font-weight: 600;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 10px;
+                                            font-weight: 600;
+                                            color: white;
+                                            visibility: hidden;
+                                        }
+                                    }
+                                    p.privacy-policy-info{
+                                        margin-right: 10px;
+                                        font-weight: 600;
+                                        color: $netmatters_black;
+                                        position: relative;
+                                        top: -13px;
+                                        left: 20px;
+                                        line-height: 32px;
+                                        cursor: pointer;
+                                        a{
+                                            text-decoration: underline;
+                                            color: $netmatters_black;
+                                            &:hover{
+                                                color: #121419;
+                                            }
+                                        }
+                                    }
+                                }
+                                p.recaptcha{
+                                    color: #333645;
+                                    font-size: 11px;
+                                    font-weight: 600;
+                                    margin-bottom: 18px;
+                                    margin-top: -10px;
+                                    a{
+                                        text-decoration: underline;
+                                        color: $netmatters_black;
+                                        &:hover{
+                                            color: #121419;
+                                        }
+                                    }
+                                }
+                                div.policies-footer{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    a{
+                                        @include offices-link_button($netmatters_black);
+                                    }
+                                    span{
+                                        font-size: 85%;
+                                        display: inline-block;
+                                        padding-top: 25px;
+                                        &::before{
+                                            content: "*";
+                                            color: #d24d57 !important;
                                         }
                                     }
                                 }

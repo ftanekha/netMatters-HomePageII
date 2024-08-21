@@ -43,7 +43,17 @@
                     <div class="main-inner">
                         <!-- HEADER -->
                         <?php include "includes/header.html" ?>
+
+                        <!-- HEADER end -->
                     </div>
+
+
+
+
+
+
+
+                    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
                     <!-- CONTACT US -->
                     <div id="contact-us">
                          <div class="contact-us-link">
@@ -179,7 +189,7 @@
                                         </div>
                                         <!-- form -->
                                         <div class="form-container-outer">
-                                            <form action="#" methot="POST">
+                                            <form action="#">
                                                 <div class="form-container-inner">
                                                     <div class="col-med">
                                                         <div class="form-group">
@@ -193,7 +203,7 @@
                                                         <div class="form-group">
                                                             <label for="company" class="">Company Name</label>
                                                             <input class="form-control" name="company" value="" id="company"
-                                                                type="text" minlength="3" maxlength="100" required
+                                                                type="text" minlength="3" maxlength="100"
                                                             >
                                                         </div>
                                                     </div>
@@ -214,12 +224,22 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-med">
-                                                    <div class="form-group">
-                                                        <label for="message" class="required">Message&nbsp;</label>
-                                                        <textarea class="form-control" name="message" rows="10" id="message"
-                                                            minlength="3" required>Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                                                        <div class="form-group text-area">
+                                                            <label for="message" class="required">Message&nbsp;</label>
+                                                            <textarea class="form-control" name="message" rows="10" id="message"
+                                                                minlength="3" required>Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                                                        </div>
                                                     </div>
+                                                </div>
+                                                <div id="policies">
+                                                    <div id="privacy-policy-container">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox">
+                                                            <!-- <span class="glyphicon glyphicon-check"></span> -->
+                                                            <p>Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</p>
+                                                        </div>
                                                     </div>
+                                                    <p class="recaptcha">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
                                                 </div>
                                             </form>
                                         </div>
@@ -228,6 +248,14 @@
                             </div>
                         </div>
                     </div>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
                     <!-- FOOTER -->
                     <?php include "includes/footer.html" ?>
                 </div>

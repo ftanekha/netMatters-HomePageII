@@ -1,0 +1,27 @@
+@mixin offices-link_button($theme){
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 142.025px;
+    height: 46px;
+    border: 1px solid $theme;
+    border-radius: 3px;
+    background-color: $theme;
+    color: #fff;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+    font-size: .9em;
+    &:hover{
+        @if $theme == $wisteria{
+            background-color:#7e57a0;
+            border-color: #735093;
+        }
+        
+        @if $theme == $netmatters_black{
+            background-color: #22242e;
+            border-color: #191a22;
+        }
+    }
+}

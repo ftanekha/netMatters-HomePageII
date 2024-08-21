@@ -1,6 +1,8 @@
 import { toggleSideMenu, toggleStickyHeader, displayCookieModal } from './js/utilities.js'
 
 $(()=>{
+    const netmattersBlack = '#333645'
+
     /*COOKIE POPUP POLICY & consent management*/
     displayCookieModal()
     const cookiSettingsButton = $('.cookie-settings-btn')
@@ -29,7 +31,7 @@ $(()=>{
             )
         }
     )
-    .on('mouseleave', ()=> $hamburgerMenuIcon.css('background-color', '#333645'))
+    .on('mouseleave', ()=> $hamburgerMenuIcon.css('background-color', netmattersBlack))
     //
     $('#side-menu_background-filter').on('click', toggleSideMenu)
     /* STICKY HEADER*/
@@ -105,12 +107,31 @@ $(()=>{
 
 
     //* CONTACT US*/
+    /*Accordion*/ 
     const $accordion = $('div#accordion') 
     const $accordionControl = $('span#accordion-control') 
     const $footer = $('footer')
 
     $footer.css('transition', '.5s ease-in-out')
 
-    $accordion.slideUp('swing')
-    $accordionControl.on('click', ()=> $accordion.slideToggle('swing'))
+    $accordion.slideUp()
+    // $accordionControl.on('click', ()=> $accordion.slideToggle())
+
+    /*Checkbox*/ 
+    const $checkBox = $('input#checkbox')
+    const $checkMark = $('span#checkmark')
+
+    $checkBox.on(
+        'focus', 
+        ()=> {
+            console.log('clicked')
+            if($checkMark.css('visibility') === 'hidden'){
+                $checkBox.css('background-color', netmattersBlack)
+                $checkMark.css('visibility', 'visible')
+            }else{
+                $checkMark.css('visibility', 'hidden')
+                $checkBox.css('background-color', netmattersBlack)
+            }
+        }
+    )
 })
