@@ -6020,19 +6020,20 @@ div#contact-us {
   color: #333645;
 }
 div#contact-us div.contact-us-link {
+  display: none;
   background-color: #fff;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
-  border-top: 1px solid #333645;
-  margin-top: 20px;
-  display: none;
+  height: 45.563px;
+  margin-bottom: -25px;
 }
-div#contact-us div.contact-us-link p {
-  background-color: #fff;
+div#contact-us div.contact-us-link div.container p {
+  height: 45.563px;
   margin: 0;
-  padding-left: 12%;
   font-size: 0.8125rem;
+  display: flex;
+  align-items: center;
 }
-div#contact-us div.contact-us-link p a {
+div#contact-us div.contact-us-link div.container p a {
   display: inline-block;
   padding-right: 8px;
   margin: 0;
@@ -6042,21 +6043,17 @@ div#contact-us div.contact-us-link p a {
 }
 @media (min-width: 768px) {
   div#contact-us div.contact-us-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
   }
 }
 div#contact-us div#contact-us-container {
   background-color: #fff;
 }
 div#contact-us div#contact-us-container div.contact-us-heading {
-  display: none;
   width: 100%;
   background-color: #333645;
-  padding-left: 12%;
 }
-div#contact-us div#contact-us-container div.contact-us-heading h1 {
+div#contact-us div#contact-us-container div.contact-us-heading div.container h1 {
   max-width: 750px;
   height: 88px;
   color: #fff;
@@ -6064,18 +6061,17 @@ div#contact-us div#contact-us-container div.contact-us-heading h1 {
   font-weight: 400;
   display: flex;
   align-items: center;
+  margin-bottom: 0px;
 }
 @media (min-width: 992px) {
   div#contact-us div#contact-us-container div.contact-us-heading {
     background-color: #fff;
   }
-  div#contact-us div#contact-us-container div.contact-us-heading h1 {
+  div#contact-us div#contact-us-container div.contact-us-heading div.container h1 {
     color: #333645;
-    padding-left: 12%;
+    margin-top: 55px;
+    padding-bottom: 10px;
   }
-}
-div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-top-container {
-  display: none;
 }
 @media (min-width: 992px) {
   div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-top-container div.offices-main-container {

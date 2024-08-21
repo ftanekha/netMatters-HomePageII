@@ -2,61 +2,64 @@ div#contact-us{
     background-color: #fff;
     color: $netmatters_black;
     div.contact-us-link{
-        // display: none;
+        display: none;
         background-color: #fff;
         box-shadow: 0 5px 35px rgba(0,0,0,.1);
-        border-top: 1px solid $netmatters_black;
-        margin-top: 20px;
-        display: none;
-        p{
-            background-color: #fff;
-            margin: 0;
-            padding-left: 12%;
-            font-size: .8125rem;
-            a{
-                display: inline-block;
-                padding-right: 8px;
+        height: 45.563px;
+        margin-bottom: -25px;
+        div.container{
+            p{
+                height: 45.563px;
                 margin: 0;
-                text-decoration: none;
-                color: $netmatters_black;
-                font-weight: 700;
+                font-size: .8125rem;
+                display: flex;
+                align-items: center;
+                a{
+                    display: inline-block;
+                    padding-right: 8px;
+                    margin: 0;
+                    text-decoration: none;
+                    color: $netmatters_black;
+                    font-weight: 700;
+                }
             }
         }
         @media (min-width: 768px){
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            display: block;
         }
     }
     div#contact-us-container{
         background-color: #fff;
         div.contact-us-heading{
-            display: none;
             width: 100%;
             background-color: $netmatters_black;
-            padding-left: 12%;
-
-            h1{
-                max-width: 750px;
-                height: 88px;
-                color: #fff;
-                font-size: 2.25rem;
-                font-weight: 400;
-                display: flex;
-                align-items: center;
+            div.container{
+                h1{
+                    max-width: 750px;
+                    height: 88px;
+                    color: #fff;
+                    font-size: 2.25rem;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0px;
+                }
             }
             @media (min-width: 992px){
                 background-color: #fff;
-                h1{
-                    color: $netmatters_black;
-                    padding-left: 12%;
+                div.container{
+                    h1{
+                        color: $netmatters_black;
+                        margin-top: 55px;
+                        padding-bottom: 10px;
+                    }            
                 }
             }
         }
         div#netmatters-offices{
+            // display: none;
             div.container{
                 div#netmatters-offices-top-container{
-                    display: none;
                     div.offices-main-container{
                         @media (min-width: 992px){
                             display: flex;
