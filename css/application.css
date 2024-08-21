@@ -6386,24 +6386,52 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
     left: -8px;
   }
 }
-div#contact-us div#notice {
+div#contact-us div.success-message-container {
   display: none;
-  position: fixed;
-  top: 0;
   width: 60%;
   margin: auto;
-  padding: 10px;
-  background-color: hsl(348, 100%, 61%);
-  transition: 1s;
+  padding: 15px;
+  background-color: #2ecc71;
+  border: solid 1px #d6e9c6;
+  border-radius: 2px;
+  animation-name: flash;
+  justify-content: space-between;
+  margin-top: 30px;
 }
-div#contact-us div#notice ul#notice-list {
+div#contact-us div.success-message-container p#success-message {
   width: calc(100% - 20px);
   margin: auto;
-}
-div#contact-us div#notice ul#notice-list li {
   color: white;
 }
+div#contact-us div.success-message-container span.cross {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.7;
+  cursor: pointer;
+}
+div#contact-us div.success-message-container span.cross:hover {
+  opacity: 1;
+}
 
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   position: relative;
   padding: 0px;

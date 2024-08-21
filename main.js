@@ -1,6 +1,6 @@
 import {
     toggleSideMenu, toggleStickyHeader, displayCookieModal, 
-    isUserEmailAddressValid, isUserTelephoneValid, displayNotice
+    isUserEmailAddressValid, isUserTelephoneValid, hasEmptyFields
 } from './js/utilities.js'
 
 $(()=>{

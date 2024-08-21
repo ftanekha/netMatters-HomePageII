@@ -170,57 +170,7 @@ function isUserTelephoneValid(userTelephone){
     const result = regex.test(userTelephone)
     return result
 }
-///////////////////////////////////////////////////////////////////////////
-function hasEmptyFields(){
-    let hasEmptyFields = false
 
-        const fields = []
-
-        if(!$name.val()){
-            fields.push('name')
-
-            $name.css({
-                'border-color': '#d64541' 
-            })
-            hasEmptyFields = true
-        }
-        if(!$company.val()){
-            fields.push('company')
-
-            $name.css({
-                'border-color': '#d64541' 
-            })
-            hasEmptyFields = true
-        }
-        if(!$email.val()){
-            fields.push('email')
-
-            $email.css({
-                'border-color': '#d64541' 
-            })
-            hasEmptyFields = true
-        }
-        if(!$telephone.val()){
-            fields.push('telephone')
-
-            $telephone.css({
-                'border-color': '#d64541' 
-            })
-            hasEmptyFields = true
-        }
-        if(!$message.val()){
-            fields.push('message')
-
-            $message.css({
-                'border-color': '#d64541' 
-            })
-            hasEmptyFields = true
-        }
-
-        displayNotice(fields)
-
-        return hasEmptyFields
-}
 ///////////////////////////////////////////////////////////////////////////
 function displayNotice(fields){
     const $notice = $('div#notice')
@@ -230,7 +180,7 @@ function displayNotice(fields){
         field => `<li>Please, include your ${field} in the form.</li>`
     )
     
-    $noticeList.html(messages)
+    messages.forEach(message => $noticeList.append(message))
     
     const timer = setTimeout(
         ()=> {
@@ -240,8 +190,53 @@ function displayNotice(fields){
     )
 }
 ///////////////////////////////////////////////////////////////////////////
+function hasEmptyFields(){
+    const $name = $('#name')
+    const $company = $('#company')
+    const $email = $('#email')
+    const $telephone = $('#telephone')
+    const $message = $('#message')
+
+    const fields = []
+
+        if(!$name.val()){
+            fields.push('name')
+
+            $name.css({
+                'border-color': '#d64541' 
+            })
+        }
+        if(!$company.val()){
+            fields.push('company')
+
+            $name.css({
+                'border-color': '#d64541' 
+            })
+        }
+        if(!$email.val()){
+            fields.push('email')
+
+            $email.css({
+                'border-color': '#d64541' 
+            })
+        }
+        if(!$telephone.val()){
+            fields.push('telephone')
+
+            $telephone.css({
+                'border-color': '#d64541' 
+            })
+        }
+        if(!$message.val()){
+            fields.push('message')
+
+            $message.css({
+                'border-color': '#d64541' 
+            })
+        }
+}
 ///////////////////////////////////////////////////////////////////////////
 export { 
     toggleSideMenu, toggleStickyHeader, displayCookieModal, 
-    isUserEmailAddressValid, isUserTelephoneValid, displayNotice
+    isUserEmailAddressValid, isUserTelephoneValid, hasEmptyFields
 }
