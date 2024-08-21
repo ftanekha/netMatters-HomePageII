@@ -6351,6 +6351,9 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
   align-items: center;
   line-height: 35px;
   font-size: 0.9em;
+  width: 148.2px;
+  height: 45px;
+  font-size: 1.063rem;
 }
 div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div.policies-footer a:hover {
   background-color: #22242e;

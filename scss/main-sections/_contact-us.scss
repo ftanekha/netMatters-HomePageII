@@ -305,6 +305,9 @@ div#contact-us{
                                     justify-content: space-between;
                                     a{
                                         @include offices-link_button($netmatters_black);
+                                        width: 148.2px;
+                                        height: 45px;
+                                        font-size: 1.063rem;
                                     }
                                     span{
                                         font-size: 85%;
