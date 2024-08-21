@@ -29,8 +29,8 @@
                 </p>
             </div>       
             <div class="cookie-policy-button-container">
-                <a class="cookie-policy-button gray" href="#">CHANGE SETTINGS</a>
-                <a class="cookie-policy-button wisteria" href="#">ACCEPT COOKIES</a>
+                <a class="cookie-policy-button gray" href="javascript:;">CHANGE SETTINGS</a>
+                <a class="cookie-policy-button wisteria" href="javascript:;">ACCEPT COOKIES</a>
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@
                     <div id="contact-us">
                          <div class="contact-us-link">
                             <div class="container">
-                                <p><a class="return-to-homepage-link" href="#">Home</a>/    Our Offices</p>
+                                <p><a class="return-to-homepage-link" href="javascript:;">Home</a>/    Our Offices</p>
                             </div>
                         </div>
                         <div id="contact-us-container">
@@ -64,13 +64,13 @@
                                             <div class="office-container">
                                                 <div class="office cambridge">
                                                     <div class="image-container">
-                                                        <a class="office-image-wrapper" href="#">
+                                                        <a class="office-image-wrapper" href="javascript:;">
                                                             <img src="assets/images/offices/cambridge.jpg" alt="Cambridge Office">
                                                         </a>
                                                     </div>
                                                     <div class="office-address">
                                                         <p class="office-h2">
-                                                            <a class="office-name" href="#">
+                                                            <a class="office-name" href="javascript:;">
                                                                 Cambridge Office
                                                             </a>
                                                         </p>
@@ -84,20 +84,20 @@
                                                         <a href="tel:01223375772" class="office-h3 text-web">
                                                             01223 37 57 72
                                                         </a>
-                                                        <a href="#" class="office-view-more">View More</a>
+                                                        <a href="javascript:;" class="office-view-more">View More</a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="office-container">
                                                 <div class="office wymondham">
                                                     <div class="image-container">
-                                                        <a class="office-image-wrapper" href="#">
+                                                        <a class="office-image-wrapper" href="javascript:;">
                                                             <img src="assets/images/offices/wymondham.jpg" alt="Wymondham Office">
                                                         </a>
                                                     </div>
                                                     <div class="office-address">
                                                         <p class="office-h2">
-                                                            <a class="office-name" href="#">
+                                                            <a class="office-name" href="javascript:;">
                                                                 Wymondham Office
                                                             </a>
                                                         </p>
@@ -111,20 +111,20 @@
                                                         <a href="tel:01603704020" class="office-h3 text-web">
                                                             01603 70 40 20
                                                         </a>
-                                                        <a href="#" class="office-view-more">View More</a>
+                                                        <a href="javascript:;" class="office-view-more">View More</a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="office-container">
                                                 <div class="office yarmouth">
                                                     <div class="image-container">
-                                                        <a class="office-image-wrapper" href="#">
+                                                        <a class="office-image-wrapper" href="javascript:;">
                                                             <img src="assets/images/offices/yarmouth.jpg" alt="Great Yarmouth Office">
                                                         </a>
                                                     </div>
                                                     <div class="office-address">
                                                         <p class="office-h2">
-                                                            <a class="office-name" href="#">
+                                                            <a class="office-name" href="javascript:;">
                                                                 Great Yarmouth Office
                                                             </a>
                                                         </p>
@@ -138,7 +138,7 @@
                                                         <a href="tel:01493603204" class="office-h3 text-web">
                                                             01493 60 32 04
                                                         </a>
-                                                        <a href="#" class="office-view-more">View More</a>
+                                                        <a href="javascript:;" class="office-view-more">View More</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -151,7 +151,7 @@
                                                 <strong>Email us on:</strong>
                                             </p>
                                             <p>
-                                                <a class="email-address" href="#">sales@netmatters.com</a>
+                                                <a class="email-address" href="javascript:;">sales@netmatters.com</a>
                                             </p>
                                             <p>
                                                 <strong>Business hours:</strong>
@@ -161,7 +161,7 @@
                                             </p>
                                             <p>
                                                 <strong>
-                                                    <a href="#">Out of Hours IT Support</a>
+                                                    <a href="javascript:;">Out of Hours IT Support</a>
                                                     <span class="glyphicon glyphicon-chevron-down" id="accordion-control"></span>
                                                 </strong>
                                             </p>
@@ -233,11 +233,11 @@
                                                             <input id="checkbox" type="text">
                                                             <span id="checkmark">&check;</span>
                                                         </div>
-                                                        <p class="privacy-policy-info">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.</p>
+                                                        <p class="privacy-policy-info">Please tick this box if you wish to receive marketing information from us. Please see our <a href="javascript:;">Privacy Policy</a> for more information on how we keep your data safe.</p>
                                                     </div>
-                                                    <p class="recaptcha">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
+                                                    <p class="recaptcha">This site is protected by reCAPTCHA and the Google <a href="javascript:;">Privacy Policy</a> and <a href="javascript:;">Terms of Service</a> apply.</p>
                                                     <div class="policies-footer">
-                                                        <button type="submit" id="send-enquiry-button" href="#">send enquiry</button>
+                                                        <button type="submit" id="send-enquiry-button" href="javascript:;">send enquiry</button>
                                                         <span class="required-info">&nbsp;Fields required</span>
                                                     </div>
                                                 </div>

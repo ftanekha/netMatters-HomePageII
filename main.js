@@ -109,6 +109,8 @@ $(()=>{
 
 
     //* CONTACT US*/
+    // stop all anchir tags misbehavior
+    $('a'.on('click'), (ev)=> ev.preventDefault())
     /*Accordion*/ 
     const $accordion = $('div#accordion') 
     const $accordionControl = $('span#accordion-control') 
