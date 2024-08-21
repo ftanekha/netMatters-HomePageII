@@ -6188,6 +6188,9 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
   margin-bottom: 25px;
   color: #666;
 }
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.extra-contact-info p.first-child {
+  margin-top: -2px;
+}
 div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.extra-contact-info p strong {
   font-weight: 600;
   color: #333645;
@@ -6208,9 +6211,6 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
 }
 div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.extra-contact-info p a:hover {
   text-decoration: underline;
-}
-div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.extra-contact-info div#accordion {
-  transition: 0.5s ease-in-out;
 }
 div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer {
   width: 100%;
@@ -6381,9 +6381,9 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
     width: 66%;
   }
   div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.extra-contact-info {
-    width: 27%;
+    width: 31%;
     position: relative;
-    left: -50px;
+    left: -8px;
   }
 }
 div#contact-us div#notice {

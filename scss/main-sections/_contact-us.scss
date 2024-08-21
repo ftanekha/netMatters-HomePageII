@@ -159,6 +159,9 @@ div#contact-us{
                             line-height: 1.875rem;
                             margin-bottom: 25px;
                             color: #666;
+                            &.first-child{
+                                margin-top: -2px;
+                            }
                             strong{
                                 font-weight: 600;
                                 color: $netmatters_black;
@@ -180,9 +183,6 @@ div#contact-us{
                                     text-decoration: underline;
                                 }
                             }
-                        }
-                        div#accordion{
-                            transition: .5s ease-in-out;
                         }
                     }
                     div.form-container-outer{
@@ -339,10 +339,11 @@ div#contact-us{
                         div.form-container-outer{
                             width: 66%;
                         }
+                        //corrected width & position
                         div.extra-contact-info{
-                            width: 27%;
+                            width: 31%;
                             position: relative;
-                            left: -50px;
+                            left: -8px;
                         }
                     }
                 }          
