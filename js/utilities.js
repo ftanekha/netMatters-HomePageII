@@ -216,8 +216,6 @@ function displaySuccessMessage(){
     const successMessageCross = document.querySelector('span#success-message-cross')
 
     if(!hasEmptyFields() && isUserEmailAddressValid(email.value) && isUserTelephoneValid(telephone.value)){
-        // email.style.borderColor = '#d64541' 
-        
         successMessageContainer.style.display = 'flex'
 
         successMessageCross.addEventListener('click',
@@ -228,7 +226,6 @@ function displaySuccessMessage(){
     }
 }
 //////////////////////////////////////////////////////////////////////////
-
 export { 
     toggleSideMenu, toggleStickyHeader, displayCookieModal, displaySuccessMessage
 }
