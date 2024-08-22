@@ -6265,6 +6265,10 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
   box-sizing: border-box;
   resize: vertical;
 }
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div.form-container-inner div.col-med div.form-group span.error-message {
+  color: hsl(348, 100%, 61%);
+  font-size: 0.3rem;
+}
 @media (min-width: 992px) {
   div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div.form-container-inner div.col-med {
     display: inline-block;
@@ -6385,9 +6389,9 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
     left: -8px;
   }
 }
-div#contact-us div#success-message-container {
+div#contact-us div#success-or-failure-message-container {
   display: none;
-  width: 60%;
+  width: calc(100% - 60px);
   margin: auto;
   padding: 15px;
   background-color: #2ecc71;
@@ -6395,24 +6399,27 @@ div#contact-us div#success-message-container {
   border-radius: 2px;
   animation-name: flash;
   justify-content: space-between;
+  align-items: center;
   margin-top: 30px;
 }
-div#contact-us div#success-message-container p#success-message {
+div#contact-us div#success-or-failure-message-container p#success-message, div#contact-us div#success-or-failure-message-container p#failure-message {
+  display: none;
   width: calc(100% - 20px);
   margin: auto;
   color: white;
 }
-div#contact-us div#success-message-container span#success-message-cross {
+div#contact-us div#success-or-failure-message-container span#success-or-failure-message-close {
   display: inline-block;
-  font-size: 0.5rem;
+  font-size: 21px;
   font-weight: 700;
   line-height: 1;
   text-shadow: 0 1px 0 #fff;
-  opacity: 0.7;
+  opacity: 0.2;
+  color: #000;
   cursor: pointer;
 }
-div#contact-us div#success-message-container span#success-message-cross:hover {
-  opacity: 1;
+div#contact-us div#success-or-failure-message-container span#success-or-failure-message-close:hover {
+  opacity: 0.5;
 }
 
 @keyframes flash {

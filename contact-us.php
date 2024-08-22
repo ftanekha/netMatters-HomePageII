@@ -1,3 +1,7 @@
+<?php
+    include "loadenv.php";
+    include "post-form-data.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -182,10 +186,11 @@
                                         </div>
                                         <!-- form -->
                                         <div class="form-container-outer">
-                                            <div id="success-message-container">
-                                                <p id="success-message">Your message has been sent!</p><span id="success-message-cross">x</span>
+                                            <div id="success-or-failure-message-container">
+                                                <p id="success-message">Your message has been sent!</p>
+                                                <p id="failure-message"></p><span id="success-or-failure-message-close">x</span>
                                              </div>
-                                            <form id="form" action="./post-form-data.php" method="POST">
+                                            <form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
                                                 <div class="form-container-inner">
                                                     <div class="col-med">
                                                         <div class="form-group">
@@ -238,7 +243,7 @@
                                                     </div>
                                                     <p class="recaptcha">This site is protected by reCAPTCHA and the Google <a href="javascript:;">Privacy Policy</a> and <a href="javascript:;">Terms of Service</a> apply.</p>
                                                     <div class="policies-footer">
-                                                        <button type="submit" id="send-enquiry-button" href="javascript:;">send enquiry</button>
+                                                        <button type="submit" id="send-enquiry-button">send enquiry</button>
                                                         <span class="required-info">&nbsp;Fields required</span>
                                                     </div>
                                                 </div>

@@ -238,7 +238,10 @@ div#contact-us{
                                             line-height: 1.42857143;
                                             box-sizing: border-box;
                                             resize: vertical;
-                                            // width: 100%;
+                                        }
+                                        span.error-message{
+                                            color: $bulma_danger; 
+                                            font-size: .3rem;
                                         }
                                     }
                                     @media (min-width: 992px){
@@ -350,9 +353,9 @@ div#contact-us{
         }
     }
     // form input notice (error message)
-    div#success-message-container{
+    div#success-or-failure-message-container{
         display: none;
-        width: 60%;
+        width: calc(100% - 60px);
         margin: auto;
         padding: 15px;
         background-color: $shamrock;
@@ -360,22 +363,25 @@ div#contact-us{
         border-radius: 2px;
         animation-name: flash;
         justify-content: space-between;
+        align-items: center;
         margin-top: 30px;
-        p#success-message{
+        p#success-message, p#failure-message{
+            display: none;
             width: calc(100% - 20px);
             margin: auto;
             color: white;
         }
-        span#success-message-cross{
+        span#success-or-failure-message-close{
             display: inline-block;
-            font-size: .5rem;
+            font-size: 21px;
             font-weight: 700;
             line-height: 1;
             text-shadow: 0 1px 0 #fff;
-            opacity: .7;
+            opacity: .2;
+            color: #000;
             cursor: pointer;
             &:hover{
-                opacity: 1
+                opacity: .5;
             }
         }
     }

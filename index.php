@@ -1,3 +1,8 @@
+<?php
+    include "fetch-news-items.php";
+
+    $newsItems = fetchNewsItems();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -402,11 +407,6 @@
                                 <!-- main content -->
                                 <div id="latest-news-main-container">
                                     <div id="latest-news-container">
-                                        <?php
-                                            include "fetch-news-items.php";
-
-                                            $newsItems = fetchNewsItems();
-                                        ?>
                                         <?php foreach($newsItems as $newsItem): ?>
                                             <div class="latest-news-item">
                                                 <a class="latest-news-item-category news_<?=$newsItem["service_category"];?>" href="#"><?=$newsItem["category"];?></a>

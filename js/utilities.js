@@ -154,6 +154,13 @@ function displayCookieModal(didUserClickManageConsentButton = false){
     }
 }
 ///////////////////////////////////////////////////////////////////////////
+function isValidStringInput(input){
+    //only contains letters, dashes, apostrophes and whitespaces
+    const regex = /^[a-zA-Z-' ]*$/g
+    const result = regex.test(input)
+    return result
+}
+///////////////////////////////////////////////////////////////////////////
 function isUserEmailAddressValid(userEmailAddress){
     /*check that user email address:*/
     //comprises alphanumeric characters (dot excluded), and is 6 to 20 characters long (e.g. ghxnyab234)
@@ -210,23 +217,34 @@ function hasEmptyFields(){
 }
 ///////////////////////////////////////////////////////////////////////////
 function shouldPostData(){
+    
+    const name = document.querySelector('#name')
+    const company = document.querySelector('#company')
     const email = document.querySelector('#email')
     const telephone = document.querySelector('#telephone')
     // form data validation
-    if(!hasEmptyFields() && isUserEmailAddressValid(email.value) && isUserTelephoneValid(telephone.value)){
-        return true
+    if(
+        !hasEmptyFields() && isValidStringInput(name.value)
+        && isValidStringInput(company.value) && isUserEmailAddressValid(email.value) 
+        && isUserTelephoneValid(telephone.value)
+    ){
+        return [true, undefined]
+    }else{
+        if(!isValidStringInput(name.value)) return [false, 'name']
+        if(!isValidStringInput(company.value)) return [false, 'company']
+        if(!isUserEmailAddressValid(email.value)) return [false, 'email']
+        if(!isUserTelephoneValid(telephone.value)) return [false, 'telephone']
     }
-    return false
 }
 //////////////////////////////////////////////////////////////////////////OK?
 function displaySuccessMessage(){
-    const successMessageContainer = document.querySelector('div#success-message-container')
-    const successMessageCross = document.querySelector('span#success-message-cross')
+    const successOrFailureMessageContainer = document.querySelector('div#success-or-failure-message-container')
+    const successOrFailureMessageClose = document.querySelector('span#success-or-failure-message-close')
     
-    successMessageContainer.style.display = 'flex'
+    successOrFailureMessageContainer.style.display = 'flex'
 
-    successMessageCross.addEventListener('click',
-        ()=> successMessageContainer.style.display = 'none'
+    successOrFailureMessageClose.addEventListener('click',
+        ()=> successOrFailureMessageContainer.style.display = 'none'
     )
 }
 //////////////////////////////////////////////////////////////////////////

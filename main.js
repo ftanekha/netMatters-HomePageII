@@ -149,10 +149,14 @@ $(()=>{
    //USING JS
    const form = document.querySelector('#form')
    const name = document.querySelector('#name')
+   const company = document.querySelector('#company')
    const email = document.querySelector('#email')
    const telephone = document.querySelector('#telephone')
    const message = document.querySelector('#message')
-
+   const successMessage = document.querySelector('p#success-message')
+   const failureMessage = document.querySelector('p#failure-message')
+   const successOrFailureMessageContainer = document.querySelector('div#success-or-failure-message-container')
+   
     form.addEventListener(
         'submit',
         (ev)=>{
@@ -160,26 +164,47 @@ $(()=>{
 
             const formData = {
                 name: name.value,
+                company: company.value,
                 email: email.value,
                 telephone: telephone.value,
                 message : message .value
             }
-            
-            if(shouldPostData()){
+
+            let [shouldPostDataResult, shouldPostDataFieldName] = shouldPostData()
+
+            if(shouldPostDataResult){
                 const requestOptions = {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify(formData)
                 }
-                
-                fetch('./post-form-data.php', requestOptions)
+                //POST data & display success message
+                fetch('post-form-data.php', requestOptions)
                 .then(res => {
                     if(res.ok){
+                        failureMessage.style.display = 'none'
+                        successMessage.style.display = 'block'
+
+                        successOrFailureMessageContainer.style.backgroundColor = '#2ecc71'
+
                         displaySuccessMessage()
+                        
                         document.querySelector('#form').reset()
                     }
                 })
                 .catch(err => console.error(err.message))
+            }else{
+                //display failure notice 
+                const failureNotice = `The ${shouldPostDataFieldName} format is incorrect.`
+
+                successMessage.style.display = 'none'
+                
+                failureMessage.textContent = failureNotice
+                failureMessage.style.display = 'block'
+
+                successOrFailureMessageContainer.style.backgroundColor = 'hsl(348, 100%, 61%)'
+
+                displaySuccessMessage()
             }
         }
     )
