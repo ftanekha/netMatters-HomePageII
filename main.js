@@ -161,6 +161,10 @@ $(()=>{
         'submit',
         (ev)=>{
             ev.preventDefault()
+            form.addEventListener(
+                'click',
+                ()=> successOrFailureMessageContainer.style.display = 'none'
+            )
 
             const formData = {
                 name: name.value,

@@ -6301,10 +6301,11 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
   padding-left: 7px;
 }
 div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container div#checkbox-container div#checkbox span#checkmark {
-  font-weight: 600;
-  font-weight: 600;
   color: white;
   visibility: hidden;
+  position: relative;
+  top: 2px;
+  left: -1px;
 }
 div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container p.privacy-policy-info {
   margin-right: 10px;

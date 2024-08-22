@@ -272,10 +272,11 @@ div#contact-us{
                                             padding-top: 2px;
                                             padding-left: 7px;
                                             span#checkmark{
-                                                font-weight: 600;
-                                                font-weight: 600;
                                                 color: white;
                                                 visibility: hidden;
+                                                position: relative;
+                                                top: 2px;
+                                                left: -1px;
                                             }
                                         }
                                     }
