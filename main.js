@@ -157,6 +157,7 @@ $(()=>{
         'submit',
         (ev)=>{
             ev.preventDefault()
+
             const formData = {
                 name: name.value,
                 email: email.value,
@@ -176,11 +177,8 @@ $(()=>{
                     if(res.ok){
                         displaySuccessMessage()
                         document.querySelector('#form').reset()
-                        console.log('success')
-                        return res.json()
                     }
                 })
-                .then(msg => console.log(msg))
                 .catch(err => console.error(err.message))
             }
         }
