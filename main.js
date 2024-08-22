@@ -1,6 +1,4 @@
-import { 
-    toggleSideMenu, toggleStickyHeader, displayCookieModal, displaySuccessMessage
-} from './js/utilities.js'
+import {toggleSideMenu, toggleStickyHeader, displayCookieModal, shouldPostData, displaySuccessMessage} from './js/utilities.js'
 
 $(()=>{
     const netmattersBlack = '#333645'
@@ -110,7 +108,7 @@ $(()=>{
 
     //* CONTACT US*/
     // stop all anchir tags misbehavior
-    $('a'.on('click'), (ev)=> ev.preventDefault())
+    $('a').on('click', (ev)=> ev.preventDefault())
     /*Accordion*/ 
     const $accordion = $('div#accordion') 
     const $accordionControl = $('span#accordion-control') 
@@ -122,11 +120,11 @@ $(()=>{
     $accordionControl.on('click', ()=> $accordion.slideToggle())
 
     /*Checkbox*/ 
-    const $checkBox = $('input#checkbox')
+    const $checkBox = $('div#checkbox')
     const $checkMark = $('span#checkmark')
 
     $checkBox.on(
-        'focus', 
+        'click', 
         ()=> {
             if($checkMark.css('visibility') === 'hidden'){
                 $checkBox.css('background-color', netmattersBlack)
@@ -139,9 +137,52 @@ $(()=>{
     )
 
     /* FORM VALIDATION*/
+    // USING HTML form action attribute to send data
+    /*
     const $sendEnquiryButton = $('#send-enquiry-button')
     $sendEnquiryButton.on('click', ()=>{
         //check for empty fields
         displaySuccessMessage()
     })
+    */
+   
+   //USING JS
+   const form = document.querySelector('#form')
+   const name = document.querySelector('#name')
+   const email = document.querySelector('#email')
+   const telephone = document.querySelector('#telephone')
+   const message = document.querySelector('#message')
+
+    form.addEventListener(
+        'submit',
+        (ev)=>{
+            ev.preventDefault()
+            const formData = {
+                name: name.value,
+                email: email.value,
+                telephone: telephone.value,
+                message : message .value
+            }
+            
+            if(shouldPostData()){
+                const requestOptions = {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(formData)
+                }
+                
+                fetch('./post-form-data.php', requestOptions)
+                .then(res => {
+                    if(res.ok){
+                        displaySuccessMessage()
+                        document.querySelector('#form').reset()
+                        console.log('success')
+                        return res.json()
+                    }
+                })
+                .then(msg => console.log(msg))
+                .catch(err => console.error(err.message))
+            }
+        }
+    )
 })

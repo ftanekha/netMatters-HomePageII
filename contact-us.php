@@ -222,7 +222,7 @@
                                                     <div class="col-med" style="min-width: 100%">
                                                         <div class="form-group text-area">
                                                             <label for="message" class="required">Message&nbsp;</label>
-                                                            <textarea class="form-control" name="message" rows="10" cols="50" id="message"
+                                                            <textarea class="form-control" name="message" rows="10" cols="50" id="message" style="display: block"
                                                                 minlength="3" required>Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
                                                         </div>
                                                     </div>
@@ -230,8 +230,9 @@
                                                 <div id="policies">
                                                     <div id="privacy-policy-container">
                                                         <div id="checkbox-container">
-                                                            <input id="checkbox" type="text">
-                                                            <span id="checkmark">&check;</span>
+                                                            <div id="checkbox">
+                                                                <span id="checkmark">&check;</span>
+                                                            </div>
                                                         </div>
                                                         <p class="privacy-policy-info">Please tick this box if you wish to receive marketing information from us. Please see our <a href="javascript:;">Privacy Policy</a> for more information on how we keep your data safe.</p>
                                                     </div>

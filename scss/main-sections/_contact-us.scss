@@ -237,6 +237,7 @@ div#contact-us{
                                             font-size: 14px;
                                             line-height: 1.42857143;
                                             box-sizing: border-box;
+                                            resize: vertical;
                                             // width: 100%;
                                         }
                                     }
@@ -258,23 +259,21 @@ div#contact-us{
                                             height: 32px;
                                             width: 32px;
                                             position: relative;
-                                        input#checkbox{
+                                        div#checkbox{
                                             border-radius: 3px;
                                             border: 2.4px solid $netmatters_black;
                                             height: 32px;
                                             width: 32px;
                                             float: left;
                                             margin-right: 20px;
-                                        }
-                                        span#checkmark{
-                                            line-height: 32px;
-                                            font-weight: 600;
-                                            position: absolute;
-                                            top: 0;
-                                            left: 10px;
-                                            font-weight: 600;
-                                            color: white;
-                                            visibility: hidden;
+                                            padding-top: 2px;
+                                            padding-left: 7px;
+                                            span#checkmark{
+                                                font-weight: 600;
+                                                font-weight: 600;
+                                                color: white;
+                                                visibility: hidden;
+                                            }
                                         }
                                     }
                                     p.privacy-policy-info{
@@ -369,6 +368,7 @@ div#contact-us{
         }
         span#success-message-cross{
             display: inline-block;
+            font-size: .5rem;
             font-weight: 700;
             line-height: 1;
             text-shadow: 0 1px 0 #fff;

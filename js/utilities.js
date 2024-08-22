@@ -209,23 +209,25 @@ function hasEmptyFields(){
         return false
 }
 ///////////////////////////////////////////////////////////////////////////
-function displaySuccessMessage(){
+function shouldPostData(){
     const email = document.querySelector('#email')
     const telephone = document.querySelector('#telephone')
+    // form data validation
+    if(!hasEmptyFields() && isUserEmailAddressValid(email.value) && isUserTelephoneValid(telephone.value)){
+        return true
+    }
+    return false
+}
+//////////////////////////////////////////////////////////////////////////OK?
+function displaySuccessMessage(){
     const successMessageContainer = document.querySelector('div#success-message-container')
     const successMessageCross = document.querySelector('span#success-message-cross')
+    
+    successMessageContainer.style.display = 'flex'
 
-    if(!hasEmptyFields() && isUserEmailAddressValid(email.value) && isUserTelephoneValid(telephone.value)){
-        successMessageContainer.style.display = 'flex'
-
-        successMessageCross.addEventListener('click',
-            ()=> successMessageContainer.style.display = 'none'
-        )
-        //reset form
-        document.querySelector('#form').reset()
-    }
+    successMessageCross.addEventListener('click',
+        ()=> successMessageContainer.style.display = 'none'
+    )
 }
 //////////////////////////////////////////////////////////////////////////
-export { 
-    toggleSideMenu, toggleStickyHeader, displayCookieModal, displaySuccessMessage
-}
+export {toggleSideMenu, toggleStickyHeader, displayCookieModal, shouldPostData, displaySuccessMessage}

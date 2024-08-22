@@ -6263,6 +6263,7 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
   font-size: 14px;
   line-height: 1.42857143;
   box-sizing: border-box;
+  resize: vertical;
 }
 @media (min-width: 992px) {
   div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div.form-container-inner div.col-med {
@@ -6285,20 +6286,18 @@ div#contact-us div#contact-us-container div#netmatters-offices div.container div
   width: 32px;
   position: relative;
 }
-div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container div#checkbox-container input#checkbox {
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container div#checkbox-container div#checkbox {
   border-radius: 3px;
   border: 2.4px solid #333645;
   height: 32px;
   width: 32px;
   float: left;
   margin-right: 20px;
+  padding-top: 2px;
+  padding-left: 7px;
 }
-div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container div#checkbox-container span#checkmark {
-  line-height: 32px;
+div#contact-us div#contact-us-container div#netmatters-offices div.container div#netmatters-offices-bottom-container div.form-container-outer form div#policies div#privacy-policy-container div#checkbox-container div#checkbox span#checkmark {
   font-weight: 600;
-  position: absolute;
-  top: 0;
-  left: 10px;
   font-weight: 600;
   color: white;
   visibility: hidden;
@@ -6405,6 +6404,7 @@ div#contact-us div#success-message-container p#success-message {
 }
 div#contact-us div#success-message-container span#success-message-cross {
   display: inline-block;
+  font-size: 0.5rem;
   font-weight: 700;
   line-height: 1;
   text-shadow: 0 1px 0 #fff;
