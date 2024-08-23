@@ -1,6 +1,8 @@
-import { toggleSideMenu, toggleStickyHeader, displayCookieModal } from './js/utilities.js'
+import {toggleSideMenu, toggleStickyHeader, displayCookieModal, shouldPostData, displaySuccessMessage} from './js/utilities.js'
 
 $(()=>{
+    const netmattersBlack = '#333645'
+
     /*COOKIE POPUP POLICY & consent management*/
     displayCookieModal()
     const cookiSettingsButton = $('.cookie-settings-btn')
@@ -29,7 +31,7 @@ $(()=>{
             )
         }
     )
-    .on('mouseleave', ()=> $hamburgerMenuIcon.css('background-color', '#333645'))
+    .on('mouseleave', ()=> $hamburgerMenuIcon.css('background-color', netmattersBlack))
     //
     $('#side-menu_background-filter').on('click', toggleSideMenu)
     /* STICKY HEADER*/
@@ -102,4 +104,129 @@ $(()=>{
             }
         }
     })
+
+
+    //* CONTACT US*/
+    // stop all anchir tags misbehavior
+    $('a').not('.functional').on('click', (ev)=> ev.preventDefault())
+    /*Accordion*/ 
+    const $accordion = $('div#accordion') 
+    const $accordionControl = $('.accordion-control') 
+    const $footer = $('footer')
+
+    $footer.css('transition', '.5s ease-in-out')
+
+    $accordionControl.on('click', ()=> $accordion.slideToggle())
+
+    /*Checkbox*/ 
+    const $checkBox = $('div#checkbox')
+    const $checkMark = $('span#checkmark')
+
+    $checkBox.on(
+        'click', 
+        ()=> {
+            if($checkMark.css('visibility') === 'hidden'){
+                $checkBox.css('background-color', netmattersBlack)
+                $checkMark.css('visibility', 'visible')
+            }else{
+                $checkMark.css('visibility', 'hidden')
+                $checkBox.css('background-color', 'white')
+            }
+        }
+    )
+
+    /* FORM VALIDATION*/
+    // USING HTML form action attribute to send data
+    /*
+    const $sendEnquiryButton = $('#send-enquiry-button')
+    $sendEnquiryButton.on('click', ()=>{
+        //check for empty fields
+        displaySuccessMessage()
+    })
+    */
+    //USING JS
+    const form = document.querySelector('#form')
+    const name = document.querySelector('#name')
+    const company = document.querySelector('#company')
+    const email = document.querySelector('#email')
+    const telephone = document.querySelector('#telephone')
+    const message = document.querySelector('#message')
+    const successMessage = document.querySelector('p#success-message')
+    const failureMessage = document.querySelector('p#failure-message')
+    const successOrFailureMessageContainer = document.querySelector('div#success-or-failure-message-container')
+    const checkMark = document.querySelector('span#checkmark')
+    
+    if(window.location.href.includes('contact-us.php')){
+        form.addEventListener(
+            'submit',
+            (ev)=>{
+                ev.preventDefault()
+                form.addEventListener(
+                    'click',
+                    ()=> successOrFailureMessageContainer.style.display = 'none'
+                )
+    
+                const formData = {
+                    name: name.value,
+                    company: company.value,
+                    email: email.value,
+                    telephone: telephone.value,
+                    message : message .value,
+                    marketing: checkMark.style.visibility === 'visible' ? true : false
+                }
+        
+                let [shouldPostDataResult, shouldPostDataInvalidFieldName] = shouldPostData()
+    
+                if(shouldPostDataResult){
+                    const requestOptions = {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify(formData)
+                    }
+                    //POST data & display success message
+                    fetch('post-form-data.php', requestOptions)
+                    .then(res => {
+                        if(res.ok){
+                            failureMessage.style.display = 'none'
+                            successMessage.style.display = 'block'
+    
+                            successOrFailureMessageContainer.style.backgroundColor = '#2ecc71'
+    
+                            displaySuccessMessage()
+                            
+                            document.querySelector('#form').reset()
+                        }
+                    })
+                    .catch(err => console.error(err.message))
+                }else{
+                    // highlight missing field
+                    switch(shouldPostDataInvalidFieldName){
+                        case 'name': name.style.borderColor = '#d64541'
+                        break;
+                        case 'company': company.style.borderColor = '#d64541'
+                        break;
+                        case 'email': email.style.borderColor = '#d64541'
+                        break;
+                        case 'telephone': telephone.style.borderColor = '#d64541'
+                        break;
+                        case 'message': message.style.borderColor = '#d64541'
+                        break;
+                    }
+                    //display failure notice 
+                    const failureNotice = `The ${shouldPostDataInvalidFieldName} format is incorrect.`
+    
+                    successMessage.style.display = 'none'
+                    
+                    failureMessage.textContent = failureNotice
+                    failureMessage.style.display = 'block'
+                    failureMessage.style.color = '#a94442'
+
+                    successOrFailureMessageContainer.style.backgroundColor = '#f2dede'
+                    successOrFailureMessageContainer.style.borderColor = '#ebccd1'
+                    
+                    displaySuccessMessage()
+                }
+            }
+        )
+    }
 })

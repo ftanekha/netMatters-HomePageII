@@ -62,7 +62,6 @@ div.container{
                 top: 0;
                 transition: .5s ease;
                 box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
-                margin-bottom: 30px;
                 &:hover{
                     top: -10px;
                 }
@@ -90,7 +89,6 @@ div.container{
                 &{
                     @media (min-width: 768px){
                         height: 590px;
-                        margin-bottom: 0px;
                     }
                 }
                 &{

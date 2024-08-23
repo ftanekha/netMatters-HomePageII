@@ -1,0 +1,407 @@
+div#contact-us{
+    background-color: #fff;
+    color: $netmatters_black;
+    div.contact-us-link{
+        display: none;
+        background-color: #fff;
+        box-shadow: 0 5px 35px rgba(0,0,0,.1);
+        height: 47.563px;
+        margin-bottom: -25px;
+        div.container{
+            p{
+                height: 47.563px;
+                margin: 0;
+                font-size: .8125rem;
+                display: flex;
+                align-items: center;
+                a.return-to-homepage-link{
+                    display: inline-block;
+                    padding-right: 8px;
+                    margin: 0;
+                    text-decoration: none;
+                    color: $netmatters_black;
+                    font-weight: 700;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        @media (min-width: 768px){
+            display: block;
+        }
+    }
+    div#contact-us-container{
+        background-color: #fff;
+        margin-top: -23px;
+        div.contact-us-heading{
+            margin-bottom: 30px;
+            width: 100%;
+            background-color: $netmatters_black;
+            div.container{
+                h1{
+                    max-width: 750px;
+                    height: 88px;
+                    color: #fff;
+                    font-size: 2.25rem;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0px;
+                }
+            }
+            @media (min-width: 992px){
+                background-color: #fff;
+                margin-bottom: 0px;
+                div.container{
+                    h1{
+                        color: $netmatters_black;
+                        margin-top: 55px;
+                        padding-bottom: 10px;
+                    }            
+                }
+            }
+        }
+        div#netmatters-offices{
+            // display: none;
+            div.container{
+                div#netmatters-offices-top-container{
+                    div.offices-main-container{
+                        @media (min-width: 992px){
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            row-gap: 30px;
+                        }
+                        div.office-container{
+                            margin-bottom: 0;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            &:nth-child(2){
+                                @media (min-width: 992px){
+                                    margin: 0 30px;
+                                }
+                            }
+                            div.office{
+                                box-shadow: 0 3px 35px rgba(0,0,0,.1);
+                                border-top-right-radius: 20px;
+                                border-top-left-radius: 20px;
+                                margin: 30px auto;
+                                &:first-child{
+                                    margin-top: 50px;
+                                }
+                                div.image-container{
+                                    a.office-image-wrapper{
+                                        display: block;
+                                        img{
+                                            border-top-right-radius: 20px;
+                                            border-top-left-radius: 20px;
+                                            max-width: 100%;
+                                            border: 0;
+                                            overflow-clip-margin: content-box;
+                                            overflow: clip;
+                                        }
+                                    }
+                                }
+                                div.office-address{
+                                    margin-top: -30px;
+                                    border-right: solid #ccc 1px;
+                                    border-bottom: solid #ccc 1px;
+                                    border-left: solid #ccc 1px;
+                                    padding: 0 30px;
+                                    p.office-h2{
+                                        font-size: 1.25rem;
+                                        margin-bottom: 10px;
+                                        a.office-name{
+                                            display: inline-block;
+                                            padding-top: 30px;
+                                            text-decoration: none;
+                                            color: $netmatters_black;
+                                            &:hover{
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    address{
+                                        font-style: normal;
+                                        font-size: .8125rem;
+                                        line-height: 1.375rem;
+                                        font-weight: 400;
+                                        margin-bottom: 10px;
+                                    }
+                                    a.office-h3{
+                                        color: $wisteria;
+                                        font-size:  1.625rem;
+                                        font-weight: 700;
+                                        text-decoration: none;
+                                            &:hover{
+                                                text-decoration: underline;
+                                            }
+                                    }
+                                    a.office-view-more{
+                                        @include offices-link_button($wisteria);
+                                    }
+                                }
+                            }
+                                
+                        }
+                    }
+                }
+                div#netmatters-offices-bottom-container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    div.extra-contact-info{
+                        margin: 0;
+                        padding-left: 0;
+                        p{
+                            line-height: 1.875rem;
+                            margin-bottom: 25px;
+                            color: #666;
+                            &.first-child{
+                                margin-top: -2px;
+                            }
+                            strong{
+                                font-weight: 600;
+                                color: $netmatters_black;
+                                span.glyphicon-chevron-down{
+                                    position: relative;
+                                    top: 3px;
+                                    left: 5px;
+                                }
+                            }
+                            a{
+                                text-decoration: none;
+                                color: $netmatters_black;
+                                &.email-address{
+                                    color: $wisteria;
+                                    font-size: 1.625rem;
+                                    font-weight: 600;
+                                }
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    div.form-container-outer{
+                        width: 100%;
+                        background-color: #e6e7e9;
+                        border-radius: 10px;
+                        margin-bottom: 40px;
+                        form{
+                            width: 100%;
+                            padding: 0 30px;
+                            div.form-container-inner{
+                                div.col-med{
+                                    div.form-group{
+                                        padding: 0;
+                                        label{
+                                            display: inline-flex;
+                                            align-items: flex-end;
+                                            height: 47px;
+                                            font-weight: 600;
+                                            margin-bottom: 5px;
+                                            &.required::after{
+                                                content: "*";
+                                                color: #d24d57 !important;
+                                            }
+                                        }
+                                        *.form-control{
+                                            color: #666;
+                                            padding: 5px 15px;
+                                            border-color: #ccc;
+                                            // outline: none;
+                                            width: 100%;
+                                            background-color: #fff;
+                                            border: 1px solid #ccc;
+                                            border-radius: 2px;
+                                            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                                            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                                            &:focus{
+                                                border-color: #5bc0de;
+                                                outline: 0;
+                                                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+                                                                0 0 8px rgba(91, 192, 222, 0.6);
+                                            }
+                                        }
+                                        input.form-control{
+                                            height: 47px;
+                                            width: 100%;
+                                        }
+                                        text-area.form-control{
+                                            min-height: 100px;
+                                            height: 100px !important;
+                                            font-size: 14px;
+                                            font-size: 14px;
+                                            line-height: 1.42857143;
+                                            box-sizing: border-box;
+                                            resize: vertical;
+                                        }
+                                        span.error-message{
+                                            color: $bulma_danger; 
+                                            font-size: .3rem;
+                                        }
+                                    }
+                                    @media (min-width: 992px){
+                                        display: inline-block;
+                                        margin: 0;
+                                        width: calc(50% - 15px);
+                                        &:nth-child(odd){
+                                            margin-right: 25px;
+                                        }
+                                    }
+                                }
+                            }
+                            div#policies{
+                                margin-top: 10px;
+                                div#privacy-policy-container{
+                                    display: flex;
+                                    div#checkbox-container{
+                                            height: 32px;
+                                            width: 32px;
+                                            position: relative;
+                                        div#checkbox{
+                                            border-radius: 3px;
+                                            border: 2.4px solid $netmatters_black;
+                                            height: 32px;
+                                            width: 32px;
+                                            float: left;
+                                            margin-right: 20px;
+                                            padding-top: 2px;
+                                            padding-left: 7px;
+                                            span#checkmark{
+                                                color: white;
+                                                visibility: hidden;
+                                                position: relative;
+                                                top: 2px;
+                                                left: -1px;
+                                            }
+                                        }
+                                    }
+                                    p.privacy-policy-info{
+                                        margin-right: 10px;
+                                        font-weight: 600;
+                                        color: $netmatters_black;
+                                        position: relative;
+                                        top: -13px;
+                                        left: 20px;
+                                        line-height: 32px;
+                                        cursor: pointer;
+                                        a{
+                                            text-decoration: underline;
+                                            color: $netmatters_black;
+                                            &:hover{
+                                                color: #121419;
+                                            }
+                                        }
+                                    }
+                                }
+                                p.recaptcha{
+                                    color: #333645;
+                                    font-size: 11px;
+                                    font-weight: 600;
+                                    margin-bottom: 18px;
+                                    margin-top: -10px;
+                                    a{
+                                        text-decoration: underline;
+                                        color: $netmatters_black;
+                                        &:hover{
+                                            color: #121419;
+                                        }
+                                    }
+                                }
+                                div.policies-footer{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    button#send-enquiry-button{
+                                        @include offices-link_button($netmatters_black);
+                                        width: 148.2px;
+                                        height: 45px;
+                                        font-size: 1.063rem;
+                                    }
+                                    span{
+                                        font-size: 85%;
+                                        display: inline-block;
+                                        padding-top: 25px;
+                                        &::before{
+                                            content: "*";
+                                            color: #d24d57 !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    @media (min-width: 1260px){
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        div.form-container-outer{
+                            width: 66%;
+                        }
+                        //corrected width & position
+                        div.extra-contact-info{
+                            width: 31%;
+                            position: relative;
+                            left: -8px;
+                        }
+                    }
+                }          
+            }
+        }
+    }
+    // form input notice (error message)
+    div#success-or-failure-message-container{
+        display: none;
+        width: calc(100% - 60px);
+        margin: auto;
+        padding: 15px;
+        background-color: $shamrock;
+        border: solid 1px #d6e9c6;
+        border-radius: 2px;
+        animation-name: flash;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        p#success-message, p#failure-message{
+            display: none;
+            width: calc(100% - 20px);
+            margin: auto;
+            color: white;
+        }
+        span#success-or-failure-message-close{
+            display: inline-block;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 1;
+            text-shadow: 0 1px 0 #fff;
+            opacity: .2;
+            color: #000;
+            cursor: pointer;
+            &:hover{
+                opacity: .5;
+            }
+        }
+    }
+}
+
+@keyframes flash{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
