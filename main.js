@@ -111,12 +111,11 @@ $(()=>{
     $('a').not('.functional').on('click', (ev)=> ev.preventDefault())
     /*Accordion*/ 
     const $accordion = $('div#accordion') 
-    const $accordionControl = $('span#accordion-control') 
+    const $accordionControl = $('.accordion-control') 
     const $footer = $('footer')
 
     $footer.css('transition', '.5s ease-in-out')
 
-    $accordion.slideUp()
     $accordionControl.on('click', ()=> $accordion.slideToggle())
 
     /*Checkbox*/ 
@@ -145,7 +144,6 @@ $(()=>{
         displaySuccessMessage()
     })
     */
-   
     //USING JS
     const form = document.querySelector('#form')
     const name = document.querySelector('#name')
@@ -174,9 +172,9 @@ $(()=>{
                     email: email.value,
                     telephone: telephone.value,
                     message : message .value,
-                    marketing: checkMark.style.visibility === 'visible' ? 'yes' : 'no'
+                    marketing: checkMark.style.visibility === 'visible' ? true : false
                 }
-    
+        
                 let [shouldPostDataResult, shouldPostDataInvalidFieldName] = shouldPostData()
     
                 if(shouldPostDataResult){

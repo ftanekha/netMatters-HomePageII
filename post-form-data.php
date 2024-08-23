@@ -20,13 +20,12 @@ catch(PDOException $pe)
     die("Could not connect to the database $dbname :" . $pe->getMessage());
 }
 
-
 #retrieve the raw POST data
 $jsonData = file_get_contents('php://input');
 #decode the JSON data into a PHP associative array
 $data = json_decode($jsonData, true);
 #check if decoding was successful
-$nameError = $companyError = $emailError = $telephoneError = $messageError = "";
+// $nameError = $companyError = $emailError = $telephoneError = $messageError = "";
 
 if(isset($data['name'])){
     if($data !== null) 
@@ -38,17 +37,10 @@ if(isset($data['name'])){
         $telephone = $data['telephone'];
         $message = $data['message'];
         $marketing = $data['marketing'];
-        // $name = $_POST['name'];
-        // $company = $_POST['company'];
-        // $email = $_POST['email'];
-        // $telephone = $_POST['telephone'];
-        // $message = $_POST['message'];
-        // $marketing = $_POST['marketing'];
 
         #DATA FORMATTING & VALIDATION
         if($_SERVER["REQUEST_METHOD"] === "POST") 
-        {
-            #format the data
+        {#format the data
             function format_form_data($form_input) 
             {
                 $form_input = trim($form_input);
@@ -67,7 +59,7 @@ if(isset($data['name'])){
                 $name = format_form_data($name);
             }
             if(empty($company)){
-                //nullable
+                #nullable
                 $company = null;
             }elseif(!preg_match("/^[a-zA-Z-' ]*$/",$company)) {
                 $companyError = "The company name format is incorrect.";
@@ -96,17 +88,18 @@ if(isset($data['name'])){
             }else{
                 $message = format_form_data($message);
             }
-            // if(empty($marketing)){
-            //     $marketing = "";
-            // }elseif(format_form_data($marketing) === "yes" or format_form_data($marketing) === "no"){
-            //     $marketing = format_form_data($marketing);
-            // }else{
-            //     $marketing = null;
-            // }
+            if(empty($marketing)){ 
+                $marketing = false; 
+            }elseif(format_form_data($marketing) === "yes" or format_form_data($marketing) === "no"){
+                $marketing = filter_var($marketing, FILTER_VALIDATE_BOOL);
+            }else{
+                $marketing = false;
+            }
         }
+
         #query database table with new data
-        $query = "INSERT INTO form_data (name, company,	email, telephone, message)
-                    VALUES (\"$name\", \"$company\", \"$email\", \"$telephone\", \"$message\")";
+        $query = "INSERT INTO form_data (name, company,	email, telephone, message, marketing)
+                    VALUES (\"$name\", \"$company\", \"$email\", \"$telephone\", \"$message\", \"$marketing\")";
         try
         {
             $result = $conn->query($query);
@@ -118,8 +111,8 @@ if(isset($data['name'])){
     } 
     else 
     {
-        //JSON decoding failed
-        http_response_code(400); // Bad Request
+        #JSON decoding failed
+        http_response_code(400); #Bad Request
         echo "Invalid JSON data";
     }
 }

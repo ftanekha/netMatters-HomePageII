@@ -51,7 +51,7 @@
                     <div id="contact-us">
                          <div class="contact-us-link">
                             <div class="container">
-                                <p><a class="return-to-homepage-link" href="javascript:;">Home</a>/    Our Offices</p>
+                                <p><a class="return-to-homepage-link functional" href="/">Home</a>/    Our Offices</p>
                             </div>
                         </div>
                         <div id="contact-us-container">
@@ -165,11 +165,11 @@
                                             </p>
                                             <p>
                                                 <strong>
-                                                    <a href="javascript:;">Out of Hours IT Support</a>
-                                                    <span class="glyphicon glyphicon-chevron-down" id="accordion-control"></span>
+                                                    <a href="javascript:;" class="accordion-control">Out of Hours IT Support</a>
+                                                    <span class="glyphicon glyphicon-chevron-down accordion-control"></span>
                                                 </strong>
                                             </p>
-                                            <div id="accordion">
+                                            <div id="accordion" style="display: none">
                                                 <p>
                                                     Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.
                                                 </p>
