@@ -108,7 +108,7 @@ $(()=>{
 
     //* CONTACT US*/
     // stop all anchir tags misbehavior
-    $('a').on('click', (ev)=> ev.preventDefault())
+    $('a').not('.functional').on('click', (ev)=> ev.preventDefault())
     /*Accordion*/ 
     const $accordion = $('div#accordion') 
     const $accordionControl = $('span#accordion-control') 
@@ -146,70 +146,89 @@ $(()=>{
     })
     */
    
-   //USING JS
-   const form = document.querySelector('#form')
-   const name = document.querySelector('#name')
-   const company = document.querySelector('#company')
-   const email = document.querySelector('#email')
-   const telephone = document.querySelector('#telephone')
-   const message = document.querySelector('#message')
-   const successMessage = document.querySelector('p#success-message')
-   const failureMessage = document.querySelector('p#failure-message')
-   const successOrFailureMessageContainer = document.querySelector('div#success-or-failure-message-container')
-   
-    form.addEventListener(
-        'submit',
-        (ev)=>{
-            ev.preventDefault()
-            form.addEventListener(
-                'click',
-                ()=> successOrFailureMessageContainer.style.display = 'none'
-            )
-
-            const formData = {
-                name: name.value,
-                company: company.value,
-                email: email.value,
-                telephone: telephone.value,
-                message : message .value
-            }
-
-            let [shouldPostDataResult, shouldPostDataFieldName] = shouldPostData()
-
-            if(shouldPostDataResult){
-                const requestOptions = {
-                    method: 'POST',
-                    headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify(formData)
+    //USING JS
+    const form = document.querySelector('#form')
+    const name = document.querySelector('#name')
+    const company = document.querySelector('#company')
+    const email = document.querySelector('#email')
+    const telephone = document.querySelector('#telephone')
+    const message = document.querySelector('#message')
+    const successMessage = document.querySelector('p#success-message')
+    const failureMessage = document.querySelector('p#failure-message')
+    const successOrFailureMessageContainer = document.querySelector('div#success-or-failure-message-container')
+    const checkMark = document.querySelector('span#checkmark')
+    
+    if(window.location.href.includes('contact-us.php')){
+        form.addEventListener(
+            'submit',
+            (ev)=>{
+                ev.preventDefault()
+                form.addEventListener(
+                    'click',
+                    ()=> successOrFailureMessageContainer.style.display = 'none'
+                )
+    
+                const formData = {
+                    name: name.value,
+                    company: company.value,
+                    email: email.value,
+                    telephone: telephone.value,
+                    message : message .value,
+                    marketing: checkMark.style.visibility === 'visible' ? 'yes' : 'no'
                 }
-                //POST data & display success message
-                fetch('post-form-data.php', requestOptions)
-                .then(res => {
-                    if(res.ok){
-                        failureMessage.style.display = 'none'
-                        successMessage.style.display = 'block'
-
-                        successOrFailureMessageContainer.style.backgroundColor = '#2ecc71'
-
-                        displaySuccessMessage()
-                        
-                        document.querySelector('#form').reset()
+    
+                let [shouldPostDataResult, shouldPostDataInvalidFieldName] = shouldPostData()
+    
+                if(shouldPostDataResult){
+                    const requestOptions = {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify(formData)
                     }
-                })
-                .catch(err => console.error(err.message))
-            }else{
-                //display failure notice 
-                const failureNotice = `The ${shouldPostDataFieldName} format is incorrect.`
+                    //POST data & display success message
+                    fetch('post-form-data.php', requestOptions)
+                    .then(res => {
+                        if(res.ok){
+                            failureMessage.style.display = 'none'
+                            successMessage.style.display = 'block'
+    
+                            successOrFailureMessageContainer.style.backgroundColor = '#2ecc71'
+    
+                            displaySuccessMessage()
+                            
+                            document.querySelector('#form').reset()
+                        }
+                    })
+                    .catch(err => console.error(err.message))
+                }else{
+                    // highlight missing field
+                    switch(shouldPostDataInvalidFieldName){
+                        case 'name': name.style.borderColor = '#d64541'
+                        break;
+                        case 'company': company.style.borderColor = '#d64541'
+                        break;
+                        case 'email': email.style.borderColor = '#d64541'
+                        break;
+                        case 'telephone': telephone.style.borderColor = '#d64541'
+                        break;
+                        case 'message': message.style.borderColor = '#d64541'
+                        break;
+                    }
+                    //display failure notice 
+                    const failureNotice = `The ${shouldPostDataInvalidFieldName} format is incorrect.`
+    
+                    successMessage.style.display = 'none'
+                    
+                    failureMessage.textContent = failureNotice
+                    failureMessage.style.display = 'block'
+                    failureMessage.style.color = '#a94442'
 
-                successMessage.style.display = 'none'
-                
-                failureMessage.textContent = failureNotice
-                failureMessage.style.display = 'block'
-
-                successOrFailureMessageContainer.style.backgroundColor = 'hsl(348, 100%, 61%)'
-
-                displaySuccessMessage()
+                    successOrFailureMessageContainer.style.backgroundColor = '#f2dede'
+                    successOrFailureMessageContainer.style.borderColor = '#ebccd1'
+                    
+                    displaySuccessMessage()
+                }
             }
-        }
-    )
+        )
+    }
 })

@@ -1,6 +1,6 @@
 <?php
-    include "loadenv.php";
-    include "post-form-data.php";
+    include 'loadenv.php';
+    include 'post-form-data.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -236,7 +236,7 @@
                                                     <div id="privacy-policy-container">
                                                         <div id="checkbox-container">
                                                             <div id="checkbox">
-                                                                <span id="checkmark">&check;</span>
+                                                                <span id="checkmark" class="icon-check"></span>
                                                             </div>
                                                         </div>
                                                         <p class="privacy-policy-info">Please tick this box if you wish to receive marketing information from us. Please see our <a href="javascript:;">Privacy Policy</a> for more information on how we keep your data safe.</p>

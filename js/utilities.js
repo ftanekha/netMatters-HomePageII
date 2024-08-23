@@ -222,18 +222,35 @@ function shouldPostData(){
     const company = document.querySelector('#company')
     const email = document.querySelector('#email')
     const telephone = document.querySelector('#telephone')
+    const message = document.querySelector('#message')
     // form data validation
     if(
         !hasEmptyFields() && isValidStringInput(name.value)
         && isValidStringInput(company.value) && isUserEmailAddressValid(email.value) 
-        && isUserTelephoneValid(telephone.value)
+        && isUserTelephoneValid(telephone.value) && (message.value.length > 3)
     ){
         return [true, undefined]
     }else{
-        if(!isValidStringInput(name.value)) return [false, 'name']
-        if(!isValidStringInput(company.value)) return [false, 'company']
-        if(!isUserEmailAddressValid(email.value)) return [false, 'email']
-        if(!isUserTelephoneValid(telephone.value)) return [false, 'telephone']
+        if(!isValidStringInput(name.value)){
+            // name.style.borderColor = '#d64541'
+            return [false, 'name']
+        }
+        if(!isValidStringInput(company.value)){
+            // company.style.borderColor = '#d64541'
+            return [false, 'company']
+        }
+        if(!isUserEmailAddressValid(email.value)){
+            // email.style.borderColor = '#d64541'
+            return [false, 'email']
+        }
+        if(!isUserTelephoneValid(telephone.value)){
+            // telephone.style.borderColor = '#d64541'
+            return [false, 'telephone']
+        }
+        if(message.value.length < 3){
+            // message.style.borderColor = '#d64541'
+            return [false, 'message']
+        }
     }
 }
 //////////////////////////////////////////////////////////////////////////OK?

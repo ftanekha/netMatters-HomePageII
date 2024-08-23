@@ -1,5 +1,5 @@
 <?php
-    include "fetch-news-items.php";
+    include 'fetch-news-items.php';
 
     $newsItems = fetchNewsItems();
 ?>

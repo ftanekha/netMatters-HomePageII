@@ -3,10 +3,10 @@
 include 'loadenv.php';
 
 #get form data
-$host = $_ENV['MySQL_DB_HOST_NAME'];
-$dbname = $_ENV['MySQL_DB_NAME'];
-$username = $_ENV['MySQL_DB_USER_NAME'];
-$password = $_ENV['MySQL_DB_PASSWORD'];
+$host = $_ENV['DB_HOST_NAME'];
+$dbname = $_ENV['DB_NAME'];
+$username = $_ENV['DB_USER_NAME'];
+$password = $_ENV['DB_PASSWORD'];
 #instantiate connection to database
 try
 {
@@ -19,6 +19,7 @@ catch(PDOException $pe)
 {
     die("Could not connect to the database $dbname :" . $pe->getMessage());
 }
+
 
 #retrieve the raw POST data
 $jsonData = file_get_contents('php://input');
@@ -36,6 +37,13 @@ if(isset($data['name'])){
         $email = $data['email'];
         $telephone = $data['telephone'];
         $message = $data['message'];
+        $marketing = $data['marketing'];
+        // $name = $_POST['name'];
+        // $company = $_POST['company'];
+        // $email = $_POST['email'];
+        // $telephone = $_POST['telephone'];
+        // $message = $_POST['message'];
+        // $marketing = $_POST['marketing'];
 
         #DATA FORMATTING & VALIDATION
         if($_SERVER["REQUEST_METHOD"] === "POST") 
@@ -88,6 +96,13 @@ if(isset($data['name'])){
             }else{
                 $message = format_form_data($message);
             }
+            // if(empty($marketing)){
+            //     $marketing = "";
+            // }elseif(format_form_data($marketing) === "yes" or format_form_data($marketing) === "no"){
+            //     $marketing = format_form_data($marketing);
+            // }else{
+            //     $marketing = null;
+            // }
         }
         #query database table with new data
         $query = "INSERT INTO form_data (name, company,	email, telephone, message)

@@ -3,10 +3,10 @@
 include 'loadenv.php';
 
 function fetchNewsItems(){
-    $host = $_ENV['MySQL_DB_HOST_NAME'];
-    $dbname = $_ENV['MySQL_DB_NAME'];
-    $username = $_ENV['MySQL_DB_USER_NAME'];
-    $password = $_ENV['MySQL_DB_PASSWORD'];
+    $host = $_ENV['DB_HOST_NAME'];
+    $dbname = $_ENV['DB_NAME'];
+    $username = $_ENV['DB_USER_NAME'];
+    $password = $_ENV['DB_PASSWORD'];
     //instantiate connection to database
     try
     {
