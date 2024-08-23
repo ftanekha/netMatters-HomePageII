@@ -156,6 +156,13 @@ $(()=>{
     const successOrFailureMessageContainer = document.querySelector('div#success-or-failure-message-container')
     const checkMark = document.querySelector('span#checkmark')
     
+    $('.form-control').on(
+        'focus', ()=> $('.form-control').css({
+            'border-color': '#ccc',
+            'background-color': '#fff'
+        })
+    )
+
     if(window.location.href.includes('contact-us.php')){
         form.addEventListener(
             'submit',

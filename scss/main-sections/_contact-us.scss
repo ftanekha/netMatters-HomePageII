@@ -212,7 +212,6 @@ div#contact-us{
                                             color: #666;
                                             padding: 5px 15px;
                                             border-color: #ccc;
-                                            // outline: none;
                                             width: 100%;
                                             background-color: #fff;
                                             border: 1px solid #ccc;
@@ -317,9 +316,12 @@ div#contact-us{
                                     justify-content: space-between;
                                     button#send-enquiry-button{
                                         @include offices-link_button($netmatters_black);
-                                        width: 148.2px;
+                                        width: 152.2px;
                                         height: 45px;
                                         font-size: 1.063rem;
+                                        @media (min-width: 768px) {
+                                            width: 148.2px;
+                                        }
                                     }
                                     span{
                                         font-size: 85%;
