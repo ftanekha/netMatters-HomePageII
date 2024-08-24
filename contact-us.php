@@ -1,7 +1,3 @@
-<?php
-    include 'loadenv.php';
-    include 'post-form-data.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -190,7 +186,7 @@
                                                 <p id="success-message">Your message has been sent!</p>
                                                 <p id="failure-message"></p><span id="success-or-failure-message-close">x</span>
                                              </div>
-                                            <form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+                                            <form id="form" action="post-form-data.php" method="POST">
                                                 <div class="form-container-inner">
                                                     <div class="col-med">
                                                         <div class="form-group">
@@ -272,7 +268,6 @@
     </noscript>
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
     <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
     <script type="module" src="main.js"></script>
 </body>

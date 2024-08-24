@@ -2,11 +2,12 @@ import {toggleSideMenu, toggleStickyHeader, displayCookieModal, shouldPostData, 
 
 $(()=>{
     const netmattersBlack = '#333645'
-
+    // stop all anchor tags misbehaving
+    $('a').not('.functional').on('click', (ev)=> ev.preventDefault())
     /*COOKIE POPUP POLICY & consent management*/
     displayCookieModal()
-    const cookiSettingsButton = $('.cookie-settings-btn')
-    cookiSettingsButton.on('click', ()=> displayCookieModal(true))
+    const $cookiSettingsButton = $('.cookie-settings-btn')
+    $cookiSettingsButton.on('click', ()=> displayCookieModal(true))
     /*CAROUSEL///Banner///*/
     $('div#banner').slick(
         {//configuration object
@@ -105,38 +106,9 @@ $(()=>{
         }
     })
 
-
     //* CONTACT US*/
-    // stop all anchir tags misbehavior
-    $('a').not('.functional').on('click', (ev)=> ev.preventDefault())
-    /*Accordion*/ 
-    const $accordion = $('div#accordion') 
-    const $accordionControl = $('.accordion-control') 
-    const $footer = $('footer')
 
-    $footer.css('transition', '.5s ease-in-out')
-
-    $accordionControl.on('click', ()=> $accordion.slideToggle())
-
-    /*Checkbox*/ 
-    const $checkBox = $('div#checkbox')
-    const $checkMark = $('span#checkmark')
-
-    $checkBox.on(
-        'click', 
-        ()=> {
-            if($checkMark.css('visibility') === 'hidden'){
-                $checkBox.css('background-color', netmattersBlack)
-                $checkMark.css('visibility', 'visible')
-            }else{
-                $checkMark.css('visibility', 'hidden')
-                $checkBox.css('background-color', 'white')
-            }
-        }
-    )
-
-    /* FORM VALIDATION*/
-    // USING HTML form action attribute to send data
+    /* FORM VALIDATION USING HTML form action attribute to send data*/
     /*
     const $sendEnquiryButton = $('#send-enquiry-button')
     $sendEnquiryButton.on('click', ()=>{
@@ -144,44 +116,61 @@ $(()=>{
         displaySuccessMessage()
     })
     */
-    //USING JS
-    const form = document.querySelector('#form')
-    const name = document.querySelector('#name')
-    const company = document.querySelector('#company')
-    const email = document.querySelector('#email')
-    const telephone = document.querySelector('#telephone')
-    const message = document.querySelector('#message')
-    const successMessage = document.querySelector('p#success-message')
-    const failureMessage = document.querySelector('p#failure-message')
-    const successOrFailureMessageContainer = document.querySelector('div#success-or-failure-message-container')
-    const checkMark = document.querySelector('span#checkmark')
-    
-    $('.form-control').on(
-        'focus', ()=> $('.form-control').css({
-            'border-color': '#ccc',
-            'background-color': '#fff'
-        })
-    )
-
     if(window.location.href.includes('contact-us.php')){
-        form.addEventListener(
+        const $form = $('#form')
+        const $name = $('#name')
+        const $company = $('#company')
+        const $email = $('#email')
+        const $telephone = $('#telephone')
+        const $message = $('#message')
+        const $successMessage = $('p#success-message')
+        const $failureMessage = $('p#failure-message')
+        const $successOrFailureMessageContainer = $('div#success-or-failure-message-container')
+        /*Input fields*/
+        $('.form-control').on(
+            'focus', ()=> $('.form-control').css({
+                'border-color': '#ccc',
+                'background-color': '#fff'
+            })
+        )
+        /*Checkbox*/ 
+        const $checkBox = $('div#checkbox')
+        const $checkMark = $('span#checkmark')
+        let marketing = 'no'
+
+        $checkBox.on(
+            'click', 
+            ()=> { 
+                if($checkMark.css('visibility') === 'hidden'){
+                    $checkBox.css('background-color', netmattersBlack)
+                    $checkMark.css('visibility', 'visible')
+                    marketing = 'yes'
+                }else{
+                    $checkMark.css('visibility', 'hidden')
+                    $checkBox.css('background-color', 'white')
+                    marketing = 'no'
+                }
+            }
+        )
+        /*Form*/ 
+        $form.on(
+            'click',
+            ()=> $successOrFailureMessageContainer.css('display','none')
+        )
+
+        $form.on(
             'submit',
             (ev)=>{
                 ev.preventDefault()
-                form.addEventListener(
-                    'click',
-                    ()=> successOrFailureMessageContainer.style.display = 'none'
-                )
-    
                 const formData = {
-                    name: name.value,
-                    company: company.value,
-                    email: email.value,
-                    telephone: telephone.value,
-                    message : message .value,
-                    marketing: checkMark.style.visibility === 'visible' ? true : false
+                    name: $name.val(),
+                    company: $company.val(),
+                    email: $email.val(),
+                    telephone: $telephone.val(),
+                    message : $message.val(),
+                    marketing
                 }
-        
+                //Validate form data
                 let [shouldPostDataResult, shouldPostDataInvalidFieldName] = shouldPostData()
     
                 if(shouldPostDataResult){
@@ -194,10 +183,10 @@ $(()=>{
                     fetch('post-form-data.php', requestOptions)
                     .then(res => {
                         if(res.ok){
-                            failureMessage.style.display = 'none'
-                            successMessage.style.display = 'block'
+                            $failureMessage.css('display', 'none')
+                            $successMessage.css('display','block')
     
-                            successOrFailureMessageContainer.style.backgroundColor = '#2ecc71'
+                            $successOrFailureMessageContainer.css('background-color', '#2ecc71')
     
                             displaySuccessMessage()
                             
@@ -208,32 +197,40 @@ $(()=>{
                 }else{
                     // highlight missing field
                     switch(shouldPostDataInvalidFieldName){
-                        case 'name': name.style.borderColor = '#d64541'
+                        case 'name': $name.css('border-color', '#d64541')
                         break;
-                        case 'company': company.style.borderColor = '#d64541'
+                        case 'company': $company.css('border-color', '#d64541')
                         break;
-                        case 'email': email.style.borderColor = '#d64541'
+                        case 'email': $email.css('border-color', '#d64541')
                         break;
-                        case 'telephone': telephone.style.borderColor = '#d64541'
+                        case 'telephone': $telephone.css('border-color', '#d64541')
                         break;
-                        case 'message': message.style.borderColor = '#d64541'
+                        case 'message': $message.css('border-color', '#d64541')
                         break;
                     }
                     //display failure notice 
                     const failureNotice = `The ${shouldPostDataInvalidFieldName} format is incorrect.`
     
-                    successMessage.style.display = 'none'
+                    $successMessage.css('display', 'none')
                     
-                    failureMessage.textContent = failureNotice
-                    failureMessage.style.display = 'block'
-                    failureMessage.style.color = '#a94442'
+                    $failureMessage.text(failureNotice)
+                    $failureMessage.css('display', 'block')
+                    $failureMessage.css('color', '#a94442')
 
-                    successOrFailureMessageContainer.style.backgroundColor = '#f2dede'
-                    successOrFailureMessageContainer.style.borderColor = '#ebccd1'
+                    $successOrFailureMessageContainer.css('background-color', '#f2dede')
+                    $successOrFailureMessageContainer.css('border-color', '#ebccd1')
                     
                     displaySuccessMessage()
                 }
             }
         )
+        /*Accordion*/ 
+        const $accordion = $('div#accordion') 
+        const $accordionControl = $('.accordion-control') 
+        const $footer = $('footer')
+
+        $footer.css('transition', '.5s ease-in-out')
+
+        $accordionControl.on('click', ()=> $accordion.slideToggle())
     }
 })
