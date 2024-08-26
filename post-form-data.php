@@ -103,7 +103,7 @@ if(isset($data['name'])){
             }
         }
         #query database table with new data
-        $query = "INSERT INTO form_data (name, company,	email, telephone, message, marketing)
+        $query = "INSERT INTO homepage_form_data (name, company,	email, telephone, message, marketing)
                     VALUES (\"$name\", \"$company\", \"$email\", \"$telephone\", \"$message\", \"$marketing\")";
         try
         {
