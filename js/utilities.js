@@ -161,6 +161,13 @@ function isValidStringInput(input){
     return result
 }
 ///////////////////////////////////////////////////////////////////////////
+function isValidAlphaNumericInput(input){
+    //only contains letters, dashes, apostrophes and whitespaces
+    const regex = /^[a-zA-Z0-9-' ]*$/g
+    const result = regex.test(input)
+    return result
+}
+///////////////////////////////////////////////////////////////////////////
 function isUserEmailAddressValid(userEmailAddress){
     /*check that user email address:*/
     //comprises alphanumeric characters (dot excluded), and is 6 to 20 characters long (e.g. ghxnyab234)
@@ -226,7 +233,7 @@ function shouldPostData(){
     // form data validation
     if(
         !hasEmptyFields() && isValidStringInput(name.value)
-        && isValidStringInput(company.value) && isUserEmailAddressValid(email.value) 
+        && isValidAlphaNumericInput(company.value) && isUserEmailAddressValid(email.value) 
         && isUserTelephoneValid(telephone.value) && (message.value.length > 3)
     ){
         return [true, undefined]
@@ -235,7 +242,7 @@ function shouldPostData(){
             // name.style.borderColor = '#d64541'
             return [false, 'name']
         }
-        if(!isValidStringInput(company.value)){
+        if(!isValidAlphaNumericInput(company.value)){
             // company.style.borderColor = '#d64541'
             return [false, 'company']
         }

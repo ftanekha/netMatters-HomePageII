@@ -180,9 +180,18 @@ $(()=>{
                         body: JSON.stringify(formData)
                     }
                     //POST data & display success message
-                    fetch('post-form-data.php', requestOptions)
+                    fetch(ev.target.action, requestOptions)
                     .then(res => {
-                        if(res.ok){
+                        if(res.ok && res.status === 200){
+                            return res.json()
+                        }
+                    })//handle bad response from server
+                    .then(data => {
+                        if(Array.isArray(data)){
+                            console.table(data[0])
+                            console.warn(data[1])
+                        }else{
+                            console.info(data)
                             $failureMessage.css('display', 'none')
                             $successMessage.css('display','block')
     

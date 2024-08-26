@@ -26,7 +26,6 @@ $jsonData = file_get_contents('php://input');
 $data = json_decode($jsonData, true);
 #check if decoding was successful
 // $nameError = $companyError = $emailError = $telephoneError = $messageError = "";
-
 if(isset($data['name'])){
     if($data !== null) 
     {
@@ -37,7 +36,6 @@ if(isset($data['name'])){
         $telephone = $data['telephone'];
         $message = $data['message'];
         $marketing = $data['marketing'];
-
         #DATA FORMATTING & VALIDATION
         if($_SERVER["REQUEST_METHOD"] === "POST") 
         {#format the data
@@ -50,59 +48,67 @@ if(isset($data['name'])){
             }
             # [1] check for empty fields/ missing form data
             # [2] ****VALIDATE*****data
+            $http_response_code406 = ["http_error_code" => 406, "error_description" => "Response Not Acceptable."];
+
             if(empty($name)) {
-                $name = "";
-                $nameError = "Your name is required";
+                // http_response_code(406);
+                echo json_encode([$http_response_code406, "The name is required"]);
+                exit;
             }elseif(!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-                $nameError = "The name format is incorrect.";
+                echo json_encode([$http_response_code406, "The name format is incorrect."]);
+                exit;
             }else{
                 $name = format_form_data($name);
             }
             if(empty($company)){
                 #nullable
                 $company = null;
-            }elseif(!preg_match("/^[a-zA-Z-' ]*$/",$company)) {
-                $companyError = "The company name format is incorrect.";
+            }elseif(!preg_match("/^[a-zA-Z0-9-' ]*$/",$company)) {
+                echo json_encode([$http_response_code406, "The company name format is incorrect."]);
+                exit;
             }else{
                 $company = format_form_data($company);
             }
             if(empty($email)){
-                $email = "";
-                $emailError = "Your email is required";
+                echo json_encode([$http_response_code406, "The email is required."]);
+                exit;
             }elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                $emailError = "The email format is incorrect.";
+                echo json_encode([$http_response_code406, "The email format is incorrect."]);
+                exit;
             }else{
-                $email = $email = format_form_data($email);
+                $email = format_form_data($email);
             }
             if(empty($telephone)){
-                $telephone = "";
-                $telephoneError = "Your telephone is required";
+                echo json_encode([$http_response_code406, "The telephone is required"]);
+                exit;
             }elseif(!preg_match("/^[0-9]{7,15}+$/", $telephone)){
-                $telephoneError = "The telephone format is incorrect.";
+                echo json_encode([$http_response_code406, "The telephone format is incorrect."]);
+                exit;
             }else{
                 $telephone = format_form_data($telephone);
             }
             if(empty($message)){
-                $message = "";
-                $messageError = "Your message is required";
+                echo json_encode([$http_response_code406, "The message is required"]);
+                exit;
             }else{
                 $message = format_form_data($message);
             }
-            if(empty($marketing)){ 
+            if(empty($marketing) or !isset($marketing) ){ 
                 $marketing = false; 
-            }elseif(format_form_data($marketing) === "yes" or format_form_data($marketing) === "no"){
-                $marketing = filter_var($marketing, FILTER_VALIDATE_BOOL);
+                echo json_encode([$http_response_code406, "Marketing is required"]);
+                exit;
             }else{
-                $marketing = false;
+                $marketing = format_form_data($marketing);
+                $marketing = filter_var($marketing, FILTER_VALIDATE_BOOL);
             }
         }
-
         #query database table with new data
         $query = "INSERT INTO form_data (name, company,	email, telephone, message, marketing)
                     VALUES (\"$name\", \"$company\", \"$email\", \"$telephone\", \"$message\", \"$marketing\")";
         try
         {
             $result = $conn->query($query);
+            echo json_encode("Success");
         }
         catch(Exception $e)
         {
