@@ -19,7 +19,6 @@ body{
         overflow-x: hidden;
         background-color: #fff;
         position: relative;
-        transition: .5s;
         z-index: $main-outer-container_z-index;
         transition: 0.5s;
         &.slide-origin{
