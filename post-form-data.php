@@ -25,7 +25,6 @@ $jsonData = file_get_contents('php://input');
 #decode the JSON data into a PHP associative array
 $data = json_decode($jsonData, true);
 #check if decoding was successful
-// $nameError = $companyError = $emailError = $telephoneError = $messageError = "";
 if(isset($data['name'])){
     if($data !== null) 
     {

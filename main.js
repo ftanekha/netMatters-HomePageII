@@ -38,7 +38,7 @@ $(()=>{
     /* STICKY HEADER*/
     //determine the scroll direction using the scroll position on the document object
     //only show the sticky header wher the user scrolls UP
-    toggleStickyHeader();
+    toggleStickyHeader()
     /* NAV drop-down menu*/
     const navItemIconColors = {
         'bs': '#67809f',

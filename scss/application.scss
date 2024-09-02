@@ -35,7 +35,6 @@ body{
                 height: 100%; 
                 div.main-inner{
                     position: relative;
-                    //CHANGED ~12LINES
                     div#header-wrapper-sticky-wrapper-support{
                         display: none;
                         width: 100%;
@@ -48,7 +47,6 @@ body{
                             display: block;
                         }
                     }
-                    //CHANGED END
                     //sticky header
                     div#header-wrapper-sticky-wrapper{
                         width: 100%;

@@ -76,9 +76,7 @@ function toggleSideMenu(){
         })
 
         $sideMenuBackgroundFilter.css('z-index', sideMenuContainerZindex)
-        //CHANGED - 1LINE
         $(window).css('height', 'auto')
-        //END 
     }
 }
 ///////////////////////////////////////////////////////////////////
@@ -193,34 +191,24 @@ function hasEmptyFields(){
     
     let formHasEmptyFields = false
 
-    const fields = []
-
         if(!name.value){
-            fields.push('name')
             name.style.borderColor = '#d64541' 
             formHasEmptyFields = true
         }
         if(!email.value){
-            fields.push('email')
-
             email.style.borderColor = '#d64541' 
             formHasEmptyFields = true
         }
         if(!telephone.value){
-            fields.push('telephone')
-
             telephone.style.borderColor = '#d64541' 
             formHasEmptyFields = true
         }
         if(!message.value){
-            fields.push('message')
-
             message.style.borderColor = '#d64541' 
             formHasEmptyFields = true
         }
 
-        if(formHasEmptyFields) return true
-        return false
+        return formHasEmptyFields
 }
 ///////////////////////////////////////////////////////////////////////////
 function shouldPostData(){
@@ -239,23 +227,18 @@ function shouldPostData(){
         return [true, undefined]
     }else{
         if(!isValidStringInput(name.value)){
-            // name.style.borderColor = '#d64541'
             return [false, 'name']
         }
         if(!isValidAlphaNumericInput(company.value)){
-            // company.style.borderColor = '#d64541'
             return [false, 'company']
         }
         if(!isUserEmailAddressValid(email.value)){
-            // email.style.borderColor = '#d64541'
             return [false, 'email']
         }
         if(!isUserTelephoneValid(telephone.value)){
-            // telephone.style.borderColor = '#d64541'
             return [false, 'telephone']
         }
         if(message.value.length < 3){
-            // message.style.borderColor = '#d64541'
             return [false, 'message']
         }
     }
