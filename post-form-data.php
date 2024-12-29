@@ -21,7 +21,6 @@ catch(PDOException $pe)
 {
     die("Could not connect to the database $dbname :" . $pe->getMessage());
 }
-
 #retrieve the raw POST data
 $jsonData = file_get_contents('php://input');
 #decode the JSON data into a PHP associative array
