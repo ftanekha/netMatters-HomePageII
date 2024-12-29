@@ -3,10 +3,10 @@
 include 'loadenv.php';
 
 #get form data
-$host = getenv("DATABASE_HOST");
-$dbname = getenv("DATABASE_NAME");
-$username = getenv("DATABASE_USERNAME");
-$password = getenv("DATABASE_PASSWORD");
+$host = "srv-captain--rbxhpafwje-mysql-80x";
+$dbname = getenv("MYSQL_DATABASE");
+$username = getenv("MYSQL_USER");
+$password = getenv("MYSQL_PASSWORD");
 #instantiate connection to database
 try
 {
