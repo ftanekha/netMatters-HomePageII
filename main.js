@@ -204,7 +204,7 @@ document.addEventListener(
                                     document.querySelector('#form').reset()
                                 }
                             })
-                            .catch(err => console.error(err.message))
+                            .catch(err => console.error(err))
                         }else{
                             // highlight missing field
                             switch(shouldPostDataInvalidFieldName){

@@ -1,4 +1,5 @@
 <?php
+
 error_reporting(-1);//report all errors
 ini_set("display_errors", "1");//shows all errors
 ini_set("log_errors", 1);
