@@ -100,6 +100,7 @@ if(isset($data['name'])){
         {
             echo "Exception caught: $e";
         }
+        $conn = null;
     } 
     else 
     {

@@ -1,22 +1,8 @@
 <?php
+require 'connect.php';
+
 function fetchNewsItems(){
-    $host = getenv("DATABASE_HOST");
-    $dbname = getenv("DATABASE_NAME");
-    $username = getenv("DATABASE_USERNAME");
-    $password = getenv("DATABASE_PASSWORD");
-    $dbPort = getenv("DATABASE_PORT");
-    //instantiate connection to database
-    try
-    {
-        $conn = new PDO(
-            "mysql:host=$host;dbname=$dbname;", 
-            $username, $password
-        );
-    } 
-    catch(PDOException $pe) 
-    {
-        die("Could not connect to the database $dbname :" . $pe->getMessage());
-    }
+    $conn = connect();
     //query database table
     $query = "SELECT * FROM news_items";
     $result = $conn->query($query);
@@ -32,7 +18,7 @@ function fetchNewsItems(){
         $newsItem["date"] = date('d-F-Y', strtotime($newsItem["date"]));
     }
     //terminate connection
-    $db = null;
+    $conn = null;
 
     return $newsItems;
 }
