@@ -1,26 +1,12 @@
 <?php
+require 'connect.php';
+
 error_reporting(-1);//report all errors
 ini_set("display_errors", "1");//shows all errors
 ini_set("log_errors", 1);
 ini_set("error_log", "/tmp/php-error.log");
-#get env variables
-$host = getenv("DATABASE_HOST");
-$dbname = getenv("DATABASE_NAME");
-$username = getenv("DATABASE_USERNAME");
-$password = getenv("DATABASE_PASSWORD");
-$dbPort = getenv("DATABASE_PORT");
-$dsn = "mysql:host=$host;dbname=$dbname;port:$dbPort";
 #instantiate connection to database
-try
-{
-    $conn = new PDO($dsn, $username, $password);
-    #throw any exception raised by PDO
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} 
-catch(PDOException $pe) 
-{
-    die("Could not connect to the database $dbname :" . $pe->getMessage());
-}
+$conn = connect();
 #retrieve the raw POST data
 $jsonData = file_get_contents('php://input');
 #decode the JSON data into a PHP associative array
