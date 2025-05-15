@@ -663,7 +663,6 @@
     </noscript>
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
     <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
     <script type="module" src="main.js"></script>
 </body>

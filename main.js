@@ -182,7 +182,7 @@ document.addEventListener(
                                 body: JSON.stringify(formData)
                             }
                             //POST data & display success message
-                            fetch("post-form-data.php", requestOptions)
+                            fetch("/post-form-data.php", requestOptions)
                             .then(res => {
                                 if(res.ok && res.status === 200){
                                     return res.json()
