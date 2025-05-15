@@ -1,7 +1,9 @@
 <?php 
-require_once __DIR__ . '/vendor/autoload.php';  // Corrected the path with forward slashes
-// Load environment variables from the .env file in the root folder
-Dotenv\Dotenv::createImmutable(__DIR__)->load();
+require_once __DIR__ . '/vendor/autoload.php';
+// For local server: Load environment variables from the .env file in the root folder
+if(file_exists(__DIR__ . '/.env')) {
+    Dotenv\Dotenv::createImmutable(__DIR__)->load();
+}
 
 function connect(){
     // Get environment variables
