@@ -8,7 +8,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/favicons/favicon-nm.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicons/favicon.ico">
+     <link rel="apple-touch-icon" href="assets/favicons/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/normalize.css">
