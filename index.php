@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/icons/style.css">
     <link rel="stylesheet" href="assets/web-fonts/Poppins.css">
     <link rel="stylesheet" type="text/css" href="css/application.css">
-    <title>Farai Tanekha: HTML & SASS Assessment</title>
+    <title>FT: Netmatters homepage replica</title>
 </head>
 <body class="home-page">
     <!-- COOKIE CONSENT BAR -->
